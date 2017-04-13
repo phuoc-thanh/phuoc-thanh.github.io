@@ -30,8 +30,8 @@ sass:
 # Author settings
 author:
   name     : "Thanh Do"
-  job      : "Software Engineer"
-  bio      : "We used to look up at the sky and wonder at our place in the stars"
+  job      : "a citizen of the Matrix"
+  bio      : "It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you."
   thumb    : /images/author.jpg
   email    : thanhdo89se@gmail.com
   url      : http://thanhdo89se.github.io
