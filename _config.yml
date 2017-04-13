@@ -1,0 +1,57 @@
+
+# SEO settings
+title: "Binary"
+title2: "Reality" # default: ""
+description: "Just a naive idea in binary world."
+keywords: "Software, Engineering, Computer, Science, SEO, blog, web, minimalist"
+url: https://thanhdo89se.github.io/ # site url
+baseurl: "" # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
+
+google_analytics: UA-XXXXX-XX
+# repo: http://github.com/heiswayi/thinkspace
+# disqus_shortname: "hnbloggithub"
+# twitter_username: "HeiswayiNrird"
+comments: true
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Thanh Do"
+  job      : "Software Engineer"
+  bio      : "We used to look up at the sky and wonder at our place in the stars"
+  thumb    : /images/author.jpg
+  email    : thanhdo89se@gmail.com
+  url      : http://thanhdo89se.github.io
+  github   : http://github.com/thanhdo89se
+  facebook : https://www.facebook.com/naiveryan
+
+# social settings
+og_locale: "en_US"
+#twitter_card: "summary_large_image"
+#twitter_site: "@HeiswayiNrird"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
