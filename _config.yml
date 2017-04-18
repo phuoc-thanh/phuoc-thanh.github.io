@@ -46,6 +46,7 @@ og_locale: "en_US"
 gems:
   - bourbon
   - jekyll-paginate
+  - jekyll-seo-tag
 
 # navbar pages
 navbar:
