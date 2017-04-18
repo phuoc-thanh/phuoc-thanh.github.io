@@ -17,7 +17,9 @@ Công ty lớn, trung bình sau khi quá mệt mỏi với CMMI đã được 1 
 Một nhóm khởi nghiệp đầy hoải bão với đủ thứ ý tưởng "mới mẻ và thời trang" trong đầu, tất nhiên không thể bỏ qua "Agile" hay XP Programming.
 Một khách hàng cấp tiến, trong buổi hợp mời thầu, cũng hỏi: "Anh nghĩ như thế nào về Agile vs Traditional".  
 
-Và những nơi đang áp dụng Agile vào quá trình sản xuất phần mềm, thật sự những con người ở đó đang tham gia vào 1 chuyến phiêu lưu đầy rủi ro.
+Và những nơi đang áp dụng Agile vào quá trình sản xuất phần mềm, thật sự những con người ở đó đang tham gia vào 1 chuyến phiêu lưu đầy rủi ro.  
+
+![Agile Risky Adventure](/assets/images/agile-risk.jpg)
 
 ## Agile, Scrum là gì?
 
@@ -62,8 +64,16 @@ Thứ hai, làm việc mà ko có 1 kế hoạch, nghe có mùi mù quáng, gi�
 ## Business-driven engineering
 > High-talent people is more important and success than micro - managed team & processes
 
-## It's destroying your career
-> Often, it’s the best employees who fall the hardest when Agile/Scrum is introduced, because R&D is effectively eliminated, and the obsession with short-term “iterations” or sprints means that there’s no room to try something that might actually fail.
+## Agile sẽ gây tổn hại đến career path của 1 Developer 
+Đoạn này xin lấy ý chính từ blog của Michael O Church 
+
+> Instead of working on actual, long-term projects that a person could get excited about, they’re relegated to working on atomized, feature-level “user stories” and often disallowed to work on improvements that can’t be related to short-term, immediate business needs (often delivered from on-high)
+
+Đúng vậy, Violent transparency, 1 loại văn hóa của Agile/Scrum sẽ khiến bạn thay vì theo đuổi những dự án dài hạn, bỏ hết tâm và sức mình vào những gì bạn hứng thú để đảm nhận 1 loại công việc ngắn hạn, nhàm chán.  
+
+Khi bước vào tuổi chín của sự nghiệp (khoảng 30), bạn - 1 kĩ sư phần mềm, mong muốn mình có thể gánh vác những công việc tầm cỡ về hạ tầng hệ thống, kiến trúc, nghiên cứu, và khả năng lãnh đạo. Trong khi với Agile/Scrum, ngày qua ngày bạn được giao những công việc ngắn hạn theo "User story" (khoảng 2 tuần), và những công việc này theo như Michael nói, chính là "grunt work".  
+
+Grunt, làm tôi nhớ tới con orc cầm búa trong Warcraft 3, 1 anh lính chỉ biết cầm búa và lao vào đối thủ và không có 1 kĩ năng nhạy bén nào =)). Và grunt work - chính là loại công việc mà 1 anh grunt đảm nhận. Những feature tẻ nhạt, lặp đi lặp lại, ngắn hạn, thiếu sáng tạo để đáp ứng ngay cho nhu cầu cấp thiết của Client.  
 
 
 ## References
