@@ -14,7 +14,7 @@ Cho tới nay, 2017. Agile nói chung (bao gồm cả Scrum) đã trở thành 1
 
 Từ tập đoàn lớn với mọi thứ đang trong khuôn khổ vận hành trơn tru bỗng 1 ngày đòi đập bỏ bộ máy trơn tru đó để áp dụng "Agile".  
 Công ty lớn, trung bình sau khi quá mệt mỏi với CMMI đã được 1 vài anh gạo cội rỉ tai về "Scrum".  
-Một nhóm khởi nghiệp đầy hoải bão với đủ thứ ý tưởng "mới mẻ và thời trang" trong đầu, tất nhiên không thể bỏ qua "Agile" hay XP Programming.  
+Một nhóm khởi nghiệp đầy hoài bão với đủ thứ ý tưởng "mới mẻ và thời trang" trong đầu, tất nhiên không thể bỏ qua "Agile" hay XP Programming.  
 Một khách hàng cấp tiến, trong buổi hợp mời thầu, cũng hỏi: "Anh nghĩ như thế nào về Agile vs Traditional".  
 
 Và những nơi đang áp dụng Agile vào quá trình sản xuất phần mềm, thật sự những con người ở đó đang tham gia vào 1 chuyến phiêu lưu đầy rủi ro.  
@@ -75,6 +75,33 @@ Khi bước vào tuổi chín của sự nghiệp (khoảng 30), bạn - 1 kĩ s
 
 Grunt, làm tôi nhớ tới con orc cầm búa trong Warcraft 3, 1 anh lính chỉ biết cầm búa và lao vào đối thủ và không có 1 kĩ năng nhạy bén nào =)). Và grunt work - chính là loại công việc mà 1 anh grunt đảm nhận. Những feature tẻ nhạt, lặp đi lặp lại, ngắn hạn, thiếu sáng tạo để đáp ứng ngay cho nhu cầu cấp thiết của Client.  
 
+## Khi nào nên áp dụng Scrum?
+
+Scrum dành cho những dự án đột xuất, khẩn cấp và yêu cầu hàng đầu là delivery, tức là phải xong việc thật nhanh.  
+
+Khi nhận dự án kiểu này, cty sẽ lập 1 team với những chiến binh có kinh nghiệm: Dev nhanh, chịu OT, có trách nhiệm cao, ko phàn nàn với sự thay đổi liên tục từ khách hàng.
+
+Team sẽ có 1 Leader, hoặc Executive có lẽ tốt hơn -> xin gọi tắt là Osin. Trách nhiệm chính của Osin là làm cầu nối giữa client và dev team. Công việc chủ yếu của Osin:  
+
+1. Lắng nghe yêu cầu/thay đổi của khách hàng (User Story) và dịch ra thành technical-task cho dev team.
+2. Giải thích technical thing sao cho dễ nghe với khách hàng và giúp họ lựa chọn giải pháp kĩ thuật.
+3. Dựa trên estimation của team (hoặc member) để deal với khách hàng về tgian hoàn thành.
+4. Overview toàn bộ mọi thứ team đang làm để đảm bảo "all jobs will be done"!  
+
+Hãy luôn ghi nhớ rằng những dự án này là "short-term", tham gia quá nhiều dự án đột xuất dạng này sẽ ảnh hưởng lớn đến sự phát triển của 1 kĩ sư chuyên nghiệp. Bởi vậy có 1 số điểm cần lưu ý khi thực hiện:
+
+1. Nó chỉ nên xảy ra 1 hoặc 2 lần trong năm cho mỗi cá nhân tham gia.
+2. Trong tgian diễn ra, mọi ng phải thống nhất rõ ràng trước là ko đánh giá hiệu suất cá nhân mà chỉ tập trung vào nhiệm vụ.
+3. Giảm tối thiểu Micro-manage, 1 điều ko tránh khỏi đối với Agile
+
+Micro-manage là vấn đề thường xuyên gặp trong các môi trường khác kể cả ngoài Agile và ngoài lĩnh vực Software. Điểm này sẽ làm những chiến binh của ta khó chịu và giảm hiệu quả khi bị giám sát/theo dõi. Có lẽ nên viết thêm 1 phần khác về Micro manage
+
+Cũng theo Michael O.C, có 2 hoàn cảnh thường xảy ra:
+* Khi 1 cty áp dụng Rapid Development quá nhiều cho 1 cá nhân thì chắc chắn có gì đó sai sót vì những dự án gấp gáp kiểu này có vẻ khá hiếm hoi.
+
+* Cty đang gặp vấn đề với quản lý Client Relationship khiến cho toàn bộ dự án/tasks đều trong tình trạng đột xuất, gấp gáp.  
+
+Okie, cả 2 điểm này tôi đều gặp. Khi cty bạn đang làm việc với khách hàng là Digital Marketing Agency, những dự án xoay quanh quy mô của 1 campaign, luôn luôn bị hối thúc. Bản chất của nó chính là "Rapid", "Short-term", "Deliver First" nên toàn bộ team đều phải chạy theo 1 kiểu làm việc hỗn loạn như trên... 
 
 ## References
 https://michaelochurch.wordpress.com/2015/06/06/why-agile-and-especially-scrum-are-terrible/
