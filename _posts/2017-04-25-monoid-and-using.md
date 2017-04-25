@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Monoid - định nghĩa và ứng dụng trong lập trình"
+title: "Monoid - Định nghĩa và ứng dụng trong lập trình"
 comments: true
-description: "Monoid - định nghĩa và ứng dụng trong lập trình"
+description: "Monoid - Định nghĩa và ứng dụng trong lập trình"
 keywords: "monoid, binary, functional, programming"
 ---
 
@@ -20,8 +20,6 @@ Binary Operation có thể dịch là phép toán 2 ngôi, phép toán nhị ngu
 * Khác với Unary Operation là phép toán 1 ngôi, phép toán đơn nguyên, sử dụng 1 biến đầu vào và cho ra 1 kết quả.
 * Khác với Bitwise Operation thường được dịch là phép toán nhị phân, sử dụng cả Unary/Binary Operation để tính toán số nhị phân.  
 
-Typical examples of binary operations are the addition (+) and multiplication (×) of numbers and matrices as well as composition of functions on a single set. For instance,
-
 Ví dụ điển hình về phép toán nhị nguyên là phép cộng (+) và phép nhân (x) trên 1 tập đơn:
 * Trong tập hợp số thực R, f(a, b) = a + b là 1 phép toán nhị nguyên vì tổng của 2 số thực là 1 số thực.
 
@@ -38,14 +36,14 @@ Phép trừ (-) ko có tính kếp hợp a − (b − c) ≠ (a − b) − c và
 Theo đó, Monoid là 1 cấu trúc đại số bao gồm 1 phép kết nhị nguyên (Associative Binary Operation) và 1 phần tử nhận dạng (Identity Element). Phép kết nhị nguyên ở đây có thể hiểu là phép toán nhị nguyên có tính kết hợp như phép cộng (+) và phép nhân (×).
 
 **Định nghĩa**
-Giả sử S là 1 tập hợp (set), và • là 1 phép phép toán nhị nguyên S × S → S, thì S cùng với • là 1 monoid nếu thỏa 2 điều sau:
+Giả sử S là 1 tập hợp (set), và • là 1 phép toán nhị nguyên S × S → S, thì S cùng với • là 1 monoid nếu thỏa 2 điều sau:
 
 1.Tính kết hợp: Đối với toàn bộ a,b và c thuộc S, ta luôn có (a • b) • c = a • (b • c)
 
 2.Phần tử nhận dạng: Tồn tại 1 phần tử e thuộc S sao cho với từng phần tử a thuộc S, ta luôn có  e • a = a • e = a
 
 **Ví Dụ**
-Tập hợp số tự nhiên N, tạo ra 2 commutative monoid (monoid có tính giao hoán) với phép cộng (phần tử nhận dạng: 0) và phép nhân (phần tử giao hoán 1)
+Tập hợp số tự nhiên N, tạo ra 2 commutative monoid (monoid có tính giao hoán) với phép cộng (phần tử nhận dạng: 0) và phép nhân (phần tử nhận dạng 1)
 
 ## Monoid trong lập trình hàm (Haskell)
 
