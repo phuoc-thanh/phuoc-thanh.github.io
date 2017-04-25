@@ -47,7 +47,7 @@ Giả sử S là 1 tập hợp (set), và • là 1 phép toán nhị nguyên S 
 **Ví Dụ**
 Tập hợp số tự nhiên N, tạo ra 2 commutative monoid (monoid có tính giao hoán) với phép cộng (phần tử nhận dạng: 0) và phép nhân (phần tử nhận dạng 1)
 
-## Monoid trong lập trình hàm (Haskell)
+## 2. Monoid trong lập trình hàm (Haskell)
 
 Xét 1 kiểu (type) m và 1 phép toán (<>) :: m -> m -> m. Kiểu m và phép toán (<>) được coi là monoid khi:
 1. luôn tồn tại 1 phần tử mempty :: m thỏa điều kiện x <> mempty == x and mempty <> x == x;
@@ -90,4 +90,5 @@ https://en.wikipedia.org/wiki/Monoid
 https://en.wikipedia.org/wiki/Binary_operation
 https://en.wikipedia.org/wiki/Abstract_algebra
 http://www.cis.upenn.edu/~cis194/spring15/lectures/04-typeclasses.html
+https://en.wikibooks.org/wiki/Haskell/Monoids
 https://en.wikibooks.org/wiki/Haskell/Foldable
