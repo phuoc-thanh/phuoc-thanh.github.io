@@ -77,9 +77,17 @@ instance Monoid [a] where
   mappend = (++)
 ```
 
+### Ứng dụng Monoid
+
+Monoid rất thông dụng trong haskell,
+
+** The `Foldable` Class **
+
+
 ## Tham khảo
 
 https://en.wikipedia.org/wiki/Monoid
 https://en.wikipedia.org/wiki/Binary_operation
 https://en.wikipedia.org/wiki/Abstract_algebra
 http://www.cis.upenn.edu/~cis194/spring15/lectures/04-typeclasses.html
+https://en.wikibooks.org/wiki/Haskell/Foldable
