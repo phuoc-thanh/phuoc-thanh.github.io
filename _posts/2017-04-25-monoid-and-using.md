@@ -23,7 +23,9 @@ Binary Operation có thể dịch là phép toán 2 ngôi, phép toán nhị ngu
 Ví dụ điển hình về phép toán nhị nguyên là phép cộng (+) và phép nhân (x) trên 1 tập đơn:
 * Trong tập hợp số thực R, f(a, b) = a + b là 1 phép toán nhị nguyên vì tổng của 2 số thực là 1 số thực.
 
-1 phép toán nhị nguyên có thể có tính giao hoán, hoặc kết hợp. Ví dụ:
+**Tính chất**
+
+Một phép toán nhị nguyên có thể có tính giao hoán, hoặc kết hợp. Ví dụ:
 
 Đối với a,b,c là phần tử thuộc tập số thực R:
 
