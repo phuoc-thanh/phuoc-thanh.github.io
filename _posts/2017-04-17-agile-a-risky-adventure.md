@@ -71,9 +71,9 @@ Thứ hai, làm việc mà ko có 1 kế hoạch, nghe có mùi mù quáng, gi�
 
 Đúng vậy, Violent transparency, 1 loại văn hóa của Agile/Scrum sẽ khiến bạn thay vì theo đuổi những dự án dài hạn, bỏ hết tâm và sức mình vào những gì bạn hứng thú để đảm nhận 1 loại công việc ngắn hạn, nhàm chán.  
 
-Khi bước vào tuổi chín của sự nghiệp (khoảng 30), bạn - 1 kĩ sư phần mềm, mong muốn mình có thể gánh vác những công việc tầm cỡ về hạ tầng hệ thống, kiến trúc, nghiên cứu, và khả năng lãnh đạo. Trong khi với Agile/Scrum, ngày qua ngày bạn được giao những công việc ngắn hạn theo "User story" (khoảng 2 tuần), và những công việc này theo như Michael nói, chính là "grunt work".  
+Khi bước vào tuổi chín của sự nghiệp (khoảng 30), bạn - 1 kỹ sư phần mềm, mong muốn mình có thể gánh vác những công việc tầm cỡ về hạ tầng hệ thống, kiến trúc, nghiên cứu, và khả năng lãnh đạo. Trong khi với Agile/Scrum, ngày qua ngày bạn được giao những công việc ngắn hạn theo "User story" (khoảng 2 tuần), và những công việc này theo như Michael nói, chính là "grunt work".  
 
-Grunt, làm tôi nhớ tới con orc cầm búa trong Warcraft 3, 1 anh lính chỉ biết cầm búa và lao vào đối thủ và không có 1 kĩ năng nhạy bén nào =)). Và grunt work - chính là loại công việc mà 1 anh grunt đảm nhận. Những feature tẻ nhạt, lặp đi lặp lại, ngắn hạn, thiếu sáng tạo để đáp ứng ngay cho nhu cầu cấp thiết của Client.  
+Grunt, làm tôi nhớ tới con orc cầm búa trong Warcraft 3, 1 anh lính chỉ biết cầm búa và lao vào đối thủ và không có 1 kỹ năng nhạy bén nào =)). Và grunt work - chính là loại công việc mà 1 anh grunt đảm nhận. Những feature tẻ nhạt, lặp đi lặp lại, ngắn hạn, thiếu sáng tạo để đáp ứng ngay cho nhu cầu cấp thiết của Client.  
 
 ## Khi nào nên áp dụng Scrum?
 
@@ -84,11 +84,11 @@ Khi nhận dự án kiểu này, cty sẽ lập 1 team với những chiến bin
 Team sẽ có 1 Leader, hoặc Executive có lẽ tốt hơn -> xin gọi tắt là Osin. Trách nhiệm chính của Osin là làm cầu nối giữa client và dev team. Công việc chủ yếu của Osin:  
 
 1. Lắng nghe yêu cầu/thay đổi của khách hàng (User Story) và dịch ra thành technical-task cho dev team.
-2. Giải thích technical thing sao cho dễ nghe với khách hàng và giúp họ lựa chọn giải pháp kĩ thuật.
+2. Giải thích technical thing sao cho dễ nghe với khách hàng và giúp họ lựa chọn giải pháp kỹ thuật.
 3. Dựa trên estimation của team (hoặc member) để deal với khách hàng về tgian hoàn thành.
 4. Overview toàn bộ mọi thứ team đang làm để đảm bảo "all jobs will be done"!  
 
-Hãy luôn ghi nhớ rằng những dự án này là "short-term", tham gia quá nhiều dự án đột xuất dạng này sẽ ảnh hưởng lớn đến sự phát triển của 1 kĩ sư chuyên nghiệp. Bởi vậy có 1 số điểm cần lưu ý khi thực hiện:
+Hãy luôn ghi nhớ rằng những dự án này là "short-term", tham gia quá nhiều dự án đột xuất dạng này sẽ ảnh hưởng lớn đến sự phát triển của 1 kỹ sư chuyên nghiệp. Bởi vậy có 1 số điểm cần lưu ý khi thực hiện:
 
 1. Nó chỉ nên xảy ra 1 hoặc 2 lần trong năm cho mỗi cá nhân tham gia.
 2. Trong tgian diễn ra, mọi ng phải thống nhất rõ ràng trước là ko đánh giá hiệu suất cá nhân mà chỉ tập trung vào nhiệm vụ.
