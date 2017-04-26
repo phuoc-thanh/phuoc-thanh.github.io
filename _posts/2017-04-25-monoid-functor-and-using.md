@@ -5,11 +5,14 @@ comments: true
 description: "Monoid, Functor - Định nghĩa và ứng dụng trong lập trình"
 keywords: "monoid, functor, binary operation, algebra, math, category, abstract, functional, programming"
 ---
+
 ## Vài dòng
 
 Mục đích của bài này là gì?
 
-Là tại đang học Haskell, mà đụng tới mấy khái niệm mới mẻ quá. Tìm hiểu thêm tí thì biết là tại mình ko có nền tảng Đại Số vững chắc. Hồi ĐH hình như chỉ đc học giải tích thôi thì phải =)). Nên là, mày mò dịch thuật, tổng hợp, suy xét để viết ra bài này. Viết để nhớ, ko mai mốt lại quên. Viết cũng là 1 cách hữu ích trong tìm tòi/nghiên cứu để hiểu sâu hơn.
+Là tại đang học Haskell, mà đụng tới mấy khái niệm mới mẻ quá. Tìm hiểu thêm tí thì biết là tại mình ko có nền tảng Đại Số vững chắc. Hồi ĐH hình như chỉ đc học giải tích thôi thì phải =)).  
+
+Nên là, mày mò dịch thuật, tổng hợp, suy xét để viết ra bài này. Viết để nhớ, ko mai mốt lại quên. Viết cũng là 1 cách hữu ích trong tìm tòi/nghiên cứu để hiểu sâu hơn.
 
 ## 1. Định nghĩa Monoid
 
@@ -107,11 +110,11 @@ Functor cũng xuất phát từ Đại Số Trừu Tượng (Abstract Algebra) v
 
 ### 3.1 Category
 
-Category trong từ điển toán tin/kỹ thuật được dịch là "Phạm Trù", đây có lẽ là 1 từ vay mượn từ môn Triết Học. Vậy Cateory Theory được dịch là Lý Thuyết Phạm Trù, nghe thật "trừu tượng" và "hàn lâm" hehe. Thôi thì từ đây tôi viết Category cho ngắn gọn chứ Phạm Trù nghe cao siêu quá =)).
+Category trong từ điển toán tin/kỹ thuật được dịch là "Phạm Trù", đây có lẽ là 1 từ vay mượn từ môn Triết Học. Vậy Category Theory được dịch là Lý Thuyết Phạm Trù, nghe thật "trừu tượng" và "hàn lâm" hehe. Thôi thì từ đây tôi viết Category cho ngắn gọn chứ Phạm Trù nghe cao siêu quá =)).
 
 > Category theory is a formalism that allows a unified way for expressing properties and constructions that are similar for various structures.
 
-Trong Toán học, Category là 1 cấu trúc đại số (Algebraic Structure) - cũng như Monoid. Cấu trúc Category bao gồm 1 nhóm đối tượng (objects) được liên kết với nhau bởi những mũi tên (arrows).
+Trong Toán học, Category là 1 cấu trúc đại số (Algebraic Structure) - cũng như Monoid. Cấu trúc Category bao gồm 1 nhóm đối tượng (objects) được liên kết với nhau bởi những arrows.
 
 Arrow: là khái niệm chỉ phép ánh xạ (morphism) giữa 2 đối tượng (object). 
 
@@ -130,7 +133,7 @@ Và sự tồn tại của 1 mũi tên định danh (identity arrow) cho mỗi o
 
 (1) và (2) nghe quen quen nhỉ, he he?
 
-Yep, Monoid và Category đều là cấu trúc nhóm ("Group-like" Structure). Monoid chính là 1 dạng Category đặc biệt với 1 object duy nhất với những ánh xạ đơn (morphisms) phản chiếu chính nó.
+Yep, Monoid và Category đều là cấu trúc nhóm ("Group-like" Structure). Monoid chính là 1 dạng Category đặc biệt gồm 1 object duy nhất với những ánh xạ đơn (morphisms) phản chiếu chính nó.
 Category chính là 1 dạng khái quát hóa của Monoid.
 
 Nếu có tgian thì tôi sẽ đọc thêm về Arrow, Object và Category Theory để hiểu thêm đoạn này.
