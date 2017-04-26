@@ -130,7 +130,8 @@ Và sự tồn tại của 1 mũi tên định danh (identity arrow) cho mỗi o
 
 (1) và (2) nghe quen quen nhỉ, he he?
 
-Yep, Monoid và Category đều là cấu trúc nhóm ("Group-like" Structure). Monoid chính là 1 dạng Category đặc biệt với 1 object đơn duy nhất (tập S với các phần tử biểu diễn s) với những ánh xạ đơn (morphisms) phản chiếu chính nó.
+Yep, Monoid và Category đều là cấu trúc nhóm ("Group-like" Structure). Monoid chính là 1 dạng Category đặc biệt với 1 object duy nhất với những ánh xạ đơn (morphisms) phản chiếu chính nó.
+Category chính là 1 dạng khái quát hóa của Monoid.
 
 Nếu có tgian thì tôi sẽ đọc thêm về Arrow, Object và Category Theory để hiểu thêm đoạn này.
 
