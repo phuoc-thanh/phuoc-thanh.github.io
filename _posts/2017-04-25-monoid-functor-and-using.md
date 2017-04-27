@@ -146,7 +146,7 @@ Functor cũng là khái niệm xuất phát từ Category Theory. Cụ thể, n�
 
 Ví dụ ta có 2 Category là C và D, F được gọi là functor (covariant functor) từ C đến D khi:
 
-* F ánh xạ mỗi x object thuộc C đến object F(x) thuộc D
+* F ánh xạ mỗi object x thuộc C đến object F(x) thuộc D
 
 * F ánh xạ mỗi arrow f:x -> y thuộc C đến arrow F(f):F(x) -> F(y) thuộc D
 
@@ -158,11 +158,11 @@ Còn 1 thể loại contravariant functor thì đảo ngược chiều của arr
 
 ## 4. Functor trong lập trình hàm (Haskell)
 
-Sau khi đã đọc hết mớ lý thuyết về functor, giờ ta sẽ hiện thực hóa nó vào lập trình (Haskell).
+Sau khi đã đọc hết mớ lý thuyết về functor, giờ ta sẽ xem cách nó được hiện thực hóa vào lập trình (Haskell).
 
 Trước tiên, các bạn hãy hiểu phép ánh xạ (Morphism) trong toán học chính là function trong Haskell đã nhé.
 
-### 4.1 Lớp Monoid (Monoid typeclass)
+### 4.1 Lớp Functor (Functor typeclass)
 
 Haskell có 1 lớp tên là Functor và lớp này chỉ có 1 function duy nhất là fmap:
 
