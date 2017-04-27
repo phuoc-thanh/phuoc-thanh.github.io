@@ -140,11 +140,43 @@ Nếu có tgian thì tôi sẽ đọc thêm về Arrow, Object và Category Theo
 
 ### 3.2 Functor
 
+Okay, tiếp nhé, đoạn này tôi dịch từ wikipedia và wikiversity, hơi hại não.  
+
+Functor cũng là khái niệm xuất phát từ Category Theory. Cụ thể, nó là 1 kiểu ánh xạ (mapping) giữa các Category.
+
+Ví dụ ta có 2 Category là C và D, F được gọi là functor (covariant functor) từ C đến D khi:
+
+* F ánh xạ mỗi x object thuộc C đến object F(x) thuộc D
+
+* F ánh xạ mỗi arrow f:x -> y thuộc C đến arrow F(f):F(x) -> F(y) thuộc D
+
+* F ánh xạ mỗi identity arrow: F(idx) = idF(x)
+
+* F giữ tính kết hợp cho tất cả ánh xạ: F(g ⚬ f) = F(g) ⚬ F(f)  
+
+Còn 1 thể loại contravariant functor thì đảo ngược chiều của arrow.
+
+## 4. Functor trong lập trình hàm (Haskell)
+
+Sau khi đã đọc hết mớ lý thuyết về functor, giờ ta sẽ hiện thực hóa nó vào lập trình (Haskell).
+
+Trước tiên, các bạn hãy hiểu phép ánh xạ (Morphism) trong toán học chính là function trong Haskell đã nhé.
+
+### 4.1 Lớp Monoid (Monoid typeclass)
+
+Haskell có 1 lớp tên là Functor và lớp này chỉ có 1 function duy nhất là fmap:
+
+```haskell
+class Functor f where
+  fmap :: (a -> b) -> f a -> f b
+```
+
+fmap chính là 1 hàm đa kiểu (polytypic function) dùng để map hàm của những type đã tồn tại với hàm của những type mới.
 
 
 ## Tham khảo
 https://en.wikiversity.org/wiki/Introduction_to_Category_Theory/Monoids
-https://en.wikipedia.org/wiki/Monoid
+https://en.wikiversity.org/wiki/Introduction_to_Category_Theory/Functors
 https://en.wikipedia.org/wiki/Binary_operation
 https://en.wikipedia.org/wiki/Abstract_algebra
 https://en.wikipedia.org/wiki/Category_(mathematics)
