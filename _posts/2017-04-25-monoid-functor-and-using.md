@@ -171,8 +171,73 @@ class Functor f where
   fmap :: (a -> b) -> f a -> f b
 ```
 
-fmap chính là 1 hàm đa kiểu (polytypic function) dùng để map hàm của những type đã tồn tại với hàm của những type mới.
+fmap chính là 1 hàm đa kiểu (polytypic function) dùng để map function của những type đã tồn tại với function của những type mới.
 
+### 4.2 Một vài ví dụ của các Functor instance (thực thể)
+
+**List Functor**
+
+```haskell
+instance Functor [] where
+  fmap = map
+```
+Nhìn vào định nghĩa thực thể functor trên list, ta có thể thấy fmap chính là dạng khái quát hóa của map.
+
+```haskell
+fmap (* 10)  [2,4,8,16] = [20,40,80,160]
+--  Int->Int    [Int]         [Int]
+```
+
+**Maybe Functor**
+
+```haskell
+instance Functor Maybe where
+  fmap _ Nothing  = Nothing
+  fmap f (Just x) = Just (f x)
+```
+fmap chỉ áp dụng function trên kiểu Just x và bỏ qua kiểu Nothing
+
+```haskell
+fmap  (+7)    (Just 10)  = Just 17
+fmap  (+7)     Nothing   = Nothing
+--Int->Int     Maybe Int   Maybe Int  
+```haskell
+
+**Custom data type Functor**
+
+2 ví dụ trên là những thực thể Functor có sẵn trong gói Prelude của Haskell, chúng ta có thể tạo ra functor cho các kiểu riêng khác.
+
+Ví dụ ta có 1 data type:
+
+```haskell
+data Tree a = Leaf a | Branch (Tree a) (Tree a) deriving (Show)
+```haskell
+
+Ta có thể định nghĩa thực thể Functor cho kiểu Tree như sau:
+
+```haskell
+instance Functor Tree where
+  fmap f (Leaf x)            = Leaf   (f x)
+  fmap f (Branch left right) = Branch (fmap f left) (fmap f right)
+```haskell
+
+Compile nó và thử apply function (2*) lên Tree này để xem điều kì diệu :D
+
+```haskell
+fmap (2*) (Branch (Branch (Leaf 1) (Leaf 2)) (Leaf 3))
+```haskell
+
+### 4.3 Functor Laws
+
+Từ những ví dụ trên, ta có thể nhận thấy:
+
+1. Functor nhận đối số (arguments) là 1 type constructor chứ ko đơn thuần là 1 type.
+
+type constructor trong những ví dụ trên là [], Maybe, Tree chứ không dích danh type [Int] hay Maybe Bool... nào cả.  
+
+2. Functor chỉ tính toán trên dữ liệu và không thay đổi cấu trúc của dữ liệu
+
+### 4.4 Ích lợi gì khi dùng Functor? 
 
 ## Tham khảo
 https://en.wikiversity.org/wiki/Introduction_to_Category_Theory/Monoids
@@ -186,3 +251,4 @@ http://www.cis.upenn.edu/~cis194/spring15/lectures/04-typeclasses.html
 https://en.wikibooks.org/wiki/Haskell/Monoids
 https://en.wikibooks.org/wiki/Haskell/The_Functor_class
 https://en.wikibooks.org/wiki/Haskell/Foldable
+http://stackoverflow.com/questions/13134825/how-do-functors-work-in-haskell
