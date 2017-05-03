@@ -201,7 +201,7 @@ fmap chỉ áp dụng function trên kiểu Just x và bỏ qua kiểu Nothing
 fmap  (+7)    (Just 10)  = Just 17
 fmap  (+7)     Nothing   = Nothing
 --Int->Int     Maybe Int   Maybe Int  
-```haskell
+```
 
 **Custom data type Functor**
 
@@ -211,7 +211,7 @@ Ví dụ ta có 1 data type:
 
 ```haskell
 data Tree a = Leaf a | Branch (Tree a) (Tree a) deriving (Show)
-```haskell
+```
 
 Ta có thể định nghĩa thực thể Functor cho kiểu Tree như sau:
 
@@ -219,13 +219,13 @@ Ta có thể định nghĩa thực thể Functor cho kiểu Tree như sau:
 instance Functor Tree where
   fmap f (Leaf x)            = Leaf   (f x)
   fmap f (Branch left right) = Branch (fmap f left) (fmap f right)
-```haskell
+```
 
 Compile nó và thử apply function (2*) lên Tree này để xem điều kì diệu :D
 
 ```haskell
 fmap (2*) (Branch (Branch (Leaf 1) (Leaf 2)) (Leaf 3))
-```haskell
+```
 
 ### 4.3 Functor Laws
 
@@ -233,7 +233,7 @@ Từ những ví dụ trên, ta có thể nhận thấy:
 
 1. Functor nhận đối số (arguments) là 1 type constructor chứ ko đơn thuần là 1 type.
 
-type constructor trong những ví dụ trên là [], Maybe, Tree chứ không dích danh type [Int] hay Maybe Bool... nào cả.  
+Type constructor trong những ví dụ trên là [], Maybe, Tree chứ không dích danh type [Int] hay Maybe Bool... nào cả.  
 
 2. Functor chỉ tính toán trên dữ liệu và không thay đổi cấu trúc của dữ liệu
 
