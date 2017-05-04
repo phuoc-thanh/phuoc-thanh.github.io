@@ -52,7 +52,22 @@ Thứ hai, làm việc mà ko có 1 kế hoạch, nghe có mùi mù quáng, gi�
 
 ## Hyping common sense
 
+Triết lý của Agile (Agile Manifesto) nghe rất hay và hấp dẫn, dĩ nhiên cả với 12 nguyên lý của Agile nữa.
+Nhưng điều mà nhiều anti muốn nói là tất cả những điều này đều là "Common Sense", tức là những lẽ thường, dễ dàng nhận thấy, nếu bạn đủ thông minh.
+
+Và Agile chỉ cường điệu hóa những điều đó mà thôi. Chúng ta đều biết nó đúng, hay, và bổ ích. Nhưng làm thế nào?
+
+Câu chuyện đc mang sang Scrum, khi đó triết lý Agile mới được áp dụng thành vào 1 dự án, 1 team.
+
+Có rất nhiều ý kiến phản đối và bổ sung thêm cho 12 nguyên lý của Agile, các bạn có thể tham khảo link dưới bài. Nhưng chỉ cần bạn có 1 tgian đủ lâu để hiểu ngành phần mềm thì bạn sẽ thấy được thiếu sót của 12 nguyên lý này, nó chỉ đúng trong môi trường lý tưởng. Nghĩa là ko áp dụng được nhiều như ta nghĩ, ko phù hợp với toàn bộ kiểu dự án...
+
+
+
 ## Open-Workspace, góc làm việc mở? The violent transparency culture
+
+Agile - Scrum mang đến 1 văn hóa làm việc mở (Open Workplace) đòi hỏi tính minh bạch cao.
+
+Standup meeting, micromanage
 
 ## Business people and developers must work together daily throughout the project.
 
@@ -96,6 +111,8 @@ Hãy luôn ghi nhớ rằng những dự án này là "short-term", tham gia qu�
 
 Micro-manage là vấn đề thường xuyên gặp trong các môi trường khác kể cả ngoài Agile và ngoài lĩnh vực Software. Điểm này sẽ làm những chiến binh của ta khó chịu và giảm hiệu quả khi bị giám sát/theo dõi. Có lẽ nên viết thêm 1 phần khác về Micro manage
 
+### Hoàn cảnh áp dụng
+
 Cũng theo Michael O.C, có 2 hoàn cảnh thường xảy ra:
 * Khi 1 cty áp dụng Rapid Development quá nhiều cho 1 cá nhân thì chắc chắn có gì đó sai sót vì những dự án gấp gáp kiểu này có vẻ khá hiếm hoi.
 
@@ -103,7 +120,19 @@ Cũng theo Michael O.C, có 2 hoàn cảnh thường xảy ra:
 
 Okie, cả 2 điểm này tôi đều gặp. Khi cty bạn đang làm việc với khách hàng là Digital Marketing Agency, những dự án xoay quanh quy mô của 1 campaign, luôn luôn bị hối thúc. Bản chất của nó chính là "Rapid", "Short-term", "Deliver First" nên toàn bộ team đều phải chạy theo 1 kiểu làm việc hỗn loạn như trên... 
 
+### Anti
+
+Những kiểu dự án như sau là thể loại ko nên áp dụng Agile/Scrum:
+
+* Dự án có độ phức tạp lớn, về mặt technical có nhiều vấn đề cần giải quyết và cần thời gian dài (ko thể xác định hay ước lượng rõ ràng) để giải quyết. Khi đó rất khó để đưa giải thích hoặc deliver thường xuyên cho khách hàng.
+
+* Dự án về Game, tương tự như trên. Bạn ko thể giao 1 phần gì đó để khách hàng có thể xem xét và chỉnh sửa đc.
+
+* Những dự án sáng tạo
+
 ## References
 https://michaelochurch.wordpress.com/2015/06/06/why-agile-and-especially-scrum-are-terrible/
 
 https://lukehalliwell.wordpress.com/2008/11/16/the-agile-disease/
+
+https://www.quora.com/Why-do-some-developers-at-strong-companies-like-Google-consider-Agile-development-to-be-nonsense
