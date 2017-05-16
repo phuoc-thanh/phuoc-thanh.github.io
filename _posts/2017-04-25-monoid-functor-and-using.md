@@ -227,7 +227,13 @@ Compile nó và thử apply function (2*) lên Tree này để xem điều kì d
 fmap (2*) (Branch (Branch (Leaf 1) (Leaf 2)) (Leaf 3))
 ```
 
-### 4.3 Functor Laws
+### 4.3 Data.Functor
+
+Các bạn xem link sau để tìm hiểu chi tiết về gói Data.Functor trong Haskell và các ví dụ khác
+
+https://hackage.haskell.org/package/base-4.9.1.0/docs/Data-Functor.html
+
+### 4.4 Functor Laws
 
 Từ những ví dụ trên, ta có thể nhận thấy:
 
