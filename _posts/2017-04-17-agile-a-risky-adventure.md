@@ -10,12 +10,12 @@ keywords: "agile, scrum, disease, evil, methodology"
 
 # Agile - Một chuyến phiêu lưu đầy rủi ro
 
-Cho tới nay, 2017. Agile nói chung (bao gồm cả Scrum) đã trở thành 1 loại tôn giáo trong ngành phần mềm, nhưng theo cá nhân tôi, Agile là 1 loại bệnh truyền nhiễm. Và những "chiên gia" (Consultant) về qui trình đang bán cho khách hàng 1 loại thuốc an thần liều mạnh đầy rủi ro - Agile, với 1 cái giá ko hề rẻ.  
+Cho tới nay, 2017. Agile nói chung (bao gồm cả Scrum) đã trở thành 1 loại tôn giáo trong ngành phần mềm, nhưng theo cá nhân tôi, Agile là 1 loại bệnh truyền nhiễm. Và những "chiên gia" (Consultant) về qui trình đang bán cho khách hàng 1 loại thuốc an thần liều mạnh nhưng ẩn chứa đầy rủi ro - Agile...
 
-Từ tập đoàn lớn với mọi thứ đang trong khuôn khổ vận hành trơn tru bỗng 1 ngày đòi đập bỏ bộ máy trơn tru đó để áp dụng "Agile".  
+Tập đoàn đa quốc gia với mọi thứ đang trong khuôn khổ vận hành trơn tru bỗng 1 ngày đòi đổi mới với qui trình "Agile".  
 Công ty lớn, trung bình sau khi quá mệt mỏi với CMMI đã được 1 vài anh gạo cội rỉ tai về "Scrum".  
-Một nhóm khởi nghiệp đầy hoài bão với đủ thứ ý tưởng "mới mẻ và thời trang" trong đầu, tất nhiên không thể bỏ qua "Agile" hay XP Programming.  
-Một khách hàng cấp tiến, trong buổi hợp mời thầu, cũng hỏi: "Anh nghĩ như thế nào về Agile vs Traditional".  
+Nhóm khởi nghiệp năng động, đầy hoài bão,, tất nhiên không thể bỏ qua "Agile" hay XP Programming.  
+Khách hàng cấp tiến, trong buổi hợp mời thầu, cũng hỏi cả nhà thầu: "Anh nghĩ như thế nào về Agile vs Traditional".  
 
 Và những nơi đang áp dụng Agile vào quá trình sản xuất phần mềm, thật sự những con người ở đó đang tham gia vào 1 chuyến phiêu lưu đầy rủi ro.  
 
