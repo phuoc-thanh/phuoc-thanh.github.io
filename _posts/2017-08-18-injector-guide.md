@@ -11,9 +11,11 @@ keywords: ""
 ### 1. Install Haskell platform
 
 Win 32bit:
+
 https://haskell.org/platform/download/8.0.2/HaskellPlatform-8.0.2-a-minimal-i386-setup.exe
 
 Win 64bit:
+
 https://haskell.org/platform/download/8.0.2/HaskellPlatform-8.0.2-a-minimal-x86_64-setup.exe
 
 ### 2. Install missing packages
@@ -45,17 +47,21 @@ Lưu ý, acc được add vào phần mềm sẽ vào server mặc định dựa
 
 **Lựa chọn kèo (Match.json)**
 
-Chỉnh kèo thắng bằng cách thay thế mã số người chơi trong dòng "win" và kèo thua vào "lose". 
- Toàn bộ acc chính sẽ đặt vào nhân vật trong dòng win. Toàn bộ clone trong Buffs.json sẽ đặt vào nhân vật trong trong lose.
+Chỉnh kèo thắng/thua bằng cách thay thế mã số người chơi trong dòng "win" và dòng "lose".
+
+Toàn bộ acc chính trong Players.json sẽ đặt vào nhân vật trong dòng win. Toàn bộ clone trong Buffs.json sẽ đặt vào nhân vật trong dòng lose.
  
     {
 	    "mid": "1",
 	    "win": "736",
 	    "lose": "73000185"
     }
+
 **Chỉnh số xu đặt (Players.json và Buffs.json)**
 
-Chỉnh số xu cược của từng acc bằng cách mở file Players (acc chính) hoặc Buffs (acc clone) để chỉnh. Số xu nằm ở dòng "amount".
+Chỉnh số xu cược của từng acc bằng cách mở file Players.json (acc chính) hoặc Buffs.json (acc clone).
+
+Số xu nằm ở dòng "amount".
 
 0 : đặt 100 xu.
 1 : đặt 1000 xu.
