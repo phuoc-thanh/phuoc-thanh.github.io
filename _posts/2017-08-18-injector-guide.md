@@ -45,7 +45,7 @@ Lưu ý, acc được add vào phần mềm sẽ vào server mặc định dựa
 
 ### 2. Chỉnh kèo
 
-**Lựa chọn kèo (Match.json)**
+**2.1 Lựa chọn kèo (Match.json)**
 
 Chỉnh kèo thắng/thua bằng cách thay thế mã số người chơi trong dòng "win" và dòng "lose".
 
@@ -57,16 +57,20 @@ Toàn bộ acc chính trong Players.json sẽ đặt vào nhân vật trong dòn
 	    "lose": "73000185"
     }
 
-**Chỉnh số xu đặt (Players.json và Buffs.json)**
+**2.2 Chỉnh số xu đặt (Players.json và Buffs.json)**
 
 Chỉnh số xu cược của từng acc bằng cách mở file Players.json (acc chính) hoặc Buffs.json (acc clone).
 
 Số xu nằm ở dòng "amount".
 
 0 : đặt 100 xu.
+
 1 : đặt 1000 xu.
+
 2 : đặt 2000 xu.
+
 3: đặt 3000 xu.
+
 ... (theo cấp số nhân x1000)
 
 Ví dụ acc sau sẽ cược 50k xu:
@@ -83,22 +87,26 @@ Ví dụ acc sau sẽ cược 50k xu:
         "acc": "reply1989"
     }
 
-**Cược xu (CrossWar.hs)**
+**2.3 Cược xu (CrossWar.hs)**
 
-Mở file CrossWar.hs bằng GHCI hoặc double click
+Mở file CrossWar.hs bằng WinGHCi hoặc double click
+
 Canh giờ chính xác.
 
-Đặt cùng lúc bằng cách bấm nút Play màu đỏ của GHCI hoặc gõ lệnh
+Bấm nút Play màu đỏ của WinGHCi hoặc gõ lệnh
 
 > main
 
 
 
-
-**Phần phụ lục (CrossWar.hs) - Chỉ dùng trong trường hợp đặc biệt**
+**Phụ lục (CrossWar.hs) - Chỉ dùng trong trường hợp đặc biệt**
 
 Chỉ đặt kèo thắng:
 >winBet
 
 Chỉ đặt kèo thua:
 >loseBet
+
+----------
+
+##
