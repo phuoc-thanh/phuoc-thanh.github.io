@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Hướng dẫn sử dụng Injector"
+comments: true
+description: ""
+keywords: ""
+---
+
 ## Cài Đặt
 
 ### 1. Install Haskell platform
