@@ -22,7 +22,7 @@ https://haskell.org/platform/download/8.0.2/HaskellPlatform-8.0.2-a-minimal-x86_
 
 > cabal update
 
-> cabal install http-conduit base16-bytestring split aeson-pretty
+> cabal install network http-conduit base16-bytestring split aeson-pretty
 
 ----------
 
