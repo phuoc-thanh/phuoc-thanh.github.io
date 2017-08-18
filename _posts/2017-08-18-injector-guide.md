@@ -93,7 +93,9 @@ Canh giờ chính xác.
 > main
 
 
-**Phần phụ**
+
+
+**Phần phụ lục (CrossWar.hs) - Chỉ dùng trong trường hợp đặc biệt**
 
 Chỉ đặt kèo thắng:
 >winBet
