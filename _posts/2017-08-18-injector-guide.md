@@ -101,9 +101,13 @@ Bấm nút Play màu đỏ của WinGHCi hoặc gõ lệnh
 
 **Phụ lục (CrossWar.hs) - Chỉ dùng trong trường hợp đặc biệt**
 
-Mã số nhân vật liên chiến:
+Mã số nhân vật liên chiến Kim Dung Truyện
 
 >https://thanhdo89se.github.io/KimDungTruyen.json
+
+
+Mã số nhân vật liên chiến Ta Là Vua
+>https://thanhdo89se.github.io/TaLaVua.json
 
 Chỉ đặt kèo thắng:
 >winBet
