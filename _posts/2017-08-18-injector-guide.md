@@ -101,6 +101,8 @@ Bấm nút Play màu đỏ của WinGHCi hoặc gõ lệnh
 
 **Phụ lục (CrossWar.hs) - Chỉ dùng trong trường hợp đặc biệt**
 
+Mã số nhân vật liên chiến: https://thanhdo89se.github.io/KimDungTruyen.json
+
 Chỉ đặt kèo thắng:
 >winBet
 
