@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Hướng dẫn sử dụng Injector"
+title: "Quỳ Hoa Bửu Điển"
 comments: true
 description: ""
 keywords: ""
 ---
 
-## Cài Đặt
+## Chương 1: Dẫn Đao Tự Cung
 
 ### 1. Install Haskell platform
 
