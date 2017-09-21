@@ -6,30 +6,8 @@ description: ""
 keywords: ""
 ---
 
-## Chương 1: Dẫn Đao Tự Cung
+## Chương I: Dẫn Đao Tự Cung
 
-### 1. Install Haskell platform
-
-Win 32bit:
-
-https://haskell.org/platform/download/8.0.2/HaskellPlatform-8.0.2-a-minimal-i386-setup.exe
-
-Win 64bit:
-
-https://haskell.org/platform/download/8.0.2/HaskellPlatform-8.0.2-a-minimal-x86_64-setup.exe
-
-### 2. Install missing packages
-
-> cabal update
-
-> cabal install network http-conduit base16-bytestring split aeson-pretty
-
-----------
-
-
-## Hướng dẫn sử dụng
-
-Để mở file .hs (Crosswar.hs, Play.hs, Hunt.hs), có thể dùng WinGHCi (có giao diện), hoặc double click vào file.
 
 ### 1. Add clone và Acc chính
 
@@ -43,21 +21,8 @@ Lưu ý, acc được add vào phần mềm sẽ vào server mặc định dựa
 
 > adp "username" "password"
 
-### 2. Chỉnh kèo
 
-**2.1 Lựa chọn kèo (Match.json)**
-
-Chỉnh kèo thắng/thua bằng cách thay thế mã số người chơi trong dòng "win" và dòng "lose".
-
-Toàn bộ acc chính trong Players.json sẽ đặt vào nhân vật trong dòng win. Toàn bộ clone trong Buffs.json sẽ đặt vào nhân vật trong dòng lose.
- 
-    {
-	    "mid": "1",
-	    "win": "736",
-	    "lose": "73000185"
-    }
-
-**2.2 Chỉnh số xu đặt (Players.json và Buffs.json)**
+### 2. Chỉnh số xu cược (Players.json và Buffs.json)
 
 Chỉnh số xu cược của từng acc bằng cách mở file Players.json (acc chính) hoặc Buffs.json (acc clone).
 
@@ -69,7 +34,7 @@ Số xu nằm ở dòng "amount".
 
 2 : đặt 2000 xu.
 
-3: đặt 3000 xu.
+3 : đặt 3000 xu.
 
 ... (theo cấp số nhân x1000)
 
@@ -87,19 +52,31 @@ Ví dụ acc sau sẽ cược 50k xu:
         "acc": "reply1989"
     }
 
-**2.3 Cược xu (CrossWar.hs)**
+### 3. Lựa chọn kèo (Match.json)
 
-Mở file CrossWar.hs bằng WinGHCi hoặc double click
+Chỉnh kèo thắng/thua bằng cách thay thế mã số người chơi trong dòng "win" và dòng "lose".
 
-Canh giờ chính xác.
+Toàn bộ acc chính trong Players.json sẽ đặt vào nhân vật trong dòng win. Toàn bộ clone trong Buffs.json sẽ đặt vào nhân vật trong dòng lose.
+ 
+    {
+	    "mid": "1",
+	    "win": "736",
+	    "lose": "73000185"
+    }
 
-Bấm nút Play màu đỏ của WinGHCi hoặc gõ lệnh
+### 4. Cược xu (CrossWar.hs)
+
+- Mở file CrossWar.hs bằng WinGHCi hoặc double click
+
+- Canh giờ chính xác.
+
+- Bấm nút Play màu đỏ của WinGHCi hoặc gõ lệnh
 
 > main
 
 
 
-**Phụ lục (CrossWar.hs) - Chỉ dùng trong trường hợp đặc biệt**
+### 5. Phụ lục
 
 Mã số nhân vật liên chiến Kim Dung Truyện
 
