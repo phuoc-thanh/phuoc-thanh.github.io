@@ -28,7 +28,7 @@ Chỉnh số xu cược của từng acc bằng cách mở file Players.json (ac
 
 Số xu nằm ở dòng "amount".
 
-0 : đặt 100 xu.
+0 : đặt toàn bộ xu.
 
 1 : đặt 1000 xu.
 

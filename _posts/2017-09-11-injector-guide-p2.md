@@ -55,6 +55,12 @@ lệnh `dailyMis` dành cho vip3 (hoặc vip3 tương lai) vào bang nhận xu m
 
 `dailyMis` áp dụng trên những account trong file Buffs.json (có thể thêm acc bằng lệnh `adb`)
 
+## dailyQ (Play.hs)
+
+lệnh `dailyQ` dành cho acc cày hoa, làm đủ 100 điểm nhận 1 hoa/ngày.
+
+`dailyQ` áp dụng trên những account trong file Buffs.json (có thể thêm acc bằng lệnh `adb`)
+
 
 ## main (Play.hs)
 
@@ -80,6 +86,22 @@ Các vị đại hiệp, để an toàn, hãy chạy 20-40 acc 1 lần, ko nên 
 lệnh `main` trong Hunt.hs dùng để trảm ma, chương trình sẽ tự động log toàn bộ acc trong Clone.json vào sver và  quay xu tìm cho ra mục tiêu trảm (như Kiều Phong chẳng hạn).
 
 Nếu tìm thấy mục tiêu, sẽ tạo phòng và chờ. Khi có người vào phòng trảm, tool sẽ chạy sau 7 giây.
+
+## tiện ích khác trong CrossWar (CrossWar.hs)
+
+1. Lệnh `info`
+
+Dùng để check số xu, lệnh `info` check các acc trong buffs.json
+
+2. Lệnh `reward`
+
+Dùng để nhận thưởng các kèo cược liên chiến, lệnh `reward` nhận các acc trong buffs.json
+
+3. Lệnh `flower "code" "n"`
+
+Dùng để buff bông cho 1 acc, code là mã số acc, n là số bông mỗi acc (trung bình 1 tuần 7 bông thì n là 7)
+
+Dùng lệnh `dailyQ` trong Play.hs để cày bông. `dailyQ` hoạt động với file buffs.json
 
 ## Một số lưu ý.
 
