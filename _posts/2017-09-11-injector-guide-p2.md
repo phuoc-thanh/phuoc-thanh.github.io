@@ -8,14 +8,12 @@ keywords: ""
 
 ## Config.json
 
-Đây là file cấu hình cho toàn bộ tool, config.json có các thông tin sau:
+Config.json là trang hướng dẫn cho cuốn bí kíp:
 
     {
         "apiHost": "",
         "payHost": "",
         "loginPath": "",
-        "armyId": "",
-        "armyLead": {},
         "armyGroup": 20,
         "cloneCamp": "2",
         "cloneKeyword": "tichta",
@@ -25,23 +23,20 @@ keywords: ""
         "huntDelay": 7000000
     }
 
-3 dòng đầu các đại hiệp ko cần quan tâm
+3 dòng đầu chư vị đại hiệp ko cần quan tâm
 
-`armyId` : Mã số bang, phải do chính tay tại hạ lấy
 
-`armyLead`: Copy thông tin bang phó bỏ vào đây
+`armyGroup`: Số lượng nhân vật phụ đồng loạt vào bang làm nhiệm vụ, tùy vị trí còn trống trong bang mà chỉnh
 
-`armyGroup`: Số lượng clone đồng loạt vào bang làm nhiệm vụ, tùy slot còn trống trong bang mà chỉnh
+`cloneCamp`: 1 hoặc 2, chỉ phe cho nhân vật phụ vào: Tụ Hiền (1) hoặc Ma Giáo (2)
 
-`cloneCamp`: 1 hoặc 2, chỉ đường cho Clone vào Tụ Hiền (1) hay Ma Giáo (2)
+`cloneKeyword`: Tên dùng chung cho nhân vật phụ
 
-`cloneKeyword`: tên dùng chung cho Clone
+`closeServer`: Máy chủ tạo nhân vật phụ
 
-`closeServer`: server tạo clone và up bang
+`defaultPass` : Mật khẩu mặc định
 
-`defaultPass` : mật khẩu mặt định
-
-`huntTarget` : Mã số tướng cần trảm ma
+`huntTarget` : Mã số "Ma" cần trảm
 
 -- Hoàng Dung ZM40, Vô Nhai Tử ZM43, Vương Tuyết Mai ZM44, Hoàng Thường ZM45, Vô Kỵ ZM48, Kiều Phong ZM49, Tiêu Diêu Lão Tổ ZM51..
 
@@ -51,62 +46,36 @@ keywords: ""
 
 ## dailyMis (Play.hs)
 
-lệnh `dailyMis` dành cho vip3 (hoặc vip3 tương lai) vào bang nhận xu mỗi ngày và thoát.
+lệnh `dailyMis` dành cho chư vị bằng hữu gia nhập bang và nhận lương bang mỗi ngày (sau đó lập tức rời bang).
 
-`dailyMis` áp dụng trên những account trong file Buffs.json (có thể thêm acc bằng lệnh `adb`)
-
-## dailyQ (Play.hs)
-
-lệnh `dailyQ` dành cho acc cày hoa, làm đủ 100 điểm nhận 1 hoa/ngày.
-
-`dailyQ` áp dụng trên những account trong file Buffs.json (có thể thêm acc bằng lệnh `adb`)
+`dailyMis` áp dụng trên những nhân vật trong file Buffs.json (có thể thêm acc bằng lệnh `adb`)
 
 
 ## main (Play.hs)
 
-lệnh `main` dùng để up bang. Mỗi 2 phút sẽ có 1 đợt clone xin vào bang, làm nhiệm vụ, cầu khấn, xong xuôi sẽ out.
+lệnh `main` dành cho quần hùng gia nhập bang, cống hiến để thăng cấp bang hội. Mỗi 45 giây sẽ có 1 đợt quần hùng xin vào bang, làm nhiệm vụ, cầu khấn, xong xuôi sẽ rời bang.
 
-`main` áp dụng trên những account trong file Clone.json (có thể thêm acc bằng lệnh `add n` hoặc `adc`)
+`main` áp dụng trên những nhân vật trong file Clone.json (có thể thêm acc bằng lệnh `add n` hoặc `adc`)
 
 
 ## add n (Play.hs)
 
-lệnh `add` dùng để tạo thêm clone. Clone sẽ tạo dựa theo file Config.json và acc cuối cùng trong file Clone.json.
+lệnh `add` dùng để chiêu mộ thêm vô danh tiểu tốt, rèn luyện tới cấp độ 23 để trở thành quần hùng cống hiến bang. Nhân vật mới được chiêu mộ dựa theo file Config.json và nhân vật cuối cùng trong file Clone.json.
 
-ví dụ với file Config như trên, và acc cuối cùng trong Clone.json là "tichta1001", khi gõ
+ví dụ với file Config như trên, và nhân vật cuối cùng trong Clone.json là "tichta1001", khi gõ
 
 `add 20`
 
-chương trình sẽ tạo thêm 20 acc "tichta1002", "tichta1003"... đến "tichta1022". Clone sẽ tự động cày lên lvl 23 và tự update vào Clone.json
+Bí cấp sẽ chiêu mộ thêm 20 nhân vật "tichta1002", "tichta1003"... đến "tichta1022" và tự thêm vào Clone.json
 
-Các vị đại hiệp, để an toàn, hãy chạy 20-40 acc 1 lần, ko nên tạo quá đà, sẽ sớm bị tẩu hỏa nhập ma.
+Chư vị đại hiệp, hãy chiêu mộ từ tốn, khoảng 20-40 tiểu tốt mỗi lần, tránh tình trạng chen lấn đua xe dẫn đến tẩu hỏa nhập ma cho những kẻ vô danh.
 
 ## main (Hunt.hs)
 
-lệnh `main` trong Hunt.hs dùng để trảm ma, chương trình sẽ tự động log toàn bộ acc trong Clone.json vào sver và  quay xu tìm cho ra mục tiêu trảm (như Kiều Phong chẳng hạn).
+lệnh `main` trong Hunt.hs dùng để trảm ma, sau khi gõ lệnh, quần hùng và vô danh tiểu tốt trong Clone.json sẽ đồng loạt xả ngân lượng để truy tìm tung tích ma đầu cần trảm (như ma Kiều Phong chẳng hạn).
 
-Nếu tìm thấy mục tiêu, sẽ tạo phòng và chờ. Khi có người vào phòng trảm, tool sẽ chạy sau 7 giây.
-
-## tiện ích khác trong CrossWar (CrossWar.hs)
-
-1. Lệnh `info`
-
-Dùng để check số xu, lệnh `info` check các acc trong buffs.json
-
-2. Lệnh `reward`
-
-Dùng để nhận thưởng các kèo cược liên chiến, lệnh `reward` nhận các acc trong buffs.json
-
-3. Lệnh `flower "code" "n"`
-
-Dùng để buff bông cho 1 acc, code là mã số acc, n là số bông mỗi acc (trung bình 1 tuần 7 bông thì n là 7)
-
-Dùng lệnh `dailyQ` trong Play.hs để cày bông. `dailyQ` hoạt động với file buffs.json
+Một khi tìm được ma đầu, tên tiểu tốt sẽ tạo phòng trảm và chờ một vị đại hiệp vào phòng trảm, sau đó 7 giây, cả 2 sẽ cùng trảm ma thu thập hồn phách.
 
 ## Một số lưu ý.
 
 Các lệnh `adp` (dành cho Players.json), `adb` (dành cho Buffs.json) và `adc` (dành cho Clone.json) có thể chạy ở bất cứ file nào: CrossWar.hs, Hunt.hs, Play.hs
-
-Acc cuối cùng trong Clone.json luôn phải có 4 chữ số sau cùng, và phải lớn hơn 999. Ví dụ như 1000, 1001, 1234...
-
-Chư vị đại hiệp có thể dùng lệnh : `adc "username" "password"` để thêm acc vào Clone.json
