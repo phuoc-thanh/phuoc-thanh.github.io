@@ -8,23 +8,29 @@ keywords: ""
 
 ## Chương I: Dẫn Đao Tự Cung
 
+Cầm trên tay cuốn bí cấp võ lâm này, đại hiệp đã bước chân vào ma đạo.
 
-### 1. Add clone và Acc chính
+Khi đã dùng bí cấp đánh cược ăn xu, bất kể là tự tay hay nhờ vả, dù một lần hay n lần, đại hiệp đã dính chàm.
+Nhân vật ảo của đại hiệp sẽ bị lưu giữ thông tin.
 
-Lưu ý, acc được add vào phần mềm sẽ vào server mặc định dựa vào lần cuối log vào game.
+Chương 1 của Quỳ Hoa Bửu Điển sẽ hướng dẫn đại hiệp cách đánh cược thu về ngân lượng của hảo hữu khác.
 
-**Lệnh add clone buff xu (CrossWar.hs)**
+### 1. Thêm nhân vật phụ và nhân vật chính
+
+Lưu ý, nhân vật được thêm vào bí kíp sẽ vào máy chủ mặc định dựa vào lần cuối bước chân vào giang hồ.
+
+**Lệnh thêm nhân vật phụ (CrossWar.hs)**
 
 > adb "username" "password"
 
-**Lệnh add nhân vật chính cược xu (CrossWar.hs)**
+**Lệnh thêm nhân vật chính (CrossWar.hs)**
 
 > adp "username" "password"
 
 
 ### 2. Chỉnh số xu cược (Players.json và Buffs.json)
 
-Chỉnh số xu cược của từng acc bằng cách mở file Players.json (acc chính) hoặc Buffs.json (acc clone).
+Chỉnh số xu cược của từng nhân vật bằng cách mở file Players.json (nv chính) hoặc Buffs.json (nv phụ).
 
 Số xu nằm ở dòng "amount".
 
@@ -38,7 +44,7 @@ Số xu nằm ở dòng "amount".
 
 ... (theo cấp số nhân x1000)
 
-Ví dụ acc sau sẽ cược 50k xu:
+Ví dụ, nhân vật sau sẽ cược 50k xu:
 
     {
         "amount": 50,
@@ -54,9 +60,9 @@ Ví dụ acc sau sẽ cược 50k xu:
 
 ### 3. Lựa chọn kèo (Match.json)
 
-Chỉnh kèo thắng/thua bằng cách thay thế mã số người chơi trong dòng "win" và dòng "lose".
+Chỉnh kèo thắng/thua bằng cách thay thế mã số đấu thủ trong dòng "win" và dòng "lose".
 
-Toàn bộ acc chính trong Players.json sẽ đặt vào nhân vật trong dòng win. Toàn bộ clone trong Buffs.json sẽ đặt vào nhân vật trong dòng lose.
+Toàn bộ nhân vật chính trong Players.json sẽ đặt vào đấu thủ trong dòng win. Toàn bộ nhân vật phụ trong Buffs.json sẽ đặt vào đấu thủ trong dòng lose.
  
     {
 	    "mid": "1",
@@ -92,6 +98,16 @@ Chỉ đặt kèo thắng:
 Chỉ đặt kèo thua:
 >loseBet
 
-----------
+### 6. Tiện ích khác
 
-##
+1. Lệnh `info`
+
+Dùng để kiểm tra số xu và hoa, lệnh `info` dùng với các nhân vật trong buffs.json
+
+2. Lệnh `reward`
+
+Dùng để nhận thưởng các kèo cược liên chiến, lệnh `reward` nhận nhân vật trong buffs.json
+
+3. Lệnh `flower "code"`
+
+Dùng để buff bông cho 1 đấu thủ, code là mã số đấu thủ.
