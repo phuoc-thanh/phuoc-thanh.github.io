@@ -6,7 +6,7 @@ description: "Agile - Một chuyến phiêu lưu đầy rủi ro"
 keywords: "agile, scrum, disease, evil, methodology"
 ---
 
-### [Đây là 1 bài viết rất dài và chưa hoàn thành !]
+### [Tổng hợp, biên dịch từ nhiều nguồn, có diễn giải theo ý kiến riêng]
 
 # Agile - Một chuyến phiêu lưu đầy rủi ro
 
@@ -14,7 +14,7 @@ Cho tới nay, 2017. Agile nói chung (bao gồm cả Scrum) đã trở thành 1
 
 Tập đoàn đa quốc gia với mọi thứ đang trong khuôn khổ vận hành trơn tru bỗng 1 ngày đòi đổi mới với qui trình "Agile".  
 Công ty lớn, trung bình sau khi quá mệt mỏi với CMMI đã được 1 vài anh gạo cội rỉ tai về "Scrum".  
-Nhóm khởi nghiệp năng động, đầy hoài bão,, tất nhiên không thể bỏ qua "Agile" hay XP Programming.  
+Nhóm khởi nghiệp năng động, đầy hoài bão, tất nhiên không thể bỏ qua "Agile" hay XP Programming.  
 Khách hàng cấp tiến, trong buổi hợp mời thầu, cũng hỏi cả nhà thầu: "Anh nghĩ như thế nào về Agile vs Traditional".  
 
 Và những nơi đang áp dụng Agile vào quá trình sản xuất phần mềm, thật sự những con người ở đó đang tham gia vào 1 chuyến phiêu lưu đầy rủi ro.  
@@ -43,8 +43,8 @@ Như vậy, cơ bản nó ko mang lại lợi ích gì nhiều.
 
 ### Customer collaboration over contract negotiation
 Okay, đồng ý nhưng như trên, trong 1 số trường hợp, nó không mang lại lợi ích thực sự.
-Kinh nghiệm cá nhân thì cái việc "Customer collaboration" thực sự là 1 thảm họa của dev. Đôi khi 1 task đơn giản, bạn phải bỏ tận 6h chỉ để get confirm từ customer, sau đó dev 2h. Vui he.  
-Chưa kể là khi được đà custom, change mà ko có evidence, contract, cực kỳ rủi ro và nó xảy ra cũng thường xuyên lắm :))
+Kinh nghiệm cá nhân thì cái việc "Customer collaboration" thực sự là 1 thảm họa của dev. Đôi khi 1 task đơn giản, bạn phải bỏ tận 6h chỉ để get confirm từ customer, sau đó dev 2h. Vui vẻ.  
+Chưa kể là khi được đà custom, change mà ko có evidence, contract, aggrement thì cực kỳ rủi ro và nó xảy ra cũng thường xuyên lắm :))
 
 ### Responding to change over following a plan
 Thứ nhứt, tôi xin cam đoan là ko có 1 thợ code nào khoái sự thay đổi từ khách hàng cả.
@@ -55,29 +55,30 @@ Thứ hai, làm việc mà ko có 1 kế hoạch, nghe có mùi mù quáng, gi�
 Triết lý của Agile (Agile Manifesto) nghe rất hay và hấp dẫn, dĩ nhiên cả với 12 nguyên lý của Agile nữa.
 Nhưng điều mà nhiều anti muốn nói là tất cả những điều này đều là "Common Sense", tức là những lẽ thường, dễ dàng nhận thấy, nếu bạn đủ thông minh.
 
-Và Agile chỉ cường điệu hóa những điều đó mà thôi. Chúng ta đều biết nó đúng, hay, và bổ ích. Nhưng làm thế nào?
+Và triết lý Agile chỉ cường điệu hóa những điều đó mà thôi. Chúng ta đều biết nó đúng, hay, và bổ ích. Nhưng làm thế nào?
 
 Câu chuyện đc mang sang Scrum, khi đó triết lý Agile mới được áp dụng thành vào 1 dự án, 1 team.
 
-Có rất nhiều ý kiến phản đối và bổ sung thêm cho 12 nguyên lý của Agile, các bạn có thể tham khảo link dưới bài. Nhưng chỉ cần bạn có 1 tgian đủ lâu để hiểu ngành phần mềm thì bạn sẽ thấy được thiếu sót của 12 nguyên lý này, nó chỉ đúng trong môi trường lý tưởng. Nghĩa là ko áp dụng được nhiều như ta nghĩ, ko phù hợp với toàn bộ kiểu dự án...
+Có rất nhiều ý kiến phản đối và bổ sung thêm cho 12 nguyên lý của Agile, các bạn có thể tham khảo link dưới bài. Nhưng chỉ cần bạn làm việc đủ lâu trong ngành phần mềm thì bạn sẽ thấy được thiếu sót của 12 nguyên lý này, nó chỉ đúng trong môi trường lý tưởng. Nghĩa là ko áp dụng được nhiều như ta nghĩ, ko phù hợp với đại đa số kiểu dự án...
 
+Ví dụ 2 principles sau, hãy thật lòng với chính bạn, bạn có nghĩ nó tốt ko? riêng dev quèn như tôi, it's bullshit
 
+> Business people and developers must work together daily throughout the project.
 
-## Open-Workspace, góc làm việc mở? The violent transparency culture
+> Welcome changing requirements, even late in development
 
-Agile - Scrum mang đến 1 văn hóa làm việc mở (Open Workplace) đòi hỏi tính minh bạch cao.
-
-Standup meeting, micromanage
-
-## Business people and developers must work together daily throughout the project.
-
-## Welcome changing requirements, even late in development
-
-## The Scrum Master
-> Is a big scam
 
 ## Business-driven engineering
+
 > High-talent people is more important and success than micro - managed team & processes
+
+Theo Michael, trong ngành Software Engineering, tồn tại 2 thể loại công ty: Business-driven và Engineering-driven.
+
+Khi công ty được điều hành bởi kỹ sư, sẽ rất khó khăn và nhiều thách thức, điều đó ko phải lúc nào cũng tốt. Nhưng trong môi trường đó, nơi mà vai trò của kĩ sư được đề cao và tin tưởng. Sản phẩm, công việc anh ấy hoàn thành được tôn trọng và công nhận. Và ai cũng sẽ happy với task/job của mình. Như vậy cty có khả năng lớn sản sinh ra những sản phẩm chất lượng cao (Yếu tố con người)
+
+Ok, còn với công ty dạng Business-driven thì sao? Ổn thôi, theo Michael, thì trong trường hợp này bạn nên tìm đến contractors, tuyển lính đánh thuê theo job, và đó là lựa chọn tốt nhất nếu bạn muốn có những kỹ sư chất lượng cao. Vì những kỹ sư tài năng đã chọn những công ty engineering-driven mất rồi.
+
+Và rất tiếc Scrum (Agile implemented) thường hướng công ty theo con đường Business-driven, nơi mà lời nói của khách hàng là tối thượng, dev ko có quyền lực và được setup để vào the-same-team-of-low-lvel, tức là 1 đội ko có thứ hạng, kỹ năng của người trong đội được coi là như nhau. Chi tiết công việc hằng ngày dev làm sẽ phải giải trình với Scum master (the big scam of scrum) hay Product Owner, 1 dạng micro-managed mà ko dev nào muốn, 1 loại non-technical manager ko dev nào muốn dưới quyền.
 
 ## Agile sẽ gây tổn hại đến career path của 1 Developer 
 Đoạn này xin lấy ý chính từ blog của Michael O Church 
@@ -88,7 +89,7 @@ Standup meeting, micromanage
 
 Khi bước vào tuổi chín của sự nghiệp (khoảng 30), bạn - 1 kỹ sư phần mềm, mong muốn mình có thể gánh vác những công việc tầm cỡ về hạ tầng hệ thống, kiến trúc, nghiên cứu, và khả năng lãnh đạo. Trong khi với Agile/Scrum, ngày qua ngày bạn được giao những công việc ngắn hạn theo "User story" (khoảng 2 tuần), và những công việc này theo như Michael nói, chính là "grunt work".  
 
-Grunt, làm tôi nhớ tới con orc cầm búa trong Warcraft 3, 1 anh lính chỉ biết cầm búa và lao vào đối thủ và không có 1 kỹ năng nhạy bén nào =)). Và grunt work - chính là loại công việc mà 1 anh grunt đảm nhận. Những feature tẻ nhạt, lặp đi lặp lại, ngắn hạn, thiếu sáng tạo để đáp ứng ngay cho nhu cầu cấp thiết của Client.  
+Grunt, làm tôi nhớ tới con orc cầm búa trong Warcraft 3, grunt orc chỉ biết cầm búa và lao vào đối thủ, không có 1 kỹ năng nhạy bén nào =)). Và grunt work - chính là loại công việc mà 1 anh grunt đảm nhận. Những feature tẻ nhạt, lặp đi lặp lại, ngắn hạn, thiếu sáng tạo để đáp ứng ngay cho nhu cầu cấp thiết của Client.  
 
 ## Khi nào nên áp dụng Scrum?
 
