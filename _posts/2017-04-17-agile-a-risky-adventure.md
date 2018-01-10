@@ -33,20 +33,20 @@ http://agilemanifesto.org.
 ## Agile và 12 tuyên ngôn (Agile Manifesto) - The hype of common sense
 Đoạn này xin mượn 1 vài ý của Luke Halliwell - 1 Game Developer "chân chính", link bài gốc ở phần tham khảo cuối bài.
 
-### Individuals and interactions over processes and tools
+1. Individuals and interactions over processes and tools
 Vâng, dĩ nhiên con người và sự tương tác là thứ quan trọng hơn. Nhưng ngạc nhiên chưa, Agile hoàn toàn nói về qui trình, và cách áp dụng nó, hiếm khi nào Agile nhắc tới yếu tố con người mới chính là quan trọng nhất trong 1 dự án. 
 
-### Working software over comprehensive documentation
+2. Working software over comprehensive documentation
 Điểm này khá là đặc thù cho từng mảng nhỏ bên trong ngành phần mềm. Như Luke nói thì công việc của anh ta chẳng có nhiều tài liệu để nhúng tay vào, như vậy điểm này khá là vô ích, hơn nữa nó sẽ khuyến khích dân chúng bỏ bê việc tài liệu, việc đó thì hơi đáng sợ hehe.  
 Ngoài ra, trong mảng Software service, Maintenance, Support, Security, Cloud-based service... thì Document là cực kỳ quan trọng đối với khách hàng. Cá nhân tôi đã làm những task 40h nhưng chỉ 8h là dev, và 32h còn lại chỉ để documenting... So what?
 Như vậy, cơ bản nó ko mang lại lợi ích gì nhiều.
 
-### Customer collaboration over contract negotiation
+3. Customer collaboration over contract negotiation
 Okay, đồng ý nhưng như trên, trong 1 số trường hợp, nó không mang lại lợi ích thực sự.
 Kinh nghiệm cá nhân thì cái việc "Customer collaboration" thực sự là 1 thảm họa của dev. Đôi khi 1 task đơn giản, bạn phải bỏ tận 6h chỉ để get confirm từ customer, sau đó dev 2h. Vui vẻ.  
 Chưa kể là khi được đà custom, change mà ko có evidence, contract, aggrement thì cực kỳ rủi ro và nó xảy ra cũng thường xuyên lắm :))
 
-### Responding to change over following a plan
+4. Responding to change over following a plan
 Thứ nhứt, tôi xin cam đoan là ko có 1 thợ code nào khoái sự thay đổi từ khách hàng cả.
 Thứ hai, làm việc mà ko có 1 kế hoạch, nghe có mùi mù quáng, giống như lái xe từ quê lên Saigon chơi mà ko cần bản đồ vậy =)) 
 
@@ -70,15 +70,16 @@ Ví dụ 2 principles sau, hãy thật lòng với chính bạn, bạn có nghĩ
 
 ## Business-driven engineering
 
+
 > High-talent people is more important and success than micro - managed team & processes
 
 Theo Michael, trong ngành Software Engineering, tồn tại 2 thể loại công ty: Business-driven và Engineering-driven.
 
-Khi công ty được điều hành bởi kỹ sư, sẽ rất khó khăn và nhiều thách thức, điều đó ko phải lúc nào cũng tốt. Nhưng trong môi trường đó, nơi mà vai trò của kĩ sư được đề cao và tin tưởng. Sản phẩm, công việc anh ấy hoàn thành được tôn trọng và công nhận. Và ai cũng sẽ happy với task/job của mình. Như vậy cty có khả năng lớn sản sinh ra những sản phẩm chất lượng cao (Yếu tố con người)
+Khi công ty được điều hành bởi kỹ sư, sẽ rất khó khăn và nhiều thách thức, điều đó ko phải lúc nào cũng tốt. Nhưng trong môi trường đó, nơi mà vai trò của kỹ sư được đề cao và tin tưởng. Sản phẩm, công việc anh ấy hoàn thành được tôn trọng và công nhận. Và ai cũng sẽ happy với task/job của mình. Như vậy cty có khả năng lớn sản sinh ra những sản phẩm chất lượng cao (Yếu tố con người)
 
 Ok, còn với công ty dạng Business-driven thì sao? Ổn thôi, theo Michael, thì trong trường hợp này bạn nên tìm đến contractors, tuyển lính đánh thuê theo job, và đó là lựa chọn tốt nhất nếu bạn muốn có những kỹ sư chất lượng cao. Vì những kỹ sư tài năng đã chọn những công ty engineering-driven mất rồi.
 
-Và rất tiếc Scrum (Agile implemented) thường hướng công ty theo con đường Business-driven, nơi mà lời nói của khách hàng là tối thượng, dev ko có quyền lực và được setup để vào the-same-team-of-low-lvel, tức là 1 đội ko có thứ hạng, kỹ năng của người trong đội được coi là như nhau. Chi tiết công việc hằng ngày dev làm sẽ phải giải trình với Scum master (the big scam of scrum) hay Product Owner, 1 dạng micro-managed mà ko dev nào muốn, 1 loại non-technical manager ko dev nào muốn dưới quyền.
+Và rất tiếc Scrum (Agile implemented) thường hướng công ty theo con đường Business-driven, nơi mà lời nói của khách hàng là tối thượng, dev ko có quyền lực và được setup để vào the-same-team-of-low-lvel, tức là 1 đội ko có thứ hạng, kỹ năng của người trong đội được coi là như nhau. Chi tiết công việc hằng ngày dev làm sẽ phải giải trình với Scrum master (the big scam of Scrum) hay Product Owner, 1 dạng qui trình micro-managed mà ko dev nào muốn bị áp đặt cộng thêm 1 loại non-technical manager ko dev nào muốn dưới quyền.
 
 ## Agile sẽ gây tổn hại đến career path của 1 Developer 
 Đoạn này xin lấy ý chính từ blog của Michael O Church 
