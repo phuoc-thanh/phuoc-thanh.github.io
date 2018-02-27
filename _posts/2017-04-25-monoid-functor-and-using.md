@@ -8,15 +8,11 @@ keywords: "monoid, functor, binary operation, algebra, math, category, abstract,
 
 ## Vài dòng
 
-Mục đích của bài này là gì?
-
-Là tại đang học Haskell, mà đụng tới mấy khái niệm mới mẻ quá. Tìm hiểu thêm tí thì biết là tại mình ko có nền tảng Đại Số vững chắc. Hồi ĐH hình như chỉ đc học giải tích thôi thì phải =)).  
-
-Nên là, mày mò dịch thuật, tổng hợp, suy xét để viết ra bài này. Viết để nhớ, ko mai mốt lại quên. Viết cũng là 1 cách hữu ích trong tìm tòi/nghiên cứu để hiểu sâu hơn.
+Mày mò dịch thuật, tổng hợp, suy xét để viết bài này. Viết để nhớ, viết cũng là 1 cách hữu ích trong tìm tòi/nghiên cứu để hiểu sâu hơn.
 
 ## 1. Định nghĩa Monoid
 
-Monoid là 1 khái niệm xuất phát từ Đại Số Trừu Tượng (Abstract Algebra) , cụ thể hơn là trong lĩnh vực Lý Thuyết Phạm Trù (Category Theory)
+Monoid là 1 khái niệm xuất phát từ Đại Số Trừu Tượng (Abstract Algebra) , cụ thể hơn: Lý Thuyết Phạm Trù (Category Theory)
  
 > A monoid is an algebraic structure with a single associative binary operation and an identity element
 
@@ -27,7 +23,7 @@ Monoid là 1 khái niệm xuất phát từ Đại Số Trừu Tượng (Abstrac
 Trong toán học, Binary Operation là phép toán trong 1 tập S, nó kết hợp 2 phần tử (gọi là toán hạng) của tập S để tạo ra 1 phần tử khác thuộc tập S.
 
 Binary Operation có thể dịch là phép toán 2 ngôi hoặc phép toán nhị nguyên, là 1 phép toán sử dụng 2 biến đầu vào và cho ra 1 kết quả.
-* Khác với Unary Operation là phép toán 1 ngôi, phép toán đơn nguyên, sử dụng 1 biến đầu vào và cho ra 1 kết quả.
+* Khác với Unary Operation là phép toán 1 ngôi (đơn nguyên), sử dụng 1 biến đầu vào và cho ra 1 kết quả.
 * Khác với Bitwise Operation thường được dịch là phép toán nhị phân, sử dụng cả Unary/Binary Operation để tính toán số nhị phân.  
 
 Ví dụ điển hình về phép toán nhị nguyên là phép cộng (+) và phép nhân (x) trên 1 tập đơn:
@@ -66,7 +62,7 @@ Xét 1 kiểu (type) m và 1 phép toán (<>) :: m -> m -> m. Kiểu m và phép
 
 2. và phép toán (<>) có tính kết (associative): (a <> b) <> c == a <> (b <> c).
 
-### 2.1 Lớp Monoid (Monoid typeclass)
+### 2.1 Lớp Monoid (Monoid typeclass) trong Haskell
 
 Lớp monoid trong haskell được định nghĩa như sau:
 
@@ -110,15 +106,15 @@ Functor cũng xuất phát từ Đại Số Trừu Tượng (Abstract Algebra) v
 
 ### 3.1 Category
 
-Category trong từ điển toán tin/kỹ thuật được dịch là "Phạm Trù", đây có lẽ là 1 từ vay mượn từ môn Triết Học. Vậy Category Theory được dịch là Lý Thuyết Phạm Trù, nghe thật "trừu tượng" và "hàn lâm" hehe. Thôi thì từ đây tôi viết Category cho ngắn gọn chứ Phạm Trù nghe cao siêu quá =)).
+Category trong từ điển toán tin/kỹ thuật được dịch là "Phạm Trù", có lẽ là 1 từ vay mượn từ Triết Học. Vậy Category Theory được dịch là Lý Thuyết Phạm Trù, nghe thật "trừu tượng" và "hàn lâm" hehe. Từ đây, tôi viết Category cho ngắn gọn chứ Phạm Trù nghe cao siêu quá =)).
 
 > Category theory is a formalism that allows a unified way for expressing properties and constructions that are similar for various structures.
 
-Trong Toán học, Category là 1 cấu trúc đại số (Algebraic Structure) - cũng như Monoid. Cấu trúc Category bao gồm 1 nhóm đối tượng (objects) được liên kết với nhau bởi những arrows.
+Trong Toán học, Category là 1 cấu trúc đại số (Algebraic Structure). Category bao gồm 1 nhóm đối tượng (objects) được liên kết với nhau bởi những arrows.
 
 Arrow: là khái niệm chỉ phép ánh xạ (morphism) giữa 2 đối tượng (object). 
 
-Ví dụ dễ thấy nhất của Category chính là sets, object chính là set và arrow là function.
+Ví dụ dễ thấy nhất của Category chính là sets, trong đó object chính là set và arrow là function.
 
 
 **Tính chất**
@@ -136,11 +132,10 @@ Và sự tồn tại của 1 mũi tên định danh (identity arrow) cho mỗi o
 Yep, Monoid và Category đều là cấu trúc nhóm ("Group-like" Structure). Monoid chính là 1 dạng Category đặc biệt gồm 1 object duy nhất với những ánh xạ đơn (morphisms) phản chiếu chính nó.
 Category chính là 1 dạng khái quát hóa của Monoid.
 
-Nếu có tgian thì tôi sẽ đọc thêm về Arrow, Object và Category Theory để hiểu thêm đoạn này.
 
 ### 3.2 Functor
 
-Okay, tiếp nhé, đoạn này tôi dịch từ wikipedia và wikiversity, hơi hại não.  
+Okay, tiếp nhé, đoạn này dịch từ wikipedia và wikiversity, hơi hại não.  
 
 Functor cũng là khái niệm xuất phát từ Category Theory. Cụ thể, nó là 1 kiểu ánh xạ (mapping) giữa các Category.
 
