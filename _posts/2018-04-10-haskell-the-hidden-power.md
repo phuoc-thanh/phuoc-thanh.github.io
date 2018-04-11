@@ -3,25 +3,58 @@ layout: post
 title: "Haskell - Sức mạnh tiềm ẩn"
 comments: true
 description: "Haskell - Sức mạnh tiềm ẩn"
-keywords: "haskell, functional, hidden power, charm, beauty"
+keywords: "haskell, pure, functional, hidden power, charm, beauty"
 ---
 
-# Câu chuyện về lập trình hàm
+# Chapter 1. Câu chuyện về lập trình hàm (Functional Programming)
 
-Để tìm hiểu về lâp trình hàm, trước hết hãy nghía qua khái niệm Declarative Programming và Imperative Programming:
+Note: Để tiện cho việc đọc - hiểu, tôi xin giữ nguyên bản ko dịch một số từ ngữ như: Functional Programming, Declarative, Imperative, Compiler...
 
-Imperative Programming: Khi ta lập trình viên (ltv) sẽ chỉ cho compiler làm những gì họ muốn, từng bước một, như một "recipe"
+## 1.1 Imperative và Declarative Programming
 
-Ví dụ:
+Để tìm hiểu về Functional Programming, trước hết chúng ta nghía qua khái niệm Declarative Programming và Imperative Programming.
 
-Declarative Programming: Ltv sẽ viết code để mô tả những gì họ muốn nhưng không mô tả rõ chi tiết cách để lấy được kết quả
+***Imperative Programming:*** Khi lập trình viên (ltv) sẽ viết code để chỉ cho compiler làm những gì họ muốn, chi tiết từng bước một: làm bước a, sau đó làm bước b, lặp lại bước a,b...
+***Declarative Programming:*** Ltv sẽ viết code để mô tả những gì họ muốn nhưng không chỉ rõ chi tiết cách để lấy được kết quả
 
-Ví dụ:
+Ví dụ, khi tôi muốn có tập hợp số bi chẵn của 1 bàn billard.
+Với kiểu lập trình Imperative, như C#/Java tôi sẽ code như sau:
 
-Các ngôn ngữ tiêu biểu đại diện cho Declarative Programming: Analytica, SQL, Haskell (pure functional), Idris (pure functional)
+```java
+List<int> billard_balls = new List<int> {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-Các ngôn ngữ tiêu biểu đại diện cho Imperative Programming: C/C++, Java, Python, Ruby, Swift
-Những nn trên thường là multi-paradigm: bao gồm cả impure functional, object oriented
+List<int> results = new List<int>();
+foreach(var ball in billard_balls)
+{
+    if (ball % 2 != 0)
+          results.Add(ball);
+}
+```
+
+Còn với kiểu lập trình Declarative, như sql sẽ là:
+
+```sql
+select ball from billard_balls where ball % 2 = 0
+```
+
+Các ngôn ngữ đại diện cho Imperative Programming: C++, Java, Python, Ruby, Swift...
+Các ngôn ngữ đại diện cho Declarative Programming: Analytica, SQL, Haskell, Idris...
+
+Ở danh sách Declarative, tôi có liệt kê Haskell và Idris, đây là 2 ngôn ngữ thiết kế theo mô hình lập trình hàm thuần túy: Pure Functional Programming.
+Pure Functional chính là một nhánh (sub-set) của Declarative Programming.
+Còn những ngôn ngữ có hỗ trợ lập trình hàm như C++, Java, Python và những ngôn ngữ lập trình hàm ko thuần túy như F#, Clojure, JavaScript.. thì không được xếp vào mục Declarative Programming
+
+## 1.2 Lịch sử Lập trình hàm
+
+Functional Programming có nguồn gốc từ Lambda Calculus (phép tính Lambda?) - còn Lambda Calculus là gì, chắc để viết sau vậy :) Nói chung là tập trừu tượng trong Toán Học Logic, được phát giới thiệu lần đầu khoảng thập niên 30.
+
+Lisp - có thể coi là ngôn ngữ đầu tiên mang triết lý Functional Programming, được phát triển ở MIT cuối thập niên 50. Thật ra những phiên bản đầu tiên của Lips là multi-paradigm language, tức là một ngôn ngữ đa dụng (đa triết lý). Những nn kế thừa của Lips và các nhánh nhỏ từ Lips thì được tập trung phát triển dựa trên nhân "functional" của Lips hơn, như: Clojure, Julia.
+
+Thập niên 70, ML, và sau đó là Miranda được tạo ra, đi kèm với giới thiệu chính thức về lập trình hàm năm 77. ML có rất nhiều kế thừa, trong đó được nhiều ltv biết đến nhất là OCaml và Standard ML.
+
+Haskell xuất hiện năm 87.
+
+## 1.3 Các khái niệm cơ bản
 
 # Gọi tên Haskell
 
@@ -44,5 +77,6 @@ Những nn trên thường là multi-paradigm: bao gồm cả impure functional,
 # Reference
 
 https://stackoverflow.com/questions/1784664/what-is-the-difference-between-declarative-and-imperative-programming
-
 https://en.wikipedia.org/wiki/List_of_programming_languages_by_type
+https://en.wikipedia.org/wiki/Functional_programming
+https://en.wikipedia.org/wiki/Lambda_calculus
