@@ -15,9 +15,11 @@ Note: Để tiện cho việc đọc - hiểu, tôi xin giữ nguyên bản ko d
 Để tìm hiểu về Functional Programming, trước hết chúng ta nghía qua khái niệm Declarative Programming và Imperative Programming.
 
 ***Imperative Programming:*** Khi lập trình viên (ltv) sẽ viết code để chỉ cho compiler làm những gì họ muốn, chi tiết từng bước một: làm bước a, sau đó làm bước b, lặp lại bước a,b...
+
 ***Declarative Programming:*** Ltv sẽ viết code để mô tả những gì họ muốn nhưng không chỉ rõ chi tiết cách để lấy được kết quả
 
 Ví dụ, khi tôi muốn có tập hợp số bi chẵn của 1 bàn billard.
+
 Với kiểu lập trình Imperative, như C#/Java tôi sẽ code như sau:
 
 ```java
@@ -42,11 +44,12 @@ Các ngôn ngữ đại diện cho Declarative Programming: Analytica, SQL, Hask
 
 Ở danh sách Declarative, tôi có liệt kê Haskell và Idris, đây là 2 ngôn ngữ thiết kế theo mô hình lập trình hàm thuần túy: Pure Functional Programming.
 Pure Functional chính là một nhánh (sub-set) của Declarative Programming.
+
 Còn những ngôn ngữ có hỗ trợ lập trình hàm như C++, Java, Python và những ngôn ngữ lập trình hàm ko thuần túy như F#, Clojure, JavaScript.. thì không được xếp vào mục Declarative Programming
 
-## 1.2 Lịch sử Lập trình hàm
+## 1.2 Lịch sử Functional Programming
 
-Functional Programming có nguồn gốc từ Lambda Calculus (phép tính Lambda?) - còn Lambda Calculus là gì, chắc để viết sau vậy :) Nói chung là tập trừu tượng trong Toán Học Logic, được phát giới thiệu lần đầu khoảng thập niên 30.
+Functional Programming có nguồn gốc từ Lambda Calculus (phép tính Lambda?) - còn Lambda Calculus là gì, chắc để viết sau vậy :) Nói chung là tập trừu tượng trong Toán Học Logic, được giới thiệu lần đầu khoảng thập niên 30.
 
 Lisp - có thể coi là ngôn ngữ đầu tiên mang triết lý Functional Programming, được phát triển ở MIT cuối thập niên 50. Thật ra những phiên bản đầu tiên của Lips là multi-paradigm language, tức là một ngôn ngữ đa dụng (đa triết lý). Những nn kế thừa của Lips và các nhánh nhỏ từ Lips thì được tập trung phát triển dựa trên nhân "functional" của Lips hơn, như: Clojure, Julia.
 
@@ -56,7 +59,26 @@ Haskell xuất hiện năm 87.
 
 ## 1.3 Các khái niệm cơ bản
 
-# Gọi tên Haskell
+Về các khái niệm, định nghĩa và đặc tính cơ bản của Functional Programming, có lẽ nên để các bạn tìm hiểu thêm. Tổng quan thì có 1 số điểm thiết yếu của Functional Programming như sau:
+
+* Higher Order Functions: Hàm bậc cao như Fold, Map, Traversal, Composition.. Khám phá hết đống này, tôi đảm bảo các bạn sẽ lạc vào một chân trời trừu tượng mới.
+
+* Pure vs Impure: Tính thuần túy - Đây là vấn đề mơ hồ và còn nhiều tranh cãi, nhưng theo hiểu biết cá nhân thì Lambda Calculus mới có thể gọi là purest. Haskell có thể coi là chiến binh còn sống sót còn lại với chữ "Pure".
+
+* Recursion: Đệ quy chính là vẻ đẹp của lập trình hàm. Có người từng nói, họ học Haskell chỉ vì "tail-recursive"
+
+* Type system: Strongly Type n Weak-Type
+
+# Chapter 2. Gọi tên Haskell
+
+Haskell, như tôi quảng cáo ở trên, được coi là chiến binh sống sót trong những vụ tranh cãi pure vs impure.
+
+Haskell đủ "mature" để có thể tồn tại giữa hàng trăm ngôn ngữ khác nhưng vẫn giữ được mức độ Pure rất cao.
+
+Haskell là ngôn ngữ tốt nhất dành cho những ai đang muốn học Functional Programming
+
+Haskell thường được xem là ngôn ngữ học thuật, nghiên cứu. Nhưng gần đây đã xuất hiện những sản phẩm tạo ra từ Haskell
+
 
 # Cái nhìn sâu hơn vào Haskell
 
