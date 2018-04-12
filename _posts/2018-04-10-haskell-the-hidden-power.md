@@ -59,60 +59,50 @@ Thập niên 70, Meta Language (ML), và sau đó là Miranda được tạo ra,
 
 Haskell xuất hiện năm 87.
 
-## 1.3 Các khái niệm cơ bản
+## 1.3 Functional - Các khái niệm cơ bản
 
-Về các khái niệm, định nghĩa và đặc tính cơ bản của Functional Programming, có lẽ nên để các bạn tìm hiểu thêm. Tổng quan thì có 1 số điểm thiết yếu của Functional Programming như sau:
+Về các khái niệm, định nghĩa và đặc tính cơ bản của Functional Programming, có lẽ nên để các bạn tự tìm hiểu thêm. Tổng quan thì có 1 số điểm thiết yếu của Functional Programming như sau:
 
-* Higher Order Functions: Hàm bậc cao như Fold, Map, Traversal, Composition.. Khám phá hết đống này, tôi đảm bảo các bạn sẽ lạc vào một chân trời trừu tượng mới.
+* **Higher Order Functions:** Hàm bậc cao như Fold, Map, Traversal, Composition.. Khám phá hết đống này, tôi đảm bảo các bạn sẽ lạc vào một chân trời trừu tượng mới.
 
-* Pure vs Impure: Tính thuần túy - Đây là vấn đề mơ hồ và còn nhiều tranh cãi, nhưng theo hiểu biết cá nhân thì Lambda Calculus mới có thể gọi là purest. Haskell có thể coi là chiến binh sống sót còn lại với chữ "Pure".
+* **Pure vs Impure:*** Tính thuần túy - Đây là vấn đề mơ hồ và còn nhiều tranh cãi, nhưng theo hiểu biết cá nhân thì Lambda Calculus mới có thể gọi là purest. Haskell có thể coi là chiến binh sống sót còn lại với chữ "Pure".
 
-* Recursion: Đệ quy chính là vẻ đẹp của lập trình hàm. Có người từng nói, họ học Haskell chỉ vì "tail-recursive"
+* **Recursion:** Đệ quy chính là vẻ đẹp của lập trình hàm. Có người từng nói, họ học Haskell chỉ vì "tail-recursive"
 
-* Lazy Evaluation: Functional Programming mang đến những đặc điểm "nhàn rỗi" trong việc tính toán, rất nhiều thư viện có sẵn hỗ trợ việc tính toán nhàn rỗi. Nhưng hãy cẩn thận với Lazy IO, nhiều khi mang đến rắc rối hơn là tiện dụng
+* **Lazy Evaluation:** Functional Programming mang đến những đặc điểm "nhàn rỗi" trong việc tính toán, rất nhiều thư viện có sẵn hỗ trợ việc tính toán nhàn rỗi. Nhưng hãy cẩn thận với Lazy IO, nhiều khi mang đến rắc rối hơn là tiện dụng
 
-* Type system: Strongly Type n Weak-Type
+* **Type system:** Strongly Type n Weak-Type
 
 # Chapter 2. Gọi tên Haskell
 
 Haskell, như tôi quảng cáo ở trên, được coi là chiến binh sống sót trong những vụ tranh cãi pure vs impure. Haskell ra mắt vào cuối thập niên 80, không phải là Pure Functional Language duy nhất, nhưng vị thế của Haskell đang dần được khẳng định. Haskell được thể hiện rõ ở các khía cạnh sau:
 
 
-* The Functional Aspect: Thật ra khó mà giải nghĩa được chữ "functional" sao cho đúng và chính xác. Nhưng khi ta nói Haskell là functional, thì nó sẽ gợi lên 2 điểm:
+* **The Functional Aspect:** Thật ra khó mà giải nghĩa được chữ "functional" sao cho đúng và chính xác. Nhưng khi ta nói Haskell là functional, thì nó sẽ gợi lên 2 điểm:
 
     1. First-class của Haskell là Functions. Vậy một function f có thể tính toán dựa trên đối số (arguments) là 1 function g khác: f(g(x)).
 
-    2. Haskell được thiết kế để `Đánh giá một biểu thức` (Evaluation Expressions) thay vì `Thực thi câu lệnh` (Executing Instructions). Đây cũng là đặc điểm của Declarative Programming so với Imperative Programming luôn há.
+    2. Haskell được thiết kế để `Đánh giá biểu thức` (Evaluation Expressions) thay vì `Thực thi câu lệnh` (Executing Instructions). Các bạn còn nhớ Declarative Programming vs Imperative Programming chứ? Yes, that's it.
 
-* The Pure Aspect: Vẫn giữ những nét đặc trưng của Pure Functional, nhưng Haskell cho phép thực thi Impure code trong tầm kiểm soát. Điểm này chính là trọng tâm làm cho Haskell nổi bật nhất khi nói đến Pure Functional.
+* **The Pure Aspect:** Vẫn giữ những nét đặc trưng của Pure Functional, nhưng Haskell cho phép thực thi Impure code trong tầm kiểm soát. Điểm này chính là trọng tâm làm cho Haskell nổi bật nhất khi nói đến Pure Functional.
 
     Tính chất của Pure bao gồm: No mutation, No side-effects, Same input always make same output.
 
-    Như vậy, Pure cũng đồng nghĩa với nói không với thao tác nhập xuất (IO), thậm chí Pure code còn ko thể in ra 1 thứ gì đó (print). Nếu chỉ đơn thuần như vậy thì chúng ta ko có việc gì để làm với Haskell cả, vì nó quá thiếu thực tế! Okay, Haskell gói những thứ impure lại và quản lý tách biệt nó 1 cách cực tốt. IO monads là bằng chứng mạnh mẽ nhất để Haskell chứng minh tính ứng dụng của nó trong thực tế.
+    Như vậy, Pure cũng đồng nghĩa với nói không với thao tác nhập xuất (IO), thậm chí Pure code còn ko thể in ra 1 thứ gì đó (print). Nghe nó quá thiếu thực tế, huh? Okay, Haskell gói những thứ impure lại và quản lý tách biệt nó một cách cực tốt. IO monads là bằng chứng mạnh mẽ nhất để Haskell chứng minh tính ứng dụng của nó trong thực tế.
 
-* The Lazy Aspect: Haskell được thiết kế là 1 ngôn ngữ "nhàn rỗi, chậm tiêu" (a.k.a lazy), tức là khi cần đến thì mới làm, chứ không chủ động tính toán trước. Với đặc điểm lazy này, haskell mang đến lợi ích khi làm việc với cấu trúc dữ liệu, đặc biệt là cấu trúc vô hạn và tạo điều kiện để ltv viết code theo phong cách kết hợp (compositional programming style)
-
-
-* Statically Typed: Haskell là ngôn ngữ có kiểu dữ liệu tĩnh, mọi biểu thức hay dữ liệu trong Haskell đều được kiểm tra kiểu (type-check) tại thời điểm compile. Mang đến lợi ích rất lớn khi loại trừ được nhiều lỗi hơn trước thời điểm run-time.
-
-    Tất nhiên Statically Typed (bao gồm cả Java, C#...) cũng mang đến sự khó chịu khi ltv bắt buộc phải chỉ rõ kiểu dữ liệu cho mỗi biểu thức, đối số... Haskell mang đến 1 công cụ mềm dẻo dành cho ltv để họ cho phép GHC (compiler của Haskell) tự xác định type trước. Tìm hiểu thêm Type Inference: https://wiki.haskell.org/Type_inference
+* **The Lazy Aspect:** Haskell được thiết kế là 1 ngôn ngữ "nhàn rỗi, chậm tiêu" (a.k.a lazy), tức là khi cần đến thì mới làm, không chủ động tính toán trước. Với đặc điểm lazy này, Haskell mang đến lợi ích khi làm việc với cấu trúc dữ liệu, đặc biệt là cấu trúc vô hạn và tạo điều kiện để ltv viết code theo phong cách kết hợp (compositional programming style)
 
 
-# Cái nhìn sâu hơn vào Haskell
+* **Statically Typed:** Haskell là ngôn ngữ có kiểu dữ liệu tĩnh, mọi biểu thức hay dữ liệu trong Haskell đều được kiểm tra kiểu (type-check) tại thời điểm compile. Mang đến lợi ích rất lớn khi loại trừ được nhiều lỗi hơn trước thời điểm run-time.
 
-## Language Syntax
 
-## Compiler
+# Chapter 3. Haskell: Từ nghiên cứu đến ứng dụng
 
-## Build System (Stack - Cabal)
 
-## Central lib repo: Hackage
 
-# Từ nghiên cứu đến ứng dụng
+# Chapter 4. Thực tại và tiềm năng
 
-# Thực tại và tiềm năng
 
-## Haskell trong công nghiệp phần mềm
 
 # Reference
 
@@ -120,3 +110,4 @@ https://stackoverflow.com/questions/1784664/what-is-the-difference-between-decla
 https://en.wikipedia.org/wiki/List_of_programming_languages_by_type
 https://en.wikipedia.org/wiki/Functional_programming
 https://en.wikipedia.org/wiki/Lambda_calculus
+https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
