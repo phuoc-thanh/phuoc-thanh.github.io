@@ -18,6 +18,7 @@ Note: Để tiện cho việc đọc - hiểu, tôi xin giữ nguyên bản ko d
 
 ***Declarative Programming:*** Ltv sẽ viết code để mô tả những gì họ muốn nhưng không chỉ rõ chi tiết cách để lấy được kết quả
 
+
 Ví dụ, khi tôi muốn có tập hợp số bi chẵn của 1 bàn billard.
 
 Với kiểu lập trình Imperative, như C#/Java tôi sẽ code như sau:
@@ -40,20 +41,21 @@ select ball from billard_balls where ball % 2 = 0
 ```
 
 Các ngôn ngữ đại diện cho Imperative Programming: C++, Java, Python, Ruby, Swift...
+
 Các ngôn ngữ đại diện cho Declarative Programming: Analytica, SQL, Haskell, Idris...
 
 Ở danh sách Declarative, tôi có liệt kê Haskell và Idris, đây là 2 ngôn ngữ thiết kế theo mô hình lập trình hàm thuần túy: Pure Functional Programming.
 Pure Functional chính là một nhánh (sub-set) của Declarative Programming.
 
-Còn những ngôn ngữ có hỗ trợ lập trình hàm như C++, Java, Python và những ngôn ngữ lập trình hàm ko thuần túy như F#, Clojure, JavaScript.. thì không được xếp vào mục Declarative Programming
+Những ngôn ngữ có hỗ trợ lập trình hàm như C++, Java, Python và những ngôn ngữ lập trình hàm ko thuần túy như F#, Clojure, JavaScript.. thì không được xếp vào mục Declarative Programming
 
 ## 1.2 Lịch sử Functional Programming
 
 Functional Programming có nguồn gốc từ Lambda Calculus (phép tính Lambda?) - còn Lambda Calculus là gì, chắc để viết sau vậy :) Nói chung là tập trừu tượng trong Toán Học Logic, được giới thiệu lần đầu khoảng thập niên 30.
 
-Lisp - có thể coi là ngôn ngữ đầu tiên mang triết lý Functional Programming, được phát triển ở MIT cuối thập niên 50. Thật ra những phiên bản đầu tiên của Lips là multi-paradigm language, tức là một ngôn ngữ đa dụng (đa triết lý). Những nn kế thừa của Lips và các nhánh nhỏ từ Lips thì được tập trung phát triển dựa trên nhân "functional" của Lips hơn, như: Clojure, Julia.
+Lisp - có thể coi là ngôn ngữ đầu tiên mang triết lý Functional Programming, được phát triển ở MIT cuối thập niên 50. Thật ra những phiên bản đầu tiên của Lips là multi-paradigm language, tức là một ngôn ngữ đa dụng (đa triết lý). Những nn kế thừa của Lisp và các nhánh nhỏ từ Lisp thì được tập trung phát triển dựa trên nhân "functional" của Lisp hơn, như: Clojure, Julia.
 
-Thập niên 70, ML, và sau đó là Miranda được tạo ra, đi kèm với giới thiệu chính thức về lập trình hàm năm 77. ML có rất nhiều kế thừa, trong đó được nhiều ltv biết đến nhất là OCaml và Standard ML.
+Thập niên 70, Meta Language (ML), và sau đó là Miranda được tạo ra, đi kèm với giới thiệu chính thức về Functional Programming vào năm 77. ML có rất nhiều kế thừa, trong đó được nhiều ltv biết đến nhất là OCaml và Standard ML.
 
 Haskell xuất hiện năm 87.
 
@@ -63,21 +65,37 @@ Về các khái niệm, định nghĩa và đặc tính cơ bản của Function
 
 * Higher Order Functions: Hàm bậc cao như Fold, Map, Traversal, Composition.. Khám phá hết đống này, tôi đảm bảo các bạn sẽ lạc vào một chân trời trừu tượng mới.
 
-* Pure vs Impure: Tính thuần túy - Đây là vấn đề mơ hồ và còn nhiều tranh cãi, nhưng theo hiểu biết cá nhân thì Lambda Calculus mới có thể gọi là purest. Haskell có thể coi là chiến binh còn sống sót còn lại với chữ "Pure".
+* Pure vs Impure: Tính thuần túy - Đây là vấn đề mơ hồ và còn nhiều tranh cãi, nhưng theo hiểu biết cá nhân thì Lambda Calculus mới có thể gọi là purest. Haskell có thể coi là chiến binh sống sót còn lại với chữ "Pure".
 
 * Recursion: Đệ quy chính là vẻ đẹp của lập trình hàm. Có người từng nói, họ học Haskell chỉ vì "tail-recursive"
+
+* Lazy Evaluation: Functional Programming mang đến những đặc điểm "nhàn rỗi" trong việc tính toán, rất nhiều thư viện có sẵn hỗ trợ việc tính toán nhàn rỗi. Nhưng hãy cẩn thận với Lazy IO, nhiều khi mang đến rắc rối hơn là tiện dụng
 
 * Type system: Strongly Type n Weak-Type
 
 # Chapter 2. Gọi tên Haskell
 
-Haskell, như tôi quảng cáo ở trên, được coi là chiến binh sống sót trong những vụ tranh cãi pure vs impure.
+Haskell, như tôi quảng cáo ở trên, được coi là chiến binh sống sót trong những vụ tranh cãi pure vs impure. Haskell ra mắt vào cuối thập niên 80, không phải là Pure Functional Language duy nhất, nhưng vị thế của Haskell đang dần được khẳng định. Haskell được thể hiện rõ ở các khía cạnh sau:
 
-Haskell đủ "mature" để có thể tồn tại giữa hàng trăm ngôn ngữ khác nhưng vẫn giữ được mức độ Pure rất cao.
 
-Haskell là ngôn ngữ tốt nhất dành cho những ai đang muốn học Functional Programming
+* The Functional Aspect: Thật ra khó mà giải nghĩa được chữ "functional" sao cho đúng và chính xác. Nhưng khi ta nói Haskell là functional, thì nó sẽ gợi lên 2 điểm:
 
-Haskell thường được xem là ngôn ngữ học thuật, nghiên cứu. Nhưng gần đây đã xuất hiện những sản phẩm tạo ra từ Haskell
+    1. First-class của Haskell là Functions. Vậy một function f có thể tính toán dựa trên đối số (arguments) là 1 function g khác: f(g(x)).
+
+    2. Haskell được thiết kế để `Đánh giá một biểu thức` (Evaluation Expressions) thay vì `Thực thi câu lệnh` (Executing Instructions). Đây cũng là đặc điểm của Declarative Programming so với Imperative Programming luôn há.
+
+* The Pure Aspect: Vẫn giữ những nét đặc trưng của Pure Functional, nhưng Haskell cho phép thực thi Impure code trong tầm kiểm soát. Điểm này chính là trọng tâm làm cho Haskell nổi bật nhất khi nói đến Pure Functional.
+
+Tính chất của Pure bao gồm: No mutation, No side-effects, Same input always make same output.
+
+Như vậy, Pure cũng đồng nghĩa với nói không với thao tác nhập xuất (IO), thậm chí Pure code còn ko thể in ra 1 thứ gì đó (print). Nếu chỉ đơn thuần như vậy thì chúng ta ko có việc gì để làm với Haskell cả, vì nó quá thiếu thực tế! Okay, Haskell gói những thứ impure lại và quản lý tách biệt nó 1 cách cực tốt. IO monads là bằng chứng mạnh mẽ nhất để Haskell chứng minh tính ứng dụng của nó trong thực tế.
+
+* The Lazy Aspect: Haskell được thiết kế là 1 ngôn ngữ "nhàn rỗi, chậm tiêu" (a.k.a lazy), tức là khi cần đến thì mới làm, chứ không chủ động tính toán trước. Với đặc điểm lazy này, haskell mang đến lợi ích khi làm việc với cấu trúc dữ liệu, đặc biệt là cấu trúc vô hạn và tạo điều kiện để ltv viết code theo phong cách kết hợp (compositional programming style)
+
+
+* Statically Typed: Haskell là ngôn ngữ có kiểu dữ liệu tĩnh, mọi biểu thức hay dữ liệu trong Haskell đều được kiểm tra kiểu (type-check) tại thời điểm compile. Mang đến lợi ích rất lớn khi loại trừ được nhiều lỗi hơn trước thời điểm run-time.
+
+Tất nhiên Statically Typed (bao gồm cả Java, C#...) cũng mang đến sự khó chịu khi ltv bắt buộc phải chỉ rõ kiểu dữ liệu cho mỗi biểu thức, đối số... Haskell mang đến 1 công cụ mềm dẻo dành cho ltv để họ cho phép GHC (compiler của Haskell) tự xác định type trước. Tìm hiểu thêm Type Inference: https://wiki.haskell.org/Type_inference
 
 
 # Cái nhìn sâu hơn vào Haskell
