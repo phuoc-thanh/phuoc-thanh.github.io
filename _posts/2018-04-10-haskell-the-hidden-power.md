@@ -8,7 +8,11 @@ keywords: "haskell, pure, functional, hidden power, charm, beauty"
 
 # Chapter 1. Câu chuyện về lập trình hàm (Functional Programming)
 
+![Lambda Calculus](/assets/images/lambda_calculus.png)
+
 Note: Để tiện cho việc đọc - hiểu, tôi xin giữ nguyên bản ko dịch một số từ ngữ như: Functional Programming, Declarative, Imperative, Compiler...
+
+---
 
 ## 1.1 Imperative và Declarative Programming
 
@@ -49,6 +53,8 @@ Pure Functional chính là một nhánh (sub-set) của Declarative Programming.
 
 Những ngôn ngữ có hỗ trợ lập trình hàm như C++, Java, Python và những ngôn ngữ lập trình hàm ko thuần túy như F#, Clojure, JavaScript.. thì không được xếp vào mục Declarative Programming
 
+---
+
 ## 1.2 Lịch sử Functional Programming
 
 Functional Programming có nguồn gốc từ Lambda Calculus (phép tính Lambda?) - còn Lambda Calculus là gì, chắc để viết sau vậy :) Nói chung là tập trừu tượng trong Toán Học Logic, được giới thiệu lần đầu khoảng thập niên 30.
@@ -58,6 +64,8 @@ Lisp - có thể coi là ngôn ngữ đầu tiên mang triết lý Functional Pr
 Thập niên 70, Meta Language (ML), và sau đó là Miranda được tạo ra, đi kèm với giới thiệu chính thức về Functional Programming vào năm 77. ML có rất nhiều kế thừa, trong đó được nhiều ltv biết đến nhất là OCaml và Standard ML.
 
 Haskell xuất hiện năm 87.
+
+---
 
 ## 1.3 Functional - Các khái niệm cơ bản
 
@@ -73,7 +81,10 @@ Về các khái niệm, định nghĩa và đặc tính cơ bản của Function
 
 * **Type system:** Strongly Type n Weak-Type
 
+
 # Chapter 2. Gọi tên Haskell
+
+![Pure Functional Language](/assets/images/pure_functional.png)
 
 Haskell, như tôi quảng cáo ở trên, được coi là chiến binh sống sót trong những vụ tranh cãi pure vs impure. Haskell ra mắt vào cuối thập niên 80, không phải là Pure Functional Language duy nhất, nhưng vị thế của Haskell đang dần được khẳng định. Haskell được thể hiện rõ ở các khía cạnh sau:
 
