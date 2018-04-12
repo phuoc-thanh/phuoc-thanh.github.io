@@ -86,16 +86,16 @@ Haskell, như tôi quảng cáo ở trên, được coi là chiến binh sống 
 
 * The Pure Aspect: Vẫn giữ những nét đặc trưng của Pure Functional, nhưng Haskell cho phép thực thi Impure code trong tầm kiểm soát. Điểm này chính là trọng tâm làm cho Haskell nổi bật nhất khi nói đến Pure Functional.
 
-Tính chất của Pure bao gồm: No mutation, No side-effects, Same input always make same output.
+    Tính chất của Pure bao gồm: No mutation, No side-effects, Same input always make same output.
 
-Như vậy, Pure cũng đồng nghĩa với nói không với thao tác nhập xuất (IO), thậm chí Pure code còn ko thể in ra 1 thứ gì đó (print). Nếu chỉ đơn thuần như vậy thì chúng ta ko có việc gì để làm với Haskell cả, vì nó quá thiếu thực tế! Okay, Haskell gói những thứ impure lại và quản lý tách biệt nó 1 cách cực tốt. IO monads là bằng chứng mạnh mẽ nhất để Haskell chứng minh tính ứng dụng của nó trong thực tế.
+    Như vậy, Pure cũng đồng nghĩa với nói không với thao tác nhập xuất (IO), thậm chí Pure code còn ko thể in ra 1 thứ gì đó (print). Nếu chỉ đơn thuần như vậy thì chúng ta ko có việc gì để làm với Haskell cả, vì nó quá thiếu thực tế! Okay, Haskell gói những thứ impure lại và quản lý tách biệt nó 1 cách cực tốt. IO monads là bằng chứng mạnh mẽ nhất để Haskell chứng minh tính ứng dụng của nó trong thực tế.
 
 * The Lazy Aspect: Haskell được thiết kế là 1 ngôn ngữ "nhàn rỗi, chậm tiêu" (a.k.a lazy), tức là khi cần đến thì mới làm, chứ không chủ động tính toán trước. Với đặc điểm lazy này, haskell mang đến lợi ích khi làm việc với cấu trúc dữ liệu, đặc biệt là cấu trúc vô hạn và tạo điều kiện để ltv viết code theo phong cách kết hợp (compositional programming style)
 
 
 * Statically Typed: Haskell là ngôn ngữ có kiểu dữ liệu tĩnh, mọi biểu thức hay dữ liệu trong Haskell đều được kiểm tra kiểu (type-check) tại thời điểm compile. Mang đến lợi ích rất lớn khi loại trừ được nhiều lỗi hơn trước thời điểm run-time.
 
-Tất nhiên Statically Typed (bao gồm cả Java, C#...) cũng mang đến sự khó chịu khi ltv bắt buộc phải chỉ rõ kiểu dữ liệu cho mỗi biểu thức, đối số... Haskell mang đến 1 công cụ mềm dẻo dành cho ltv để họ cho phép GHC (compiler của Haskell) tự xác định type trước. Tìm hiểu thêm Type Inference: https://wiki.haskell.org/Type_inference
+    Tất nhiên Statically Typed (bao gồm cả Java, C#...) cũng mang đến sự khó chịu khi ltv bắt buộc phải chỉ rõ kiểu dữ liệu cho mỗi biểu thức, đối số... Haskell mang đến 1 công cụ mềm dẻo dành cho ltv để họ cho phép GHC (compiler của Haskell) tự xác định type trước. Tìm hiểu thêm Type Inference: https://wiki.haskell.org/Type_inference
 
 
 # Cái nhìn sâu hơn vào Haskell
