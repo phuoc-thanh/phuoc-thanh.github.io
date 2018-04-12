@@ -73,7 +73,7 @@ Về các khái niệm, định nghĩa và đặc tính cơ bản của Function
 
 * **Higher Order Functions:** Hàm bậc cao như Fold, Map, Traversal, Composition.. Khám phá hết đống này, tôi đảm bảo các bạn sẽ lạc vào một chân trời trừu tượng mới.
 
-* **Pure vs Impure:*** Tính thuần túy - Đây là vấn đề mơ hồ và còn nhiều tranh cãi, nhưng theo hiểu biết cá nhân thì Lambda Calculus mới có thể gọi là purest. Haskell có thể coi là chiến binh sống sót còn lại với chữ "Pure".
+* **Pure vs Impure:** Tính thuần túy - Đây là vấn đề mơ hồ và còn nhiều tranh cãi, nhưng theo hiểu biết cá nhân thì Lambda Calculus mới có thể gọi là purest. Haskell có thể coi là chiến binh sống sót còn lại với chữ "Pure".
 
 * **Recursion:** Đệ quy chính là vẻ đẹp của lập trình hàm. Có người từng nói, họ học Haskell chỉ vì "tail-recursive"
 
@@ -81,6 +81,7 @@ Về các khái niệm, định nghĩa và đặc tính cơ bản của Function
 
 * **Type system:** Strongly Type n Weak-Type
 
+---
 
 # Chapter 2. Gọi tên Haskell
 
@@ -106,14 +107,35 @@ Haskell, như tôi quảng cáo ở trên, được coi là chiến binh sống 
 
 * **Statically Typed:** Haskell là ngôn ngữ có kiểu dữ liệu tĩnh, mọi biểu thức hay dữ liệu trong Haskell đều được kiểm tra kiểu (type-check) tại thời điểm compile. Mang đến lợi ích rất lớn khi loại trừ được nhiều lỗi hơn trước thời điểm run-time.
 
+---
 
-# Chapter 3. Haskell: Từ nghiên cứu đến ứng dụng
+# Chapter 3. Từ nghiên cứu đến ứng dụng
+
+Haskell, đã tồn tại trên dưới 30 năm, nhưng tại sao đến 2018 này nghe vẫn xa lạ? Haskell ở đâu trong thiên hà?
+
+Câu hỏi về Haskell, nhưng câu trả lời rất liên quan tới vấn đề rộng lớn hơn: Functional Programming tại sao lại ít được ứng dụng? Khắp mọi nơi từ trường học, sách vở, buổi giảng, hội nghị công nghệ, chợ việc làm, tin tức tuyển dụng... chúng ta đều nghe "Object Oriented Programming". Hah, hướng đối tượng.
+
+Lại một thứ tôn giáo nữa trong ngành lập trình. Lần này tôi ko bài trừ OOP, chỉ đơn giản là nó bị cường điệu hóa và lạm dụng quá mức.
+
+Quay trở lại với Functional Programming, vị trí của nó hiện tại là nằm trong trường học, phòng lab, phòng R&D, yep. Thị phần của FP quá nhỏ nhoi trong công nghiệp phần mềm. Ah chắc tôi phải loại trừ JavaScript ra, chú em sinh sau đẻ muộn này vẫn đang xuất hiện mọi ngõ ngách. Nhưng một thời gian rất dài người ta cố nhồi OOP vào JavaScript, có vẻ việc nhồi nhét đó vẫn chưa dừng lại.
+
+Haskell, cũng ko là ngoại lệ. Tuy nhiên cộng đồng fan hâm mộ và những developer tiên phong đang từng bước xây dựng một nền tảng chắc chắn cho sự trở lại của Functional Programming, đặc biệt là Haskell vào ngành công nghiệp phần mềm.
+
+Thực trạng nhức nhối của ngành phần mềm hiện tại bao gồm cả:
+
+* **Parallelism:** Chúng ta cần tận dụng kiến trúc đa nhân của CPU hơn là tốc độ của nhân đơn
+
+* **Modular n Side-Effect:** Có thể ltv đang rất chán khi phải debug ngày đêm với những thứ vốn có thể loại trừ từ trước
 
 
 
 # Chapter 4. Thực tại và tiềm năng
 
+Mức độ trưởng thành của Haskell được liệt kê khá rõ ràng ở đây:
 
+https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
+
+typing...
 
 # Reference
 
