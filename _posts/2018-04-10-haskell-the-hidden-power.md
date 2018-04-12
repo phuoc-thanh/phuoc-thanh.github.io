@@ -53,7 +53,7 @@ Những ngôn ngữ có hỗ trợ lập trình hàm như C++, Java, Python và 
 
 Functional Programming có nguồn gốc từ Lambda Calculus (phép tính Lambda?) - còn Lambda Calculus là gì, chắc để viết sau vậy :) Nói chung là tập trừu tượng trong Toán Học Logic, được giới thiệu lần đầu khoảng thập niên 30.
 
-Lisp - có thể coi là ngôn ngữ đầu tiên mang triết lý Functional Programming, được phát triển ở MIT cuối thập niên 50. Thật ra những phiên bản đầu tiên của Lips là multi-paradigm language, tức là một ngôn ngữ đa dụng (đa triết lý). Những nn kế thừa của Lisp và các nhánh nhỏ từ Lisp thì được tập trung phát triển dựa trên nhân "functional" của Lisp hơn, như: Clojure, Julia.
+Lisp - có thể coi là ngôn ngữ đầu tiên mang triết lý Functional Programming, được phát triển ở MIT cuối thập niên 50. Thật ra những phiên bản đầu tiên của Lisp là multi-paradigm language, tức là một ngôn ngữ đa dụng (đa triết lý). Những nn kế thừa của Lisp và các nhánh nhỏ từ Lisp thì được tập trung phát triển dựa trên nhân "functional" của Lisp hơn, như: Clojure, Julia.
 
 Thập niên 70, Meta Language (ML), và sau đó là Miranda được tạo ra, đi kèm với giới thiệu chính thức về Functional Programming vào năm 77. ML có rất nhiều kế thừa, trong đó được nhiều ltv biết đến nhất là OCaml và Standard ML.
 

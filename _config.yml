@@ -3,14 +3,14 @@
 title: "Binary"
 title2: "Reality" # default: ""
 description: "Just a naive idea in binary world."
-keywords: "Software, Engineering, Computer, Science, SEO, blog, web, minimalist"
+keywords: "Software, Engineering, Computer, Science, Programming, SEO, blog, web, minimalist"
 url: https://thanhdo89se.github.io/ # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
 google_analytics: UA-XXXXX-XX
-# repo: http://github.com/heiswayi/thinkspace
-# disqus_shortname: "hnbloggithub"
+repo: https://github.com/thanhdo89se/thanhdo89se.github.io
+disqus_shortname: "binaryreality"
 # twitter_username: "HeiswayiNrird"
 comments: true
 
