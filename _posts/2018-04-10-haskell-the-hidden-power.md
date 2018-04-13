@@ -111,13 +111,14 @@ Haskell, như tôi quảng cáo ở trên, được coi là chiến binh sống 
 
 # Chapter 3. Từ nghiên cứu đến ứng dụng
 
-Haskell, đã tồn tại trên dưới 30 năm, nhưng tại sao đến 2018 này nghe vẫn xa lạ? Haskell ở đâu trong thiên hà?
+Haskell, đã tồn tại trên dưới 30 năm, nhưng tại sao đến 2018 này nghe vẫn xa lạ? Haskell ở đâu trong ngành công nghiệp phần mềm?
 
-Câu hỏi về Haskell, nhưng câu trả lời rất liên quan tới vấn đề rộng lớn hơn: Functional Programming tại sao lại ít được ứng dụng? Khắp mọi nơi từ trường học, sách vở, buổi giảng, hội nghị công nghệ, chợ việc làm, tin tức tuyển dụng... chúng ta đều nghe "Object Oriented Programming". Hah, hướng đối tượng.
+Câu hỏi về Haskell, nhưng câu trả lời liên quan tới vấn đề rộng lớn hơn: Functional Programming đang ở đâu? 
 
+Khắp mọi nơi từ trường học, sách vở, buổi giảng, hội nghị công nghệ, chợ việc làm, tin tức tuyển dụng... chúng ta đều nghe "Object Oriented Programming". Hah, hướng đối tượng.
 Lại một thứ tôn giáo nữa trong ngành lập trình. Lần này tôi ko bài trừ OOP, chỉ đơn giản là nó bị cường điệu hóa và lạm dụng quá mức.
 
-Quay trở lại với Functional Programming, vị trí của nó hiện tại là nằm trong trường học, phòng lab, phòng R&D, yep. Thị phần của FP quá nhỏ nhoi trong công nghiệp phần mềm. Ah chắc tôi phải loại trừ JavaScript ra, chú em sinh sau đẻ muộn này vẫn đang xuất hiện mọi ngõ ngách. Nhưng một thời gian rất dài người ta cố nhồi OOP vào JavaScript, có vẻ việc nhồi nhét đó vẫn chưa dừng lại.
+Quay trở lại với Functional Programming, vị trí của nó hiện tại là nằm trong trường học, phòng lab, github, yep. Thị phần của FP quá nhỏ nhoi trong công nghiệp phần mềm. Ah chắc tôi phải loại trừ JavaScript ra, chú em sinh sau đẻ muộn này vẫn đang xuất hiện mọi ngõ ngách. Nhưng một thời gian rất dài người ta cố nhồi OOP vào JavaScript, có vẻ việc nhồi nhét đó vẫn chưa dừng lại.
 
 Haskell, cũng ko là ngoại lệ. Tuy nhiên cộng đồng fan hâm mộ và những developer tiên phong đang từng bước xây dựng một nền tảng chắc chắn cho sự trở lại của Functional Programming, đặc biệt là Haskell vào ngành công nghiệp phần mềm.
 

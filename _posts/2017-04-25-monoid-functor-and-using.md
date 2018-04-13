@@ -3,7 +3,7 @@ layout: post
 title: "Monoid, Functor - Định nghĩa và ứng dụng"
 comments: true
 description: "Monoid, Functor - Định nghĩa và ứng dụng"
-keywords: "monoid, functor, binary operation, algebra, math, category, abstract, functional, programming"
+keywords: "monoid, functor, binary operation, algebra, math, category, abstract, functional, programming, haskell"
 ---
 
 Mày mò dịch thuật, tổng hợp, sắp xết để tóm tắt về một chủ đề khá trừu tượng. Viết để nhớ, viết để học, và để chia sẻ...
