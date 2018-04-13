@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Monoid, Functor - Định nghĩa và ứng dụng trong lập trình"
+title: "Monoid, Functor - Định nghĩa và ứng dụng"
 comments: true
-description: "Monoid, Functor - Định nghĩa và ứng dụng trong lập trình"
+description: "Monoid, Functor - Định nghĩa và ứng dụng"
 keywords: "monoid, functor, binary operation, algebra, math, category, abstract, functional, programming"
 ---
 
-## Vài dòng
-
-Mày mò dịch thuật, tổng hợp, suy xét để viết bài này. Viết để nhớ, viết cũng là 1 cách hữu ích trong tìm tòi/nghiên cứu để hiểu sâu hơn.
+Mày mò dịch thuật, tổng hợp, sắp xết để tóm tắt về một chủ đề khá trừu tượng. Viết để nhớ, viết để học, và để chia sẻ...
 
 ## 1. Định nghĩa Monoid
 
@@ -16,18 +14,23 @@ Monoid là 1 khái niệm xuất phát từ Đại Số Trừu Tượng (Abstrac
  
 > A monoid is an algebraic structure with a single associative binary operation and an identity element
 
-### 1.1 Binary Operation - phép toán nhị nguyên
+### 1.1 Binary Operation
 
 **Định nghĩa**
 
-Trong toán học, Binary Operation là phép toán trong 1 tập S, nó kết hợp 2 phần tử (gọi là toán hạng) của tập S để tạo ra 1 phần tử khác thuộc tập S.
+Trong toán học, ***Binary Operation*** là phép toán trong 1 tập S, nó kết hợp 2 phần tử (còn gọi là toán hạng) của tập S để tạo ra 1 phần tử khác cũng thuộc tập S.
 
-Binary Operation có thể dịch là phép toán 2 ngôi hoặc phép toán nhị nguyên, là 1 phép toán sử dụng 2 biến đầu vào và cho ra 1 kết quả.
-* Khác với Unary Operation là phép toán 1 ngôi (đơn nguyên), sử dụng 1 biến đầu vào và cho ra 1 kết quả.
-* Khác với Bitwise Operation thường được dịch là phép toán nhị phân, sử dụng cả Unary/Binary Operation để tính toán số nhị phân.  
+***Binary Operation*** có thể dịch là phép toán 2 ngôi hoặc phép toán nhị nguyên, là 1 phép toán sử dụng 2 biến đầu vào và cho ra 1 kết quả.
 
 Ví dụ điển hình về phép toán nhị nguyên là phép cộng (+) và phép nhân (x) trên 1 tập đơn:
 * Trong tập hợp số thực R, f(a, b) = a + b là 1 phép toán nhị nguyên vì tổng của 2 số thực là 1 số thực.
+
+***Note:***
+
+*Khác với Unary Operation là phép toán 1 ngôi (đơn nguyên), sử dụng 1 biến đầu vào và cho ra 1 kết quả.*
+
+*Khác với Bitwise Operation thường được dịch là phép toán nhị phân, sử dụng cả Unary/Binary Operation để tính toán số nhị phân*
+
 
 **Tính chất**
 
@@ -55,6 +58,8 @@ Giả sử S là 1 tập hợp (set), và • là 1 phép toán nhị nguyên S 
 
 Tập hợp số tự nhiên N, tạo ra 2 commutative monoid (monoid có tính giao hoán) với phép cộng (phần tử nhận dạng: 0) và phép nhân (phần tử nhận dạng 1)
 
+---
+
 ## 2. Monoid trong lập trình hàm (Haskell)
 
 Xét 1 kiểu (type) m và 1 phép toán (<>) :: m -> m -> m. Kiểu m và phép toán (<>) được coi là monoid khi:
@@ -78,7 +83,7 @@ class Monoid m where
 (<>) = mappend
 ```
 
-Và haskell có sẵn rất nhiều thực thể Monoid (Monoid instances). Ví dụ dễ thấy nhất trong list:
+Và haskell có sẵn rất nhiều thực thể Monoid (Monoid instances). Ví dụ dễ thấy nhất là list:
 
 ```haskell
 instance Monoid [a] where
@@ -86,7 +91,7 @@ instance Monoid [a] where
   mappend = (++)
 ```
 
-### 2.2 Ứng dụng Monoid
+### 2.2 Ứng dụng Monoid (to be completed)
 
 Monoid rất thông dụng trong haskell,
 
@@ -96,7 +101,9 @@ Monoid rất thông dụng trong haskell,
 
 ** Finger Trees **
 
-** Options and settings ""
+** Options and settings **
+
+---
 
 ## 3. Định nghĩa Functor
 
@@ -112,7 +119,7 @@ Category trong từ điển toán tin/kỹ thuật được dịch là "Phạm T
 
 Trong Toán học, Category là 1 cấu trúc đại số (Algebraic Structure). Category bao gồm 1 nhóm đối tượng (objects) được liên kết với nhau bởi những arrows.
 
-Arrow: là khái niệm chỉ phép ánh xạ (morphism) giữa 2 đối tượng (object). 
+Arrow: là khái niệm chỉ phép ánh xạ (morphism) giữa 2 đối tượng (objects). 
 
 Ví dụ dễ thấy nhất của Category chính là sets, trong đó object chính là set và arrow là function.
 
@@ -150,6 +157,8 @@ Ví dụ ta có 2 Category là C và D, F được gọi là functor (covariant 
 * F giữ tính kết hợp cho tất cả ánh xạ: F(g ⚬ f) = F(g) ⚬ F(f)  
 
 Còn 1 thể loại contravariant functor thì đảo ngược chiều của arrow.
+
+---
 
 ## 4. Functor trong lập trình hàm (Haskell)
 
@@ -200,7 +209,7 @@ fmap  (+7)     Nothing   = Nothing
 
 **Custom data type Functor**
 
-2 ví dụ trên là những thực thể Functor có sẵn trong gói Prelude của Haskell, chúng ta có thể tạo ra functor cho các kiểu riêng khác.
+2 ví dụ trên là những thực thể Functor có sẵn trong gói Prelude của Haskell, chúng ta có thể tạo ra functor cho các kiểu dữ liệu tùy biến khác.
 
 Ví dụ ta có 1 data type:
 
@@ -238,7 +247,7 @@ Type constructor trong những ví dụ trên là [], Maybe, Tree chứ không d
 
 2. Functor chỉ tính toán trên dữ liệu và không thay đổi cấu trúc của dữ liệu
 
-### 4.4 Ích lợi gì khi dùng Functor? 
+### 4.4 Ích lợi gì khi dùng Functor? (to be completed)
 
 ## Tham khảo
 https://en.wikiversity.org/wiki/Introduction_to_Category_Theory/Monoids
