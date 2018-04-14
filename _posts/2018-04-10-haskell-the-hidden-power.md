@@ -128,15 +128,39 @@ Thực trạng nhức nhối của ngành phần mềm hiện tại bao gồm c�
 
 * **Modular n Side-Effect:** Có thể ltv đang rất chán khi phải debug ngày đêm với những thứ vốn có thể loại trừ từ trước
 
-
+---
 
 # Chapter 4. Thực tại và tiềm năng
+
+
+Có thể nói, Haskell là một con dao sắc. Haskell có thể làm được mọi thứ, quan trọng là tốn bao nhiêu công sức mà thôi. Hehe.
+Ví dụ như bạn viết Compiler cho một ngôn ngữ khác bằng Haskell, oh yeah, bạn chọn đúng dao rồi đó. Nếu bạn viết App Mobile bằng haskell, khả thi đấy, nhưng bạn viết xong 1app thì từng đó thời gian bạn có thể viết được 20 app bằng Java rồi cũng nên, hehe chúc mừng. 
 
 Mức độ trưởng thành của Haskell được liệt kê khá rõ ràng ở đây:
 
 https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
 
-typing...
+## Những ứng dụng đáng chú ý 
+
+* Elm, PureScript, Idris Compiler đều được viết bằng Haskell. Thậm chí homework của CS-194 còn bắt viết 1 cái Interpreter cơ mà ^_*
+
+* Facebook dùng Sigma để chống spam: https://code.facebook.com/posts/745068642270222/fighting-spam-with-haskell/
+
+* Cardano (ADA) được viết bằng Haskell
+
+* AT&T sử dụng Haskell trong mảng Network Security để lọc và chống những kẻ quấy phá
+
+* Google đã sử dụng Haskell trong 1 số dự án nội bộ, bao gồm Ganeti Project
+
+* Intel đã phát triển một Haskell compiler trong nghiên cứu về multicore parallelism: http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf
+
+* Standard Chartered sử dụng Haskell cho các vấn đề về banking
+
+* ...
+
+## Tương lai gần
+
+Tất cả những gì Haskell cần là 1 killer-app, như Ruby cùng với Rails vậy.
 
 # Reference
 
@@ -145,3 +169,5 @@ https://en.wikipedia.org/wiki/List_of_programming_languages_by_type
 https://en.wikipedia.org/wiki/Functional_programming
 https://en.wikipedia.org/wiki/Lambda_calculus
 https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
+https://wiki.haskell.org/Haskell_in_industry
+https://www.quora.com/What-is-the-future-of-Haskell
