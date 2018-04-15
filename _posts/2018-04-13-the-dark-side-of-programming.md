@@ -37,9 +37,9 @@ Tại sao hắc ám? Vì nói cho cùng, nó là khai thác lỗ hổng của m�
 
 Series dự tính:
 
-Chapter 1: The Origin of Crime - Khơi nguồn tội ác
+[Chapter 1: The Origin of Crime - Khơi nguồn tội ác](https://thanhdo89se.github.io/2018/chapter01-the-origin-of-crime/)
 
-Chapter 2: Raise of the North's force - Thế lực miền Bắc
+Chapter 2: Raise of the North's Force - Thế lực phương Bắc
 
 Chapter 3: Tracing & Investigating - Thám tử tập sự
 
@@ -47,7 +47,7 @@ Chapter 4: The first proof - Bằng chứng đầu tiên
 
 Chapter 5: The art of stealing - Nghệ thuật kiếm chác
 
-Chapter 6: Raise of the South's force - Thế lực miền Nam
+Chapter 6: Raise of the South's Force - Thế lực miền Nam
 
 Chapter 7: Expansion of the core - Phiên bản mở rộng
 

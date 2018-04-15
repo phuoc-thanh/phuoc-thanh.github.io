@@ -9,8 +9,8 @@ keywords: "haskell, pure, functional, hijack, game, server"
 
 # Lược sử trình độ
 
-Thế hệ 8x, các bạn chắc không quên cơn bão game Online 2004-2005-2006 nhỉ, cái thời ADSL mới được nhân rộng, năm đó tôi học lớp 10.
-Tôi cũng là một con thiêu thân lao vào thời gian đó. Bắt đầu bằng MU Hanoi, thời đó tạo nhân vật hết 15p, vào game hết 10p và mở rương đồ hết 15p. Da fuck, nếu là các bạn trẻ bây giờ, có khi đã đập bể vài bộ chuột phím rồi ấy :). Phải công nhận game online thời đó như là ma thuật, khiến ngta nhìn vào màn hình quên ăn quên ngủ, kiên nhẫn chỉ để thấy nhân vật mình đi lại và chém vài nhát.
+Thế hệ 8x, các bạn chắc không quên cơn bão Game Online 2004-2005-2006 nhỉ, cái thời ADSL mới được nhân rộng, năm đó tôi học lớp 10.
+Tôi cũng là một con thiêu thân lao vào thời gian đó. Bắt đầu bằng MU Hanoi, thời đó tạo nhân vật hết 15p, vào game hết 10p và mở rương đồ hết 15p. Da fuck, nếu là các bạn trẻ bây giờ, có khi đã đập bể vài bộ chuột phím rồi ấy :). Phải công nhận Game Online thời đó như là ma thuật, khiến ngta nhìn vào màn hình quên ăn quên ngủ, kiên nhẫn chỉ để thấy nhân vật mình đi lại và chém vài nhát.
 
 Sau đó là Gunbound, Line Age 2, Dota... và tôi thi vào ngành CNTT, tôi nghĩ sau này mình sẽ sản xuất game.
 
@@ -20,7 +20,7 @@ Tôi vẫn chơi game, cho tới lúc ra trường và ko theo đuổi lập tr�
 
 Nhờ những tiếp xúc rất sớm với game online và được học cơ bản về lập trình, tôi có chút hiểu biết về mô hình game online, cũng có thể gọi là client-server
 
-Tháng 12-2015, lần đầu tiên tôi chơi 1 game online dành cho Mobile - tạm gọi là Game X, lúc đó game mới mở được hơn 1 tháng, tôi vào server 21.
+Tháng 12-2015, lần đầu tiên tôi chơi 1 Game Online dành cho Mobile - tạm gọi là Game X, lúc đó game mới mở được hơn 1 tháng, tôi vào server 21.
 
 Khoảng tháng 4-2016, Game X mở tính năng đấu trường liên server, tạm gọi là Đấu Trường Thú - gọi tên theo đam mê 1 thời của tôi Bloody Roar hehe -)).
 
@@ -36,27 +36,27 @@ Game X mà tôi kể trên, là dạng Turn-based Strategy. Mỗi trận đánh 
 
 Cơ bản như hình trên thì 1 đội có 1 nhân vật chính và 4 tướng có thể đi kèm theo, trong ảnh là Tống Thanh Thư và Tiểu Long Nữ.
 
-Tiền tệ trong game là Xu và Bạc, Bạc thì có dễ kiếm bằng các hoạt động trong game, nhưng lại ko có giá trị mấy. Xu là tiền tệ chính để giúp nhân vật mạnh hơn.
+Tiền tệ trong game là Xu và Bạc, Bạc thì dễ kiếm bằng các hoạt động trong game, nhưng lại ko có giá trị mấy. Xu là tiền tệ chính để giúp nhân vật mạnh hơn.
 Xu cũng có thể kiếm nhưng lại quá ít, mỗi ngày siêng năng cày cũng đc 200-400 Xu mà thôi. Xu cũng chính là công cụ để nhà phát hành (NPH) hút máu game thủ.
 
 Nạp 100.000 VND thì được 1000 Xu, nạp 1tr được 10k xu kèm khuyến mãi linh tinh thì coi như 1 củ khoai lang = 20k xu đi.
 
-Vip 15 (cao nhất) là phải nạp 100 củ khoai lang. Tính tới thời điểm tôi nghỉ game thì đã có khoảng 15 anh tài VIP15, chưa kể VIP14 (nạp 50 chai) rất đông. Thời điểm game tàn (cuối 2017) vẫn có 1 vị đại hiệp quăng vào 80 chai để bá chủ đấu trường thú.
+Vip15 (cao nhất) là phải nạp 100 củ khoai lang. Tính tới thời điểm tôi nghỉ game thì đã có khoảng 10-15 anh tài Vip15, chưa kể Vip14 (nạp 50 chai) rất đông. Thời điểm game tàn (cuối 2017) vẫn có 1 vị đại hiệp quăng vào 80 chai để bá chủ Đấu Trường Thú.
 
 ---
 
 # Đấu Trường Thú
 
-Nếu các bạn chơi game mobile nhiều thì sẽ nhận thất đa số game thẻ bài dạng này thường mở rất nhiều server, liên tục cỡ 1 tuần 2,3 cái - chủ yếu để tiện hút máu cho mạnh hơn -)).
+Nếu các bạn chơi game mobile nhiều thì sẽ nhận thất đa số game thẻ bài dạng này thường mở rất nhiều server, liên tục cỡ 1 tuần 2,3 cái - chủ yếu để hút máu cho mạnh hơn -)).
 
-Vậy nên server mới sẽ là nơi thi đua nạp tiền, nhưng như vậy chưa đủ, cần tạo ra tranh đua hơn nữa để hút mạnh hơn. Thể là 2 tính năng mới ra đời: Gộp Server cũ và Mở liên chiến (Đấu trường Thú).
+Vậy nên server mới sẽ là nơi thi đua nạp tiền, nhưng như vậy chưa đủ, cần tạo ra tranh đua hơn nữa để hút mạnh hơn nữa. Thể là 2 tính năng mới ra đời: Gộp Server cũ và Mở liên chiến (Đấu trường Thú).
 
-Đấu trường này như champion league vậy, nhưng có 3 cấp độ: Sơ cấp (cấp nhân vật 59 trở xuống), Trung cấp (lvl 60-89) và Cao cấp (lvl 90 trở lên)
+Đấu trường này như Champion League vậy, nhưng có 3 cấp độ: Sơ cấp (cấp nhân vật 59 trở xuống), Trung cấp (lvl 60-89) và Cao cấp (lvl 90 trở lên)
 
 **Vòng loại: Diễn ra vào chiều thứ 6**
 
 Game thủ chỉ báo danh, việc sắp xếp bốc thăm, khiêu chiến, tính kết quả sẽ do Máy chủ liên chiến làm hết. khoảng 7PM tối thứ 6 là có kết quả.
-Đánh loạn xà ngầu cùng cấp độ, trên toàn bộ server, thắng khoảng 6-7 trận thì vào vòng loại trực tiếp, cũng có trường hợp xui thắng 9 trận nhưng ko vào, hay hên: thắng 2 trận vào luôn.
+Đánh loạn xà ngầu cùng cấp độ, trên toàn bộ server, thắng khoảng 6-7 trận thì vào vòng loại trực tiếp, cũng có trường hợp xui thắng 8 trận nhưng ko vào, hay hên: thắng 2 trận vào luôn.
 
 Như vậy có 32 đấu thủ sẽ được chọn ra để vào vòng loại trực tiếp cho mỗi cấp độ.
 
@@ -86,7 +86,7 @@ Số tiền cược tối đa cho 1 đấu thủ là 2k Xu, tối thiểu là 10
 
 Chỉ những game thủ Vip3 trở lên mới được tham gia cược xu (nạp 50k là Vip3 nhé)
 
-![Liên chiến](/assets/images/aspect-of-programming/in-game.png)
+![Liên chiến](/assets/images/aspect-of-programming/cross-war.png)
 
 Các bạn thấy đó, ở trên đầu mỗi đấu thủ chính là số xu cược.
 
