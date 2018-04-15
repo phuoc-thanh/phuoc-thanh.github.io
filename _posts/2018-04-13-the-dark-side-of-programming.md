@@ -41,9 +41,9 @@ Series dự tính:
 
 [Chapter 2: Raise of the North Force - Thế lực phương Bắc](https://thanhdo89se.github.io/2018/chapter02-raise-of-the-north-force/)
 
-[Chapter 3: Chasing the Shark - Thám tử Cá Mập](https://thanhdo89se.github.io/2018/chapter03-reveal-the-mysteries/)
+[Chapter 3: Chasing the Shark - Thám tử Cá Mập](https://thanhdo89se.github.io/2018/chapter03-chasing-the-shark/)
 
-Chapter 4: The first proof - Bằng chứng đầu tiên
+[Chapter 4: Reveal the Secret - Giải mã bí mật](https://thanhdo89se.github.io/2018/chapter04-reveal-the-secret/)
 
 Chapter 5: The art of stealing - Nghệ thuật kiếm chác
 

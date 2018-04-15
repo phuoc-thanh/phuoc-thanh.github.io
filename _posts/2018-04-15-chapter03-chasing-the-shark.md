@@ -8,7 +8,7 @@ keywords: "haskell, pure, functional, hijack, game, server, wireshark, tcp, pack
 
 # Những suy đoán ban đầu
 
-Sau khi rage quit tập 2, tôi lúc đã đã rất quyết tâm khi nghỉ game. Nhưng trước khi nghỉ, tôi đã mường tượng được việc mà đại ca minhchau bug.
+Sau khi rage quit tập 2, tôi lúc đã đã rất quyết tâm nghỉ game. Nhưng trước khi nghỉ, tôi đã mường tượng được việc mà đại ca minhchau bug.
 
 Đặt cược nhiều hơn 2000 Xu, theo tôi đoán, là do team dev chỉ kiểm tra số xu cược 1 lần duy nhất bằng client (tức là bằng cái app game được cài trên máy) và không kiểm tra lại lúc nhận thông tin ở Server. Ở đây các bạn cần hiểu là Game Online lúc nào cũng bao gồm 2 phần: Client - Server, nếu tập trung mọi xử lý ở Server thì sẽ làm cho server chịu tải lớn, cả về Sức mạnh xử lý, lẫn băng thông. Ngược lại nếu phân tán xử lý ra cho client thì rất dễ bị cheat.
 
@@ -40,11 +40,11 @@ Tôi có 2 lý do để chọn cách tiếp cận thứ 2: Một là tôi ko có
 
 # Let the hack begin !!!!
 
-Trước hết, tôi tìm hiểu sơ qua về cách hoạt động của Game Server, mất 1-2 ngày. Cơ bản mô hình Game Server cũ sẽ dùng giao thức Tcp hoặc Udp để làm kênh giao tiếp giữa Client và Server. Tùy theo thể loại game mà sẽ chọn giao thức phù hợp, Tcp nếu bạn muốn đảm bảo toàn vẹn dữ liệu, Udp dành cho thể loại yêu cầu tốc độ cập nhật. Ngoài ra các game mới còn sử dụng Http (tôi cũng k hiểu lí do lắm).
+Trước hết, tôi tìm hiểu sơ qua về cách hoạt động của Game Server, mất 1-2 ngày. Cơ bản mô hình Game Server cũ sẽ dùng giao thức Tcp hoặc Udp để làm kênh giao tiếp giữa Client và Server. Tùy theo thể loại game mà sẽ chọn giao thức phù hợp, Tcp nếu bạn muốn đảm bảo toàn vẹn dữ liệu, Udp dành cho thể loại yêu cầu tốc độ cập nhật. Ngoài ra các game mới còn sử dụng Http (tôi cũng k hiểu lý do lắm).
 
-Tiếp, đến tiết mục nghiền ngẫm dòng chảy dữ liệu, ở đây tôi có chút kinh nghiệm với Wireshark, thứ công cụ cực kỳ mạnh mẽ. Tuy nhiên tôi muốn nói với các bạn, đây là giai đoạn khó khăn, thử thách nhất đối với quá trình tạo ra bot/hack game.
+Tiếp, đến tiết mục nghiền ngẫm dòng chảy dữ liệu, tôi có chút kinh nghiệm với Wireshark, thứ công cụ cực kỳ mạnh mẽ.
 
-Okay, sau cài đặt Nox và Wireshark xong xuối, mở game lên bằng Nox, sau đó ngay lập tức bật chế độ tracking netwwork của Wireshark. Tiếp đó quay lại Nox, login vào game, chờ màn hình loading chạy hết thì tắt chế độ tracking của Wireshark. Đây là kỹ năng tôi học được từ thời còn là sinh viên :v
+Okay, sau cài đặt Nox và Wireshark xong xuôi, mở game lên bằng Nox, sau đó ngay lập tức bật chế độ tracking netwwork của Wireshark. Tiếp đó quay lại Nox, login vào game, chờ màn hình loading chạy hết thì tắt chế độ tracking của Wireshark. Đây là kỹ năng tôi học được từ thời còn là sinh viên :v
 
 Wireshark sẽ hiển thị như ảnh:
 
@@ -60,7 +60,7 @@ Tiếp tục view chi tiết 2 cái request trên: Checkuser (19) và GetUser (3
 
 Ahha, tôi tập trung vào cái request 19 hơn, vì nó chứa thông tin đăng nhập mà tôi vừa gửi :). Chưa vội làm gì, tôi copy request-response và lưu lại vào 1 file text, tiếp tục xem wireshark.
 
-Tôi tiếp tục để ý tới cái POST request 55, host lại rất rất quen thuộc :) 
+Tôi tiếp tục để ý tới cái POST request 55, host lại rất rất quen thuộc, lần này là sub-domain khác.
 
 ![Wireshark capture](/assets/images/aspect-of-programming/wireshark2.png)
 
