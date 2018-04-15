@@ -7,7 +7,7 @@ keywords: "haskell, pure, functional, hijack, game, server"
 ---
 
 
-# Lược sử trình độ
+# Nhập đề
 
 Thế hệ 8x, các bạn chắc không quên cơn bão Game Online 2004-2005-2006 nhỉ, cái thời ADSL mới được nhân rộng, năm đó tôi học lớp 10.
 Tôi cũng là một con thiêu thân lao vào thời gian đó. Bắt đầu bằng MU Hanoi, thời đó tạo nhân vật hết 15p, vào game hết 10p và mở rương đồ hết 15p. Da fuck, nếu là các bạn trẻ bây giờ, có khi đã đập bể vài bộ chuột phím rồi ấy :). Phải công nhận Game Online thời đó như là ma thuật, khiến ngta nhìn vào màn hình quên ăn quên ngủ, kiên nhẫn chỉ để thấy nhân vật mình đi lại và chém vài nhát.

@@ -41,7 +41,7 @@ Series dự tính:
 
 Chapter 2: Raise of the North's Force - Thế lực phương Bắc
 
-Chapter 3: Tracing & Investigating - Thám tử tập sự
+Chapter 3: Trace & Investigate - Thám tử tập sự
 
 Chapter 4: The first proof - Bằng chứng đầu tiên
 
