@@ -39,15 +39,15 @@ Series dự tính:
 
 [Chapter 1: The Origin of Crime - Khơi nguồn tội ác](https://thanhdo89se.github.io/2018/chapter01-the-origin-of-crime/)
 
-Chapter 2: Raise of the North's Force - Thế lực phương Bắc
+[Chapter 2: Raise of the North Force - Thế lực phương Bắc](https://thanhdo89se.github.io/2018/chapter02-raise-of-the-north-force/)
 
-Chapter 3: Trace & Investigate - Thám tử tập sự
+[Chapter 3: Chasing the Shark - Thám tử Cá Mập](https://thanhdo89se.github.io/2018/chapter03-reveal-the-mysteries/)
 
 Chapter 4: The first proof - Bằng chứng đầu tiên
 
 Chapter 5: The art of stealing - Nghệ thuật kiếm chác
 
-Chapter 6: Raise of the South's Force - Thế lực miền Nam
+Chapter 6: Raise of the South Force - Thế lực miền Nam
 
 Chapter 7: Expansion of the core - Phiên bản mở rộng
 

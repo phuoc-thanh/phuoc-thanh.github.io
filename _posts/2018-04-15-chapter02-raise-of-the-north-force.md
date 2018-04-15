@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 02: Raise of the North's Force"
+title: "Chapter 02: Raise of the North Force"
 comments: true
 description: "Nghệ thuật hắc ám - Phần 02: Thế lực phương Bắc"
 keywords: "haskell, pure, functional, hijack, game, server"
@@ -26,7 +26,7 @@ Thêm một điểm cần lưu ý nữa là phải có tay để chơi những a
 
 **Vấn đề thứ ba**
 
-Là chọn kèo. Hehe, nếu hắn muốn bán xu, phải chọn kèo thật chắc ăn, nếu kết quả ngược lại, thì acc cùi Vip3 sẽ ăn xu acc chính. Thế nên hắn có 2 con đường, nương nhờ kèo người khác và phó mặc số phận, hai là phải nuôi acc/ mua acc khủng thường xuyên vào liên chiến để có thể sắp xếp tỉ số - bán độ. Vậy nhưng cần bao nhiêu acc cho đủ? vấn đề khá nan giải.
+Là chọn kèo. Hehe, nếu hắn muốn bán xu, phải chọn kèo thật chắc ăn, nếu kết quả ngược lại, thì acc cùi Vip3 sẽ ăn xu acc chính. Thế nên hắn có 2 con đường, nương nhờ kèo người khác và phó mặc số phận, hai là phải nuôi acc/ mua acc khủng thường xuyên vào liên chiến để có thể dàn xếp tỉ số - bán độ. Vậy nhưng cần bao nhiêu acc cho đủ? vấn đề khá nan giải.
 
 **Kết quả**
 
@@ -34,11 +34,11 @@ Quả thật khó. Nhưng hắn có thể từ chối bớt kèo, thu nhập ít
 
 ---
 
-# Lần trờ lại thứ 2
+# Lần trở lại thứ nhất
 
 Tôi nghỉ một thời gian khoảng 6 tháng, quay trở lại vào khoảng tháng 10-2016 (ko chính xác lắm, nhớ vậy thôi). Lần này tôi đầu tư đánh Sơ Cấp, vì ít tốn kém nhất.
 
-Qua vài kỳ liên chiến, tôi nhận thấy một nhân vật tên là "ngocpck", hắn rất mạnh ở Sơ cấp. Ngocpck ở sv66, sv cũ của tôi, sơ qua lúc còn chung server 66 thì tôi out lúc đang top2-3 gì đó. Thời gian đó ngocpck cùng sv nên tôi rõ hắn là tay biết chơi, kì cựu, biết ép server dưới 59 để đánh, biết đi boss, biết bật top tiêu v.v... 
+Qua vài kỳ liên chiến, tôi nhận thấy một nhân vật tên là "ngocpck", hắn rất mạnh ở Sơ cấp. Ngocpck ở sv66, sv cũ của tôi, sơ qua lúc còn chung server 66 thì tôi out lúc đang top2-3 gì đó. Thời gian đó ngocpck cùng sv nên tôi rõ hắn là tay biết chơi, kì cựu, biết ép level dưới 59 để đánh, biết đi boss, biết bật top tiêu v.v... 
 
 Phong thanh trên group thì té ra ngocpck chính là một vị vua không ngai, hắn chỉ chịu nhượng bộ những anh vip quá cao (vip13 trở lên), xu của hắn ko biết bao nhiêu nhưng vung tay cực kì bạo, ăn top liên tục để liên chiến. Ngoài ra hắn còn là đầu nậu bán xu. Giá rẻ 1/2 so với ku Chinh, tức là 1m = 20 vạn, 500k = 10 vạn (100.000 Xu). Và không bán lẻ tẻ.
 
@@ -88,4 +88,4 @@ Tôi lờ mờ nhận ra vài thứ và quyết định Quit.
 
 ![Bạc đầy kho](/assets/images/aspect-of-programming/silver_money.png)
 
-Đây là hình ảnh bạc tràn kho -))
+Đây là hình ảnh bạc tràn kho.
