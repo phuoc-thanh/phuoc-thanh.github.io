@@ -15,7 +15,7 @@ Có một câu nói mà tôi tâm đắc từ thời còn là sinh viên:
 
 Có thể trong cuộc đời code dạo, chúng ta có rất nhiều đêm mất ngủ, nhưng hàng tháng mất ngủ thì phải nói sao nhỉ? Đâu có mấy :)
 
-Tôi chưa từng nghĩ mình sẽ làm được gì có ích, xài được bằng Haskell, với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn học. Nhưng cuối cùng ứng dụng đầu tiên của Haskell mà tôi làm được lại hơi mờ ám, tà đạo một chút xíu. Quyết định viết series này, nghĩ mình hơi khùng, nh cá tính tôi ít khi thay đổi quyết định.
+Tôi chưa từng nghĩ mình sẽ làm được gì có ích, xài được bằng Haskell. Với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn học. Nhưng cuối cùng ứng dụng đầu tiên của Haskell mà tôi làm được lại hơi mờ ám, tà đạo một chút xíu. Quyết định viết series này, nghĩ mình hơi khùng, nh cá tính tôi ít khi thay đổi quyết định.
 
 Có thể nói chủ đề của series, vấn đề mà tôi giải quyết, có thể quá bé, quá ít để viết ra.
 
@@ -33,13 +33,13 @@ Tại sao hắc ám? Vì nói cho cùng, nó là khai thác lỗ hổng của m�
 
 # This is long!
 
-Đây sẽ là 1 series khá dài, bao gồm nhiều phần, và có cả source code. hãy sẵn sàng.
+Đây sẽ là series khá dài, bao gồm nhiều phần, và có cả source code. hãy sẵn sàng.
 
 Series dự tính:
 
-Chapter 1: The origin of crime - Khơi nguồn tội ác
+Chapter 1: The Origin of Crime - Khơi nguồn tội ác
 
-Chapter 2: Raw analytics - Những phân tích đầu tiên
+Chapter 2: Raise of the North's force - Thế lực miền Bắc
 
 Chapter 3: Tracing & Investigating - Thám tử tập sự
 
@@ -47,7 +47,7 @@ Chapter 4: The first proof - Bằng chứng đầu tiên
 
 Chapter 5: The art of stealing - Nghệ thuật kiếm chác
 
-Chapter 6: Raise of the South's Gang - Băng đản miền Nam
+Chapter 6: Raise of the South's force - Thế lực miền Nam
 
 Chapter 7: Expansion of the core - Phiên bản mở rộng
 
@@ -61,9 +61,9 @@ Chapter 11: Má ơi dài quá T.T
 
 ---
 
-# This is not "extra-ordinary" things
+# This is not "extra-ordinary" things!
 
-Phần code trong series này được viết từ Haskell.
+Phần code trong series này được viết bằng Haskell.
 
 Nói thế thôi các bạn đừng sợ, Haskell rất đẹp, Haskell không khó như bạn nghĩ.
 
