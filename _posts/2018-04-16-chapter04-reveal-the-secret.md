@@ -6,7 +6,7 @@ description: "Nghệ thuật hắc ám - Phần 04: Giải mã bí mật"
 keywords: "haskell, pure, functional, hijack, game, server, wireshark, tcp, packet, filter, network, injector"
 ---
 
-# Những dòng code đầu tiên
+# Đánh phá Http Server
 
 Trong phần trước tôi có nói rằng tôi có chút kinh nghiệm với Network, ah ha, nhưng chỉ với Java thôi, còn với Haskell, lúc này tôi hoàn toàn ko biết một chút gì về Haskell Networking.
 
@@ -168,7 +168,7 @@ Mặt khác, dữ liệu được encode ở dạng Base16 String, nó sẽ hi�
 
 ---
 
-# Minh chứng đầu tiên
+# Mạo danh Tcp Client
 
 Sau khi tôi giải mã và viết xong được module tạo Tcp Packet, cái cần thiết bây giờ là 1 Tcp Injector để tiêm những gói này vào Game Server.
 
@@ -215,7 +215,7 @@ Và Module `Authenticator.hs`, nơi tôi giả lập lại những Packet login 
 
 ---
 
-# Một bước tiến dài
+# Vén màn bí mật
 
 Khi tôi dùng Injector login vào được game và đá acc của tôi ra trên điện thoại, tôi có cảm giác như đã chiến thắng chính bản thân mình.
 
