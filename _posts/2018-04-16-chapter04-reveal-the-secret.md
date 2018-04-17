@@ -145,9 +145,9 @@ Tất nhiên, để test thì tôi vẫn phải copy phần loginData mà Wiresh
 
 ---
 
-# Phân tích từng Byte dữ liệu
+# Giải mã dữ liệu
 
-Đối với Tcp data, những ltv tạo ra game sẽ phải serialize/deserialize data sao cho dữ liệu gửi đi thật tiết kiệm, thật nhỏ nhưng phải đảm bảo toàn vẹn. Có thể bạn ko biết, những mỗi giây, TCP Server sẽ xử lý rất nhiều request, con số có thể lên đến hàng trăm, hàng ngàn, và thậm chí nhiều hơn thế. Đây là tôi đang nói trong phạm vi 1 Game Server.
+Đối với Tcp data, những ltv tạo ra game sẽ phải serialize/deserialize data sao cho dữ liệu gửi đi thật tiết kiệm, thật nhỏ nhưng phải đảm bảo toàn vẹn. Có thể bạn ko biết, những mỗi giây, TCP Server xử lý rất nhiều request, con số có thể lên đến hàng trăm, hàng ngàn, và thậm chí nhiều hơn thế. Đây là tôi đang nói trong phạm vi 1 Game Server.
 
 Mỗi data packet gửi đi/về tôi thu được trong Wireshark, tôi đều mày mò so sánh, giải mã. Chiến dịch giải mã từng byte trong gói data giao tiếp giữa Client-Server đã tiêu tốn của tôi rất nhiều đêm mất ngủ.
 
@@ -221,22 +221,27 @@ Cắt, dán đúng những bytes chứa CharacterID, sau đó deserialize:
 getChNumber :: ByteString -> Integer
 getChNumber = hexDeserialize . C.take 8 . C.drop 14
 ```
+
 ---
 
-# Tích hợp mọi thứ
+# Viên gạch đầu tiên
 
-Sau khi xây dựng đủ các module cần thiết, chuyện tích hợp khác đơn giản, lúc này tôi có:
+Sau khi xây dựng đủ các module cần thiết, chuyện tích hợp khá đơn giản, lúc này tôi có:
 
 ***HttpRq.hs:*** có nhiệm vụ fake Http request để gửi tới Http Server.
 
 ***Injector.hs:*** có nhiệm vụ fake Tcp request để gửi tới Tcp Server.
 
-***Serializer.hs:*** Encode/decode byte data.
-
 ***Authenticator.hs:*** Nhận thông tin từ HttpRq và build Player data, build login packet cho Injector.
+
+***Serializer.hs:*** Encode/decode byte data.
 
 ***Parser.hs*** Data model cho Player, Server, bao gồm cả lưu/đọc file json.
 
 ***Player.json:*** Nơi lưu trữ thông tin player, có thể xem như một database.
 
+Nhiệm vụ đầu tiên ngốn của tôi khoảng 6 ngày code, mỗi ngày 2-4 tiếng. Và như tôi có nói ban đầu, những dòng code đầu tiên ko được hoàn chỉnh như trong bài đâu nhé, đó là cả một quá trình refactor :)
 
+Trải nghiệm này giúp tôi làm quen với các thư viện như Network, Aeson, Base16 ByteString, Http Simple...
+
+At that time: 15 Aug, 2017
