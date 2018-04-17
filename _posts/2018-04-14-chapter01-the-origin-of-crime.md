@@ -3,28 +3,27 @@ layout: post
 title: "Chapter 01: The Origin of Crime"
 comments: true
 description: "Nghệ thuật hắc ám - Phần 01: Khơi nguồn tội ác"
-keywords: "haskell, pure, functional, hijack, game, server"
+keywords: "haskell, pure, functional, hijack, game, server, programming"
 ---
 
 
-# Nhập đề
+# Quá khứ bỏ quên
 
-Thế hệ 8x, các bạn chắc không quên cơn bão Game Online 2004-2005-2006 nhỉ, cái thời ADSL mới được nhân rộng, năm đó tôi học lớp 10.
-Tôi cũng là một con thiêu thân lao vào thời gian đó. Bắt đầu bằng MU Hanoi, thời đó tạo nhân vật hết 15p, vào game hết 10p và mở rương đồ hết 15p. Da fuck, nếu là các bạn trẻ bây giờ, có khi đã đập bể vài bộ chuột phím rồi ấy :). Phải công nhận Game Online thời đó như là ma thuật, khiến ngta nhìn vào màn hình quên ăn quên ngủ, kiên nhẫn chỉ để thấy nhân vật mình đi lại và chém vài nhát.
+Thế hệ 8x, các bạn chắc không quên cơn bão Game Online 2004-2005-2006 nhỉ, cái thời ADSL mới được nhân rộng, tôi cũng là một con thiêu thân lao vào thử lửa. 2004, năm đó tôi học lớp 10, bắt đầu bằng MU Hanoi. Internet thời MU Hanoi tạo nhân vật hết 15p, vào game hết 10p và mở rương đồ hết 15p. Fuck, nếu là các bạn trẻ bây giờ, có khi đã đập bể vài bộ chuột phím rồi ấy :). Phải công nhận Game Online thời đó như là ma thuật, khiến ngta nhìn vào màn hình quên ăn quên ngủ, kiên nhẫn chỉ để thấy nhân vật mình đi lại và chém vài nhát.
 
 Sau đó là Gunbound, Line Age 2, Dota... và tôi thi vào ngành CNTT, tôi nghĩ sau này mình sẽ sản xuất game.
 
 Vâng tôi biết chắc rất rất nhiều anh/chị/em dev hiện tại, lao đầu vào ngành CNTT chỉ vì thích máy tính, thích chơi game.
 
-Tôi vẫn chơi game, cho tới lúc ra trường và ko theo đuổi lập trình game, mà làm thiên về Web Server (Java).
+Tôi vẫn chơi game, cho tới lúc ra trường... dòng đời đẩy đưa, tôi làm Web Server (Java), bỏ quên lý tưởng Sx Game năm nào...
 
-Nhờ những tiếp xúc rất sớm với game online và được học cơ bản về lập trình, tôi có chút hiểu biết về mô hình game online, cũng có thể gọi là client-server
+Nhờ những tiếp xúc rất sớm với Game Online và được học cơ bản về lập trình, tôi có chút hiểu biết về mô hình Game Online, cũng có thể gọi là Client-Server
 
-Tháng 12-2015, lần đầu tiên tôi chơi 1 Game Online dành cho Mobile - tạm gọi là Game X, lúc đó game mới mở được hơn 1 tháng, tôi vào server 21.
+Tháng 12-2015, lần đầu tiên tôi chơi 1 Game Online dành cho Mobile - gọi là Game X đi, lúc đó game mới mở được hơn 1 tháng, tôi vào server 21.
 
-Khoảng tháng 4-2016, Game X mở tính năng đấu trường liên server, tạm gọi là Đấu Trường Thú - gọi tên theo đam mê 1 thời của tôi Bloody Roar hehe -)).
+Khoảng tháng 4-2016, Game X mở tính năng liên chiến xuyên Server, tạm gọi là Đấu Trường Thú - gọi tên theo đam mê 1 thời của tôi Bloody Roar hehe -)).
 
-Đấu Trường Thú mở được 1 tháng tôi nghỉ game, vì đánh nhau ko lại các anh đại gia top server. Hihi. Đây là trải nghiệm tiền đè chết người đầu tiên mà tôi gặp. Các game trước t chơi 1 là RPG cày cuốc, 2 là thể loại đối kháng yêu cầu kỹ năng như DoTA.
+Đấu Trường Thú mở được 1 tháng tôi nghỉ game, vì đánh nhau ko lại các anh đại gia top server. Hihi. Đây là trải nghiệm tiền đè chết người đầu tiên mà tôi gặp. Các game trước tôi chơi 1 là RPG cày cuốc, 2 là thể loại đối kháng yêu cầu kỹ năng như DoTA.
 
 ---
 
@@ -36,10 +35,10 @@ Game X mà tôi kể trên, là dạng Turn-based Strategy. Mỗi trận đánh 
 
 Cơ bản như hình trên thì 1 đội có 1 nhân vật chính và 4 tướng có thể đi kèm theo, trong ảnh là Tống Thanh Thư và Tiểu Long Nữ.
 
-Tiền tệ trong game là Xu và Bạc, Bạc thì dễ kiếm bằng các hoạt động trong game, nhưng lại ko có giá trị mấy. Xu là tiền tệ chính để giúp nhân vật mạnh hơn.
+Tiền tệ trong game là Xu và Bạc, Bạc thì dễ kiếm bằng các hoạt động trong game, nhưng lại ko có giá trị mấy. Xu là tiền tệ chính để sắm đồ giúp nhân vật mạnh hơn.
 Xu cũng có thể kiếm nhưng lại quá ít, mỗi ngày siêng năng cày cũng đc 200-400 Xu mà thôi. Xu cũng chính là công cụ để nhà phát hành (NPH) hút máu game thủ.
 
-Nạp 100.000 VND thì được 1000 Xu, nạp 1tr được 10k xu kèm khuyến mãi linh tinh thì coi như 1 củ khoai lang = 20k xu đi.
+Giá nạp của Game X: 100.000 VND = 1000 Xu, nạp 1tr được 10k xu kèm khuyến mãi linh tinh thì coi như 1 củ khoai lang = 20k xu đi.
 
 Vip15 (cao nhất) là phải nạp 100 củ khoai lang. Tính tới thời điểm tôi nghỉ game thì đã có khoảng 10-15 anh tài Vip15, chưa kể Vip14 (nạp 50 chai) rất đông. Thời điểm game tàn (cuối 2017) vẫn có 1 vị đại hiệp quăng vào 80 chai để bá chủ Đấu Trường Thú.
 
@@ -47,9 +46,9 @@ Vip15 (cao nhất) là phải nạp 100 củ khoai lang. Tính tới thời đi�
 
 # Đấu Trường Thú
 
-Nếu các bạn chơi game mobile nhiều thì sẽ nhận thất đa số game thẻ bài dạng này thường mở rất nhiều server, liên tục cỡ 1 tuần 2,3 cái - chủ yếu để hút máu cho mạnh hơn -)).
+Nếu các bạn chơi game mobile nhiều thì sẽ nhận thất đa số game thẻ bài dạng này thường mở rất nhiều server, liên tục cỡ 1 tuần 2,3 cái - chủ yếu để hút máu mạnh hơn -)).
 
-Vậy nên server mới sẽ là nơi thi đua nạp tiền, nhưng như vậy chưa đủ, cần tạo ra tranh đua hơn nữa để hút mạnh hơn nữa. Thể là 2 tính năng mới ra đời: Gộp Server cũ và Mở liên chiến (Đấu trường Thú).
+Vậy nên server mới sẽ là nơi thi đua nạp tiền, nhưng như vậy chưa đủ, cần tạo ra tranh đua hơn nữa để hút cả ở những server cũ. Thể là 2 tính năng mới ra đời: Gộp Server cũ và Mở liên chiến (Đấu trường Thú).
 
 Đấu trường này như Champion League vậy, nhưng có 3 cấp độ: Sơ cấp (cấp nhân vật 59 trở xuống), Trung cấp (lvl 60-89) và Cao cấp (lvl 90 trở lên)
 
@@ -76,9 +75,9 @@ Cũng với thể thức như vòng loại trực tiếp, bán kết diễn ra v
 
 Nếu chỉ là đánh nhau để xác định ngôi vương của toàn bộ server, thì có thể nói đại hiệp nào hào phóng hơn đương nhiên là người chiến thắng. Cuộc chơi trở thành nơi so tài của Vip14-15. Nhưng không, Đấu trường thú có một tính năng đặc biệt thú vị, gọi là "Đặt cược" (a.k.a betting haha)
 
-Trước khi mỗi trận đấu ở Vòng loại trực tiếp/ Vòng chung kết diễn ra, người chơi có thể cược đấu thủ chiến thắng. Bên thắng ăn hết Xu cược của bên thua.
+Trước khi mỗi trận đấu ở Vòng loại trực tiếp/Vòng chung kết diễn ra, người chơi có thể cược đấu thủ chiến thắng. Bên thắng ăn hết Xu cược của bên thua.
 
-Ví dụ, trong trận đấu của Lão Hạc - sv6 vs 98 Giới - sv10 (2 đại ca vip15 mạnh nhất các kì liên chiến thời đó). Tôi đặt 2k Xu cho Lão Hạc, bên 98 Giới có 2 đại ca khác đặt cược 2k mỗi người, tổng là 4k cho 98.
+Ví dụ, trong trận đấu của Lão Hạc vs 98 Giới (2 đại hiệp vip15 mạnh nhất thời đó). Tôi đặt 2k Xu cho Lão Hạc, bên 98 Giới có 2 đại ca khác đặt cược 2k mỗi người, tổng là 4k cho 98.
 
 Nếu Lão Hạc win, tôi ăn toàn bộ 6k (2k cược và 4k thắng). Nếu 98 win, 2 đại ca kia mỗi người ăn 3k (2k cược và 1k được chia theo % từ tiền ăn được, ở đây là 50-50 vì mỗi người đều đặt 2k).
 
@@ -94,7 +93,7 @@ Các bạn thấy đó, ở trên đầu mỗi đấu thủ chính là số xu c
 
 # Manh múng lập cơ đồ
 
-Khi tính năng liên chiến trôi qua được 2 kì, đã có 1 vị thiếu hiệp nổi lên, hắn đăng trên group (group fb, do NPH tạo để game thủ đàm đạo) là bán xu, rẻ hơn nạp. 100k được 10k xu -  như vậy tương đương nạp 1 triệu (1 triệu nạp vào game được 10k xu + quà khuyến mãi).
+Khi tính năng liên chiến trôi qua được 2 kì, đã có 1 vị thiếu hiệp nổi lên, hắn đăng trên group (group fb, do NPH tạo để game thủ đàm đạo) là bán xu, rẻ hơn nạp. 100k = 10k xu, như vậy tương đương nạp 1 triệu (1 triệu nạp vào game được 10k xu + quà khuyến mãi).
 
 Chà chà, tay trẻ tuổi này tôi quen, hắn tiết lộ:
 

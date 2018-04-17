@@ -8,9 +8,9 @@ keywords: "haskell, pure, functional, hijack, game, server, wireshark, tcp, pack
 
 # Những suy đoán ban đầu
 
-Sau khi rage quit tập 2, tôi lúc đã đã rất quyết tâm nghỉ game. Nhưng trước khi nghỉ, tôi đã mường tượng được việc mà đại ca minhchau bug.
+Sau khi rage quit tập 2, tôi đã rất quyết tâm nghỉ game. Nhưng trước khi nghỉ, tôi đã mường tượng được việc mà đại ca minhchau bug.
 
-Đặt cược nhiều hơn 2000 Xu, theo tôi đoán, là do team dev chỉ kiểm tra số xu cược 1 lần duy nhất bằng client (tức là bằng cái app game được cài trên máy) và không kiểm tra lại lúc nhận thông tin ở Server. Ở đây các bạn cần hiểu là Game Online lúc nào cũng bao gồm 2 phần: Client - Server, nếu tập trung mọi xử lý ở Server thì sẽ làm cho server chịu tải lớn, cả về Sức mạnh xử lý, lẫn băng thông. Ngược lại nếu phân tán xử lý ra cho client thì rất dễ bị cheat.
+Đặt cược nhiều hơn 2000 Xu, theo tôi đoán, là do team dev chỉ kiểm tra số xu cược 1 lần duy nhất bằng Client (tức là bằng cái app game được cài trên máy) và không kiểm tra lại lúc nhận thông tin ở Server. Ở đây các bạn cần hiểu là Game Online lúc nào cũng bao gồm 2 phần: Client - Server, nếu tập trung mọi xử lý ở Server thì sẽ làm cho server chịu tải lớn, cả về Sức mạnh xử lý lẫn băng thông. Ngược lại nếu phân tán xử lý ra cho Client thì rất dễ bị cheat.
 
 Tiếp tục, như vậy tôi đoán tiếp cách để tận dụng bug này, có 2 hướng như sau.
 
@@ -18,7 +18,7 @@ Tiếp tục, như vậy tôi đoán tiếp cách để tận dụng bug này, c
 
 * Dùng tool của bên thứ ba (ko phải là client), giả danh Client và cược số xu lớn hơn 2000.
 
-Tôi thiên về giả thiết 2, vì như giang hồ đồn thì bọn hắn chạy rất nhiều clone, và cược xu hàng loạt có khi lên đến 500.000 Xu 1 trận. Nếu mod client, thì công sức để cài và để chạy đồng loạt đúng giờ quá lớn, vài người ko đảm đương nổi.
+Tôi thiên về giả thiết 2, vì như giang hồ đồn thì bọn hắn chạy rất nhiều clone, và cược xu hàng loạt có khi lên đến 500.000 Xu 1 trận. Nếu Mod Client, thì công sức để cài và để chạy đồng loạt đúng giờ quá lớn, vài người ko đảm đương nổi.
 
 ---
 
@@ -30,27 +30,27 @@ Thật ra ở giai đoạn 2 (lần quay trở lại đầu tiên) thì tôi đ�
 
 Tôi bắt đầu chơi ở server lậu, và tạo nhóm chat riêng với Hanso4, Rin và Cherry (thím này về sau là Mod của Game X :D)
 
-Lúc này là cuối tháng 06-2017. Rất may mắn, đây là thời gian vàng để tập tọe thứ gì đó. Tôi lúc đó mới làm đến Week 06 của khóa CIS-194 và đang hăng máu chuẩn bị đề tài cho Final Assignment. Nên tôi chọn luôn cái ý tưởng mơ hồ của mình để làm Final Assignment, tức là tôi sẽ dùng Haskell để hack Game X!
+Lúc này là cuối tháng 06-2017. Rất may mắn, đây là thời gian vàng để tập tọe thứ gì đó. Tôi lúc đó mới học đến Week 06 của khóa CIS-194 và đang hăng máu chuẩn bị đề tài cho Final Assignment. Nên tôi chọn luôn cái ý tưởng mơ hồ của mình để làm Final Assignment, tức là tôi sẽ dùng Haskell để cheat Game X!
 
-Dựa trên những suy đoán ban đầu, tôi đã chọn cách tiếp cận thứ 2. Tức là viết một tool giả danh Client thực hiện công việc tà đạo haha.
+Dựa trên những suy đoán ban đầu, tôi đã chọn cách tiếp cận thứ 2, viết một tool mạo danh Client thực hiện công việc tà đạo haha.
 
-Tôi có 2 lý do để chọn cách tiếp cận thứ 2: Một là tôi ko có kinh nghiệm modding app, Haskell sẽ ko áp dụng được vào phương án này, Java thì tôi đã chán ngấy và rất lâu ko đụng đến. Hai là viết 1 tool giả danh tuy tôi cũng ko có kinh nghiệm nốt nhưng tôi có 1 số kiến thức có thể áp dụng được (Client-Server model, Haskell network package, network tracking)
+Tôi có 2 lý do để chọn cách tiếp cận thứ 2: Một là tôi ko có kinh nghiệm modding app, Haskell sẽ ko áp dụng được vào phương án này, Java thì tôi đã chán ngấy và rất lâu ko đụng đến. Hai là viết 1 tool giả danh tuy tôi cũng ko có kinh nghiệm nốt nhưng tôi có 1 số kiến thức có thể áp dụng được (Client-Server model, Haskell, network package, network tracking)
 
 ---
 
 # Let the hack begin !!!!
 
-Trước hết, tôi tìm hiểu sơ qua về cách hoạt động của Game Server, mất 1-2 ngày. Cơ bản mô hình Game Server cũ sẽ dùng giao thức Tcp hoặc Udp để làm kênh giao tiếp giữa Client và Server. Tùy theo thể loại game mà sẽ chọn giao thức phù hợp, Tcp nếu bạn muốn đảm bảo toàn vẹn dữ liệu, Udp dành cho thể loại yêu cầu tốc độ cập nhật. Ngoài ra các game mới còn sử dụng Http (tôi cũng k hiểu lý do lắm).
+Trước hết, tôi tìm hiểu sơ qua về cách hoạt động của Game Server, mất 1-2 ngày. Cơ bản mô hình Game Server cũ sẽ dùng giao thức Tcp hoặc Udp để làm kênh giao tiếp giữa Client và Server. Tùy theo thể loại game mà chọn giao thức phù hợp, Tcp nếu bạn muốn đảm bảo toàn vẹn dữ liệu, Udp dành cho thể loại yêu cầu tốc độ cập nhật. Ngoài ra các game mới còn sử dụng Http (tôi cũng k hiểu lý do lắm).
 
-Tiếp, đến tiết mục nghiền ngẫm dòng chảy dữ liệu, tôi có chút kinh nghiệm với Wireshark, thứ công cụ cực kỳ mạnh mẽ.
+Tiếp, đến tiết mục nghiền ngẫm dòng chảy dữ liệu, tôi có chút kinh nghiệm với Wireshark - thứ công cụ cực kỳ mạnh mẽ.
 
-Okay, sau cài đặt Nox và Wireshark xong xuôi, mở game lên bằng Nox, sau đó ngay lập tức bật chế độ tracking netwwork của Wireshark. Tiếp đó quay lại Nox, login vào game, chờ màn hình loading chạy hết thì tắt chế độ tracking của Wireshark. Đây là kỹ năng tôi học được từ thời còn là sinh viên :v
+Okay, cài đặt Nox và Wireshark xong xuôi, mở game lên bằng Nox, sau đó ngay lập tức bật chế độ tracking netwwork của Wireshark. Tiếp đó quay lại Nox, login vào game, chờ màn hình loading chạy hết thì tắt chế độ tracking của Wireshark. Đây là kỹ năng tôi học được từ thời còn là sinh viên :v
 
 Wireshark sẽ hiển thị như ảnh:
 
 ![Wireshark capture](/assets/images/aspect-of-programming/wireshark.png)
 
-Tôi chú ý đến cái request 19 và 31, đây là 2 dòng POST request, được gửi đến 1 domain rất quen thuộc với tôi lúc đó "Gaba", hehe Gaba là platform để login và nạp tiền của Game X. Tất nhiên tôi phải căng mắt sàng lọc cả tiếng mới tìm được, chứ ko thần thánh gì :). 
+Tôi chú ý đến 2 packet là 19 và 31, đây là 2 dòng POST request, được gửi đến 1 domain rất quen thuộc "Gaba", hehe Gaba là platform để login và nạp tiền của Game X. Tất nhiên tôi phải căng mắt sàng lọc cả tiếng mới tìm được, chứ ko thần thánh gì :). 
 
 Tiếp tục view chi tiết 2 cái request trên: Checkuser (19) và GetUser (31), nội dung POST của nó lần lượt là:
 
@@ -58,13 +58,13 @@ Tiếp tục view chi tiết 2 cái request trên: Checkuser (19) và GetUser (3
 
 > session=faa6f650-b966-4eb6-b1f4-9fe9028e8d16&serverMode=UNKNOWN&hash=f0ed1769de065b7ee318b647c92ed6a6&time=1523809261967
 
-Ahha, tôi tập trung vào cái request 19 hơn, vì nó chứa thông tin đăng nhập mà tôi vừa gửi :). Chưa vội làm gì, tôi copy request-response và lưu lại vào 1 file text, tiếp tục xem wireshark.
+Ahha, tôi tập trung vào cái packet 19 hơn, vì nó chứa thông tin đăng nhập mà tôi vừa gửi :). Chưa vội làm gì, tôi copy request-response và lưu lại vào 1 file text, tiếp tục xem Wireshark.
 
-Tôi tiếp tục để ý tới cái POST request 55, host lại rất rất quen thuộc, lần này là sub-domain khác.
+Tôi tiếp tục để ý tới cái POST request 55, host lại rất rất quen thuộc, lần này là sub-domain khác (api.kd).
 
 ![Wireshark capture](/assets/images/aspect-of-programming/wireshark2.png)
 
-View chi tiết (follow TCP thì wireshark sẽ hiện response đã được decode)
+View chi tiết (follow TCP thì Wireshark sẽ hiện response đã được decode)
 
 ![Wireshark capture](/assets/images/aspect-of-programming/wireshark3.png)
 
@@ -84,9 +84,9 @@ Quay lại với wireshark, tôi filter packets theo ip 123.31.25.75. IP này t�
 
 # Kết luận đầu tiên
 
-Dựa vào những gì thu được từ wireshark, tôi đưa ra kết luận của mình, tất nhiên chưa được kiểm chứng.
+Dựa vào những gì thu được từ Wireshark, tôi đưa ra kết luận của mình, tất nhiên chưa được kiểm chứng.
 
-* Có 1 Server HTTP để chứng thực đăng nhập, sau đó trả về 1 số ttin cần thiết như session, token, time , server info, bla bla...
+* Có 1 Server HTTP để chứng thực đăng nhập, sau đó trả về 1 số thông tin cần thiết như session, token, time , server info, bla bla...
 
 * Sau đó Client sẽ dùng thông tin ở HTTP response trên để kết nối với Game Server qua giao thức TCP.
 

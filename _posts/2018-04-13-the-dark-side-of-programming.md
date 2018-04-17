@@ -13,19 +13,30 @@ Có một câu nói mà tôi tâm đắc từ thời còn là sinh viên:
 
 > Bạn chưa mất ngủ vì công việc tức là bạn chưa làm việc
 
-Có thể trong cuộc đời code dạo, chúng ta có rất nhiều đêm mất ngủ, nhưng hàng tháng mất ngủ thì phải nói sao nhỉ? Đâu có mấy :)
+Có thể trong cuộc đời code dạo, chúng ta có rất nhiều đêm mất ngủ, chủ yếu là để đua deadline, hoàn thành tasks cho Client. Đó không phải là những đêm mất ngủ mà tôi nói đến, mà là loại khác, loại mất ngủ không phải vì công việc mà vì đam mê:
 
-Tôi chưa từng nghĩ mình sẽ làm được gì có ích, xài được bằng Haskell. Với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn học. Nhưng cuối cùng ứng dụng đầu tiên của Haskell mà tôi làm được lại hơi mờ ám, tà đạo một chút xíu. Quyết định viết series này, nghĩ mình hơi khùng, nh cá tính tôi ít khi thay đổi quyết định.
+* Trằn trọc suy nghĩ về ý tưởng, giải pháp, thậm chí còn mơ về nó.
 
-Có thể nói chủ đề của series, vấn đề mà tôi giải quyết, có thể quá bé, quá ít để viết ra.
+* Code xuyên màn đêm để giải quyết một bài toán khó (của riêng bạn).
 
-Có thể nói code mà tôi viết, chung qui là ko có gì đặc biệt, ai cũng làm được.
+* Debug điên cuồng đến nỗi quên rằng trời gần sáng, gà đang gáy.
 
-Có thể nói quá trình làm ra ứng dụng không có gì nổi trội, ko có bài học.
+* Tưởng tượng ra Thread, String, Memory, Package... ngay cả khi tắm, lái xe, ăn, ngủ (mơ).
 
-Uây, nhưng t ko quan tâm lắm, viết để ghi nhớ những lần chiến tranh bàn phím, những đêm bật dậy lúc 3h sáng để thực thi ý tưởng, những kinh nghiệm học được từ Haskell, hay đơn giản hơn: Viết để xả stress. Hihi.
 
-"Nghệ thuật hắc ám" nghe có vẻ hoành tráng, thật ra ko tới mức cao siêu trừu tượng gì cho lắm, chỉ đơn giản nhớ tới truyện Harry Potter thoi hehe.
+Thời gian tôi học Haskell, cũng là một khoảng thời gian mất ngủ như vậy...
+
+Với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn học, chưa từng nghĩ mình sẽ làm được gì có ích bằng Haskell. Nhưng cuối cùng tôi cũng hoàn thành được ứng dụng đầu tiên, tuy nó hơi mờ ám, tà đạo.
+
+* Có thể nói chủ đề của series, vấn đề mà tôi giải quyết: quá bé, quá ít để viết ra.
+
+* Có thể nói code mà tôi viết: chung qui là ko có gì đặc biệt, ai cũng làm được.
+
+* Có thể nói quá trình làm ra ứng dụng: không có gì nổi trội, ko có bài học đáng giá.
+
+Uây, nhưng t ko quan tâm lắm, viết để ghi nhớ những lần chiến tranh bàn phím, những đêm bật dậy lúc 3h sáng để code, những kinh nghiệm học được từ Haskell, hay đơn giản hơn: Viết để xả stress. Hihi.
+
+"Nghệ thuật hắc ám" nghe có vẻ hoành tráng, thật ra ko tới mức cao siêu trừu tượng gì cho lắm, chỉ là nhớ tới truyện Harry Potter thoi hehe.
 
 Tại sao hắc ám? Vì nói cho cùng, nó là khai thác lỗ hổng của một server và bug của ứng dụng.
 
@@ -45,7 +56,7 @@ Series dự tính:
 
 [Chapter 4: Reveal the Secret - Giải mã bí mật](https://thanhdo89se.github.io/2018/chapter04-reveal-the-secret/)
 
-[Chapter 5: The art of stealing - Nghệ thuật kiếm chác](https://thanhdo89se.github.io/2018/chapter05-the-art-of-stealing/)
+[Chapter 5: The Art of Stealing - Nghệ thuật kiếm chác](https://thanhdo89se.github.io/2018/chapter05-the-art-of-stealing/)
 
 Chapter 6: Raise of the South Force - Thế lực miền Nam
 
@@ -61,15 +72,17 @@ Chapter 11: Má ơi dài quá T.T
 
 ---
 
-# This is not "extra-ordinary" things!
+# This is not "extraordinary" things!
 
 Phần code trong series này được viết bằng Haskell.
 
-Nói thế thôi các bạn đừng sợ, Haskell rất đẹp, Haskell không khó như bạn nghĩ.
+Nói thế thôi các bạn đừng sợ, Haskell rất đẹp, Haskell không khó như bạn nghĩ đâu. Hãy đăng ký học và cảm nhận, tôi đảm bảo bạn sẽ được mở rộng tầm nhìn rất rất nhiều.
 
-Tôi sẽ cố gắng giải thích code mà tôi viết, anw thì các bạn đọc series này cũng cần một chút hiểu biết về lập trình.
+Tất nhiên, để hiện thực hóa được ý tưởng, cũng cần kỹ năng khác như phân tích vấn đề, truy tìm dấu vết, thiết kế cấu trúc, kiểm thử... Mấy cái này đi làm rồi cũng sẽ quen thôi :)
 
-Có thể đọc xong series các bạn sẽ muốn làm quen với Haskell, tôi cũng muốn nhắn nhủ rằng, hãy học đi, ko khó đâu, ko cao siêu gì đâu ^_*
+Có thể khi các bạn thấy code tôi post trong series khá hoàn chỉnh, nhưng đời ko như mơ. Đó là qua rất nhiều lần refactor, optimize, tuning performance, beautify... các kiểu mới có thể gọi là tạm OK như vậy.
+
+Mỗi ngày tôi code khoảng 2-4 tiếng thôi, nên tốc độ hoàn thành khá chậm. Thêm vào đó tôi có thói quen thường xuyên đọc và refactor code của chính mình, nên thành ra tôi code hoài, trung bình cỡ 20 hours/week.
 
 ---
 

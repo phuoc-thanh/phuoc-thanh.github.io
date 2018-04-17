@@ -144,7 +144,7 @@ https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
 
 * Elm, PureScript, Idris Compiler đều được viết bằng Haskell. Thậm chí homework của CS-194 còn bắt viết 1 cái Interpreter cơ mà ^_*
 
-* Facebook dùng Sigma để chống spam: https://code.facebook.com/posts/745068642270222/fighting-spam-with-haskell/
+* [Facebook dùng Sigma để chống spam](https://code.facebook.com/posts/745068642270222/fighting-spam-with-haskell/)
 
 * Cardano (ADA) được viết bằng Haskell
 
@@ -152,7 +152,7 @@ https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
 
 * Google đã sử dụng Haskell trong 1 số dự án nội bộ, bao gồm Ganeti Project
 
-* Intel đã phát triển một Haskell compiler trong nghiên cứu về multicore parallelism: http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf
+* [Intel đã phát triển một Haskell compiler trong nghiên cứu về multicore parallelism](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf)
 
 * Standard Chartered sử dụng Haskell cho các vấn đề về banking
 
