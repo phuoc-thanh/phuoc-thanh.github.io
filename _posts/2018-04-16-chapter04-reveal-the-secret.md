@@ -3,7 +3,7 @@ layout: post
 title: "Chapter 04: Reveal the Secret"
 comments: true
 description: "Nghệ thuật hắc ám - Phần 04: Giải mã bí mật"
-keywords: "haskell, pure, functional, hijack, game, server, wireshark, tcp, packet, filter, network, injector"
+keywords: "haskell, pure, functional, hijack, game, server, wireshark, tcp, packet, filter, network, injector, serialize"
 ---
 
 Trong phần trước tôi có nói rằng tôi có chút kinh nghiệm với Network, ah ha, nhưng chỉ với Java thôi, còn với Haskell, lúc này tôi hoàn toàn ko biết một chút gì về Haskell Networking.
@@ -96,11 +96,11 @@ Các thông tin cần thiết để thiết lập nên Player có thể get từ
 
 ---
 
-# Chướng ngại vật đầu tiên: giải mã dữ liệu TCP
+# Request đến Tcp Server
 
 Okay tôi đã gửi Http Request và nhận Response đúng như mong đợi. Công việc tiếp theo là Inject những gói data vào TCP Server, đây mới chính là Game Server của Game X.
 
-Ở đây phải nói thêm là sau vài ngày mày mò tìm hiểu, tôi phát hiện 1 lỗi rất lớn của Game X. Thông thường Tcp Request sẽ nhận các thông số từ Http Response như uid, key, default server, create time... rồi dùng những thông số này để tạo request gửi tới Tcp Server.
+Ở đây phải nói thêm là sau vài ngày mày mò tìm hiểu, tôi phát hiện 1 lỗi rất lớn của Game X. Thông thường Tcp Request sẽ nhận các thông số từ Http Response như uid, key, default_server, create_time... rồi dùng những thông số này để tạo request gửi tới Tcp Server.
 
 Lỗi ở chỗ, Tcp server không kiểm tra tính hợp lệ của những thông số này, tôi có thể gửi 1 Http request tới Http Server, nhận được key/time trả về trong Http Response. Sau đó tôi có thể dùng cặp thông tin key/time này để gửi đến TCP Server trong mọi hoàn cảnh sau đó. Nghĩa là bạn chỉ cần đăng nhập 1 lần duy nhất, sau đó có thể chơi game mà không cần log-in! Crazy?
 
@@ -108,73 +108,7 @@ Yes, chính xác là như vậy, Game X đã bỏ qua một lỗi sơ đẳng nh
 
 Lúc này, đa số thông tin lấy đc từ Http Response, đã đầy đủ. Tôi tiếp tục tìm hiểu tới Tcp Server.
 
-Đối với Tcp data, những ltv tạo ra game sẽ phải serialize/deserialize data sao cho dữ liệu gửi đi thật tiết kiệm, thật nhỏ nhưng phải đảm bảo toàn vẹn. Có thể bạn ko biết, những mỗi giây, TCP Server sẽ xử lý rất nhiều request, con số có thể lên đến hàng trăm, hàng ngàn, và thậm chí nhiều hơn thế. Đây là tôi đang nói trong phạm vi 1 Game Server.
-
----
-
-# Phân tích từng Byte dữ liệu
-
-Mỗi data packet gửi đi/về tôi thu được trong Wireshark, tôi đều mày mò so sánh, giải mã. Đây chính là giai đoạn khó khăn và thử thách nhất trong toàn bộ quá trình tôi hack game này.
-
-Chiến dịch giải mã từng byte trong gói data giao tiếp giữa Client-Server đã tiêu tốn của tôi rất nhiều đêm mất ngủ.
-
-Sau rất nhiều nỗ lực phân tích, tìm kiếm, kiểm thử. Tôi cuối cùng đã giải mã được cấu trúc dữ liệu giao tiếp giữa Client-Server của Game X. Các bạn hãy lưu ý rằng đây chính là bước quan trọng nhất và cũng là khó nhất của công việc hack game: Encode and Decode Packet Structure!
-
-Kết quả tôi đính kèm theo trong file `Serializer.hs` sau đây, tôi có note lại cấu trúc dữ liệu mà Game X đã sử dụng trong phần comment.
-
-```haskell
-
-module Serializer where
-
-import qualified Data.ByteString.Char8 as C
-import Data.ByteString.Base16
-import Data.List.Split
-import Numeric
-
-
--- Packet structure
--- packet info = 2 bytes (1 byte info + 1 flag byte) represents the length of packet
--- index info  = 2 bytes (1 index byte + 1 byte: ff) represents the index of this packet in the streams
--- data info   = 2 bytes (1 byte info + 1 flag byte) represents the length of data
--- data        = x bytes (x-1 byte data + 1 flag byte) contains the data
-
-decToHex :: (Show a, Integral a) => a -> C.ByteString
-decToHex c
-    | c < 16 = C.append "0" . C.pack $ showHex c ""
-    | otherwise = C.pack $ showHex c ""
-
-hexDeserialize :: C.ByteString -> Integer
-hexDeserialize "" = 0
-hexDeserialize b  = read . concat . ("0x":) . reverse . chunksOf 2 $ C.unpack b
-
-hexSerialize :: (Show a, Integral a) => a -> C.ByteString
-hexSerialize d = fst . decode $ C.append (decToHex (d + 4))
-                              $ C.append "0003ff"
-                              $ C.append (decToHex d) "00"
-
-hexLoginSerialize :: (Show a, Integral a) => a -> C.ByteString                           
-hexLoginSerialize d = fst . decode $ C.append (decToHex (d + 4))
-                                   $ C.append "0001ff"
-                                   $ C.append (decToHex d) "00"
-
-hexEnterSerialize :: (Show a, Integral a) => a -> C.ByteString                             
-hexEnterSerialize d = fst . decode $ C.append (decToHex (d + 4))
-                                   $ C.append "0002ff"
-```
-
-Ở đây tôi phải viết 3 functions serialize, vì các gói dữ liệu được đánh số thứ tự riêng rẽ, login có flag byte khác với enter, login và enter có flag byte khác với các gói dữ liệu thông thường khác... (0001ff, 0002ff, 0003ff)
-
-Mặt khác, dữ liệu được encode ở dạng Base16 String, nó sẽ hiển thị toàn số Hex, bạn cần dùng Wireshark để xem xét từng byte. Rất may mắn, Haskell có package ByteString.Base16 giúp tôi giải quyết chuyện này. Công việc của Serializer là từ những dữ liệu con người có thể đọc hiểu (String), build ra một gói Data phù hợp, có thể dùng để gửi tới Game Server (Hex bytes)
-
----
-
-# Mạo danh Tcp Client
-
-Sau khi tôi giải mã và viết xong được module tạo Tcp Packet, cái cần thiết bây giờ là 1 Tcp Injector để tiêm những gói này vào Game Server.
-
 Ban đầu tôi dùng Tcp Streams, thư viện tích hợp sẵn việc gửi nhận gói tcp và đưa dữ liệu vào Streams, nhưng sau đó tôi lại chuyển qua dùng gói Network cơ bản của Haskell để tự tạo nên Injector. Tính tôi thích mọi thứ thật đơn giản, chỉ những thứ thiết yếu :)
-
-Bấy giờ, mục tiêu của tôi chỉ là login vào được game. Nếu tôi đang mở Game X bằng điện thoại (or Nox), mà Injector đá được tôi ra khỏi game là đã thành công (Game X có cơ chế người login sau đá người login trước).
 
 Đây là module Injector, thuở sơ khai.
 
@@ -207,18 +141,102 @@ login u p = do res <- loginVerify u p
                                (amount res)
 ```
 
-Và Module `Authenticator.hs`, nơi tôi giả lập lại những Packet login vào game (Giả lại gói đăng nhập từ TCP packet tôi bắt đc ở phần trước)
-
-* getServerInfo là lấy ip và port từ server, các bạn có thể xem chi tiêt trong github.
-
-* loginData là User Data được function build ra tcp data từ những dữ liệu chứng thực, các bạn có thể xem chi tiết trên Gibhub
+Tất nhiên, để test thì tôi vẫn phải copy phần loginData mà Wireshark bắt được, inject vào đúng ip:port của server. Phần build data packet sẽ tiếp tục ngay sau đây. :))
 
 ---
 
-# Vén màn bí mật
+# Phân tích từng Byte dữ liệu
 
-Khi tôi dùng Injector login vào được game và đá acc của tôi ra trên điện thoại, tôi có cảm giác như đã chiến thắng chính bản thân mình.
+Đối với Tcp data, những ltv tạo ra game sẽ phải serialize/deserialize data sao cho dữ liệu gửi đi thật tiết kiệm, thật nhỏ nhưng phải đảm bảo toàn vẹn. Có thể bạn ko biết, những mỗi giây, TCP Server sẽ xử lý rất nhiều request, con số có thể lên đến hàng trăm, hàng ngàn, và thậm chí nhiều hơn thế. Đây là tôi đang nói trong phạm vi 1 Game Server.
 
-Từ đây, tôi biết Game X đã nằm trong tầm tay...
+Mỗi data packet gửi đi/về tôi thu được trong Wireshark, tôi đều mày mò so sánh, giải mã. Chiến dịch giải mã từng byte trong gói data giao tiếp giữa Client-Server đã tiêu tốn của tôi rất nhiều đêm mất ngủ.
+
+Sau rất nhiều nỗ lực phân tích, tìm kiếm, kiểm thử. Tôi cuối cùng đã giải mã được cấu trúc dữ liệu giao tiếp giữa Client-Server của Game X. Các bạn hãy lưu ý rằng đây chính là bước quan trọng nhất và cũng là khó nhất của công việc hack game online: Encode and Decode Packet Structure!
+
+Kết quả tôi đính kèm theo trong file `Serializer.hs` sau đây, tôi có note lại cấu trúc dữ liệu mà Game X đã sử dụng trong phần comment.
+
+```haskell
+
+module Serializer where
+
+import qualified Data.ByteString.Char8 as C
+import Data.ByteString.Base16
+import Data.List.Split
+import Numeric
+
+
+-- Packet structure
+-- packet info = 2 bytes (1 byte info + 1 flag byte) represents the length of packet
+-- index info  = 2 bytes (1 index byte + 1 byte: ff) represents the index of this packet in the streams
+-- data info   = 2 bytes (1 byte info + 1 flag byte) represents the length of data
+-- data        = x bytes (x-1 byte data + 1 flag byte) contains the data
+
+decToHex :: (Show a, Integral a) => a -> C.ByteString
+decToHex c
+    | c < 16 = C.append "0" . C.pack $ showHex c ""
+    | otherwise = C.pack $ showHex c ""
+
+hexSerialize :: (Show a, Integral a) => a -> C.ByteString
+hexSerialize d = fst . decode $ C.append (decToHex (d + 4))
+                              $ C.append "0003ff"
+                              $ C.append (decToHex d) "00"
+
+hexLoginSerialize :: (Show a, Integral a) => a -> C.ByteString                           
+hexLoginSerialize d = fst . decode $ C.append (decToHex (d + 4))
+                                   $ C.append "0001ff"
+                                   $ C.append (decToHex d) "00"
+
+hexEnterSerialize :: (Show a, Integral a) => a -> C.ByteString                             
+hexEnterSerialize d = fst . decode $ C.append (decToHex (d + 4))
+                                   $ C.append "0002ff"
+```
+
+Ở đây tôi phải viết 3 functions serialize, vì các gói dữ liệu được đánh số thứ tự riêng rẽ, login có flag byte khác với enter, login và enter có flag byte khác với các gói dữ liệu thông thường khác... (0001ff, 0002ff, 0003ff)
+
+Mặt khác, dữ liệu được encode ở dạng Base16 String, nó sẽ hiển thị toàn số Hex, bạn cần dùng Wireshark để xem xét từng byte. Rất may mắn, Haskell có package ByteString.Base16 giúp tôi giải quyết chuyện này. Công việc của Serializer là từ những dữ liệu con người có thể đọc hiểu (String), build ra một gói Data phù hợp, có thể dùng để gửi tới Game Server (Hex bytes).
+
+---
+
+# Chuỗi Byte bị đảo ngược
+
+Ở function login của Injector, sau khi gửi thành công gói login data tới TCP Server, Client sẽ nhận được thông tin Character ID. Character ID là 1 dạng mã định danh cho nhân vật, tương tự như cột Id chúng ta hay dùng trong SQL Database.
+
+Để get được số ID này, tôi lấy toàn bộ dữ liệu từ socket (nhận đc từ Tcp Server) và phân tích tiếp.
+
+Lần này đội dev Game X không chỉ đơn giản mã hóa Base16, mà reverse luôn order của các bytes dữ liệu theo từng cặp, tăng mức độ khó của việc bẻ khóa.
+
+Tôi thêm 1 function vào Serializer chuyên xử lý mấy tình yêu này:
+
+```haskell
+hexDeserialize :: C.ByteString -> Integer
+hexDeserialize "" = 0
+hexDeserialize b  = read . concat . ("0x":) . reverse . chunksOf 2 $ C.unpack b
+```
+
+Và trong Injector, tôi get 256 bytes từ socket, sau đó gọi 1 function tên là getChNumber để lấy đc Character ID từ 256 bytes này.
+
+Cắt, dán đúng những bytes chứa CharacterID, sau đó deserialize:
+
+```haskell
+getChNumber :: ByteString -> Integer
+getChNumber = hexDeserialize . C.take 8 . C.drop 14
+```
+---
+
+# Tích hợp mọi thứ
+
+Sau khi xây dựng đủ các module cần thiết, chuyện tích hợp khác đơn giản, lúc này tôi có:
+
+***HttpRq.hs:*** có nhiệm vụ fake Http request để gửi tới Http Server.
+
+***Injector.hs:*** có nhiệm vụ fake Tcp request để gửi tới Tcp Server.
+
+***Serializer.hs:*** Encode/decode byte data.
+
+***Authenticator.hs:*** Nhận thông tin từ HttpRq và build Player data, build login packet cho Injector.
+
+***Parser.hs*** Data model cho Player, Server, bao gồm cả lưu/đọc file json.
+
+***Player.json:*** Nơi lưu trữ thông tin player, có thể xem như một database.
 
 
