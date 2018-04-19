@@ -44,7 +44,7 @@ Những người mua/dùng tool mới của tôi hầu hết là phe đối ngh�
 
 **XQ:** ku này sẵn bị ngocpck đè nén 1 thời gian dài trong Game nên bắt đầu mua Tool cạnh tranh bán Xu và tự tin đầu tư Sơ Cấp để hạ bệ ngocpck.
 
-**joker:** lão già ở Nha Trang, bạn của Rin và XQ. Đang là đương kim Vô địch Cao cấp Game Y, mua tool để chiến đấu với acc Cao cấp của ngocpck: NATO
+**Jokerr:** lão già ở Nha Trang, bạn của Rin và XQ. Đang là đương kim Vô địch Cao cấp Game Y, mua tool để chiến đấu với acc Cao cấp của ngocpck: NATO
 
 **VyBaby:** ở tận Lạng Sơn nhưng ngứa mắt với ngocpck cũng mua tool để giành giật chức vô địch Sơ Cấp (Game Y).
 
@@ -54,15 +54,19 @@ Tôi vẫn giữ bug bạc cho riêng mình, vì bug này quá lớn, tôi và R
 
 Như vậy ngoại trừ Vybaby ở Lạng Sơn, miền Nam lúc này đã có một băng nhóm mới đối chọi lại thế lực cũ, rải rác ở Nha Trang, Gia Lai, Sài Gòn.
 
+![Liên chiến Game Y](/assets/images/aspect-of-programming/cross-war-2.png)
+
+Ảnh Đấu Trường Thú ở game Y, chụp lại lần đầu cược xu trong Game.
+
 ---
 
 # Những làn gió mới
 
 Cuối tuần tôi ít khi ở nhà, ít khi Online nên không tham gia vào Đấu Trường Thú. Việc buôn bán hầu hết do Rin và XQ thầu. Từ ngày có cạnh tranh từ phía Nam, giá Xu đã rẻ hơn và dễ mua hơn so với trước. Những đại gia cũng rục rịch tăng cường mua Xu, giảm đầu tư Nạp. Đáng kể nhất là AceNever và GoogleTi, 1 vip13 và 1vip14.
 
-Game X: Ngocpck bị hạ bệ ở Sơ cấp, minhchau bị Hanso4 và Cherry bật lại ở Trung Cấp
+**Game X:** Ngocpck bị hạ bệ ở Sơ cấp, minhchau bị Hanso4 và Cherry bật lại ở Trung Cấp
 
-Game Y: Bị khích bác, ngocpck bug bạc lộ liễu để lên Vô Địch. Vì quá nóng vội hắn bị khóa acc và sau đó được thả nhưng cấm tham gia Liên Chiến.
+**Game Y:** Bị khích bác, ngocpck bug bạc lộ liễu để lên Vô Địch. Vì quá nóng vội hắn bị khóa acc và sau đó được thả nhưng cấm tham gia Liên Chiến.
 
 Những vụ bug xu bug bạc ngày càng nhiều, vì hiện tại ko còn độc quyền buôn bán nữa.
 

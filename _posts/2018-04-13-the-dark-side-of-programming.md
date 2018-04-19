@@ -60,15 +60,11 @@ Series dự tính:
 
 [Chapter 6: Raise of the South Force - Thế lực miền Nam](https://thanhdo89se.github.io/2018/chapter06-raise-of-the-south-force/)
 
-[Chapter 7: Expansion of the Core - Phiên bản mở rộng](https://thanhdo89se.github.io/2018/chapter06-raise-of-the-south-force/)
+[Chapter 7: Expansion of the Core - Phiên bản mở rộng](https://thanhdo89se.github.io/2018/chapter07-expansion-of-the-core/)
 
-Chapter 8: War of Gangs - Chiến tranh ảo
+[Chapter 8: The Last Fight - Trận chiến cuối cùng](https://thanhdo89se.github.io/2018/chapter08-the-last-fight/)
 
-Chapter 9: The last battles and face of Boss - Đàn áp
-
-Chapter 10: The end of crime - Kết thúc 
-
-Chapter 11: Má ơi dài quá T.T
+[Chapter 9: The end of crime - Kết thúc 
 
 ---
 
