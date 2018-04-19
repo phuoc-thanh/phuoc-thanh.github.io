@@ -40,7 +40,7 @@ Xu cũng có thể kiếm nhưng lại quá ít, mỗi ngày siêng năng cày c
 
 Giá nạp của Game X: 100.000 VND = 1000 Xu, nạp 1tr được 10k xu kèm khuyến mãi linh tinh thì coi như 1 củ khoai lang = 20k xu đi.
 
-Vip15 (cao nhất) là phải nạp 100 củ khoai lang. Tính tới thời điểm tôi nghỉ game thì đã có khoảng 10-15 anh tài Vip15, chưa kể Vip14 (nạp 50 chai) rất đông. Thời điểm game tàn (cuối 2017) vẫn có 1 vị đại hiệp quăng vào 80 chai để bá chủ Đấu Trường Thú.
+Vip15 (cao nhất) là phải nạp 100 củ khoai lang. Tính tới thời điểm tôi nghỉ game thì đã có khoảng 10-15 anh tài Vip15, chưa kể rất nhiều đại hiệp Vip13,Vip14. Thời điểm game tàn (cuối 2017) vẫn có 1 vị đại hiệp quăng vào 80 chai để bá chủ Đấu Trường Thú.
 
 ---
 

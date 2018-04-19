@@ -56,7 +56,7 @@ Series dự tính:
 
 [Chapter 4: Reveal the Secret - Giải mã bí mật](https://thanhdo89se.github.io/2018/chapter04-reveal-the-secret/)
 
-[Chapter 5: The Art of Stealing - Nghệ thuật kiếm chác](https://thanhdo89se.github.io/2018/chapter05-the-art-of-stealing/)
+[Chapter 5: The Art of Cheating - Nghệ thuật kiếm chác](https://thanhdo89se.github.io/2018/chapter05-the-art-of-cheating/)
 
 [Chapter 6: Raise of the South Force - Thế lực miền Nam](https://thanhdo89se.github.io/2018/chapter06-raise-of-the-south-force/)
 
