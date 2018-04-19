@@ -60,7 +60,7 @@ Series dự tính:
 
 [Chapter 6: Raise of the South Force - Thế lực miền Nam](https://thanhdo89se.github.io/2018/chapter06-raise-of-the-south-force/)
 
-Chapter 7: Expansion of the core - Phiên bản mở rộng
+[Chapter 7: Expansion of the Core - Phiên bản mở rộng](https://thanhdo89se.github.io/2018/chapter06-raise-of-the-south-force/)
 
 Chapter 8: War of Gangs - Chiến tranh ảo
 

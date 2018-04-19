@@ -43,9 +43,10 @@ Qua vài kỳ liên chiến, tôi nhận thấy một nhân vật tên là "ngoc
 Phong thanh trên group thì té ra ngocpck chính là một vị vua không ngai, hắn chỉ chịu nhượng bộ những anh vip quá cao (vip13 trở lên), xu của hắn ko biết bao nhiêu nhưng vung tay cực kì bạo, ăn top liên tục để liên chiến. Ngoài ra hắn còn là đầu nậu bán xu. Giá rẻ 1/2 so với ku Chinh, tức là 1m = 20 vạn, 500k = 10 vạn (100.000 Xu). Và không bán lẻ tẻ.
 
 Wow, quá lợi hại, vừa mạnh, vừa bán xu, vừa nuôi acc.
+
 ---
 
-# Thế lực phương Bắc.
+# Thế lực phương Bắc
 
 Mục tiêu của tôi sau vài tháng là vào chung kết liên chiến Sơ cấp, thời kì này, ngoài ngocpck có 1 số nhân vật nổi trội ở Sơ cấp:
 
@@ -63,7 +64,7 @@ Trong số những tay hảo thủ ở trên, ngoại trừ Hanso4 tự lực c�
 
 ---
 
-# Phân tích kỹ thuật.
+# Phân tích kỹ thuật
 
 Như tôi kể trên, cả hội thao túng Game tới mức gần như tuyệt đối, chỉ chịu thua Vip12-13 trở lên, và làm ăn chuyên nghiệp.
 
@@ -77,7 +78,7 @@ Vừa tìm kiếm thông tin, vừa thảo luận với game thủ khác như Ri
 
 ---
 
-# Quitter tập 2.
+# Quitter tập 2
 
 Tôi vẫn chinh chiến vài tháng sau đó, đến khoảng tháng 3 hay 4-2017 gì đó thì tôi quit. Tôi quit vì được biết 1 thông tin độc đáo: A-e ngocpck đã tìm được bug mới: Lấy bạc không giới hạn.
 
