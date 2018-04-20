@@ -42,7 +42,7 @@ Sau lần gặp Rin, cuối tuần đó tôi ngay lập tức dùng 1acc còn í
 
 Phải nói thêm về cái lỗi trời ơi này, nó sẽ giúp người chơi tay không bắt giặc. Game thủ ko cần phải me đến sát giờ chiến đấu để đặt cược nữa, và cũng không cần dùng acc phụ (Clone) để đặt vào bên thua. Bây giờ rất đơn giản, chỉ cần chọn kèo chắc ăn, đặt bên thắng, và đợi trận đấu kết thúc, easy Xu. Đây có thể gọi là dupe Xu.
 
-Lần này tôi kỹ lưỡng hơn, sau khi nhận được 200k Xu từ kèo dupe xu. Tôi tiếp tục thử một lỗ hổng khác, nếu may mắn tôi sẽ là đại gia vô đối trong Game luôn. Lần này tôi sửa lại function bet:
+Lần này tôi kỹ lưỡng hơn, sau khi nhận được 200k Xu từ kèo dupe xu. Tôi tiếp tục thử một lỗ hổng khác, nếu may mắn tôi sẽ là đại gia vô đối trong Game luôn. Lần này tôi sử dụng function betX:
 
 ```haskell
 betX :: ByteString -> ByteString

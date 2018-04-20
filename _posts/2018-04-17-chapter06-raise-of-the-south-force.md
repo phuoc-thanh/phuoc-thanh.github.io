@@ -36,7 +36,7 @@ Nhưng chẳng ai có thể chống lại được cơn bão tên mang tên "B�
 
 Tôi quyết định cho lên sóng tình yêu của mình, trên cả 2 Game X và Y để xóa bỏ sự thao túng của nhóm a-e Hanoi.
 
-Topic đầu tiên tôi với ngocpck chiến tranh là trong tin bán tool, được đăng trên một group kín ko phải do NPH quản lý. Nội dung thì trong phần trước tôi có kể qua. Tin tức lan rộng, kha khá nhiều hỏi mua tool, cả 2 Game.
+Sau khi đăng tin bán tool, kha khá người hỏi mua, cả 2 Game.
 
 Những người mua/dùng tool mới của tôi hầu hết là phe đối nghịch trực tiếp với ngocpck:
 
@@ -71,6 +71,8 @@ Cuối tuần tôi ít khi ở nhà, ít khi Online nên không tham gia vào Đ
 Những vụ bug xu bug bạc ngày càng nhiều, vì hiện tại ko còn độc quyền buôn bán nữa.
 
 Bắt đầu có những vụ phá top: Đăng ký vào server của đối thủ, thủ sẵn Xu tới ngày đua top thì cướp.
+
+Sử dụng bug đăng nhập (forever key/time pair) để phá acc (vụ này thì chỉ một mình ngocpck làm)
 
 Kiện tụng và khóa acc cũng xảy ra thường xuyên.
 

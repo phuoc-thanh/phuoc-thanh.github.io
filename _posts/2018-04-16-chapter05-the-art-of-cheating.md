@@ -78,7 +78,7 @@ Nhóm chat của tôi gồm Rin, Cherry, Hanso4 và tôi. Tôi thông báo cho m
 
 ***Cherry*** lúc này đang làm Mod quản lý fanpage, group đã giúp tôi thông tin từ ban điều hành Game.
 
-***Rin*** giúp tôi tìm bug game, việc bug bạc vô tận chính là do lão kiếm thông tin được. Tôi viết tính năng này trong vài phút :)
+***Rin*** giúp tôi tìm bug game, việc bug bạc vô tận chính là do lão kiếm thông tin được.
 
 ***Hanso4*** đợt trước hắn ôm rất nhiều acc cùi Vip3, bây giờ là lúc phát huy tác dụng.
 

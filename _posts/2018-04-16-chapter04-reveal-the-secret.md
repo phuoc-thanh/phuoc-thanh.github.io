@@ -6,7 +6,6 @@ description: "Nghệ thuật hắc ám - Phần 04: Giải mã bí mật"
 keywords: "haskell, pure, functional, hijack, game, server, wireshark, tcp, packet, filter, network, injector, serialize"
 ---
 
-Trong phần trước tôi có nói rằng tôi có chút kinh nghiệm với Network, ah ha, nhưng chỉ với Java thôi, còn với Haskell, lúc này tôi hoàn toàn ko biết một chút gì về Haskell Networking.
 
 Từ những dữ liệu mà Wireshark mang lại cộng thêm những phân tích đầu tiên, lúc này tôi cần làm 2 việc:
 
@@ -100,11 +99,11 @@ Các thông tin cần thiết để thiết lập nên Player có thể get từ
 
 Okay tôi đã gửi Http Request và nhận Response đúng như mong đợi. Công việc tiếp theo là Inject những gói data vào TCP Server, đây mới chính là Game Server của Game X.
 
-Ở đây phải nói thêm là sau vài ngày mày mò tìm hiểu, tôi phát hiện 1 lỗi rất lớn của Game X. Thông thường Tcp Request sẽ nhận các thông số từ Http Response như uid, key, default_server, create_time... rồi dùng những thông số này để tạo request gửi tới Tcp Server.
+Ở đây phải nói thêm là sau vài ngày mày mò tìm hiểu, tôi phát hiện 1 lỗi rất lớn của Game X. Thông thường Client sẽ nhận các thông số từ Http Response như uid, key, default_server, create_time... rồi dùng những thông số này để tạo request gửi tới Tcp Server.
 
 Lỗi ở chỗ, Tcp server không kiểm tra tính hợp lệ của những thông số này, tôi có thể gửi 1 Http request tới Http Server, nhận được key/time trả về trong Http Response. Sau đó tôi có thể dùng cặp thông tin key/time này để gửi đến TCP Server trong mọi hoàn cảnh sau đó. Nghĩa là bạn chỉ cần đăng nhập 1 lần duy nhất, sau đó có thể chơi game mà không cần log-in! Crazy?
 
-Yes, chính xác là như vậy, Game X đã bỏ qua một lỗi sơ đẳng nhưng cực kỳ nghiêm trọng. Hiện tại tôi chưa thấy được lợi ích, nhưng càng về sau, chiến tranh nổ ra thì cái lỗi củ chuối này sẽ là đòn chí mạng!
+Yes, chính xác là như vậy, Game X đã bỏ qua một lỗi sơ đẳng nhưng cực kỳ nghiêm trọng. Hiện tại tôi chưa thấy được lợi ích, nhưng càng về sau, chiến tranh nổ ra thì cái lỗi củ chuối khiến nhiều game thủ điêu đứng.
 
 Lúc này, đa số thông tin lấy đc từ Http Response, đã đầy đủ. Tôi tiếp tục tìm hiểu tới Tcp Server.
 
@@ -147,7 +146,7 @@ Tất nhiên, để test thì tôi vẫn phải copy phần loginData mà Wiresh
 
 # Giải mã dữ liệu
 
-Đối với Tcp data, những ltv tạo ra game sẽ phải serialize/deserialize data sao cho dữ liệu gửi đi thật tiết kiệm, thật nhỏ nhưng phải đảm bảo toàn vẹn. Có thể bạn ko biết, những mỗi giây, TCP Server xử lý rất nhiều request, con số có thể lên đến hàng trăm, hàng ngàn, và thậm chí nhiều hơn thế. Đây là tôi đang nói trong phạm vi 1 Game Server.
+Đối với Tcp data, những ltv tạo ra game sẽ phải serialize/deserialize data sao cho dữ liệu gửi đi thật tiết kiệm, thật nhỏ nhưng phải đảm bảo toàn vẹn. Có thể bạn ko biết, nhưng mỗi giây, TCP Server xử lý rất nhiều request, con số có thể lên đến hàng trăm, hàng ngàn, và thậm chí nhiều hơn thế. Đây là tôi đang nói trong phạm vi 1 Game Server.
 
 Mỗi data packet gửi đi/về tôi thu được trong Wireshark, tôi đều mày mò so sánh, giải mã. Chiến dịch giải mã từng byte trong gói data giao tiếp giữa Client-Server đã tiêu tốn của tôi rất nhiều đêm mất ngủ.
 

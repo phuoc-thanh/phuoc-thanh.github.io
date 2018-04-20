@@ -28,14 +28,6 @@ Thời gian tôi học Haskell, cũng là một khoảng thời gian mất ngủ
 
 Với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn học, chưa từng nghĩ mình sẽ làm được gì có ích bằng Haskell. Nhưng cuối cùng tôi cũng hoàn thành được ứng dụng đầu tiên, tuy nó hơi mờ ám, tà đạo.
 
-* Có thể nói chủ đề của series, vấn đề mà tôi giải quyết: quá bé, quá ít để viết ra.
-
-* Có thể nói code mà tôi viết: chung qui là ko có gì đặc biệt, ai cũng làm được.
-
-* Có thể nói quá trình làm ra ứng dụng: không có gì nổi trội, ko có bài học đáng giá.
-
-Uây, nhưng t ko quan tâm lắm, viết để ghi nhớ những lần chiến tranh bàn phím, những đêm bật dậy lúc 3h sáng để code, những kinh nghiệm học được từ Haskell, hay đơn giản hơn: Viết để xả stress. Hihi.
-
 "Nghệ thuật hắc ám" nghe có vẻ hoành tráng, thật ra ko tới mức cao siêu trừu tượng gì cho lắm, chỉ là nhớ tới truyện Harry Potter thoi hehe.
 
 Tại sao hắc ám? Vì nói cho cùng, nó là khai thác lỗ hổng của một server và bug của ứng dụng.
@@ -46,7 +38,7 @@ Tại sao hắc ám? Vì nói cho cùng, nó là khai thác lỗ hổng của m�
 
 Đây sẽ là series khá dài, bao gồm nhiều phần, và có cả source code. hãy sẵn sàng.
 
-Series dự tính:
+Danh mục:
 
 [Chapter 1: The Origin of Crime - Khơi nguồn tội ác](https://thanhdo89se.github.io/2018/chapter01-the-origin-of-crime/)
 
@@ -64,7 +56,7 @@ Series dự tính:
 
 [Chapter 8: The Last Fight - Trận chiến cuối cùng](https://thanhdo89se.github.io/2018/chapter08-the-last-fight/)
 
-[Chapter 9: The end of crime - Kết thúc 
+[Chapter 9: The end of crime - Kết thúc]
 
 ---
 

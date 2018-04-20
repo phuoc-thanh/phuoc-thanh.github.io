@@ -9,15 +9,11 @@ keywords: "haskell, pure, functional, hijack, game, server, programming"
 
 # Quá khứ bỏ quên
 
-Thế hệ 8x, các bạn chắc không quên cơn bão Game Online 2004-2005-2006 nhỉ, cái thời ADSL mới được nhân rộng, tôi cũng là một con thiêu thân lao vào thử lửa. 2004, năm đó tôi học lớp 10, bắt đầu bằng MU Hanoi. Internet thời MU Hanoi tạo nhân vật hết 15p, vào game hết 10p và mở rương đồ hết 15p. Fuck, nếu là các bạn trẻ bây giờ, có khi đã đập bể vài bộ chuột phím rồi ấy :). Phải công nhận Game Online thời đó như là ma thuật, khiến ngta nhìn vào màn hình quên ăn quên ngủ, kiên nhẫn chỉ để thấy nhân vật mình đi lại và chém vài nhát.
+Thế hệ 8x, các bạn chắc không quên cơn bão Game Online 2004-2005-2006 nhỉ, cái thời ADSL mới được nhân rộng, tôi cũng là một con thiêu thân lao vào thử lửa. 2004 - năm đó tôi học lớp 10, bắt đầu bằng MU Hanoi, sau đó là Gunbound, Line Age 2, Dota... và tôi thi vào ngành CNTT, tôi nghĩ sau này mình sẽ sản xuất game.
 
-Sau đó là Gunbound, Line Age 2, Dota... và tôi thi vào ngành CNTT, tôi nghĩ sau này mình sẽ sản xuất game.
+Vâng tôi biết chắc rất rất nhiều anh/chị/em dev hiện tại, lao đầu vào ngành CNTT chỉ vì thích máy tính, thích Online, thích chơi Game.
 
-Vâng tôi biết chắc rất rất nhiều anh/chị/em dev hiện tại, lao đầu vào ngành CNTT chỉ vì thích máy tính, thích chơi game.
-
-Tôi vẫn chơi game, cho tới lúc ra trường... dòng đời đẩy đưa, tôi làm Web Server (Java), bỏ quên lý tưởng Sx Game năm nào...
-
-Nhờ những tiếp xúc rất sớm với Game Online và được học cơ bản về lập trình, tôi có chút hiểu biết về mô hình Game Online, cũng có thể gọi là Client-Server
+Tôi vẫn chơi game, cho tới lúc ra trường... dòng đời đẩy đưa, tôi làm Web Server (Java), bỏ quên lý tưởng sản xuất Game năm nào...
 
 Tháng 12-2015, lần đầu tiên tôi chơi 1 Game Online dành cho Mobile - gọi là Game X đi, lúc đó game mới mở được hơn 1 tháng, tôi vào server 21.
 
@@ -40,30 +36,29 @@ Xu cũng có thể kiếm nhưng lại quá ít, mỗi ngày siêng năng cày c
 
 Giá nạp của Game X: 100.000 VND = 1000 Xu, nạp 1tr được 10k xu kèm khuyến mãi linh tinh thì coi như 1 củ khoai lang = 20k xu đi.
 
-Vip15 (cao nhất) là phải nạp 100 củ khoai lang. Tính tới thời điểm tôi nghỉ game thì đã có khoảng 10-15 anh tài Vip15, chưa kể rất nhiều đại hiệp Vip13,Vip14. Thời điểm game tàn (cuối 2017) vẫn có 1 vị đại hiệp quăng vào 80 chai để bá chủ Đấu Trường Thú.
+Vip15 (cao nhất) là phải nạp 100 củ khoai lang. Tính tới thời điểm tôi nghỉ game thì đã có khoảng 10-15 anh tài Vip15, chưa kể rất nhiều đại hiệp Vip13, Vip14. Thời điểm game tàn, vẫn có 1 vị đại hiệp quăng vào 80 chai để bá chủ Đấu Trường Thú.
 
 ---
 
 # Đấu Trường Thú
 
-Nếu các bạn chơi game mobile nhiều thì sẽ nhận thất đa số game thẻ bài dạng này thường mở rất nhiều server, liên tục cỡ 1 tuần 2,3 cái - chủ yếu để hút máu mạnh hơn -)).
+Nếu các bạn chơi game mobile nhiều thì sẽ nhận thấy đa số game thẻ bài dạng này thường mở rất nhiều server, liên tục 1 tuần 2,3 server mới - chủ yếu để hút máu.
 
-Vậy nên server mới sẽ là nơi thi đua nạp tiền, nhưng như vậy chưa đủ, cần tạo ra tranh đua hơn nữa để hút cả ở những server cũ. Thể là 2 tính năng mới ra đời: Gộp Server cũ và Mở liên chiến (Đấu trường Thú).
+Vậy nên server mới sẽ là nơi anh tài tụ hội, thể hiện độ chịu chơi. Dường như chưa đủ hấp dẫn, NPH cần tạo ra tranh đua hơn nữa ở cả ở những server cũ. Thể là 2 tính năng mới ra đời: Gộp Server cũ và Mở liên chiến (Đấu trường Thú).
 
-Đấu trường này như Champion League vậy, nhưng có 3 cấp độ: Sơ cấp (cấp nhân vật 59 trở xuống), Trung cấp (lvl 60-89) và Cao cấp (lvl 90 trở lên)
+Đấu trường này như là Champion League vậy, nhưng có 3 cấp độ: Sơ cấp (lvl 59 trở xuống), Trung cấp (lvl 60-89) và Cao cấp (lvl 90 trở lên)
 
-**Vòng loại: Diễn ra vào chiều thứ 6**
+**Vòng sơ loại: Diễn ra vào chiều thứ 6**
 
 Game thủ chỉ báo danh, việc sắp xếp bốc thăm, khiêu chiến, tính kết quả sẽ do Máy chủ liên chiến làm hết. khoảng 7PM tối thứ 6 là có kết quả.
-Đánh loạn xà ngầu cùng cấp độ, trên toàn bộ server, thắng khoảng 6-7 trận thì vào vòng loại trực tiếp, cũng có trường hợp xui thắng 8 trận nhưng ko vào, hay hên: thắng 2 trận vào luôn.
 
-Như vậy có 32 đấu thủ sẽ được chọn ra để vào vòng loại trực tiếp cho mỗi cấp độ.
+Sau vòng sơ loại 32 đấu thủ sẽ được chọn để vào vòng loại trực tiếp cho mỗi cấp độ.
 
 **Vòng loại trực tiếp: Diễn ra vào tối thứ 7**
 
-Sau khi vòng loại diễn ra thì Máy chủ liên chiến tiếp tục bốc thăm chia cặp để đánh top32, gồm 4 bảng A,B,C,D cho mỗi cấp độ Sơ, Trung, Cao.
+SMáy chủ liên chiến tiếp tục bốc thăm chia cặp để đánh top32, gồm 4 bảng A,B,C,D cho mỗi cấp độ Sơ, Trung, Cao.
 
-Đây mới chính là nơi để game thủ thể hiện kĩ năng sắp xếp, chiến đấu. Vòng loại trực tiếp diễn ra vào 7PM đánh top32, 8PM đánh top16, 9PM đánh top8. Sau vòng loại top8 thì chỉ còn lại 4 game thủ vào bán kết.
+Đây mới chính là nơi để game thủ thể hiện kĩ năng sắp xếp, chiến đấu. Vòng loại trực tiếp diễn ra vào 3 khung giờ: 7PM đánh top32, 8PM đánh top16, 9PM đánh top8. Sau vòng loại top8 thì chỉ còn lại 4 game thủ vào bán kết.
 
 **Vòng chung kết: Diễn ra vào tối chủ nhật**
 
@@ -83,7 +78,7 @@ Nếu Lão Hạc win, tôi ăn toàn bộ 6k (2k cược và 4k thắng). Nếu 
 
 Số tiền cược tối đa cho 1 đấu thủ là 2k Xu, tối thiểu là 100 Xu (toàn bộ phải cược bằng Xu hết nhé, ko chơi bạc).
 
-Chỉ những game thủ Vip3 trở lên mới được tham gia cược xu (nạp 50k là Vip3 nhé)
+Chỉ những game thủ Vip3 trở lên mới được tham gia cược xu (nạp 50k là Vip3)
 
 ![Liên chiến](/assets/images/aspect-of-programming/cross-war.png)
 
@@ -93,7 +88,7 @@ Các bạn thấy đó, ở trên đầu mỗi đấu thủ chính là số xu c
 
 # Manh múng lập cơ đồ
 
-Khi tính năng liên chiến trôi qua được 2 kì, đã có 1 vị thiếu hiệp nổi lên, hắn đăng trên group (group fb, do NPH tạo để game thủ đàm đạo) là bán xu, rẻ hơn nạp. 100k = 10k xu, như vậy tương đương nạp 1 triệu (1 triệu nạp vào game được 10k xu + quà khuyến mãi).
+Khi tính năng liên chiến trôi qua được 2 kì, có 1 vị thiếu hiệp nổi lên, hắn đăng trên group (group fb, do NPH tạo để game thủ đàm đạo) là bán xu, rẻ hơn nạp. 100k = 10k xu, như vậy tương đương nạp 1 triệu (1 triệu nạp vào game được 10k xu + quà khuyến mãi).
 
 Chà chà, tay trẻ tuổi này tôi quen, hắn tiết lộ:
 
