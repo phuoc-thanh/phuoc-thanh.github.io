@@ -56,8 +56,6 @@ Danh mục:
 
 [Chapter 8: Being Unstoppable - Không thể dừng lại](https://thanhdo89se.github.io/2018/chapter08-being-unstoppable/)
 
-[Chapter 9: The end of crime - Kết thúc]
-
 ---
 
 # This is not "extraordinary" things!

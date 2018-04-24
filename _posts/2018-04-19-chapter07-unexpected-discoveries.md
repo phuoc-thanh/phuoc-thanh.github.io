@@ -79,8 +79,6 @@ Cherry và XQ dính chưởng, vì acc của 2 bé này trước kia có mua xu 
 
 Kể ra thì lỗi thuộc về minhchau trước, anh lưu toàn bộ thông tin acc mỗi lần bán xu!
 
-Tôi ít khi tham gia vào những cuộc chiến cuối tuần, nhưng lần xung đột này quá lớn nên tôi có chat với minhchau. Sau đó được biết là ngocpck và đồ đệ của hắn làm.
-
 Về minhchau, đại ca này tôi và Rin đều nể vì anh mới chính là người viết ra tool đầu tiên của game. Cũng là người có tuổi, anh ít lên tiếng trong group, và còn thường xuyên giúp đỡ Rin...
 
 Minhchau viết tool là để thử thách bản thân, anh ko bán mặc dù được trả giá cao. Về sau, minhchau có tâm sự với tôi là việc a giao tool cho ngocpck là một sai lầm ko thể sửa chữa...
