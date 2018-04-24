@@ -72,7 +72,7 @@ Những vụ bug xu bug bạc ngày càng nhiều, vì hiện tại ko còn đ�
 
 Bắt đầu có những vụ phá top: Đăng ký vào server của đối thủ, thủ sẵn Xu tới ngày đua top thì cướp.
 
-Sử dụng bug đăng nhập (forever key/time pair) để phá acc (vụ này thì chỉ một mình ngocpck làm)
+Sử dụng bug đăng nhập (permanent key/time pair) để phá acc (vụ này thì chỉ một mình ngocpck làm)
 
 Kiện tụng và khóa acc cũng xảy ra thường xuyên.
 
