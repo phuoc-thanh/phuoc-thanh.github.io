@@ -8,25 +8,23 @@ keywords: "haskell, pure, functional, hijack, game, server, tool, programming"
 
 # Thủ công vs Công nghiệp
 
-Bất kỳ ngành nghề nào, khi mở rộng từ thủ công đến công nghiệp đều là 1 sự nhảy vọt, và yếu tố "Tự động" và "Máy móc" là phần thiết yếu nhất, đương nhiên.
+Bất kỳ ngành nghề nào, khi mở rộng từ thủ công đến công nghiệp đều là 1 sự nhảy vọt, 2 yếu tố "Tự động" và "Máy móc" là phần thiết yếu nhất, đương nhiên.
 
-Quay lại vào thời điểm giữa 2016, lúc tôi nghỉ game và ku Chinh (or Chính maybe) đang phát triển việc làm ăn của hắn. Ku này ở Nha Trang, chơi game tay ngang thôi.
+Quay lại vào thời điểm giữa 2016, lúc tôi nghỉ game và ku Chinh (or Chính maybe) đang phát triển việc làm ăn của hắn. Ku này ở Nha Trang, chơi game tay ngang thôi, khi lượng người chơi mua xu bắt đầu nhiều, hắn gặp 2 vấn đề:
 
-**Vấn đề đầu tiên**
+**Cung ko đủ cầu**
 
-Là nhu cầu đang lớn dần. Khi bán 10k Xu với giá 100k, nếu 2-3 người mua nhỏ lẻ thì vẫn OK, có nghĩa là hắn cần lận lưng 10-15 acc Vip3. Ok, nếu 5 khách hàng mua 50k Xu, thì cần có 25acc Vip3, chà con số bắt đầu nở. Nhu cầu tăng lên 100-200k Xu mỗi tuần thì sao? Hắn có chịu nổi nhiệt?
+Khi bán 10k Xu với giá 100k, nếu 2-3 người mua nhỏ lẻ thì vẫn OK, có nghĩa là hắn cần lận lưng 10-15 acc Vip3. Nếu 5 khách hàng mua 50k Xu, thì cần có 25acc Vip3, chà con số bắt đầu nở. Nhu cầu tăng lên 100-200k Xu mỗi tuần thì sao? Hắn có chịu nổi nhiệt?
 
-**Vấn đề thứ hai**
-
-Là tay. Đúng vậy, cần tay để bấm. Giả như một kỳ liên chiến hắn có 10 khách hàng, chia làm 3 vòng top32, top16, top8. Mỗi vòng 3 khách, cần bấm 15+3 là 18 acc.
+Tiếp nữa là cần tay để bấm. Giả như một kỳ liên chiến hắn có 10 khách hàng, chia làm 3 vòng top32, top16, top8. Mỗi vòng 3 khách, cần bấm 15+3 là 18 acc.
 
 Máy Core i5 chạy được 4 acc, thì phải là 4 máy + 2 điện thoại. Liệu có bấm kịp? Maybe, I just don't know.
 
 Thêm một điểm cần lưu ý nữa là phải có tay để chơi những acc clone (Vip3) sao cho mỗi acc kiếm đủ 2k xu 1 tuần, không khó lắm nhưng mất thời gian.
 
-**Vấn đề thứ ba**
+**Ăn chắc hay ăn liều?**
 
-Là chọn kèo. Hehe, nếu hắn muốn bán xu, phải chọn kèo thật chắc ăn, nếu kết quả ngược lại, thì acc cùi Vip3 sẽ ăn xu acc chính. Thế nên hắn có 2 con đường, nương nhờ kèo người khác và phó mặc số phận, hai là phải nuôi acc/ mua acc khủng thường xuyên vào liên chiến để có thể dàn xếp tỉ số - bán độ. Vậy nhưng cần bao nhiêu acc cho đủ? vấn đề khá nan giải.
+Hehe, nếu hắn muốn bán xu, phải chọn kèo thật chắc ăn, nếu kết quả ngược lại, thì acc cùi Vip3 sẽ ăn xu acc chính. Thế nên hắn có 2 con đường, nương nhờ kèo người khác và phó mặc số phận, hai là phải nuôi acc/ mua acc khủng thường xuyên vào liên chiến để có thể dàn xếp tỉ số - bán độ. Vậy nhưng cần bao nhiêu acc cho đủ? vấn đề khá nan giải.
 
 **Kết quả**
 
@@ -36,11 +34,11 @@ Quả thật khó. Nhưng hắn có thể từ chối bớt kèo, thu nhập ít
 
 # Lần trở lại thứ nhất
 
-Tôi nghỉ một thời gian khoảng 6 tháng, quay trở lại vào khoảng tháng 10-2016 (ko chính xác lắm, nhớ vậy thôi). Lần này tôi đầu tư đánh Sơ Cấp, vì ít tốn kém nhất.
+Tôi nghỉ một thời gian khoảng 6 tháng, quay trở lại vào khoảng tháng 10-2016 - ko chính xác lắm, nhớ vậy thôi.
 
-Qua vài kỳ liên chiến, tôi nhận thấy một nhân vật tên là "ngocpck", hắn rất mạnh ở Sơ cấp. Ngocpck ở sv66, sv cũ của tôi, sơ qua lúc còn chung server 66 thì ngocpck là tay biết chơi, kì cựu, biết ép level dưới 59 để liên chiến, biết đi boss, biết bật top tiêu v.v... 
+Qua vài kỳ liên chiến, tôi nhận thấy một nhân vật là "ngocpck", rất mạnh ở Sơ cấp.
 
-Phong thanh trên group thì té ra ngocpck chính là một vị vua không ngai, hắn chỉ chịu nhượng bộ những anh vip quá cao (vip13 trở lên), xu của hắn ko biết bao nhiêu nhưng vung tay cực kì bạo, ăn top liên tục để liên chiến. Ngoài ra hắn còn là đầu nậu bán xu. Giá rẻ 1/2 so với ku Chinh, tức là 1m = 20 vạn, 500k = 10 vạn (100.000 Xu). Và không bán lẻ tẻ.
+Phong thanh trên group thì té ra ngocpck chính là một vị vua không ngai, hắn chỉ chịu nhượng bộ những anh vip quá cao (vip13 trở lên), xu của hắn ko biết bao nhiêu nhưng tiêu Xu cực kì bạo dâm, ăn top liên tục. Ngoài ra hắn còn là đầu nậu bán xu. Giá rẻ 1/2 so với ku Chinh, tức là 1m = 20 vạn, 500k = 10 vạn (100.000 Xu). Và không bán lẻ tẻ.
 
 Wow, quá lợi hại, vừa mạnh, vừa bán xu, vừa nuôi acc.
 
@@ -48,7 +46,7 @@ Wow, quá lợi hại, vừa mạnh, vừa bán xu, vừa nuôi acc.
 
 # Thế lực phương Bắc
 
-Mục tiêu của tôi sau vài tháng là vào chung kết liên chiến Sơ cấp, thời kì này, ngoài ngocpck có 1 số nhân vật nổi trội ở Sơ cấp:
+Sơ cấp thời kì này, ngoài ngocpck có 1 số nhân vật nổi trội khác:
 
 * 50CM: ku này đầu tư cùng lúc với tôi, và đầu tư mạnh hơn tôi rất nhiều, biết chơi.
 
@@ -60,13 +58,11 @@ Mục tiêu của tôi sau vài tháng là vào chung kết liên chiến Sơ c�
 
 Trong số những tay hảo thủ ở trên, ngoại trừ Hanso4 tự lực cánh sinh ra, còn lại hoặc là nạp, hoặc là mua Xu, chỉ có JameRoyal và ngocpck là ngon vì 2 đứa này bán xu. Tôi thuộc thành phần vừa nạp vừa mua.
 
-Để mua đc Xu thì cũng phải tham gia Group và tìm đến người bán, vâng, và lúc này sự thật được hé mở. Ở Game X này, chỉ có 1 hội bán xu duy nhất, hội của ngocpck và Jame, ngoài ra còn có minhchau (sv71), lão béo, lão hạc cùng sv6 và 1 số acc top trong liên chiến. Có thể nói, hội này thầu gần hết các acc top liên chiến, bán xu số lượng lớn (bao nhiêu cũng có), thao túng toàn bộ Game. Toàn bộ thành viên nhóm này đều ở Hanoi...
+Để mua đc Xu thì cũng phải tham gia Group và tìm đến người bán, vâng, và lúc này sự thật được hé mở. Ở Game X này, chỉ có 1 hội bán xu duy nhất, hội của ngocpck và Jame, ngoài ra còn có minhchau (sv71), lão béo, lão hạc cùng sv6 và 1 số acc top trong liên chiến. Có thể nói, hội này thầu gần hết các acc top liên chiến, bán xu số lượng lớn & chuyên nghiệp, thao túng toàn bộ Game. Toàn bộ thành viên nhóm này đều ở Hanoi...
 
 ---
 
 # Phân tích kỹ thuật
-
-Như tôi kể trên, cả hội thao túng Game tới mức gần như tuyệt đối, chỉ chịu thua Vip12-13 trở lên, và làm ăn chuyên nghiệp.
 
 Vừa tìm kiếm thông tin, vừa thảo luận với game thủ khác như Rin, Hanso4, 50cm, vừa trực tiếp mua xu từ Jame, tôi có được những kết luận sau:
 
@@ -82,7 +78,7 @@ Vừa tìm kiếm thông tin, vừa thảo luận với game thủ khác như Ri
 
 Tôi vẫn chinh chiến vài tháng sau đó, đến khoảng tháng 3 hay 4-2017 gì đó thì tôi quit. Tôi quit vì được biết 1 thông tin độc đáo: A-e ngocpck đã tìm được bug mới: Lấy bạc không giới hạn.
 
-Như tôi có nói ở phần 01, bạc không thể mua được gì giá trị, nhưng đối với số bạc quá lớn, phải nói là vô tận, thì bạc lại cực kỳ hữu ích. Nhân vật sau khi đập đá bằng bạc vào 1 số thứ thì trở nên mạnh mẽ điên cuồng.
+Như tôi có nói ở phần 01, bạc không thể mua được gì giá trị, nhưng nếu có lượng bạc vô hạn, thì lại cực kỳ hữu ích. Nhân vật sau khi đập đá bằng bạc vào 1 số thứ thì trở nên mạnh mẽ điên cuồng.
 
 Tôi lờ mờ nhận ra vài thứ và quyết định Quit.
 

@@ -3,7 +3,7 @@ layout: post
 title: "Programming - Nghệ thuật hắc ám"
 comments: true
 description: "Programming - Nghệ thuật hắc ám"
-keywords: "haskell, pure, functional, dark, power, hijack, beauty"
+keywords: "haskell, pure, functional, programming, dark, power, hijack, beauty"
 ---
 
 
@@ -13,7 +13,7 @@ Có một câu nói mà tôi tâm đắc từ thời còn là sinh viên:
 
 > Bạn chưa mất ngủ vì công việc tức là bạn chưa làm việc
 
-Có thể trong cuộc đời code dạo, chúng ta có rất nhiều đêm mất ngủ, chủ yếu là để đua deadline, hoàn thành tasks cho Client. Đó không phải là những đêm mất ngủ mà tôi nói đến, mà là loại khác, loại mất ngủ không phải vì công việc mà vì đam mê:
+Sống cuộc đời của một "lờ tờ vờ", dĩ nhiên chúng ta có rất nhiều đêm mất ngủ vì công việc, chủ yếu là để đua deadline, hoàn thành tasks cho Client, xử lý trường hợp khẩn cấp. Đó là mất ngủ cưỡng ép, còn mất ngủ tự nguyện thì như thế nào?
 
 * Trằn trọc suy nghĩ về ý tưởng, giải pháp, thậm chí còn mơ về nó.
 
@@ -24,19 +24,19 @@ Có thể trong cuộc đời code dạo, chúng ta có rất nhiều đêm mấ
 * Tưởng tượng ra Thread, String, Memory, Package... ngay cả khi tắm, lái xe, ăn, ngủ (mơ).
 
 
-Thời gian tôi học Haskell, cũng là một khoảng thời gian mất ngủ như vậy...
+Thời gian tôi học Haskell, ko hề có một sức ép nào, nhưng tôi vẫn mất ngủ...
 
-Với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn học, chưa từng nghĩ mình sẽ làm được gì có ích bằng Haskell. Nhưng cuối cùng tôi cũng hoàn thành được ứng dụng đầu tiên, tuy nó hơi mờ ám, tà đạo.
+Với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn học thú vị, chưa từng nghĩ mình sẽ làm được gì có ích bằng Haskell. Nhưng cuối cùng tôi cũng hoàn thành được ứng dụng Haskell đầu tiên, tuy nó hơi mờ ám, tà đạo.
 
-"Nghệ thuật hắc ám" nghe có vẻ hoành tráng, thật ra ko tới mức cao siêu trừu tượng gì cho lắm, chỉ là nhớ tới truyện Harry Potter thoi hehe.
+"Nghệ thuật hắc ám" nghe có vẻ hoành tráng, thật ra ko tới mức cao siêu trừu tượng gì, chỉ là mượn chữ trong truyện Harry Potter thoi hehe.
 
-Tại sao hắc ám? Vì nói cho cùng, nó là khai thác lỗ hổng của một server và bug của ứng dụng.
+Tại sao hắc ám? Vì nói cho cùng, nó là khai thác lỗ hổng của server và bug của ứng dụng.
 
 ---
 
 # This is long!
 
-Đây sẽ là series khá dài, bao gồm nhiều phần, và có cả source code. hãy sẵn sàng.
+Đây sẽ là series khá dài, bao gồm nhiều phần, và có cả source code. Hãy sẵn sàng!
 
 Danh mục:
 
@@ -54,7 +54,7 @@ Danh mục:
 
 [Chapter 7: Unexpected Discoveries - Những khám phá bất ngờ](https://thanhdo89se.github.io/2018/chapter07-unexpected-discoveries/)
 
-[Chapter 8: Being Unstoppable - Không thể dừng lại](https://thanhdo89se.github.io/2018/chapter08-being-unstoppable/)
+[Chapter 8: Being Unstoppable - Không thể cưỡng lại](https://thanhdo89se.github.io/2018/chapter08-being-unstoppable/)
 
 ---
 
@@ -62,7 +62,7 @@ Danh mục:
 
 Phần code trong series này được viết bằng Haskell.
 
-Nói thế thôi các bạn đừng sợ, Haskell rất đẹp, Haskell không khó như bạn nghĩ đâu. Hãy đăng ký học và cảm nhận, tôi đảm bảo bạn sẽ được mở rộng tầm nhìn rất rất nhiều.
+Nói thế thôi các bạn đừng sợ, Haskell ko phải là một ngôn ngữ quái vật, ngược lại Haskell rất đẹp và không khó như mọi người nghĩ. Hãy đăng ký học Haskell, tôi đảm bảo bạn sẽ được mở rộng tầm nhìn rất rất nhiều.
 
 Tất nhiên, để hiện thực hóa được ý tưởng, cũng cần kỹ năng khác như phân tích vấn đề, truy tìm dấu vết, thiết kế cấu trúc, kiểm thử... Mấy cái này đi làm rồi cũng sẽ quen thôi :)
 
