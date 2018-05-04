@@ -30,7 +30,7 @@ Với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn họ
 
 "Nghệ thuật hắc ám" nghe có vẻ hoành tráng, thật ra ko tới mức cao siêu trừu tượng gì, chỉ là mượn chữ trong truyện Harry Potter thoi hehe.
 
-Tại sao hắc ám? Vì nói cho cùng, nó là khai thác lỗ hổng của server và bug của ứng dụng.
+Tại sao hắc ám? Vì nói cho cùng, nó là khai thác lỗ hổng của server và gian lận trong Game.
 
 ---
 
