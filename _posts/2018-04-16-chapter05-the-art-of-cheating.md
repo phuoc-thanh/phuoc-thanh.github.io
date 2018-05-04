@@ -54,7 +54,7 @@ Nếu gửi từng request riêng lẻ, Tcp Server sẽ biết 1 người chơi 
 
 Để có thể login hàng loạt acc vào Server, tôi cần sự trợ giúp của đa luồng (multi-threading), vấn đề mà hiếm khi tôi được đụng đến trong mấy năm dev của mình. Tôi đã học cách dùng forkIO và forM_ từ 2 gói Control.Monad và Control.Concurrent, rất quan trọng đối với người mới học Haskell. Thực sự ấn tượng với forkIO của Haskell, nhờ nó, mà threading dễ dàng hơn bao giờ hết lại chiếm rất ít bộ nhớ.
 
-Về sau tôi còn được nếm trải các bài học về kiểm soát Threads, dùng threadDelay, close Thread, handle 1000+ threads... nhờ vào việc viết tool cheat game này.
+Về sau tôi còn được nếm trải các bài học về kiểm soát 100+ Threads, dùng threadDelay, close Thread, handle memory... nhờ vào việc viết tool cheat game này.
 
 ---
 
@@ -86,6 +86,6 @@ Tôi bug 1 lượng bạc cực lớn cho nhóm, và bắt đầu bug Xu từ vi
 
 Tôi cũng rao bán tool trong 1 group kín khác. Lúc này ngocpck bay vào topic bán tool và sỉ vả như 1 kẻ bề trên, hắn vẫn nghĩ chỉ có một mình phe hắn là có tool, còn tôi chỉ là lừa đảo. Khi tôi chụp ảnh bằng chứng bug xu trong game, hắn lập tức thay đổi thái độ, lúc này hắn lại nghi rằng tôi "ăn cắp" tool từ bên hội a-e phương Bắc -))
 
-Tôi cũng giao 2 bản tool cho Cherry và Rin để 2 người thực hành, còn Hanso4 lúc này đã qua Nhật, tình hình bên đó căng nên hắn chỉ mua Clone giúp nhóm. Mua 1 lần 150 clone vip3 cơ.
+Tôi cũng giao 2 bản tool cho Cherry và Rin để 2 người thực hành, còn Hanso4 lúc này đã qua Nhật, tình hình bên đó căng nên hắn chỉ mua Clone giúp nhóm, khoảng 150 acc vip3.
 
 Vài tuần sau khi viết tính năng cá cược thì Server lậu chính thức chết, tôi quay trở lại Server của Game X, lần tái xuất thứ 3.

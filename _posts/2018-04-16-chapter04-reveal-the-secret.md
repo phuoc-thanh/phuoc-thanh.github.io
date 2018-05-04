@@ -146,7 +146,7 @@ Tất nhiên, để test thì tôi vẫn phải copy phần loginData mà Wiresh
 
 # Giải mã dữ liệu
 
-Đối với Tcp data, những ltv tạo ra game sẽ phải serialize/deserialize data sao cho dữ liệu gửi đi thật tiết kiệm, thật nhỏ nhưng phải đảm bảo toàn vẹn. Có thể bạn ko biết, nhưng mỗi giây, TCP Server xử lý rất nhiều request, con số có thể lên đến hàng trăm, hàng ngàn, và thậm chí nhiều hơn thế. Đây là tôi đang nói trong phạm vi 1 Game Server.
+Đối với Tcp data, những ltv tạo ra game sẽ phải serialize/deserialize data sao cho dữ liệu gửi đi thật tiết kiệm, thật nhỏ nhưng phải đảm bảo toàn vẹn. Có thể bạn ko biết, mỗi giây, TCP Server xử lý rất nhiều request, con số có thể lên đến hàng trăm, hàng ngàn, và thậm chí nhiều hơn thế.
 
 Mỗi data packet gửi đi/về tôi thu được trong Wireshark, tôi đều mày mò so sánh, giải mã. Chiến dịch giải mã từng byte trong gói data giao tiếp giữa Client-Server đã tiêu tốn của tôi rất nhiều đêm mất ngủ.
 
@@ -188,9 +188,10 @@ hexLoginSerialize d = fst . decode $ C.append (decToHex (d + 4))
 hexEnterSerialize :: (Show a, Integral a) => a -> C.ByteString                             
 hexEnterSerialize d = fst . decode $ C.append (decToHex (d + 4))
                                    $ C.append "0002ff"
+                                   $ C.append (decToHex d) "00"
 ```
 
-Ở đây tôi phải viết 3 functions serialize, vì các gói dữ liệu được đánh số thứ tự riêng rẽ, login có flag byte khác với enter, login và enter có flag byte khác với các gói dữ liệu thông thường khác... (0001ff, 0002ff, 0003ff)
+Ở đây tôi viết 3 functions serialize, vì các gói dữ liệu được đánh số thứ tự riêng rẽ, login có flag byte khác với enter, login và enter có flag byte khác với các gói dữ liệu thông thường khác... (0001ff, 0002ff, 0003ff)
 
 Mặt khác, dữ liệu được encode ở dạng Base16 String, nó sẽ hiển thị toàn số Hex, bạn cần dùng Wireshark để xem xét từng byte. Rất may mắn, Haskell có package ByteString.Base16 giúp tôi giải quyết chuyện này. Công việc của Serializer là từ những dữ liệu con người có thể đọc hiểu (String), build ra một gói Data phù hợp, có thể dùng để gửi tới Game Server (Hex bytes).
 
@@ -202,7 +203,7 @@ Mặt khác, dữ liệu được encode ở dạng Base16 String, nó sẽ hi�
 
 Để get được số ID này, tôi lấy toàn bộ dữ liệu từ socket (nhận đc từ Tcp Server) và phân tích tiếp.
 
-Lần này đội dev Game X không chỉ đơn giản mã hóa Base16, mà reverse luôn order của các bytes dữ liệu theo từng cặp, tăng mức độ khó của việc bẻ khóa.
+Lần này đội dev Game X không chỉ đơn giản mã hóa Base16, mà đảo ngược luôn thứ tự của các bytes dữ liệu theo từng cặp, tăng độ khó của việc bẻ khóa.
 
 Tôi thêm 1 function vào Serializer chuyên xử lý mấy tình yêu này:
 
@@ -223,7 +224,7 @@ getChNumber = hexDeserialize . C.take 8 . C.drop 14
 
 ---
 
-# Viên gạch đầu tiên
+# Phiên bản đầu tiên
 
 Sau khi xây dựng đủ các module cần thiết, chuyện tích hợp khá đơn giản, lúc này tôi có:
 
@@ -239,7 +240,7 @@ Sau khi xây dựng đủ các module cần thiết, chuyện tích hợp khá �
 
 ***Player.json:*** Nơi lưu trữ thông tin player, có thể xem như một database.
 
-Nhiệm vụ đầu tiên ngốn của tôi khoảng 6 ngày code, mỗi ngày 2-4 tiếng. Và như tôi có nói ban đầu, những dòng code đầu tiên ko được hoàn chỉnh như trong bài đâu nhé, đó là cả một quá trình refactor :)
+Nhiệm vụ đầu tiên ngốn của tôi khoảng 6 ngày code, và như tôi có nói ban đầu, những dòng code đầu tiên ko được hoàn chỉnh như trong bài đâu nhé, đó là cả một quá trình refactor :)
 
 Trải nghiệm này giúp tôi làm quen với các thư viện như Network, Aeson, Base16 ByteString, Http Simple...
 

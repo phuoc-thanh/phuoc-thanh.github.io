@@ -62,11 +62,11 @@ Tôi tiếp tục để ý tới cái POST request 55, host lại rất rất qu
 
 ![Wireshark capture](/assets/images/aspect-of-programming/wireshark2.png)
 
-View chi tiết (follow TCP thì Wireshark sẽ hiện response đã được decode)
+follow TCP bằng Wireshark, tôi nhận response đã được decode
 
 ![Wireshark capture](/assets/images/aspect-of-programming/wireshark3.png)
 
-Ồ có vẻ như ở request 55 này, Client đang dùng thông tin từ 2 request 19 và 31 để gửi một request đến sub-domain khác của Gaba. Response là list danh sách máy chủ, tuyệt vời. Tôi cũng lưu lại request-response số 55 này.
+Ồ có vẻ như ở request 55 này, Client đang dùng thông tin được trả về từ 2 request 19 và 31 để gửi một request đến sub-domain khác của Gaba. Response là list danh sách máy chủ, tuyệt vời. Tôi cũng lưu lại request-response số 55 này.
 
 Quay lại với wireshark, tôi filter packets theo ip 123.31.25.75. IP này tôi lấy từ list server trả về từ request 55 ở trên, đây là địa chỉ của server 101 (là server tôi vừa login bên Nox). Kết quả là 1 loạt giao tiếp bằng TCP của máy tôi tới 123.31.25.75. Wow, that's enough. 
 

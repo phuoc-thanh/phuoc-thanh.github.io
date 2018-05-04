@@ -8,7 +8,7 @@ keywords: "haskell, pure, functional, hijack, game, server"
 
 # Bất đồng lý tưởng
 
-Ngược lại thời gian lúc tôi chưa chế ra đồ chơi, tôi ban đầu chẳng ác cảm gì với băng mafia của ngocpck cả, thật sự mà nói, tôi còn nể phía bên đó vì những khám phá của họ. Kể cả chuyện độc quyền buôn bán Xu cũng vậy, đó như là phần thưởng cho công sức và tài năng của nhóm ngocpck.
+Ngược lại thời gian lúc tôi chưa chế ra đồ chơi, tôi ban đầu chẳng ác cảm gì với băng mafia của ngocpck cả, thật sự mà nói, tôi còn nể phía bên đó vì những khám phá của họ. Kể cả chuyện độc quyền buôn bán Xu cũng vậy, tôi nghĩ đó như là phần thưởng cho công sức và tài năng của nhóm ngocpck.
 
 Về sau, khi nhóm ngocpck thao túng toàn bộ game, tôi bắt đầu ghét thái độ kiêu căng, trịch thượng của ngocpck trên group. Trong game, hắn lập hẳn 2 acc "BốSơCấp" và "BoTrungCap", bug xu, bạc và giành cúp liên tiếp. Nghe tên in-game là tôi đã ác cảm rồi. Hia hia.
 
@@ -20,11 +20,11 @@ Rin có lẽ là người phấn khích nhất khi nghe được thông báo đ�
 
 # Chiến trường thứ hai
 
-Có lẽ cảm thấy chưa được thỏa mãn với quyền lực ảo trong Game X, ngocpck nhảy tiếp qua Game Y (là 1 game tương tự X, chỉ thay đổi giao diện bên ngoài) để làm vua Game Y tiếp.
+Có lẽ cảm thấy chưa được thỏa mãn với quyền lực ảo trong Game X, ngocpck nhảy qua Game Y (là 1 game tương tự X, chỉ thay đổi giao diện bên ngoài) để làm vua Game Y tiếp.
 
 Ko rõ nội bộ nhóm a-e Hanoi suy tính thế nào, nhưng cuối cùng, minhchau đã bàn giao hàng nóng cho ngocpck. Từ lúc ngocpck chuyển sang Game Y, hắn có thể tự sử dụng tool để bug bạc, Xu... ko cần nhờ vả người anh nữa.
 
-Sau 1 tháng đổ bộ Game Y, ngocpck đã được cả group bên đó biết tới với nicknam "BốSơCấp". Hắn dùng sức mạnh của tool đánh bật hết những kẻ buôn bán Xu nhỏ lẻ, và đang trên đường tới chức Vô địch Sơ Cấp.
+Sau 1 tháng đổ bộ Game Y, ngocpck đã được cả group bên đó biết tới với nickname "BốSơCấp". Hắn dùng sức mạnh của tool đánh bật hết những kẻ buôn bán Xu nhỏ lẻ, và đang trên đường tới chức Vô địch Sơ Cấp.
 
 Cũng bằng sự hống hách nên hắn gây thù chuốc oán với một số anh tài Vip cao và một số thương lái nhỏ lẻ. Tất nhiên Game Y tôi ko chơi và cũng chỉ là nghe kể lại vậy thôi :)
 
@@ -50,8 +50,6 @@ Những người mua/dùng tool mới của tôi hầu hết là phe đối ngh�
 
 Ngoài ra còn Cherry và MinhLuan là 2 cựu Mod của Game X cũng có tool.
 
-Tôi vẫn giữ bug bạc cho riêng mình, vì bug này quá lớn, tôi và Rin nhất trí ko muốn người nào khác khai thác lỗ hổng này, ngay cả Rin cũng ko sử dụng bug bạc.
-
 Như vậy ngoại trừ Vybaby ở Lạng Sơn, miền Nam lúc này đã có một băng nhóm mới đối chọi lại thế lực cũ, rải rác ở Nha Trang, Gia Lai, Sài Gòn.
 
 ![Liên chiến Game Y](/assets/images/aspect-of-programming/cross-war-2.png)
@@ -62,11 +60,11 @@ Như vậy ngoại trừ Vybaby ở Lạng Sơn, miền Nam lúc này đã có m
 
 # Những làn gió mới
 
-Cuối tuần tôi ít khi ở nhà, ít khi Online nên không tham gia vào Đấu Trường Thú. Việc buôn bán hầu hết do Rin và XQ thầu. Từ ngày có cạnh tranh từ phía Nam, giá Xu đã rẻ hơn và dễ mua hơn so với trước. Những đại gia cũng rục rịch tăng cường mua Xu, giảm đầu tư Nạp. Đáng kể nhất là AceNever và GoogleTi, 1 vip13 và 1vip14.
+Cuối tuần tôi ít khi ở nhà, ít khi Online nên không tham gia vào Đấu Trường Thú. Việc buôn bán hầu hết do Rin và XQ thầu. Từ ngày có cạnh tranh từ phía Nam, giá Xu đã rẻ hơn và dễ mua hơn so với trước. Những đại gia cũng rục rịch tăng cường mua Xu, giảm đầu tư Nạp. Đáng kể nhất là AceNever, TiGoogle, DungGoogle, toàn vip13 và vip14.
 
 **Game X:** Ngocpck bị hạ bệ ở Sơ cấp, minhchau bị Hanso4 và Cherry bật lại ở Trung Cấp
 
-**Game Y:** Bị khích bác, ngocpck bug bạc lộ liễu để lên Vô Địch. Vì quá nóng vội hắn bị khóa acc và sau đó được thả nhưng cấm tham gia Liên Chiến.
+**Game Y:** Bị khích bác, ngocpck bug bạc lộ liễu để lên Vô Địch. Vì quá nóng vội hắn bị khóa acc và sau đó được thả nhưng bị cấm tham gia Liên Chiến.
 
 Những vụ bug xu bug bạc ngày càng nhiều, vì hiện tại ko còn độc quyền buôn bán nữa.
 
@@ -76,6 +74,6 @@ Sử dụng bug đăng nhập (permanent key/time pair) để phá acc (vụ nà
 
 Kiện tụng và khóa acc cũng xảy ra thường xuyên.
 
-Những game thủ trung lập có lẽ rất vui khi thấy tính cạnh tranh trong Game tăng lên. Những trận chiến ở Sơ Cấp, Trung Cấp trở nên hấp dẫn, máu lửa và bất ngờ liên tiếp xảy ra.
+Những game thủ trung lập có lẽ là những người vui nhất khi thấy tính cạnh tranh trong Game tăng lên. Những trận chiến ở Sơ Cấp, Trung Cấp trở nên hấp dẫn, máu lửa và bất ngờ liên tiếp xảy ra.
 
 Lúc này Hanso4 rủ rê tôi lại Sơ Cấp, bọn tôi mua được acc "linhsún", về sau tôi đổi tên thành "petit_soleil".
