@@ -12,7 +12,7 @@ Trong thời gian dev tool, tôi nhận thấy nhiều điểm hơi vô lý củ
 
 Như tính năng cược Xu có 2 vấn đề mà Server cần kiểm tra tính hợp lệ:
 
-* Tổng số Xu cược cho mỗi trận đấu, tối đa là 2000. Điều này tôi đã gian lận được bằng cách gửi thật nhanh các gói data để Server ko kịp kiểm tra toàn bộ.
+* Tổng số Xu cược cho mỗi trận đấu, tối đa là 2000. Điều này tôi đã gian lận được bằng cách gửi thật nhanh các gói tin cược xu để Server ko kịp kiểm tra toàn bộ.
 
 * Số Xu đặt cược và tài sản của người chơi, bạn ko thể cược 1000 Xu nếu trong túi chỉ có 800 Xu. Điều này tôi có thử và ko thành công. Tuy nhiên tôi đã bỏ sót một trường hợp!
 

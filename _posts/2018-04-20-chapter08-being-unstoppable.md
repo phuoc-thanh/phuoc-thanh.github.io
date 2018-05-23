@@ -16,7 +16,7 @@ Hai tên này không thừa nhận vụ phá acc Cherry và XQ, nhưng lại th�
 
 Khoảng tháng 12-2017, Đấu Trường Thú xuất hiện những kèo lớn - rất lớn, toàn vài triệu Xu/trận, đỉnh điểm là 173m Xu trong 1 trận. Thời đó Tôi và Rin chỉ dupe vài chục vạn chơi cho vui, hiếm khi làm kèo triệu Xu. Tôi đoán chỉ có minhchau mới có thể dupe được, nhưng ko...
 
-Tôi nói với minhchau lỗi này, và anh trả lời là ko hề biết lỗi này, tool của anh chặn những chỗ này rất kỹ nên ko có khả năng dupe được Xu. Ngay cả anh, sau khi nghe tôi kể lỗ hổng này, cũng phải mất vài lần sửa đi sửa lại code mới dupe được Xu.
+Tôi nói với minhchau lỗi dupe Xu, anh trả lời là ko hề biết lỗi này, tool của anh chặn những chỗ này rất kỹ nên ko có khả năng dupe được Xu. Ngay cả anh, sau khi nghe tôi kể lỗ hổng này, cũng phải mất vài lần sửa đi sửa lại code mới dupe được Xu.
 
 Như vậy đã có một người thứ 3 giúp ngocpck code phần dupe Xu, tôi nghĩ là cũng code trên tool của minhchau. Sau này được biết là bạn của ngocpck, dev của FPT đã code phần này - chỉ nghe đồn vậy thôi chứ tôi và Rin ko chắc.
 
