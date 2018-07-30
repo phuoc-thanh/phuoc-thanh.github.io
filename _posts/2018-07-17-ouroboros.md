@@ -34,9 +34,9 @@ Ngoài ra một số các giao thức khác cũng được đưa ra, cũng với
 
 **The PoS Design Challenge**
 
-Vấn đề cơ bản nhất mà giao thức PoS cần giải quyết là quá trình chỉ định, phân công công việc và phần thưởng. Để đạt được sự công bằng trong quá trình chỉ định ngẫu nhiên giữa các cổ đông, "entropy" phải được đưa vào hệ thống, và cơ chế đưa ra entropy có thể sẽ bị thao túng bởi 1 nhóm đối tượng.
+Vấn đề cơ bản nhất mà giao thức PoS cần giải quyết là quá trình chỉ định/phân công công việc và phần thưởng. Để đạt được sự công bằng trong quá trình chỉ định ngẫu nhiên giữa các cổ đông, "entropy" phải được đưa vào hệ thống, và cơ chế đưa ra entropy có thể sẽ bị thao túng bởi 1 nhóm đối tượng.
 
-Entropy: Mức độ biến động (hỗn loạn) của thông tin khi nhân một tin hiệu từ sự kiện ngẫu nhiên.
+Entropy: Mức độ biến động (hỗn loạn) của thông tin khi nhân một tín hiệu từ sự kiện ngẫu nhiên.
 https://en.wikipedia.org/wiki/Entropy_(information_theory)
 
 Ví dụ, khi một nhóm cổ đông có thể giả lập để thực hiện một giao thức để tìm ra một sự tiếp diễn giữa các nhóm cổ đông chung mục đích (xấu), như vậy họ sẽ thành lập đc một liên minh thao túng quá trình chỉ định. Đây là nhược điểm được biết đến với tên "grinding" (vulnerability)
@@ -45,3 +45,13 @@ Ví dụ, khi một nhóm cổ đông có thể giả lập để thực hiện 
 
 Nhóm tác giả giới thiệu Ouroboros, một hệ thống Proof of Stake được đảm bảo an toàn.
 
+
+# Mô hình giao dịch truyền thống (with trusted third party)
+
+# The need of new electronic transfer system (without trusted third party)
+
+#. References
+
+https://bitcoin.org/bitcoin.pdf
+
+https://cardanodocs.com/introduction
