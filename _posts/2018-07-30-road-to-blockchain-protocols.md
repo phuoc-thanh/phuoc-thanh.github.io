@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Road to Blockchain - Part 1: Proof of Work - What and How?"
+title: "Road to Blockchain - Proof of Work n Proof of Stake"
 comments: true
 description: "Proof of Work - Những khái niệm cơ bản"
 keywords: "blockchain, proofofstake, proofofwork, bitcoin"
@@ -127,6 +127,9 @@ Chắc chắn có rất nhiều bài toán kĩ thuật khác cũng đang cần g
 # References
 
 https://bitcoin.org/bitcoin.pdf
+
 https://en.wikipedia.org/wiki/Proof-of-work_system
+
 https://en.wikipedia.org/wiki/Hashcash
+
 https://en.wikipedia.org/wiki/SHA-2
