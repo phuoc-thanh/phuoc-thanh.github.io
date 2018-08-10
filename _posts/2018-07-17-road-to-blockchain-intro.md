@@ -6,9 +6,10 @@ description: "Road to Blockchain - Bước ra từ lịch sử"
 keywords: "blockchain, proofofstake, proofofwork"
 ---
 
-Kế toán: Accounting và Bookeeping nói chung là gì?
 
-# Single-entry bookeeping - Lược sử ngành kế toán, ghi sổ
+# 1. Single-entry bookeeping - Lược sử ngành kế toán, ghi sổ
+
+Kế toán: Accounting và Bookeeping nói chung là gì?
 
 Xin ngược dòng lịch sử, một chốc.
 
@@ -40,7 +41,7 @@ Khi "tiền" được sử dụng trong giao dịch, mọi mua bán đều cần
 Đây được coi là khởi đầu của ngành "kế toán - ghi sổ", hệ thống sổ ghi đơn giản như trên được coi là "Single-entry bookeeping system"
 
 
-# Double-entry bookeeping - Hệ thống ghi sổ kép
+# 2. Double-entry bookeeping - Hệ thống ghi sổ kép
 
 ## Problem
 
@@ -64,7 +65,7 @@ Sổ của Trâu note: Ngày xx, mua của Cáo già 10 trái táo, mất 120 xu
 
 Như vậy đảm bảo Credit Cáo = Debit Trâu, và nếu cần thiết, ta kí tên vào để khỏi ai giả mạo giấy tờ hí hí. Và sau này có tranh cãi kiện tụng, cứ đem sổ sách ra nói chuyện, ko cần phải đụng răng đụng sừng :)
 
-# Double-Entry System faults and correction
+# 3. Double-Entry System faults and corrections
 
 ## Kỷ nguyên số hóa
 
@@ -103,7 +104,7 @@ Mỗi cuốn sổ (or nơi lưu trữ) ghi lại các giao dịch của tài kho
 
 Tất nhiên, chúng ta vẫn đang sử dụng cách ghi sổ có tuổi đời hơn 500 năm, vẫn và đã có những gian lận xảy ra. Ngành kiểm toán đã khai thác được rất nhiều gian lận về sổ sách kế toán, vấn đề là "Balance but it's not correct"
 
-Debit và Credit cân bằng ư, tôi sẽ phù phép cho nó cân bằng, nhưng chi tiết bên trong là "gian lận", ghi chép đề có thể bị giả. Chữ ký tay ư, rất dễ bị vượt qua, là con người mà, lúc nào cũng có thể.
+Debit và Credit cân bằng ư, tôi sẽ phù phép cho nó cân bằng, nhưng chi tiết bên trong là "gian lận", ghi chép đều có thể bị giả. Chữ ký tay ư, rất dễ bị vượt qua, là con người mà, lúc nào cũng có thể.
 
 Số hóa và sự tham gia của bên thứ 3 như Ngân hàng với tài khoản Cash thì sao?
 
@@ -111,7 +112,7 @@ Vấn đề nằm ở sự tin tưởng của bên thứ 3, nếu có 1 sự sai
 
  Hơn nữa, ta giao hết toàn bộ ghi chép cho bên thứ 3, thì mất đi tính minh bạch. Ko phải ai cũng có thể kiểm chứng được các giao dịch, và chưa chắc giao dịch của bạn được an toàn!!!
 
-# Triple-entry system
+# 4. Triple-entry system
 
 Hoàn toàn ko liên quan đến lý thuyết "Momentum Accounting and Triple-Entry Bookkeeping" của giáo sư Yuji Ijiri, Nguyên lý kế toán mới của giáo sư là về dự đoán đà tăng trưởng.
 
@@ -127,7 +128,7 @@ Nếu hệ thống xác minh hoạt động bền vững khó bị phá vỡ và
 
 Hệ thống đó, nếu có, sẽ là Blockchain!
 
-# Blockchain
+# 5. Blockchain
 
 Toàn bộ những vấn đề trên đều liên quan tới giao dịch thương mại, tiền, nhưng hãy hình dung đến các khía cạnh khác có thể áp dụng "giao dịch" như:
 
@@ -135,7 +136,7 @@ Toàn bộ những vấn đề trên đều liên quan tới giao dịch thươn
 + Quản lý định danh cho mỗi người
 + Sổ xố?
 
-#. References
+# References
 
 https://bitcoin.org/bitcoin.pdf
 
