@@ -51,7 +51,7 @@ Và thế là, "vỏ sò" được phát minh ra, dùng để làm đơn vị qu
 
 Và giao thương cũng từ đó, mà vươn xa. Cọp siberian đem xuống đồng bằng đổi sữa dê đùi ngựa, tôm cua đem lên cao nguyên đổi thịt voi, cafe đổi hồ tiêu, lúa gạo đổi máy bay, v.vv. Và vỏ sò cũng tiến hóa thành tiền đồng, bạc, vàng, ngân phiếu, và tiến tới thành 1 vài con số thập phân trong "tài khoản ngân hàng" - đó là chuyện về sau.
 
-### Cuốn sổ ghi nợ.
+### Cuốn sổ ghi nợ
 
 Khi "tiền" được sử dụng trong giao dịch, mọi mua bán đều cần phải được ghi chép, để tính toán giá cả, và có lẽ cũng là để tiện đòi nợ. Ai đó đã phát minh ra chữ viết và giấy da, và từ "ghi sổ" cũng đồng thời đc đưa vào từ điển. Đại loại là 1 cuốn sổ ghi chép những thứ như:
 
@@ -64,19 +64,17 @@ Khi "tiền" được sử dụng trong giao dịch, mọi mua bán đều cần
 
 ## 2. Hệ thống ghi sổ kép
 
-## Problem
-
-Vấn đề gì xảy ra với hệ thống ghi sổ đơn?
+Vấn đề của ghi sổ đơn là gì?
 
 Khi thương mại vượt xa giới hạn bộ tộc, làng xã, tới quốc gia, vượt đại dương, châu lục... Cuốn sổ đơn kia bộc lộ vấn đề về tính đúng đắn, minh bạch - khi không có 1 căn cứ nào để xác định được việc ghi chép kia là đúng, sẽ dẫn tới các vấn đề về xác định tài sản, giá cả, thuế má, gian lận thương mại...
 
 Hôm nay Cáo bán nợ cho Trâu già chục táo chín, vài hôm sau qua trả nợ thì Cáo bảo "Mày mua 12 trái lận, tao có ghi sổ đây...". Tranh cãi nổ ra và Trâu già húc lòi ruột Cáo, hết đời gian thương. Đó là vấn đề của hệ thống sổ đơn.
 
-## Solution
+***Giải pháp thay thế cho "Ghi sổ đơn"***
 
-Giai đoạn đầu Trung cổ, người Do Thái bắt đầu tiên phong đổi mới ngành kế toán: ghi sổ kép. Và sau đó ở Ý, việc thực thi ghi sổ kép được đem ra làm chuẩn mực trong giao thương.
+Giai đoạn đầu Trung cổ, người Do Thái bắt đầu tiên phong đổi mới ngành kế toán: ghi sổ kép. Và sau đó ở Ý, việc thực thi ghi sổ kép được đem ra làm chuẩn mực trong giao thương (đâu đó ở Thế Kỷ 15).
 
-Về nguyên tắc, nó dựa vào: debit (ghi nợ) và credit (ghi có) vào account (tài khoản) và luôn đảm bảo sự cân bằng của 2 phần này. Đọc thêm về ghi sổ kép: [Link Wiki](https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system)
+Về nguyên tắc, nó là cách ghi dữ liệu debit (ghi nợ) và credit (ghi có) vào account (tài khoản) và luôn đảm bảo sự cân bằng của 2 phần này. Đọc thêm về ghi sổ kép: [Link Wiki](https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system)
 
 Lúc này nhé, Trâu già mua chục trái táo của Cáo, thì:
 
@@ -88,58 +86,64 @@ Như vậy đảm bảo Credit Cáo = Debit Trâu, và nếu cần thiết, ta k
 
 ## 3. Yếu kém của Sổ Kép và các bổ sung
 
+Vấn đề của ghi sổ kép là gì?
+
+Cho tới bây giờ - 2018, chúng ta vẫn đang sử dụng cách ghi sổ có tuổi đời hơn 500 năm, vẫn và đã có những gian lận xảy ra. 
+
+Vấn đề là "Balanced but it's not correct"
+
+Debit và Credit phải cân bằng ư? No-problem, và từ đó xuất hiện những thiên tài, địa tài hay đại hiệp ẩn danh phù phép sự cân bằng này bằng cách cố tình ghi chép sai, khai khống hóa đơn, mua chuộc, giả mạo chữ ký v.v... và những sai sót này được tính toán rất tỉ mỉ, công phu, đảm bảo "Totally Balanced" cho các tài khoản được ghi chép.
+
+Ngành kiểm toán đã phát hiện được rất nhiều gian lận về sổ sách kế toán, chúng ta hằng ngày vẫn chứng kiến những phiên tòa xử các vụ án giả mạo sổ sách..
+
+### Đặt niềm tin vào bên thứ 3
+
+Những vụ án giả mạo và gian lận xảy ra, khiến Trâu già ko còn tin tưởng bạn làm ăn của mình. Trang trại súc vật lúc này, nổi lên họ nhà Vượn, nổi tiếng khéo léo, thông minh, biết tổ chức và hơn hết là "đáng tin cậy".
+
+Giao dịch diễn ra ở trang trại đa phần sẽ thông qua họ nhà Vượn, như:
+
+Trâu già muốn mua nhãn của Khỉ-đột, thì sẽ nói với nhà Vượn 1 tiếng -  rằng hắn sắp mua của Khỉ 2 cân nhãn, giá đồng ý là 40xu. Vượn sẽ làm chứng cho giao dịch này, và sẽ ghi vào sổ của nhà Vượn 1 dòng ghi chép: 
+
+> Ngày xx, Trâu già mua của Khỉ-đột 2 cân táo, giá 40xu.
+
+Trâu già và Khỉ-đột cũng đồng thời ghi chú vào sổ của mình giao dịch trên.
+
+Như vậy, cách mà nhà Vượn tham gia vào ghi chép cho 1 giao dịch của Trâu và Khỉ, được coi là một phương pháp tiếp cận bổ sung cho nền tảng Ghi Sổ Kép. Cách tiếp cận này tin cậy hơn, giảm thiểu rủi ro của sai sót và gian lận, và mang tính chất lưu trữ - phòng trường hợp tranh chấp, thanh tra..
+
+Đây là cách mà Ngân Hàng hoạt động, dĩ nhiên, nhà Vượn (a.k.a Ngân Hàng) sẽ thu một mức phí để duy trì hoạt động làm "bên thứ 3 tin cậy" này.
+
 ### Kỷ nguyên số hóa
 
-Computers và Internet đã bước vào hệ thống thương mại, ngân hàng cực kỳ mạnh mẽ, và đem đến rất nhiều lợi ích lớn lao, như:
+Cùng với vòng xoáy của Computer và Internet, công nghệ lưu trữ số hóa cũng được áp dụng vào ghi chép.
 
-+ Năng lực tính toán vượt trội cả về độ chính xác và tốc độ
-+ Khả năng lưu trữ vô tận
-+ Bảo mật cao
-+ Xóa nhòa khoảng cách địa lý trong giao dịch
-+ ...
++ Nhập liệu Sổ sách giấy tờ được thay bằng Software, Hard Disk.
++ Chữ ký tay được thay bằng chữ ký số.
++ Bank account được sử dụng rộng rãi và tiện dụng nhờ Internet.
+...
 
-Hết thời của những anh vượn người, những Trâu già - hậu duệ, Cáo già - hậu duệ, giờ đây sinh sản và di cư đến các miền khác cách xa nhau. Giao dịch giờ đây, ko bằng giấy tờ nữa, mà bằng số.
+Thời điểm này, Ngân Hàng và các bên thứ 3 khác (Vượn đội lốt) cũng đã số hóa phần lớn sổ sách và ghi chép
 
-- Trâu: Ê, ship tao 4 xe tải táo xanh xuống An Giang, địa chỉ zz.
-- Cáo: ok, đợi 20 phút.
+## 4. Chữ ký số và Hóa đơn điện tử
 
-20 giây sau:
+**Vấn đề của bên thứ 3**
 
-- Cáo: Xong, đã đóng hàng kèm hóa đơn xong xuôi.
-- Trâu: Oke, đang chuyển khoản... Đã xong.
+Đó là `Insider Fraud`, có thể dịch ra là gian lận nội bộ.
 
-Và tài khoản ngân hàng của Cáo lúc này được xác nhận tăng lên 1200$, tài khoản của Trâu già -1200$. Và ngân hàng lưu lại biên lai/biên nhận giao dịch tài khoản của Cáo và Trâu, kiểu như:
+Gian lận xảy ra giữa người mua - kẻ bán, và đặc biệt là nằm ở bên thứ 3 - như nhà Vượn. Kể cả ghi chép giao dịch được ghi làm 3 bản, vẫn chưa đủ đảm bảo độ toàn vẹn dữ liệu.
 
-> Ngày xx tháng yy, TK Trâu -1200 chuyển khoản cho Cáo (1200), nội dung: Mua 4 xe táo
+Làm sao để chắc là Trâu già và Khỉ đột giữ ghi chép về việc mua bán? Thật sự mà nói, chúng ta đã đủ bận rộn rồi, và không một ai ghi chép đầy đủ những giao dịch trong ngày, và chúng ta chọn cách tin tưởng tuyệt đối vào bên thứ 3 như Ngân Hàng, Chính Phủ...
 
-### Số hóa sổ cái
+Nếu một ngày bên thứ 3 xảy ra sai sót so với hợp đồng giao dịch của bên mua-bán, nếu 2 trong 3 bên quyết tâm gian lận ghi chép thì sao? Hoặc trường hợp toàn bộ sổ sách ở bên thứ 3 đột nhiên bị mất hết (chập điện, cháy nổ, thiên tai...) thì chuyện gì xảy ra?
 
- Ở ví dụ trên là tài khoản tiền mặt (Cash account). Nguyên tắc kế toán, thực tế được số hóa ở nhiều khía cạnh khác nữa, theo đó, phần mềm kế toán, chữ ký điện tử, con dấu số, mã số cá nhân... được sử dụng rộng rãi hiện nay. Về cơ bản, nguyên tắc sổ kép vẫn được giữ, nhưng ở mức bảo mật và tin tưởng cao hơn.
+Hay đơn giản hơn là sự sụp đổ - biến mất của bên thứ 3, ồ lúc này thảm họa ghi chép mới xuất hiện.
 
-+ Thay vì ghi chép thủ công, thì giờ thay bằng phần mềm.
-+ Thay vì lưu sổ sách giấy, nay đổi mới lưu vào đĩa cứng.
-+ Thay vì xác nhận chữ ký tay, giờ xác nhận bằng mật mã cá nhân, chữ ký số...
-+ Và có 1 tổ chức thứ 3 (là Ngân Hàng) dựa vào uy tín của mình để xác minh rằng giao dịch của 2 bên là hợp lệ
+Và công nghệ mã hóa bước chân vào cuộc chơi..
 
-Mỗi cuốn sổ (or nơi lưu trữ) ghi lại các giao dịch của tài khoản được gọi là Sổ cái - Ledger. Tiếp theo, sẽ là câu chuyện của Ledger...
+### Triple entry accounting
 
-### Vấn đề của ghi sổ kép
+Hoàn toàn ko liên quan đến lý thuyết "Momentum Accounting and Triple-Entry Bookkeeping" của giáo sư Yuji Ijiri, Nguyên lý kế toán mới của giáo sư là về dự đoán đà tăng trưởng. Tôi đang nhắc đến 1 paper của Ian Grigg xuất bản năm 2005.
 
-Tất nhiên, chúng ta vẫn đang sử dụng cách ghi sổ có tuổi đời hơn 500 năm, vẫn và đã có những gian lận xảy ra. Ngành kiểm toán đã phát hiện được rất nhiều gian lận về sổ sách kế toán, chúng ta hằng ngày vẫn chứng kiến những phiên tòa xử các vụ án giả mạo sổ sách. Vấn đề là "Balanced but it's not correct"
-
-Debit và Credit phải cân bằng ư, tôi sẽ phù phép cho nó cân bằng, nhưng chi tiết bên trong là "gian lận", ghi chép đều có thể bị giả. Chữ ký tay ư, rất dễ bị vượt qua, là con người mà, lúc nào cũng có thể.
-
-Số hóa và sự tham gia của bên thứ 3 như Ngân hàng với tài khoản Cash thì sao?
-
-Vấn đề nằm ở sự tin tưởng của bên thứ 3, nếu có 1 sự sai sót, gian lận nào đó ở bên thứ 3, tất cả sẽ sụp đổ. Ko có ai đảm bảo sự trung thực tuyệt đối hay tính bền vững của tổ chức thứ 3. Ai dám đảm bảo 1 chính phủ, 1 ngân hàng, 1 tổ chức tín dụng, một tổ chức cấp phép nào đó ko bị sụp đổ?
-
- Hơn nữa, một khi đã giao hết toàn bộ ghi chép cho bên thứ 3, thì mất đi tính minh bạch. Ko phải ai cũng có thể kiểm chứng được các giao dịch, và chưa chắc giao dịch của bạn được an toàn!!!
-
-## 4. Triple-entry system
-
-Hoàn toàn ko liên quan đến lý thuyết "Momentum Accounting and Triple-Entry Bookkeeping" của giáo sư Yuji Ijiri, Nguyên lý kế toán mới của giáo sư là về dự đoán đà tăng trưởng.
-
-Đoạn này các bạn có thể đọc thêm ở [đây](https://nakamotoinstitute.org/triple-entry-accounting)
+Bài viết gốc ở [đây](https://nakamotoinstitute.org/triple-entry-accounting)
 
 Nếu có một cách ghi sổ mà mọi người đều có thể xem được giao dịch ghi trong sổ cái (Ledger)?
 
@@ -156,6 +160,7 @@ Hệ thống đó, nếu có, sẽ là Blockchain!
 Toàn bộ những vấn đề trên đều liên quan tới giao dịch thương mại, tiền, nhưng hãy hình dung đến các khía cạnh khác có thể áp dụng "giao dịch" như:
 
 + Bỏ phiếu, nếu chúng ta vote xong thì coi như là 1 giao dịch sẽ được ghi vào sổ cái, kiểm phiếu minh bạch
++ Chấm bài thi
 + Quản lý định danh cho mỗi người
 + Sổ xố?
 
