@@ -6,25 +6,22 @@ description: "Proof of Work - Những khái niệm cơ bản"
 keywords: "blockchain, proofofstake, proofofwork, bitcoin"
 ---
 
+[Draft version - to be completed]
+
+
 # Proof of Work - the need of
 
-Nếu tôi là chủ của 1 mỏ kim cương, cai quản hàng ngàn thợ đào mỏ, và tôi muốn có một cách thức chấm công tự động nào đó để không phải sử dụng nhiều cai mỏ.
+Hẳn các bạn còn nhớ tới phát minh vỏ sò ở phần trước chứ?
 
-Tôi làm sao biết được, đến cuối ngày anh thợ A, B đã đào cật lực, anh Y chỉ ngồi mát, thậm chí anh Z nào đó ko phải là công nhân của tôi mà chỉ đợi tới giờ phát lương là lẻn vào để nhận tiền công?
+Chúng ta thử suy luận, tại sao nó phải được mài nhỏ, có thể là khắc lên nữa rồi mới có thể đem ra làm tiền giao dịch được?
 
-Tôi cần bằng chứng công việc: Hãy show bằng chứng rằng anh đã làm việc cật lực để nhận đc tiền công!
+Vì công việc mài dũa/điêu khắc một vỏ sò, vỏ hến đến một mức thật đẹp, thật tinh xảo sẽ chiếm một phần công sức, có thể đo đếm được - tất nhiên chỉ ở một mức độ tương đối. Nhưng khi cầm trên tay chiếc vỏ sò thật đẹp, nó là bằng chứng rằng người tạo ra nó ko chỉ dạo một vòng biển nhặt lên, mà người đó đã trải qua một quá trình làm việc, bỏ công sức chế tác để tạo ra chiếc vỏ sò có thể giao dịch được. Và người ta công nhận công sức của anh ta qua chiếc vỏ sò đó.
 
-Tôi thuê một đội kĩ sư, họ phát minh ra cái cuốc thông minh, gắn 1 loại cảm biến có thể hiểu được người sử dụng cuốc có chịu làm việc hay không...
+Vỏ sò, đó là nguyên mẫu rất xa xưa của cái gọi là "Proof of Work" / bằng chứng công việc.
 
-Hàng ngàn cái cuốc thông minh được phát cho công nhân đào mỏ, và tôi trả công cho thợ đào dựa trên bằng chứng của cuốc thông minh báo. Đảm bảo toàn bộ thợ đào đều phải làm việc và xứng đáng nhận được tiền công, ko ai có thể mạo danh để nhận công.
+Vậy nếu như một người nhặt được chiếc vỏ sò đẹp tự nhiên, như đã được chế tác rồi thì sao? Thì mọi người vẫn công nhận, may mắn cũng là một phần của hệ thống :)
 
-Cây cuốc này hoạt động như thế nào?
-
-Mỗi nhát cuốc được bổ xuống, cảm biến bên trong cuốc sẽ hoạt động và tìm kiếm 1 loại đá đặc biệt (Crypton chẳng hạn, hehe). Các kĩ sư thiết đã đo đạc và tính toán rất kĩ mật độ của loại đá này trong nền địa chất của mỏ kim cương, và cho ra 1 con số thích hợp. Ví dụ, tỉ lệ xấu nhất để cảm biến tìm thấy được loại đá này là 12000 cuốc, và trường hợp may mắn cuốc lần đầu đã trúng thì cực kỳ thấp. Trung bình thợ đào sẽ cuốc đc 14000 nhát trong 8 tiếng làm việc, như vậy rất dễ dàng để đo được là chủ cây cuốc có làm việc hay không.
-
-
-Hệ thống xác nhận bằng chứng công việc kiểu này được gọi là Proof of Work (system)!
-
+Và vài trăm năm nay, những hệ thống Proof Of Work vẫn đang được sử dụng rất nhiều. Chúng ta có thể đang gián tiếp sử dụng nó mỗi ngày, nhưng ko ai để ý mà thôi.
 
 
 # Hashcash by Adam Back (1997)
@@ -39,9 +36,9 @@ Hashcash đảm bảo: đối với người sử dụng máy tính cá nhân, g
 
 **Nguyên lý hoạt động**
 
-Cũng như nền tảng của hệ thống Proof-of-Work, hashcash sẽ có 1 cơ chế khiến người gửi phải hoạt động để tìm 1 thứ gì đó đặc biệt, ở trường hợp này, đó là một loại mã (hash) thay vì crypton :)
+Cũng như nền tảng của hệ thống Proof-of-Work, hashcash sẽ có 1 cơ chế khiến người gửi phải hoạt động để đạt được 1 kết quả nào đó, ở trường hợp này, đó là một loại mã hash.
 
-Loại mã hash này chỉ có 1 cách duy nhất để tìm ra là đoán dần: brute force, ko có phương pháp thay thế nào khác. Nhưng khi tìm ra rồi thì việc xác nhận độ đúng đắn của mã hash này rất dễ dàng.
+Loại mã hash này chỉ có 1 cách duy nhất để tìm ra là đoán dần: brute force, ko có cách tìm nào khác. Nhưng khi tìm ra rồi thì việc xác nhận độ đúng đắn của mã hash này rất dễ dàng.
 
 **Phân tích kĩ thuật**
 
@@ -51,30 +48,16 @@ header của email sẽ có dạng:
 
 `X-Hashcash: 1:20:1303030600:adam@cypherspace.org::McMybZIhxKXu57jd:ckvi`
 
-> ver: Hashcash format version, 1 (which supersedes version 0).
-
-> bits: Number of "partial pre-image" (zero) bits in the hashed code.
-
-> date: The time that the message was sent, in the format YYMMDD[hhmm[ss]].
-
-> resource: Resource data string being transmitted, e.g., an IP address or email address.
-
-> ext: Extension (optional; ignored in version 1).
-
-> rand: String of random characters, encoded in base-64 format.
-
-> counter: Binary counter (up to 220), encoded in base-64 format.
-
 Các thông tin chứa trong header gồm địa chỉ email, ngày gửi, và thông tin về bằng chứng công việc. Sự có mặt của địa chỉ email người nhận để đảm bảo rằng header này được tính toán dành cho mỗi người nhận cụ thể. Thời gian đính kèm để đảm bảo rằng email được gửi gần đây và để chắc chắn về header email: là duy nhất cho mỗi email
 
 
-Sender Side:
+***Sender Side:***
 
 Người gửi sẽ random 1 con số gắn vào header như trên và tính SHA (160bit) hash của header. Nếu 20 bits đầu tiên (5 hex digits) đều bằng zero, thì số hash này được coi là 1 bằng chứng "đạt chuẩn", sẽ được chấp thuận. Nếu không có kết quả như yêu cầu trên, sender sẽ tăng phần counter lên và tính hash lại. Xác suất để sender tính được số hash chuẩn ngay lần đầu tiên là 1/1 048 576. Đây cũng là trung bình số lần mà sender cần thử để tìm ra bằng chứng công việc - hash chuẩn.
 
 Đối với máy tính cá nhân thông thường, đây là mức tính toán có thể chấp nhân được đối với 1 người sử dụng phổ thông, nhưng với spammer thì con số phép tính sẽ cực kỳ lớn bởi số lượng email spam.
 
-Receiver Side:
+***Receiver Side:***
 
 Người nhận sẽ tính SHA của header và kiểm tra xem 20 bits đầu chuỗi hash có phải là zero không. Việc này chỉ mất 2 microsecond mà thôi. Nếu kết quả đúng thì sẽ tiếp tục kiểm tra các thông tin khác trong header như email address, time, database... để chắc chắn đây là email hợp lệ. Việc này cũng chiếm rất ít tài nguyên cpu và disk.
 
@@ -82,8 +65,6 @@ Người nhận sẽ tính SHA của header và kiểm tra xem 20 bits đầu ch
 # Bitcoin PoW system (2009)
 
 Bitcoin là một trong những công nghệ ứng dụng Proof of Work và Hashcash.
-
-Như đã giới thiệu ở phần nguyên lý hoạt động của hệ thống Proof-of-Work, lợi ích rõ ràng nhất mà hệ thống mang lại là loại bỏ bên thứ 3 (cai mỏ) ra khỏi việc giao tiếp, kiểm tra, thanh toán giữa chủ và nhân công.
 
 Bitcoin áp dụng hệ thống PoW để giải quyết vấn đề của giao dịch tiền, và loại bỏ bên thứ 3 là ngân hàng.
 
@@ -102,7 +83,7 @@ Bitcoin cũng đc xem là ứng dụng tiên phong nhất của Blockchain, ở 
 
 Thật ko may, hệ thống PoW vẫn có những điểm yếu của riêng nó. Và "Năng lượng" chính là bài toán lớn nhất của 1 hệ thống PoW.
 
-Cảm biến nằm bên trong cán cuốc, cpu dùng để tìm mã hash, đều cần sử dụng điện năng. Và điện năng tiêu thụ ngày một lớn khi nhu cầu sử dụng tăng. Ngta đang tự hỏi rằng họ tiêu thụ một lượng điện năng lớn để đáp ứng yêu cầu của hệ thống PoW liệu có phải là tối ưu? Liệu có giải pháp nào đó ưu việt hơn, hiệu năng cao hơn ko?
+Cpu dùng để tìm mã hash cần sử dụng điện năng. Và điện năng tiêu thụ ngày một lớn khi nhu cầu sử dụng tăng. Ngta đang tự hỏi rằng họ tiêu thụ một lượng điện năng lớn để đáp ứng yêu cầu của hệ thống PoW liệu có phải là tối ưu? Liệu có giải pháp nào đó ưu việt hơn, hiệu năng cao hơn ko?
 
 Và khái niệm Proof of Stake ra đời, chủ yếu là để áp dụng trong lĩnh vực tiền mã hóa.
 
