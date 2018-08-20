@@ -96,7 +96,7 @@ Cùng với vòng xoáy của Computer và Internet, công nghệ lưu trữ s�
 + Bank account được sử dụng rộng rãi và tiện dụng nhờ Internet.
 ...
 
-Thời điểm này, Ngân Hàng và các bên thứ 3 khác (Vượn đội lốt) cũng đã số hóa phần lớn sổ sách và ghi chép
+Thời điểm này, Ngân Hàng và các bên thứ 3 khác (Vượn đội lốt) cũng đã số hóa phần lớn sổ sách và ghi chép. Kèm theo quá trình số hóa, là việc ứng dụng các nghiên cứu của ngành Mật Mã học hiện đại (Modern Cryptography) để ngăn ngừa những hiểm họa về an toàn thông tin.
 
 ## 4. Chữ ký số và Hóa đơn điện tử
 
@@ -112,13 +112,17 @@ Nếu một ngày bên thứ 3 xảy ra sai sót so với hợp đồng giao d�
 
 Hay đơn giản hơn là sự sụp đổ - biến mất của bên thứ 3, ồ lúc này thảm họa ghi chép mới xuất hiện.
 
-Và công nghệ mã hóa bước chân vào cuộc chơi..
+Và công nghệ Blockchain bước chân vào cuộc chơi..
 
 ### Triple entry accounting
 
 Hoàn toàn ko liên quan đến lý thuyết "Momentum Accounting and Triple-Entry Bookkeeping" của giáo sư Yuji Ijiri, Nguyên lý kế toán mới của giáo sư là về dự đoán đà tăng trưởng. Tôi đang nhắc đến 1 paper của Ian Grigg xuất bản năm 2005.
 
 Bài viết gốc ở [đây](https://nakamotoinstitute.org/triple-entry-accounting)
+
+Ian Grigg đã đưa ra khái niệm ghi sổ mới, đem công nghệ mã hóa vào cùng với lý thuyết ghi chép chuỗi trên nền tảng tính toán phi tập trung. Ngoài ra phải kể đến những nghiên cứu trước đó của Nick Szabo về các vấn đề thanh toán online, hợp đồng thông minh, nguy cơ của bên thứ 3... Chính Nick Szabo, là người được cả cộng đồng tin rằng đã tạo ra bitcoin. Những nghiên cứu của ông rất gần và rất sát với Bitcoin.
+
+[Đọc thêm về nghiên cứu của Nick](https://nakamotoinstitute.org/authors/nick-szabo/)
 
 Nếu có một cách ghi sổ mà mọi người đều có thể xem được giao dịch ghi trong Sổ sách?
 
@@ -145,8 +149,8 @@ https://bitcoin.org/bitcoin.pdf
 
 https://resources.sei.cmu.edu/asset_files/Brochure/2012_015_001_28207.pdf
 
-https://hackernoon.com/why-everyone-missed-the-most-important-invention-in-the-last-500-years-c90b0151c169
-
 https://nakamotoinstitute.org/triple-entry-accounting
+
+https://nakamotoinstitute.org/bit-gold/
 
 https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system
