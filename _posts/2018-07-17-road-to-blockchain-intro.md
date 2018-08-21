@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Road to Blockchain - The First Look"
+title: "Road to Blockchain - A Pieace of History"
 comments: true
 description: "Road to Blockchain - Bước ra từ lịch sử"
 keywords: "blockchain, proofofstake, proofofwork"
 ---
 
-Viết về một công nghệ mới mẻ, luôn là thách thức lớn đối với blogger, và nó là một loại công việc tiêu hao rất nhiều thời gian và công sức. 4 phần mày mò tìm hiểu, nhưng 6 phần quan trọng hơn là giải thích, diễn đạt để người độc giả hiểu, mới là thành công của 1 bài viết.
+Viết về một công nghệ mới mẻ, luôn là thách thức lớn đối với blogger, và nó là một loại công việc tiêu hao rất nhiều thời gian và công sức. 4 phần mày mò tìm hiểu, nhưng 6 phần quan trọng hơn là giải thích, diễn đạt để độc giả hiểu, mới là thành công của 1 bài viết.
 
-Chủ đề lần này tôi chọn viết là một mảng công nghệ nhận được sự quan tâm rất lớn từ cộng đồng thời gian qua: Blockchain.
+Chủ đề lần này tôi chọn viết là một mảng công nghệ đang nhận được sự quan tâm rất lớn từ cộng đồng thời gian qua: Blockchain.
 
-Có thể các bạn đã đọc rất nhiều, nghe rất nhiều, tìm tòi rất lâu nhưng vẫn đang bối rối với những gì thu thập được - như tôi. Thì hẳn bạn rất khao khát muốn biết rõ hơn về nguồn gốc, ý tưởng đằng sau blockchain, những thôi thúc nào đã giúp Satoshi tạo ra bitcoin? Blockchain - thật sự là công nghệ của tương lai hay chỉ là công cụ bánh vẽ của cá mập để mồi cá lia ria?
+Có thể các bạn đã đọc rất nhiều, nghe rất nhiều, tìm tòi rất lâu nhưng vẫn đang bối rối với những gì thu thập được - như tôi. Thì hẳn bạn rất khao khát muốn biết rõ hơn về nguồn gốc, ý tưởng đằng sau blockchain, những nền tảng đã giúp Satoshi tạo ra bitcoin...
 
-Bài viết đầu tiên trong series, sẽ tổng hợp và cố gắng giải thích những định nghĩa cơ bản về blockchain, từ nhu cầu ghi chép đơn sơ đến sự bùng nổ của công nghệ mã hóa. 
+Bài viết đầu tiên trong series, sẽ tổng hợp và cố gắng giải thích nguồn gốc của blockchain, từ nhu cầu ghi chép đơn sơ đến sự bùng nổ của công nghệ mã hóa. 
 
 Vậy xin ngược dòng lịch sử một chốc, về thời kỳ săn bắn hái lượm luôn cho xa nhé :)
 
@@ -20,11 +20,11 @@ Vậy xin ngược dòng lịch sử một chốc, về thời kỳ săn bắn h
 
 Bắt đầu bằng một nhu cầu cơ bản khi con người sống tập trung là ***Trao đổi (Exchange)***
 
-Hôm nay tôi săn đc con chồn, cả nhà ăn chồn 2 tuần nay đã ngán lắm, đi ngang nhà tên hàng xóm, thấy nó đang nướng cá, thơm lừng. Tôi bèn gợi ý đổi con chồn lấy 5 con cá của nó. Thằng hàng xóm đồng ý trao đổi, như vậy là đã xảy ra 1 giao dịch. Vậy đó, giao dịch đã xảy ra - trước cả khi con người biết đọc, ko chừng trước cả khi biết nói (who's know? hahaa)
+Hôm nay tôi săn đc 1 em chồn, cả nhà ăn chồn 2 tuần nay đã ngán lắm, đi ngang nhà tên hàng xóm, thấy nó đang nướng cá, thơm lừng. Tôi dụ dỗ nó đổi em chồn lấy 5 con cá. Thằng hàng xóm đồng ý trao đổi, như vậy là đã xảy ra 1 giao dịch. Vậy đó, giao dịch đã xảy ra - trước cả khi con người biết đọc, ko chừng trước cả khi biết nói (who's know? hahaa)
 
 Đến bước phát triển kế tiếp, là nhu cầu ***Buôn bán, giao thương (Trade)***
 
-Một ngày đẹp trời, tôi săn đc 6 con chồn, hay thậm chí săn đc cả cọp Siberia, voi Mammoth, đương nhiên là ăn không hết, nhưng tủ lạnh lại chưa đc phát minh nên cũng chẳng còn cách nào - ngoài đem cho thằng hàng xóm hoặc linh cẩu ăn bớt. Ngay cả khi, tôi đem đổi thành cá, hay trái cây, thì cũng ko tài nào nhai hết được.
+Một ngày đẹp trời, tôi săn đc 6 con chồn, hay thậm chí săn đc cả cọp Siberia, voi Mammoth, đương nhiên là ăn không hết, nhưng tủ lạnh lại chưa đc phát minh nên cũng chẳng còn cách nào - ngoài đem cho thằng hàng xóm hoặc linh cẩu ăn bớt. Ngay cả khi, tôi đem đổi thành cá, hay trái cây, thì cũng ko thể nhai hết được.
 
 Và thế là, "vỏ sò" được phát minh ra, dùng để làm đơn vị quy đổi cho hàng hóa. Tiền thời này, là vỏ sò được mài thật đẹp, phụ nữ mang làm trang sức được. Tôi săn đc 1 cọp Siberia, để lại cái tay cọp cả nhà ăn lẩu, còn lại tôi đem đổi lấy trăm vỏ sò ở ngoài chợ. Bữa nào đói quá, lười quá, hay say lá đu đủ quá ko săn được gì, tôi đem ít vỏ sò này đổi lấy vài chục trái táo, đôi con cá về ăn, vỏ sỏ quả là phát minh vĩ đại -))
 
