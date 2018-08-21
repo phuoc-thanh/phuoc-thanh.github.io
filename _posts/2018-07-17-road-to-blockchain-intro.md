@@ -38,7 +38,7 @@ Khi "tiền" được sử dụng trong giao dịch, mọi mua bán đều cần
 + Ngày 02, bán 20 cá thu được 200 sò, mua 2 cân gạo hết 40 sò.
 + ...
 
-Đây được coi là khởi đầu của ngành "kế toán - ghi sổ", hệ thống sổ ghi đơn giản như trên được coi là "Single-entry bookeeping system". Các loại sổ ghi chép này về sau được gọi là Sổ Cái (Ledger).
+Đây được coi là khởi đầu của việc "kế toán - ghi sổ", hệ thống sổ ghi đơn giản như trên được coi là "Single-entry bookeeping system". Các loại sổ ghi  sổ sách, lưu trữ dữ liệu đang đchép này về sau được gọi là Sổ Cái (Ledger).
 
 
 ## 2. Hệ thống ghi Sổ Kép
@@ -96,23 +96,55 @@ Cùng với vòng xoáy của Computer và Internet, công nghệ lưu trữ s�
 + Bank account được sử dụng rộng rãi và tiện dụng nhờ Internet.
 ...
 
-Thời điểm này, Ngân Hàng và các bên thứ 3 khác (Vượn đội lốt) cũng đã số hóa phần lớn sổ sách và ghi chép. Kèm theo quá trình số hóa, là việc ứng dụng các nghiên cứu của ngành Mật Mã học hiện đại (Modern Cryptography) để ngăn ngừa những hiểm họa về an toàn thông tin.
+Thời điểm này, Ngân Hàng và các bên thứ 3 khác (Vượn đội lốt) cũng đã số hóa phần lớn sổ sách và ghi chép. Kèm theo quá trình số hóa, là việc ứng dụng các nghiên cứu của ngành Mật Mã học hiện đại (Modern Cryptography) để ngăn ngừa những nguy cơ về an toàn thông tin.
 
-## 4. Chữ ký số và Hóa đơn điện tử
+## 4. Lưu trữ thông tin thời kỳ hiện đại
 
-**Vấn đề của bên thứ 3**
+Đọc tới đây, các bạn cũng hiểu việc ghi chép, lưu trữ đã có một lịch sử rất thú vị như vậy, nó luôn luôn có khiếm khuyết, và con người cũng chưa bao giờ ngừng hoàn thiện nó. Những công nghệ mới, tiêu chuẩn mới, phát minh mới vẫn cứ xuất hiện theo thời gian...
 
-Đó là `Insider Fraud`, có thể dịch ra là gian lận nội bộ.
+Những đột phá trong lĩnh vực CNTT và Mật mã học mang đến các hệ thống lưu trữ thông tin giao dịch khổng lồ, tập trung, được quản lý bởi những Tổ chức tín nhiệm (Trusted Third Party).
 
-Gian lận xảy ra giữa người mua - kẻ bán, và đặc biệt là nằm ở bên thứ 3 - như nhà Vượn. Kể cả ghi chép giao dịch được ghi làm 3 bản, vẫn chưa đủ đảm bảo độ toàn vẹn dữ liệu.
+Tất nhiên, những Tổ chức tín nhiệm này cũng có nhiều nhược điểm, và nhược điểm lớn nhất của nó có lẽ là hiểm họa "Insider Fraud" - Gian lận nội bộ.
 
-Làm sao để chắc là Trâu già và Khỉ đột giữ ghi chép về việc mua bán? Thật sự mà nói, chúng ta đã đủ bận rộn rồi, không một ai ghi chép đầy đủ những giao dịch trong ngày, và chúng ta chọn cách tin tưởng tuyệt đối vào bên thứ 3 như Ngân Hàng, Chính Phủ...
+Nói một cách dễ hiểu, là những gian lận này phát sinh từ bản thân "bên trong tổ chức" mà chúng ta đang tin tưởng. Chúng ta đang đặt niềm tin vào những tổ chức tín nhiệm, họ thường mang danh tiếng và của cải ra để đảm bảo cho sự tín nhiệm của tổ chức. Nhưng "tổ chức" đó là ai? Là những con người.
 
-Nếu một ngày bên thứ 3 xảy ra sai sót so với hợp đồng giao dịch của bên mua-bán, nếu 2 trong 3 bên quyết tâm làm méo mó những ghi chép thì sao? Hoặc rủi ro, toàn bộ sổ sách ở bên thứ 3 đột nhiên bị mất hết (chập điện, cháy nổ, thiên tai...) thì chuyện gì xảy ra?
+Những người bên trong một tổ chức tín nhiệm, họ có thẩm quyền, họ được tiếp xúc với những dữ liệu ghi chép, hệ thống thông tin quan trọng. Và họ cũng chính là nguy cơ tiềm ẩn. Nhân viên cũ, cộng tác viên, đối tác, quản trị viên và thậm chí là kiểm soát viên đều có thể trở thành nhân tố tham gia vào những cuộc gian lận như:
 
-Hay đơn giản hơn là sự sụp đổ - biến mất của bên thứ 3, ồ lúc này thảm họa ghi chép mới xuất hiện.
+- Thay đổi, chỉnh sửa chứng từ, ghi chép.
+- Đánh cắp thông tin nhạy cảm (như tài khoản ngân hàng).
+- Giả mạo sổ sách.
+- Sử dụng trái phép tài sản ko thuộc sở hữu.
+- Vi phạm tính riêng tư của người dùng
+...
 
-Và công nghệ Blockchain bước chân vào cuộc chơi..
+Các bạn có thể xem qua một nghiên cứu nhỏ của SEI (Carnegie Mellon Uni) về gian lận nội bộ trong ngành tài chính ở [đây](https://resources.sei.cmu.edu/asset_files/Brochure/2012_015_001_28207.pdf)
+
+### Công nghệ mã hóa trong lưu trữ
+
+Ngoài lĩnh vực tài chính, kiểm toán, ngân hàng vốn đã nhiều vấn đề, các bên thứ 3 khác cũng được tin tưởng trên sân chơi mới là Internet: VISA, Verisign, Internet DNS, Paypal... Chúng ta không thể phủ nhận những lợi ích từ những Tổ chức thứ 3 này mang lại, đặc biệt khi họ ứng dụng những công nghệ mã hóa hiện đại để đảm bảo an toàn thông tin cho người sử dụng. Nhưng một lần nữa, niềm tin bị thử thách...
+
+Các nhà nghiên cứu độc lập thậm chí đã nhận diện được hiểm họa từ lâu, và vẫn liên tiếp xuất bản những nghiên cứu chung + riêng đề xuất đến những mặt tối của "Trusted Third Party" thời kỳ Internet này:
+
+Vì chủ đề này gói hẹp trong phạm vi blockchain, nên tôi dẫn nguôn nghiên cứu của 2 tác giả được cho là ảnh hưởng rất lớn tới sự ra đời của blockchain là Ian Grigg và Nick Szabo:
+
+1. Những rào cản về chi phí, kĩ thuật, hạ tầng... chưa được dỡ bỏ kèm theo những lỗ hổng bảo mật mới: [Trusted Third Parties Are Security Holes - Nick Szabo](https://nakamotoinstitute.org/trusted-third-parties)
+
+2. Tác hại của hệ thống khóa công khai (Public Key Infrastructure): [PKI considered harmful - Ian Grigg](http://iang.org/ssl/pki_considered_harmful.html)
+
+
+Ở nghiên cứu của Ian Grigg về hệ thống PKI, có một đoạn ngắn mô tả tác hại của nguyên tắc tập trung, cũng là một vấn đề thúc đẩy cho sự ra đời của blockchain:
+
+> ...Indeed, as he (Trusted Third Party) has total power over issuance of certificates, he is now a major source of weakness, placing great stress on the word 'trust'.
+
+> This alternate logic has been expressed in the term Centralised Vulnerability Party or CVP. Instead of the marketing hope that you trust the TTP, you the user are forced to trust. You have no choice, and are vulnerable to this central, all-powerful party...
+
+## 5. Hệ thống lưu trữ chuỗi khối a.k.a blockchain
+
+[to be completed]
+
+Những rủi ro về bảo mật, mất mát thông tin hay những gian lận xảy ra, kể cả chỉ là hiểm họa tiềm tàng trong lĩnh vực ghi chép sổ sách, lưu trữ dữ liệu đòi hỏi sự ra đời của một nền tảng lưu trữ mới...
+
+Những đòi hỏi đó đã được nghiên cứu và thử nghiệm nhiều năm liền, cho tới khi bitcoin ra đời. Một trong số những hệ thống ghi chép như vậy, được mô tả bởi Ian Grigg, về cách ghi sổ tam phân (?)
 
 ### Triple entry accounting
 
@@ -124,24 +156,24 @@ Ian Grigg đã đưa ra khái niệm ghi sổ mới, đem công nghệ mã hóa 
 
 [Đọc thêm về nghiên cứu của Nick](https://nakamotoinstitute.org/authors/nick-szabo/)
 
+Hệ thống của Nick mô tả, hướng tới việc giải quyết những vấn đề về lưu trữ, mà bài viết liệt kê:
+
 Nếu có một cách ghi sổ mà mọi người đều có thể xem được giao dịch ghi trong Sổ sách?
 
 Nếu có một hệ thống mà mỗi giao dịch đã ghi thì ko thể nào bị chỉnh sửa?
 
-Nếu có một hệ thống mà có một cơ chế đồng thuận tốt hơn, ko cần bên thứ 3 nhưng đảm bảo giao dịch được xác minh đúng đắn?
+Nếu có một hệ thống mà có một cơ chế xác nhận tốt hơn, ko phải phụ thuộc vào bên thứ 3 (hay Tổ chức tín nhiệm)?
 
 Nếu hệ thống xác minh hoạt động bền vững khó bị phá vỡ và đủ nhanh để sử dụng xuyên lục địa?
 
 Hệ thống đó, nếu có, sẽ là Blockchain!
 
-## 5. Blockchain
+Toàn bộ những vấn đề trên đều liên quan tới giao dịch thương mại, tiền, nhưng hãy hình dung đến các khía cạnh khác cần phải được ghi chép như:
 
-Toàn bộ những vấn đề trên đều liên quan tới giao dịch thương mại, tiền, nhưng hãy hình dung đến các khía cạnh khác có thể áp dụng "giao dịch" như:
-
-+ Bỏ phiếu, nếu chúng ta vote xong thì coi như là 1 giao dịch sẽ được ghi vào sổ cái, kiểm phiếu minh bạch
++ Bỏ phiếu
 + Chấm bài thi
 + Quản lý định danh cho mỗi người
-+ Sổ xố?
++ Sổ xố
 
 # References
 
@@ -152,5 +184,7 @@ https://resources.sei.cmu.edu/asset_files/Brochure/2012_015_001_28207.pdf
 https://nakamotoinstitute.org/triple-entry-accounting
 
 https://nakamotoinstitute.org/bit-gold/
+
+http://iang.org/ssl/pki_considered_harmful.html
 
 https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system
