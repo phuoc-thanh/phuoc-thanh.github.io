@@ -26,7 +26,7 @@ Hôm nay tôi săn đc 1 em chồn, cả nhà ăn chồn 2 tuần nay đã ngán
 
 Một ngày đẹp trời khác, tôi săn đc 6 con chồn, hay thậm chí săn đc cả cọp Siberia, voi Mammoth, đương nhiên là ăn không hết, nhưng tủ lạnh lại chưa đc phát minh nên cũng chẳng còn cách nào - ngoài đem cho thằng hàng xóm hoặc linh cẩu ăn bớt. Ngay cả khi, tôi đem đổi thành cá, hay trái cây, thì cũng ko thể nhai hết được.
 
-Và thế là, "vỏ sò" được phát minh ra, dùng để làm đơn vị quy đổi cho hàng hóa. Tiền thời này, là vỏ sò được mài thật đẹp, phụ nữ mang làm trang sức được. Tôi săn đc 1 cọp Siberia, để lại cái tay cọp cả nhà ăn lẩu, còn lại tôi đem đổi lấy trăm vỏ sò ở ngoài chợ. Bữa nào đói quá, lười quá, hay say lá đu đủ quá ko săn được gì, tôi đem ít vỏ sò này đổi lấy vài chục trái táo, đôi con cá về ăn, vỏ sỏ quả là phát minh vĩ đại -))
+Và thế là, vỏ sò, vỏ hến được đem ra làm đơn vị quy đổi cho hàng hóa. Tiền thời này, là vỏ sò được mài thật đẹp, phụ nữ mang làm trang sức được. Tôi săn đc 1 cọp Siberia, để lại cái tay cọp cả nhà ăn lẩu, còn lại tôi đem đổi lấy trăm vỏ sò ở ngoài chợ. Bữa nào đói quá, lười quá, hay say lá đu đủ quá ko săn được gì, tôi đem ít vỏ sò này đổi lấy vài chục trái táo, đôi con cá về ăn, vỏ sỏ quả là phát minh vĩ đại -))
 
 Rồi giao thương cũng từ đó mà vươn xa. Cọp Siberian đem xuống đồng bằng đổi sữa dê đùi ngựa, tôm cua đem lên cao nguyên đổi thịt voi, cafe đổi hồ tiêu, lúa gạo đổi máy bay, v.vv. Và vỏ sò cũng tiến hóa thành tiền đồng, bạc, vàng, ngân phiếu, và tiến tới thành 1 vài con số thập phân trong "tài khoản ngân hàng" - đó là chuyện về sau.
 
@@ -38,7 +38,7 @@ Khi "tiền vỏ hến" được sử dụng trong giao dịch, mọi mua bán �
 + Ngày 02, bán 20 cá thu được 200 sò, mua 2 cân gạo hết 40 sò.
 + ...
 
-Đây được coi là gốc rễ của ngành "kế toán - ghi sổ", hệ thống sổ ghi đơn giản như trên được coi là "Single-entry bookeeping system". Các loại sổ ghi nợ, nhật ký buôn bán của gian thương về sau được gọi là Sổ Cái (Ledger).
+Đây được coi là gốc rễ của ngành "kế toán - ghi sổ", hệ thống sổ ghi đơn giản như trên được coi là "Single-entry bookkeeping system". Các loại sổ ghi nợ, nhật ký buôn bán của gian thương về sau được gọi là Sổ Cái (Ledger).
 
 
 ## 2. Hệ thống ghi Sổ Kép
