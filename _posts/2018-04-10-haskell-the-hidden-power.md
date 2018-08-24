@@ -119,7 +119,7 @@ Khắp mọi nơi từ trường học, sách vở, hội nghị công nghệ, c
 
 Quay trở lại với Functional Programming, thị phần của nó quá nhỏ nhoi trong công nghiệp phần mềm. Ah chắc tôi phải loại trừ JavaScript ra, chú em sinh sau đẻ muộn này vẫn đang xuất hiện ở mọi ngõ ngách. Nhưng một thời gian rất dài người ta cố nhồi OOP vào JavaScript, có vẻ việc nhồi nhét đó vẫn chưa dừng lại.
 
-Haskell, cũng ko là ngoại lệ. Tuy nhiên cộng đồng fan hâm mộ và những developer tiên phong đang từng bước xây dựng một nền tảng chắc chắn cho sự trở lại của Functional Programming, đặc biệt là Haskell vào ngành công nghiệp phần mềm.
+Haskell, cũng ko là ngoại lệ, Haskell được nhắc đến như một loại ngôn ngữ học thuật, nghiên cứu mà thôi. Bạn hãy thử search với keyword: "tuyển dụng" + "haskell" mà xem, ko có kết quả nào, rite? Tuy nhiên cộng đồng fan hâm mộ và những developer tiên phong đang từng bước xây dựng một nền tảng chắc chắn cho sự trở lại của Functional Programming, đặc biệt là Haskell vào ngành công nghiệp phần mềm.
 
 Tại sao họ lại quan tâm và phát triển một thứ "ko-mới-mẻ" gì như Functional Programming? Tất nhiên có những khía cạnh mà Functional Programming giải quyết tốt hơn Object Oriented Programming, ví dụ:
 

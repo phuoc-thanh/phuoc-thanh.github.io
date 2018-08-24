@@ -6,11 +6,13 @@ description: "Monoid, Functor - Định nghĩa và ứng dụng"
 keywords: "monoid, functor, binary operation, algebra, math, category, abstract, functional, programming, haskell"
 ---
 
-Mày mò dịch thuật, tổng hợp, sắp xết để tóm tắt về một chủ đề khá trừu tượng. Viết để nhớ, viết để học, và để chia sẻ...
+Khi bắt đầu tiếp xúc với Functional Programming, tôi gặp nhiều khái niệm mới mẻ - đáng ngạc nhiên hơn là 5 năm lập trình dạo mình chưa hề nghe qua. 2 trong số đó là monoid và functor (tiếp theo là monad - the true black hole hahah). Các bài viết chi tiết về monoid, functor khá rải rác, đa số là viết bằng English.
+
+Cũng đã dành kha khá thời gian của mình cho phần này, nên Tôi quyết định làm 1 wiki nhỏ tóm tắt về chủ đề khá trừu tượng này.
 
 ## 1. Định nghĩa Monoid
 
-Monoid là 1 khái niệm xuất phát từ Đại Số Trừu Tượng (Abstract Algebra) , cụ thể hơn: Lý Thuyết Phạm Trù (Category Theory)
+Monoid là 1 khái niệm xuất phát từ Đại Số Trừu Tượng (Abstract Algebra), cụ thể hơn: Lý Thuyết Phạm Trù (Category Theory)
  
 > A monoid is an algebraic structure with a single associative binary operation and an identity element
 
@@ -109,7 +111,7 @@ Monoid rất thông dụng trong haskell,
 
 Functor cũng xuất phát từ Đại Số Trừu Tượng (Abstract Algebra) và Lý Thuyết Phạm Trù (Category Theory).
 
->A functor is a type of mapping between categories arising in category theory. Functors can be thought of as homomorphisms between categories. In the category of small categories, functors can be thought of more generally as morphisms.
+> A functor is a type of mapping between categories arising in category theory. Functors can be thought of as homomorphisms between categories. In the category of small categories, functors can be thought of more generally as morphisms.
 
 ### 3.1 Category
 
@@ -254,7 +256,6 @@ https://en.wikiversity.org/wiki/Introduction_to_Category_Theory/Monoids
 https://en.wikiversity.org/wiki/Introduction_to_Category_Theory/Functors
 https://en.wikipedia.org/wiki/Binary_operation
 https://en.wikipedia.org/wiki/Abstract_algebra
-https://en.wikipedia.org/wiki/Category_(mathematics)
 https://en.wikipedia.org/wiki/Morphism
 https://en.wikipedia.org/wiki/Functor
 http://www.cis.upenn.edu/~cis194/spring15/lectures/04-typeclasses.html
