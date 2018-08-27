@@ -2,7 +2,7 @@
 layout: post
 title: "Road to Blockchain - A Piece of History"
 comments: true
-description: "Road to Blockchain - Bước ra từ lịch sử"
+description: "Road to Blockchain - Một phần của lịch sử"
 keywords: "blockchain, bitcoin, history, satoshi, accounting"
 ---
 
@@ -163,7 +163,7 @@ Tóm tắt lại cho các bạn ko có thời gian đọc, những nghiên cứu
 
 - Tính toàn vẹn: mỗi thông tin (giao dịch) được lưu vào sổ thì không có cách nào chỉnh sửa, thay đổi.
 
-- Tính minh bạch: Cơ chế xác nhận ngang hàng và công bằng, nhằm loại bỏ bên bên thứ 3 (hệ thống tín nhiệm).
+- Tính minh bạch(!): Cơ chế xác nhận ngang hàng và công bằng, nhằm loại bỏ bên bên thứ 3 (hệ thống tín nhiệm).
 
 
 ### Sự ra đời của bitcoin/blockchain

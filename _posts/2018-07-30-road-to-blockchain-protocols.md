@@ -1,12 +1,40 @@
 ---
 layout: post
-title: "Road to Blockchain - Proof of Work n Proof of Stake"
+title: "Road to Blockchain - How it works?"
 comments: true
-description: "Proof of Work - Những khái niệm cơ bản"
+description: "Road to Blockchain - Những khái niệm cơ bản"
 keywords: "blockchain, proofofstake, proofofwork, bitcoin"
 ---
 
 [Draft version - to be completed]
+
+Ở phần trước tôi đã giới thiệu về một phần lịch sử của blockchain, về nền tảng để hình thành nên một hệ thống lưu trữ thông tin toàn vẹn. Chúng ta hiểu blockchain ra đời để xóa bỏ 2 thứ: gian lận trong ghi chép và bên thứ 3, nhưng làm cách nào để hiện thực hóa lý tưởng?
+
+Bài viết thứ 2 trong series, tôi xin mô tả các đặc điểm của blockchain và cách hoạt động của một hệ thống mẫu (bitcoin)
+
+## Blockchain characteristics
+
+Nhắc lại về câu hỏi "blockchain là gì?"
+
+Nói tóm gọn, blockchain là một hệ thống lưu trữ thông tin phân tán, ko phụ thuộc vào bất kỳ bên thứ 3 nào và đảm bảo được sự toàn vẹn của dữ liệu. Blockchain được xây dựng dựa trên 3 đặc điểm chính:
+
+1. Distrubuted Ledger: Dữ liệu được ghi vào nhiều sổ khác nhau, và hoàn toàn giống nhau. Điều này góp phần loại bỏ một trung tâm lưu trữ tập trung và khiến cho hệ thống dữ liệu khó bị chỉnh sửa, đảm bảo an toàn đối với rủi ro mất mát thông tin.
+
+2. Immutable Data: Mỗi ghi chép được dán nhãn, mã hóa và liên kết chặt chẽ với nhau khiến cho việc chỉnh sửa ghi chép gần như là điều bất khả thi.
+
+3. Consensus Protocols: Cơ chế đồng thuận cởi mở...
+
+...
+
+## Distributed Ledger Sytem
+
+...
+
+## Immutable Data
+
+...
+
+## Consensus Protocols
 
 
 # Proof of Work - the need of
@@ -114,3 +142,5 @@ https://en.wikipedia.org/wiki/Proof-of-work_system
 https://en.wikipedia.org/wiki/Hashcash
 
 https://en.wikipedia.org/wiki/SHA-2
+
+https://www.ibm.com/blogs/cloud-computing/2017/04/11/characteristics-blockchain/
