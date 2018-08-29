@@ -13,7 +13,7 @@ Nếu bạn đã từng "Agile" rồi, bạn có muốn tiếp tục truyền b�
 
 Tôi thì sao? xin trả lời luôn, Tôi là một anti-fan của Agile.
 
-...
+---
 
 Câu chuyện bắt đầu khi lần đầu tiên được nghe giảng về Agile - khoảng 2008-2009. Ôi, thần thánh quá, Agile là thứ gì mà có thể "embrace changes" và "doesn't require much documents", rồi lại còn "Propose better collaboration.." gì gì đó nữa. Tôi hoài nghi, nhưng nhanh chóng quên đi bởi dù gì khi đó, cũng chỉ là sách vở.
 
@@ -40,6 +40,8 @@ Xin mời xem qua Tuyên ngôn và Nguyên tắc của Agile trước:
 [Agile Principles](http://agilemanifesto.org/principles.html)
 
 Scrum: là phiên bản hiện thực hóa của lý tưởng Agile
+
+---
 
 ## 1. Về 4 tuyên ngôn của Agile
 
@@ -190,6 +192,7 @@ Những kiểu dự án như sau là thể loại ko nên áp dụng Agile/Scrum
 
 [put here more]
 
+---
 
 ## Lời kết
 
