@@ -13,19 +13,9 @@ Nếu bạn đã từng "Agile" rồi, bạn có muốn tiếp tục truyền b�
 
 Tôi thì sao? xin trả lời luôn, Tôi là một anti-fan của Agile.
 
----
-
-Câu chuyện bắt đầu khi lần đầu tiên được nghe giảng về Agile - khoảng 2008-2009. Ôi, thần thánh quá, Agile là thứ gì mà có thể "embrace changes" và "doesn't require much documents", rồi lại còn "Propose better collaboration.." gì gì đó nữa. Tôi hoài nghi, nhưng nhanh chóng quên đi bởi dù gì khi đó, cũng chỉ là sách vở.
-
-Cho đến khi được thực nghiệm những "User Story" đầu tiên, xoay vòng với những Backlog 2 tuần. Rồi tới trải nghiệm thứ 2, lần này ở một công ty Outsouce tầm cỡ. Tham gia một số buổi họp phổ cập về ý định "Agile hóa" toàn cty của các sếp bự, Tôi thoáng nghĩ "sao phải thay đổi những thứ đang hoạt động trơn tru nhỉ?"
-
-Trải nghiệm tiếp theo đó, khá tệ, khiến team Java của Tôi tan vỡ, không phải chỉ bởi vì Scrum, mà Scrum đã góp một phần lớn vào sự đổ vỡ từ bên trong bản sắc công ty.
-
-Cuối cùng, những ám ảnh, stress khi phải Rapid Development liên tục trong một thời gian dài đã thôi thúc tôi đào sâu thêm về những hoài nghi ban đầu của mình. Tìm kiếm những thứ như "Agile n Scrum are evils", "Criticism of scrum", "Agile methodology flaws", "Negative about Agile development"... tôi được an ủi phần nào, khi đọc được nhiều hơn những lời chê bai Agile...
-
 ![Agile Risky Adventure](/assets/images/agile-risk.jpg)
 
-**Note trước: Bài viết này chủ yếu là tổng hợp và biên dịch từ nguồn khác, kèm theo một số diễn giải từ kinh nghiệm cá nhân.**
+**Note trước: Phần tiếp theo của bài viêt, chủ yếu là tổng hợp và biên dịch từ nguồn khác, kèm theo một số diễn giải từ kinh nghiệm cá nhân.**
 
 ## Agile, Scrum là gì?
 
