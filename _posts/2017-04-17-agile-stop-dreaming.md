@@ -95,11 +95,11 @@ Bạn có nghĩ là dev có thể giao tiếp "ngang cấp" với khách hàng c
 
 Hãy tự hỏi chính mình, cho dù bạn là ai đi nữa: dev, tester, leader, designer, abc-er xyz-er, bạn có "welcome changing requirements" ko? Như tôi - thì ko nhé!
 
-Cuối cùng, bạn có nghĩ là việc liên tiếp giao "một phiên bản hoạt động đc" của sản phẩm là khả thi? Tôi e rằng câu trả lời là không, cho đại đa số dự án.
+Cuối cùng, bạn có tin việc liên tiếp giao "một phiên bản hoạt động đc" của sản phẩm là khả thi? Tôi e rằng câu trả lời là không, cho đại đa số dự án.
 
 ## 3. Kể tội Agile/Scrum
 
-Để mà liệt kê toàn bộ những chỉ trích của lập trình viên chuyên nghiệp - những người trong cuộc, dành cho Agile/Scrum, thì có lẽ phải tổng hợp và biên dịch thành series chục bài. Để khởi động - hâm nóng máy móc, mời các bạn đọc qua 2 blog và 1 Q&A trên Quora trước:
+Nếu phải liệt kê toàn bộ những chỉ trích của lập trình viên chuyên nghiệp - những người trong cuộc, dành cho Agile/Scrum, thì có lẽ phải tổng hợp và biên dịch thành series chục bài. Để khởi động - hâm nóng máy móc, mời các bạn đọc qua 2 blog và 1 Q&A trên Quora trước:
 
 1. [Tại sao dev ở những cty sừng sỏ như Google coi Agile là điều vô nghĩa?](https://www.quora.com/Why-do-some-developers-at-strong-companies-like-Google-consider-Agile-development-to-be-nonsense)
 
