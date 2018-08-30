@@ -45,7 +45,7 @@ Vâng, dĩ nhiên con người và sự tương tác là thứ quan trọng hơn
 
 Như Luke nói thì công việc của anh ta chẳng có nhiều tài liệu để nhúng tay vào, hơn nữa nó sẽ khuyến khích dân chúng bỏ bê việc tài liệu, việc đó thì hơi đáng sợ hehe.
 Ngoài ra, trong mảng Software service, Maintenance, Support, Security, Cloud-based service... thì Document là cực kỳ quan trọng đối với khách hàng. Cá nhân tôi đã làm những task 40h nhưng chỉ 8h là dev, và 32h còn lại chỉ để documenting... So what?
-Như vậy, cơ bản nó ko mang lại lợi ích gì nhiều.
+Như vậy, ưu tiên documentation hay software, cũng tùy theo dự án mà thôi.
 
 3. ***Customer collaboration over contract negotiation***
 

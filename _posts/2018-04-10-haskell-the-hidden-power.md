@@ -115,7 +115,7 @@ Haskell ra đời và tồn tại trên dưới 30 năm, nhưng tại sao đến
 
 Câu hỏi về Haskell, nhưng câu trả lời liên quan tới vấn đề rộng lớn hơn: Functional Programming đang ở đâu? 
 
-Khắp mọi nơi từ trường học, sách vở, hội nghị công nghệ, chợ việc làm, tin tức tuyển dụng... chúng ta đều nghe "Object Oriented Programming". Hah, OOP như là một tôn giáo trong ngành lập trình. Lần này tôi ko bài trừ OOP, chỉ cảm giác rằng nó bị cường điệu hóa quá mức.
+Khắp mọi nơi từ trường học, sách vở, hội nghị công nghệ, chợ việc làm, tin tức tuyển dụng... chúng ta đều nghe "Object Oriented Programming". Hah, OOP đã trở thành một tiêu chuẩn, một niềm tin mù quáng.
 
 Quay trở lại với Functional Programming, thị phần của nó quá nhỏ nhoi trong công nghiệp phần mềm. Ah chắc tôi phải loại trừ JavaScript ra, chú em sinh sau đẻ muộn này vẫn đang xuất hiện ở mọi ngõ ngách. Nhưng một thời gian rất dài người ta cố nhồi OOP vào JavaScript, có vẻ việc nhồi nhét đó vẫn chưa dừng lại.
 
