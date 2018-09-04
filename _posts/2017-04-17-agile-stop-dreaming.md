@@ -7,11 +7,11 @@ keywords: "agile, scrum, disease, evil, methodology, stop dreaming"
 ---
 
 
-Nếu bạn đang làm việc trong ngành công nghệ thông tin, hẳn bạn biết đến một xu hướng được rất nhiều người quan tâm và theo đuổi tên là Agile. Vậy ấn tượng của bạn về Agile như thế nào? Yêu thích, mến mộ hay ghét bỏ?
+Nếu bạn đang làm việc trong "ngành", hẳn bạn biết đến một xu hướng được rất nhiều người quan tâm và theo đuổi tên là Agile. Vậy ấn tượng của bạn về Agile như thế nào? Yêu thích, mến mộ hay ghét bỏ?
 
 Nếu bạn đã từng "Agile" rồi, bạn có muốn tiếp tục truyền bá Agile không? hay bạn đã chán nản và muốn bài trừ nó?
 
-Tôi thì sao? xin trả lời luôn, Tôi là một anti-fan của Agile.
+Tôi thì sao? xin trả lời luôn, Tôi là anti-fan của Agile.
 
 ![Agile Risky Adventure](/assets/images/agile-risk.jpg)
 
@@ -49,13 +49,12 @@ Như vậy, ưu tiên documentation hay software, cũng tùy theo dự án mà t
 
 3. ***Customer collaboration over contract negotiation***
 
-Okay, đồng ý nhưng như trên, trong 1 số trường hợp, nó không mang lại lợi ích thực sự.
-Kinh nghiệm cá nhân thì cái việc "Customer collaboration" thực sự là 1 thảm họa của dev. Đôi khi 1 task đơn giản, bạn phải bỏ tận 6h chỉ để get confirm từ customer, sau đó dev 2h. Vui vẻ.
+Đáng buồn là trên thực tế, "Customer collaboration" thường là một câu chuyện thảm họa. Đôi khi 1 task đơn giản, bạn phải bỏ tận 6h chỉ để get confirm từ customer, sau đó dev 2h. Vui vẻ.
 Chưa kể là khi được đà custom, change mà ko có evidence, contract, aggrement thì cực kỳ rủi ro và nó xảy ra cũng thường xuyên lắm :))
 
 4. ***Responding to change over following a plan***
 
-Thứ nhứt, tôi xin cam đoan là ko có 1 thợ code nào khoái sự thay đổi từ khách hàng cả.
+Thứ nhứt, tôi xin cam đoan là ko có một thợ code nào khoái sự thay đổi từ khách hàng cả.
 Thứ hai, làm việc mà ko có 1 kế hoạch, rất mù quáng, giống như lái xe từ quê lên Saigon chơi mà ko cần bản đồ vậy =)) 
 
 ## 2. Về 12 nguyên tắc của của Agile
@@ -78,7 +77,7 @@ Còn "Agile" đến mức độ nào ư? Nó còn tùy thuộc vào văn hóa, m
 
 
 
-Trường hợp thứ hai, dưới góc độ là developer, chỉ cần bạn làm việc đủ lâu trong ngành phần mềm thì bạn sẽ thấy: những nguyên tắc này mơ hồ, thiếu thực tế, nó chỉ đúng trong môi trường lý tưởng. Nghĩa là ko áp dụng được nhiều như ta nghĩ, ko phù hợp với đại đa số dự án...
+Trường hợp thứ hai, dưới góc độ là developer, chỉ cần bạn làm việc đủ lâu trong ngành phần mềm thì bạn sẽ thấy: những nguyên tắc này mơ hồ, thiếu thực tế, nó chỉ đúng trong môi trường lý tưởng. Nghĩa là ko áp dụng được nhiều như quảng cáo, ko phù hợp với đại đa số dự án...
 
 > Business people and developers must work together daily throughout the project.
 
@@ -93,7 +92,7 @@ Trường hợp thứ hai, dưới góc độ là developer, chỉ cần bạn l
 
 Bạn có nghĩ là dev có thể giao tiếp "ngang cấp" với khách hàng của họ? 2 bên thấu hiểu nhau? Riêng tôi cho rằng: thiếu thực tế!
 
-Hãy tự hỏi chính mình, cho dù bạn là ai đi nữa: dev, tester, leader, designer, abc-er xyz-er, bạn có "welcome changing requirements" ko? Như tôi - thì ko nhé!
+Tôi ko biết bạn là ai: dev, tester, leader, designer, taxi driver, police officer... nhưng bạn có "welcome changing requirements" ko?
 
 Cuối cùng, bạn có tin việc liên tiếp giao "một phiên bản hoạt động đc" của sản phẩm là khả thi? Tôi e rằng câu trả lời là không, cho đại đa số dự án.
 
@@ -109,20 +108,29 @@ Nếu phải liệt kê toàn bộ những chỉ trích của lập trình viên
 
 Ở mỗi bài viết, các bạn hãy chú ý đọc thêm câu trả lời và bình luận phía dưới, bạn sẽ thấy một Agile/Scrum xấu xí như thế nào.
 
-Và thực trạng Agile/Scrum ở Việt Nam, còn khủng khiếp hơn. Trên mặt báo, website, blog, hầu hết cái bài viết đều kể về một Agile lý tưởng, đẹp đẽ. Nhưng đằng sau đó thì sao, tôi tự hỏi, các bạn có thực sự hài lòng, yêu thích Agile, mong muốn Scrumming everyday? Hãy thành thật với bản thân, nếu câu trả lời vẫn là có, thì mời bạn tiếp tục đọc một vài phân tích nữa, bên dưới.
+Và thực trạng Agile/Scrum ở Việt Nam, còn khủng khiếp hơn. Trên mặt báo, website, blog, hầu hết cái bài viết đều kể về một Agile lý tưởng, đẹp đẽ. Nhưng đằng sau đó thì sao? Các bạn có thực sự hài lòng, yêu thích Agile, mong muốn Scrumming everyday? Hãy thành thật với bản thân, nếu câu trả lời vẫn là có, thì mời bạn tiếp tục đọc một vài phân tích nữa, bên dưới.
 
 
 ### Agile là sản phẩm thương mại
 
-Trong bài viết của Luke, anh ấy gợi ý bạn đọc hãy xem qua website của những "nhà sáng lập" Agile, hãy xem và cảm nhận mức độ thương mại của những website đó. Muốn học Agile? Hãy mua sách của của tôi. Muốn tìm hiểu, hãy đến seminar của chúng tôi. Muốn ứng dụng, hãy thuê tư vấn viên của chúng tôi...
+Trong bài viết của Luke, anh ấy gợi ý bạn đọc hãy xem qua website của những "nhà sáng lập" Agile, hãy xem và cảm nhận mức độ thương mại của những website đó. Muốn học Agile? Hãy mua sách của của tôi. Muốn tìm hiểu, hãy đến seminar của chúng tôi. Muốn áp dụng Rapid Development? Hãy thuê Scrum Master về để cải thiện Scrum...
 
-Agile, xuất phát từ những chuyên gia tư vấn này mà ra, và chỉ thực sự phù hợp với 1 số dự án đặc thù, nhưng họ đã nâng tầm Agile/Scrum lên, mục đích có lẽ để biến nó thành một sản phẩm thương mại. Cũng với hình hài đó, ở Việt Nam, phía sau những bài viết hay ho về Agile, đa số là bán khóa học, bán sách, bán vé hội thảo. Tôi xin phép ko nêu rõ, nhưng bạn hãy thử truy tìm mà xem.
+Agile, xuất phát từ những chuyên gia tư vấn này mà ra, và chỉ thực sự phù hợp với một số dự án đặc thù, nhưng họ đã nâng tầm Agile/Scrum lên, mục đích có lẽ để biến nó thành một sản phẩm thương mại. Cũng với hình hài đó, ở Việt Nam, phía sau những bài viết hay ho về Agile, đa số là bán khóa học, bán sách, bán vé hội thảo. Tôi xin phép ko nêu rõ, nhưng bạn hãy thử truy tìm mà xem.
 
-Scrum Master chính là một minh chứng cho tính thương mại của Agile/Scrum, một vị trí thừa thải, ko có thực quyền nhưng lại phải nhận trách nhiệm để suốt ngày ba hoa về qui trình cải thiện, về stand-up meeting, về estimate...và rất sùng đạo (đạo Agile ahaha). Muốn làm Scrum Master? Hãy tham gia khóa học... muốn áp dụng Rapid Development? Hãy thuê Scrum Master về để cải thiện Scrum...
+Scrum Master chính là một minh chứng cho tính thương mại của Agile/Scrum, một vị trí thừa thải, ko có thực quyền nhưng lại phải nhận trách nhiệm để suốt ngày ba hoa về qui trình cải thiện, về stand-up meeting, về estimate...và rất sùng đạo (đạo Agile ahaha). Kể cả với một vai trò nửa mùa như vậy, nhưng dân tình vẫn bán các khóa training "Path to Scrum Master", Oh money talks?
 
 Có một điều rất thú vị về Agile/Scrum mà Tôi thường gặp. Nếu bạn tranh cãi với fan cuồng Agile/tín đồ Scrum về tính khả thi của Scrum, sau một hồi dẫn chứng về các dự án áp dụng Scrum thất bại, team chao đảo vì Scrum, dẫn lời những bôi bác của ltv dành cho Scrum, thì bạn luôn luôn nhận được câu trả lời: "Đó là tại tụi mày ko biết cách áp dụng Scrum và Agile thôi, do tụi mày làm sai qui trình..." Tôi đã rất bối rối, rằng thứ Methodology kiểu méo gì mà khó áp dụng thế??? Tại sao tốn quá nhiều thời gian, tiền bạc và nhân lực mà vẫn ko làm đúng được, Tôi đã quên cái gì chăng?
 
-Phải chăng Tôi (và cả trăm nghìn dev khác) cần phải đi training thêm về Scrum? Ai train? Có tốn phí ko? Có chắc sau khi học xong sẽ áp dụng được?...
+Chôm chỉa đâu đó trên reddit:
+
++ Nếu mày bê nguyên si mô hình Scrum vào dự án và thất bại, đó là tại mày ko biết cuztum Scrum.
+
++ Nếu mày chế biến Scrum để áp dụng và thất bại, tại mày Cuztum mà ko follow đúng theo Scrum.
+
++ Nếu mày Scrum thành công, thì do Scrum hoàn hảo.
+
+Kidding me?
+
 
 ### Môi trường làm việc mà Agile hướng tới
 
@@ -166,7 +174,7 @@ Hãy luôn ghi nhớ rằng, bản chất của những dự án này là "Rapid
 2. Trong thời gian diễn ra, mọi người phải thống nhất rõ ràng trước là ko đánh giá hiệu suất cá nhân mà chỉ tập trung vào nhiệm vụ.
 3. Giảm tối thiểu Micro-manage, 1 điều ko tránh khỏi đối với Agile
 
-Micro-manage là vấn đề thường xuyên gặp trong các môi trường khác kể cả ngoài Agile và ngoài lĩnh vực Software. Và văn hóa làm việc kiểu này sẽ làm những chiến binh ưu tú khó chịu và giảm hiệu quả khi bị giám sát/theo dõi. Rủi ro thay, Scrum rất đề cao sự minh bạch và thanh tra. Có lẽ nên viết thêm 1 phần khác về Micro manage..
+Micro-manage là vấn đề thường xuyên gặp trong các môi trường khác kể cả ngoài Agile và ngoài lĩnh vực Software. Văn hóa làm việc kiểu này sẽ làm những chiến binh ưu tú khó chịu và giảm hiệu quả khi bị giám sát/theo dõi. Rủi ro thay, Scrum rất đề cao sự minh bạch và thanh tra (a.k.a micro-manage)
 
 Note: Ở trong blog của Michael, có một phần khá dài về Violent Transparency Culture, chính là đang đề cập tới vấn đề trên.
 

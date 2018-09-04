@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Road to Blockchain - A Piece of History"
+title: "Road to Blockchain: A Piece of History"
 comments: true
-description: "Road to Blockchain - Một phần của lịch sử"
+description: "Road to Blockchain: Một phần của lịch sử"
 keywords: "blockchain, bitcoin, history, satoshi, accounting"
 ---
 

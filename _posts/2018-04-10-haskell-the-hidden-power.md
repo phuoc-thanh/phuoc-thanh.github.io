@@ -6,7 +6,7 @@ description: "Haskell - Sức mạnh tiềm ẩn"
 keywords: "lambda, calculus, haskell, pure, functional, imperative, declarative, programming"
 ---
 
-# 1. Câu chuyện về lập trình hàm (Functional Programming)
+## 1. Câu chuyện về lập trình hàm (Functional Programming)
 
 ![Lambda Calculus](/assets/images/lambda_calculus.png)
 
@@ -14,11 +14,11 @@ Note: Để tiện cho việc đọc - hiểu, tôi xin giữ nguyên ko dịch 
 
 ---
 
-## 1.1 Imperative và Declarative Programming
+### 1.1 Imperative và Declarative Programming
 
 Nhắc đến Functional Programming, trước hết ta cần nghía qua khái niệm Declarative Programming và Imperative Programming.
 
-***Imperative Programming:*** Khi lập trình viên (ltv) sẽ viết code để hướng dẫn cho compiler làm những gì họ muốn, chi tiết từng bước một: làm bước a, sau đó làm bước b, lặp lại bước a,b...
+***Imperative Programming:*** Lập trình viên (ltv) sẽ viết code để hướng dẫn cho compiler làm những gì họ muốn, chi tiết từng bước một: làm bước a, sau đó làm bước b, lặp lại bước a,b...
 
 ***Declarative Programming:*** Ltv sẽ viết code để mô tả những gì họ muốn nhưng không nêu rõ chi tiết cách để lấy được kết quả
 
@@ -55,7 +55,7 @@ Những ngôn ngữ có hỗ trợ lập trình hàm như C++, Java, Python và 
 
 ---
 
-## 1.2 Lịch sử Functional Programming
+### 1.2 Lịch sử Functional Programming
 
 Functional Programming có nguồn gốc từ Lambda Calculus - là một mô hình tính toán áp dụng hàm số trên các đối số và trừu tượng hóa các phép tính, được giới thiệu lần đầu khoảng thập niên 30.
 
@@ -67,13 +67,13 @@ Haskell xuất hiện năm 87.
 
 ---
 
-## 1.3 Functional - Các khái niệm cơ bản
+### 1.3 Functional - Các khái niệm cơ bản
 
-Về các khái niệm, định nghĩa và đặc tính cơ bản của Functional Programming, các bạn có thể tự tìm hiểu thêm. Tổng quan thì có 1 số điểm thiết yếu của Functional Programming như sau:
+Về các khái niệm, định nghĩa và đặc tính cơ bản của Functional Programming, các bạn có thể tự tìm hiểu thêm. Tổng quan thì nó mang một số đặc điểm sau:
 
 * **Higher Order Functions:** Hàm bậc cao như Fold, Map, Traversal, Composition.. Khám phá hết đống này, tôi đảm bảo các bạn sẽ lạc vào một chân trời trừu tượng mới.
 
-* **Pure vs Impure:** Tính thuần túy - Đây là vấn đề mơ hồ và còn nhiều tranh cãi, nhưng theo hiểu biết cá nhân thì Lambda Calculus mới có thể gọi là purest. Haskell có thể coi là chiến binh sống sót còn lại với chữ "Pure".
+* **Pure vs Impure:** Tính thuần túy là vấn đề khá mơ hồ và đã gây ra rất nhiều tranh cãi. Tuy nhiên, xét đến cùng thì Lambda Calculus mới là purest, Haskell có thể coi là chiến binh sống sót còn lại với chữ "Pure".
 
 * **Recursion:** Đệ quy chính là vẻ đẹp của lập trình hàm. Có người từng nói, họ học Haskell chỉ vì "tail-recursive".
 
@@ -83,11 +83,11 @@ Về các khái niệm, định nghĩa và đặc tính cơ bản của Function
 
 ---
 
-# 2. Gọi tên Haskell
+## 2. Gọi tên Haskell
 
 ![Pure Functional Language](/assets/images/pure_functional.png)
 
-Haskell, như tôi quảng cáo ở trên, được coi là chiến binh sống sót trong những vụ tranh cãi pure vs impure. Haskell ra mắt vào cuối thập niên 80, không phải là Pure Functional Language duy nhất, nhưng vị thế của Haskell đang dần được khẳng định. Bản chất của Haskell, được thể hiện rõ ở các khía cạnh:
+Haskell, như tôi quảng cáo, được coi là kẻ-sống-sót sau những vụ tranh cãi pure vs impure. Haskell ra mắt vào cuối thập niên 80, không phải là Pure Functional Language duy nhất, nhưng vị thế của Haskell đang dần được khẳng định. Bản chất của Haskell, được thể hiện rõ ở các khía cạnh:
 
 
 * **The Functional Aspect:** Thật ra khó mà giải nghĩa được chữ "functional" sao cho đúng và chính xác. Nhưng khi ta nói Haskell là functional, thì nó sẽ gợi lên 2 điểm:
@@ -109,21 +109,21 @@ Haskell, như tôi quảng cáo ở trên, được coi là chiến binh sống 
 
 ---
 
-# 3. Từ nghiên cứu đến ứng dụng
+## 3. Từ nghiên cứu đến ứng dụng
 
 Haskell ra đời và tồn tại trên dưới 30 năm, nhưng tại sao đến 2018 này nghe vẫn xa lạ? Haskell ở đâu trong ngành công nghiệp phần mềm?
 
 Câu hỏi về Haskell, nhưng câu trả lời liên quan tới vấn đề rộng lớn hơn: Functional Programming đang ở đâu? 
 
-Khắp mọi nơi từ trường học, sách vở, hội nghị công nghệ, chợ việc làm, tin tức tuyển dụng... chúng ta đều nghe "Object Oriented Programming". Hah, OOP đã trở thành một tiêu chuẩn, một niềm tin mù quáng.
+Khắp mọi nơi từ trường học, sách vở, hội nghị công nghệ, chợ việc làm, tin tức tuyển dụng... chúng ta đều nghe "Object Oriented Programming". Hah, OOP đã trở thành tiêu chuẩn, thành xu hướng thời trang, thành giáo phái - thật ma mị, và mù quáng.
 
-Quay trở lại với Functional Programming, thị phần của nó quá nhỏ nhoi trong công nghiệp phần mềm. Ah chắc tôi phải loại trừ JavaScript ra, chú em sinh sau đẻ muộn này vẫn đang xuất hiện ở mọi ngõ ngách. Nhưng một thời gian rất dài người ta cố nhồi OOP vào JavaScript, có vẻ việc nhồi nhét đó vẫn chưa dừng lại.
+Còn Functional Programming? Thị phần của nó quá nhỏ nhoi trong công nghiệp phần mềm, Ah chắc tôi phải loại trừ JavaScript ra, chú em sinh sau đẻ muộn này vẫn đang xuất hiện ở mọi ngõ ngách. Nhưng một thời gian rất dài người ta cố nhồi OOP vào JavaScript, có vẻ việc nhồi nhét đó vẫn chưa dừng lại.
 
 Haskell, cũng ko là ngoại lệ, Haskell được nhắc đến như một loại ngôn ngữ học thuật, nghiên cứu mà thôi. Bạn hãy thử search với keyword: "tuyển dụng" + "haskell" mà xem, ko có kết quả nào, rite? Tuy nhiên cộng đồng fan hâm mộ và những developer tiên phong đang từng bước xây dựng một nền tảng chắc chắn cho sự trở lại của Functional Programming, đặc biệt là Haskell vào ngành công nghiệp phần mềm.
 
 Tại sao họ lại quan tâm và phát triển một thứ "ko-mới-mẻ" gì như Functional Programming? Tất nhiên có những khía cạnh mà Functional Programming giải quyết tốt hơn Object Oriented Programming, ví dụ:
 
-* **Parallelism:** Chúng ta cần tận dụng kiến trúc đa nhân của CPU để tăng tốc độ thực thi của một chương trình.
+* **Parallelism:** Tận dụng kiến trúc đa nhân của CPU để tăng tốc độ thực thi của một chương trình.
 
 * **Modular n Side-Effect:** Tại sao chúng ta phải debug ngày đêm với những thứ vốn có thể loại trừ từ trước?
 
@@ -131,18 +131,18 @@ Tại sao họ lại quan tâm và phát triển một thứ "ko-mới-mẻ" gì
 
 ---
 
-# 4. Thực tại và tiềm năng
+## 4. Thực tại và tiềm năng
 
 Vậy Haskell có thể làm được gì?
 
-Có thể nói, Haskell là một con dao sắc. Haskell có thể làm được mọi thứ, quan trọng là tốn bao nhiêu công sức mà thôi. Hehe.
+Có thể nói, Haskell là một con dao sắc. Haskell có thể làm được mọi thứ, quan trọng là tốn bao nhiêu công sức mà thôi.
 Ví như bạn viết Compiler cho một ngôn ngữ khác bằng Haskell, oh yeah, bạn chọn đúng dao rồi đó. Nếu bạn viết App Mobile bằng haskell, khả thi đấy, nhưng bạn viết xong 1app thì từng đó thời gian bạn có thể viết được 20 app bằng Java rồi cũng nên, hehe chúc mừng. 
 
 Mức độ trưởng thành của Haskell được liệt kê khá rõ ràng ở đây:
 
 https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
 
-## Những ứng dụng đáng chú ý 
+### Những ứng dụng đáng chú ý 
 
 * Elm, PureScript, Idris Compiler đều được viết bằng Haskell. Thậm chí homework của CS-194 còn bắt viết 1 cái Interpreter cơ mà ^_*
 
@@ -160,11 +160,11 @@ https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
 
 * ...
 
-## Tương lai gần
+### Tương lai gần
 
 Tất cả những gì Haskell cần là bước nhảy vọt cùng với 1 killer-app. Tương tự như cú nhảy của Ruby cùng với Rails.
 
-# Reference
+## Reference
 
 https://stackoverflow.com/questions/1784664/what-is-the-difference-between-declarative-and-imperative-programming
 

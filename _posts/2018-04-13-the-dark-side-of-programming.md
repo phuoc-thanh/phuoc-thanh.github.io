@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Programming - Nghệ thuật hắc ám"
+title: "Programming: Nghệ thuật hắc ám"
 comments: true
-description: "Programming - Nghệ thuật hắc ám"
+description: "Programming: Nghệ thuật hắc ám"
 keywords: "haskell, pure, functional, programming, dark, power, hijack, beauty"
 ---
 

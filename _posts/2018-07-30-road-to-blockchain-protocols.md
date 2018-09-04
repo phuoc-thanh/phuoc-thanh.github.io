@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Road to Blockchain - How it works?"
+title: "Road to Blockchain: How it works?"
 comments: true
 description: "Road to Blockchain - Những khái niệm cơ bản"
 keywords: "blockchain, proofofstake, proofofwork, bitcoin"
