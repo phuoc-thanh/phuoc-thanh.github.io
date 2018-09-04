@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Programming: Nghệ thuật hắc ám"
+title: "Chapter 00: Một trải nghiệm Haskell"
 comments: true
-description: "Programming: Nghệ thuật hắc ám"
+description: "A Haskell experience"
 keywords: "haskell, pure, functional, programming, dark, power, hijack, beauty"
 ---
 
@@ -26,11 +26,7 @@ Sống cuộc đời của một "lờ tờ vờ", dĩ nhiên chúng ta có rấ
 
 Thời gian tôi học Haskell, ko hề có một sức ép nào, nhưng tôi vẫn mất ngủ...
 
-Với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn học thú vị, chưa từng nghĩ mình sẽ làm được gì có ích bằng Haskell. Nhưng cuối cùng tôi cũng hoàn thành được ứng dụng Haskell đầu tiên, tuy nó hơi mờ ám, tà đạo.
-
-"Nghệ thuật hắc ám" nghe có vẻ hoành tráng, thật ra ko tới mức cao siêu trừu tượng gì, chỉ là mượn chữ trong truyện Harry Potter thoi hehe.
-
-Tại sao hắc ám? Vì nói cho cùng, nó là khai thác lỗ hổng của server và gian lận trong Game.
+Với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn học thú vị, chưa từng nghĩ mình sẽ làm được gì có ích bằng Haskell. Nhưng cuối cùng tôi cũng hoàn thành được ứng dụng Haskell đầu tiên, tuy nó hơi mờ ám, tà đạo: khai thác lỗ hổng của server và gian lận trong Game.
 
 ---
 

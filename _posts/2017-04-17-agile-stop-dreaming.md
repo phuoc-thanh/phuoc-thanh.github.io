@@ -125,7 +125,7 @@ Chôm chỉa đâu đó trên reddit:
 
 + Nếu mày bê nguyên si mô hình Scrum vào dự án và thất bại, đó là tại mày ko biết cuztum Scrum.
 
-+ Nếu mày chế biến Scrum để áp dụng và thất bại, tại mày Cuztum mà ko follow đúng theo Scrum.
++ Nếu mày chế biến Scrum để áp dụng và thất bại, đó là tại mày Cuztum mà ko follow đúng theo Scrum.
 
 + Nếu mày Scrum thành công, thì do Scrum hoàn hảo.
 
