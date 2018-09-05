@@ -3,18 +3,22 @@ layout: post
 title: "Road to Blockchain: A Piece of History"
 comments: true
 description: "Road to Blockchain: Một phần của lịch sử"
-keywords: "blockchain, bitcoin, history, satoshi, accounting"
+keywords: "blockchain, bitcoin, history, satoshi, accounting, crypto"
 ---
 
-Viết về một công nghệ mới mẻ, luôn là thách thức lớn đối với blogger, và nó là một loại công việc tiêu hao rất nhiều thời gian và công sức. 4 phần mày mò tìm hiểu, nhưng 6 phần quan trọng hơn là giải thích, diễn đạt để độc giả hiểu, mới là thành công của 1 bài viết.
+![A piece of History](/assets/images/rtb1/history.png)
+
+Viết về một công nghệ mới mẻ, luôn là thách thức lớn đối với blogger, và nó là một loại công việc tiêu hao rất nhiều thời gian và công sức. 4 phần mày mò tìm hiểu, nhưng 6 phần quan trọng hơn là giải thích, diễn đạt để độc giả hiểu, mới là thành công của một bài viết.
 
 Chủ đề lần này tôi chọn viết là một mảng công nghệ đang nhận được sự quan tâm rất lớn từ cộng đồng thời gian qua: Blockchain.
 
-Có thể các bạn đã đọc rất nhiều, nghe rất nhiều, tìm tòi rất lâu nhưng vẫn đang bối rối với những gì thu thập được - như tôi. Thì hẳn bạn rất khao khát muốn biết rõ hơn về nguồn gốc, ý tưởng đằng sau blockchain, những nền tảng đã giúp Satoshi tạo ra bitcoin...
+Có thể các bạn đã đọc rất nhiều, nghe rất nhiều, tìm tòi rất lâu nhưng vẫn đang bối rối, hoài nghi với những gì thu thập được - như tôi. Thì hẳn bạn rất khao khát muốn biết rõ hơn về nguồn gốc, ý tưởng đằng sau blockchain, những nền tảng đã giúp Satoshi tạo ra bitcoin...
 
 Bài viết đầu tiên trong series, sẽ tổng hợp và cố gắng giải thích nguồn gốc của blockchain, từ nhu cầu ghi chép đơn sơ đến sự bùng nổ của công nghệ mã hóa. 
 
 Vậy xin ngược dòng lịch sử một chốc, về thời kỳ săn bắn hái lượm luôn cho xa nhé :)
+
+---
 
 ## 1. Từ nhu cầu ghi chép đơn sơ
 
@@ -28,6 +32,8 @@ Một ngày đẹp trời khác, tôi săn đc 6 con chồn, hay thậm chí să
 
 Và thế là, vỏ sò, vỏ hến được đem ra làm đơn vị quy đổi cho hàng hóa. Tiền thời này, là vỏ sò được mài thật đẹp, phụ nữ mang làm trang sức được. Tôi săn đc 1 cọp Siberia, để lại cái tay cọp cả nhà ăn lẩu, còn lại tôi đem đổi lấy trăm vỏ sò ở ngoài chợ. Bữa nào đói quá, lười quá, hay say lá đu đủ quá ko săn được gì, tôi đem ít vỏ sò này đổi lấy vài chục trái táo, đôi con cá về ăn, vỏ sỏ quả là phát minh vĩ đại -))
 
+![Ancient Egypt bazaar](/assets/images/rtb1/ancient_egypt_bazaar.jpg)
+
 Rồi giao thương cũng từ đó mà vươn xa. Cọp Siberian đem xuống đồng bằng đổi sữa dê đùi ngựa, tôm cua đem lên cao nguyên đổi thịt voi, cafe đổi hồ tiêu, lúa gạo đổi máy bay, v.vv. Và vỏ sò cũng tiến hóa thành tiền đồng, bạc, vàng, ngân phiếu, và tiến tới thành 1 vài con số thập phân trong "tài khoản ngân hàng" - đó là chuyện về sau.
 
 ### Cuốn sổ ghi nợ
@@ -38,8 +44,9 @@ Khi "tiền vỏ hến" được sử dụng trong giao dịch, mọi mua bán �
 + Ngày 02, bán 20 cá thu được 200 sò, mua 2 cân gạo hết 40 sò.
 + ...
 
-Đây được coi là gốc rễ của ngành "kế toán - ghi sổ", hệ thống sổ ghi đơn giản như trên được coi là "Single-entry bookkeeping system". Các loại sổ ghi nợ, nhật ký buôn bán của gian thương về sau được gọi là Sổ Cái (Ledger).
+Đây được coi là gốc rễ của ngành "kế toán - ghi sổ", hệ thống sổ ghi đơn giản như trên gọi là "Single-entry bookkeeping system". Các loại sổ ghi nợ, nhật ký buôn bán của gian thương về sau được đặt tên là Sổ Cái (Ledger).
 
+---
 
 ## 2. Hệ thống ghi Sổ Kép
 
@@ -60,6 +67,10 @@ Lúc này, Trâu già mua chục trái táo của Cáo, thì giao dịch sẽ đ
 > Sổ của Trâu thêm 1 dòng: Ngày xx, mua của Cáo già 10 trái táo, mất 120 xu. --> Debit Account Trâu + 120
 
 Như vậy đảm bảo Credit Cáo = Debit Trâu, và nếu cần thiết, ta kí tên vào 1 bản hợp đồng chung, để khỏi ai giả mạo sổ sách hí hí. Và sau này có tranh cãi kiện tụng, cứ đem sổ sách ra nói chuyện, ko cần phải đụng răng đụng sừng :)
+
+![Early 19th-century ledger](/assets/images/rtb1/ledger.png)
+
+---
 
 ## 3. Yếu kém của Sổ Kép và các bổ sung
 
@@ -98,6 +109,8 @@ Cùng với vòng xoáy của Computer và Internet, công nghệ lưu trữ s�
 
 Thời điểm này, Ngân Hàng và các bên thứ 3 khác (Vượn đội lốt) cũng đã số hóa phần lớn sổ sách và ghi chép. Kèm theo quá trình số hóa, là việc ứng dụng các nghiên cứu của ngành Mật Mã học hiện đại (Modern Cryptography) để ngăn ngừa những nguy cơ về an toàn thông tin.
 
+---
+
 ## 4. Lưu trữ thông tin thời kỳ hiện đại
 
 Đọc tới đây, các bạn cũng hiểu lĩnh vực ghi chép, lưu trữ đã có một lịch sử rất thú vị như vậy, nó luôn luôn có khiếm khuyết, và con người cũng chưa bao giờ ngừng hoàn thiện nó. Những công nghệ mới, tiêu chuẩn mới, phát minh mới vẫn cứ xuất hiện theo thời gian...
@@ -105,6 +118,8 @@ Thời điểm này, Ngân Hàng và các bên thứ 3 khác (Vượn đội l�
 Những đột phá trong lĩnh vực CNTT mang đến các hệ thống lưu trữ thông tin giao dịch khổng lồ, tập trung, được quản lý bởi những Tổ chức tín nhiệm (Trusted Third Party).
 
 Tất nhiên, những Tổ chức tín nhiệm này cũng có nhiều nhược điểm, và nhược điểm lớn nhất của nó có lẽ là hiểm họa "Insider Fraud" - Gian lận nội bộ.
+
+![Insider Fraud](/assets/images/rtb1/cyber_attack.jpg)
 
 Nói một cách dễ hiểu, là những gian lận này phát sinh từ bản thân "bên trong tổ chức" mà chúng ta đang tin tưởng. Chúng ta đang đặt niềm tin vào những tổ chức tín nhiệm, họ thường mang danh tiếng và của cải ra để đảm bảo cho sự tín nhiệm của tổ chức. Nhưng "tổ chức" đó là ai? Là những con người.
 
@@ -136,6 +151,8 @@ Vì chủ đề này gói hẹp trong phạm vi blockchain, nên tôi dẫn ngu�
 > ...Indeed, as he (Trusted Third Party) has total power over issuance of certificates, he is now a major source of weakness, placing great stress on the word 'trust'.
 
 > This alternate logic has been expressed in the term Centralised Vulnerability Party or CVP. Instead of the marketing hope that you trust the TTP, you the user are forced to trust. You have no choice, and are vulnerable to this central, all-powerful party...
+
+---
 
 ## 5. Một hệ thống ghi chép hoàn hảo
 
@@ -171,6 +188,8 @@ Tóm tắt lại cho các bạn ko có thời gian đọc, những nghiên cứu
 Và cuối cùng, một vị đại hiệp đã mang đến hệ thống thanh toán "như yêu cầu", tuy mới nhưng ko phải mới: Bitcoin! Câu chuyện từ cuối năm 2008 trở đi, rồi giai đoạn nở rộ của tiền mã hóa, chắc mọi người ai cũng nắm được. Ngoài ra, còn có rất nhiều kênh thông tin mà các bạn có thể tham khảo, có lẽ ko cần nhắc đến nữa.
 
 Tuy nhiên, trong bản thảo về hệ thống tiền kỹ thuật số ngang hàng của mình, Satoshi Nakamato ko hề nhắc đến blockchain. Khái niệm blockchain (về sau) là dựa theo cách mà bitcoin hoạt động để hình thành nên.
+
+![Blockchain](/assets/images/rtb1/blockchain.jpg)
 
 Blockchain đã xuất hiện như vậy, ko phải một ý tưởng chói lòa đến từ tương lai, mà là cả một quá trình nghiên cứu, hoàn thiện một nền tảng công nghệ ghi chép - lưu trữ dựa trên những điểm yếu của chính hệ thống hiện tại. Người ta đã nghiên cứu nó từ thập niên 80, và vẫn ko có dấu hiệu ngừng lại, khi hàng loạt công ty công nghệ lớn, ngân hàng, tập đoàn xuyên quốc gia, và cả chính phủ cũng đã bắt đầu tìm hiểu, nghiên cứu, thử nghiệm blockchain.
 
