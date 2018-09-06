@@ -8,7 +8,7 @@ keywords: "blockchain, proofofstake, proofofwork, bitcoin"
 
 [Draft version - to be completed]
 
-Ở phần trước tôi đã giới thiệu về một phần lịch sử của blockchain, về nền tảng để hình thành nên một hệ thống lưu trữ thông tin toàn vẹn. Chúng ta hiểu blockchain ra đời để xóa bỏ 2 thứ: gian lận trong ghi chép và bên thứ 3, nhưng làm cách nào để hiện thực hóa lý tưởng?
+Ở bài viết mở đầu, tôi đã giới thiệu về một phần lịch sử của blockchain, về nền tảng để hình thành nên một hệ thống lưu trữ thông tin toàn vẹn. Chúng ta hiểu blockchain ra đời để xóa bỏ 2 thứ: gian lận trong ghi chép và bên thứ 3, nhưng làm cách nào để hiện thực hóa lý tưởng?
 
 Bài viết thứ 2 trong series, tôi xin mô tả các đặc điểm của blockchain và cách hoạt động của một hệ thống mẫu (bitcoin)
 
@@ -23,6 +23,16 @@ Nói tóm gọn, blockchain là một hệ thống lưu trữ thông tin phân t
 2. Immutable Data: Mỗi ghi chép được dán nhãn, mã hóa và liên kết chặt chẽ với nhau khiến cho việc chỉnh sửa ghi chép gần như là điều bất khả thi.
 
 3. Consensus Protocols: Cơ chế đồng thuận cởi mở...
+
+### Blockchain và Bitcoin là 2 hay là 1?
+
+Bitcoin ra đời để khẳng định tính khả thi của tiền số (Electronic Cash or Digital Cash). Satoshi giới thiệu một giải pháp cho vấn đề "double-spending" trong các giao dịch tiền số ngang hàng. Giải pháp này dựa trên cơ chế xác nhận phi tập trung và mã hóa các giao dịch vào một chuỗi gần-như-ko-thể-bị-đảo-ngược. Bitcoin là giải pháp cho tiền số nhưng vô tình (not sure) nó cũng là một giải pháp cho lưu trữ, nếu thay các dữ liệu giao dịch (transactions) bằng các bản ghi chép (records).
+
+Chi tiết hơn về giải pháp của Bitcoin, nó bao gồm:
+
+1. Proof-of-Work based Consensus Protocol: Cơ chế đồng thuận dựa trên PoW cho phép giao dịch được xác nhận mà ko cần dựa vào bên thứ 3. Ngoài ra, các bên tham gia mạng lưới sẽ có sổ cái riêng (phi tập trung), những sổ cái này đồng bộ về dữ liệu (same data)
+
+2. Hashed transactions into an ongoing chain: Các dữ liệu giao dịch được hash (1 dạng mã hóa) vào 1 chuỗi có kèm thông tin thời gian, khiến các giao dịch này ko thể bị chỉnh sửa. Trong thực tế, các dữ liệu giao dịch này được gom lại thành 1 block, sau đó block này sẽ được hash vào chain --> Bạn đã hiểu nguồn gốc tên gọi blockchain ra đời ntnao rồi đó.
 
 ...
 
