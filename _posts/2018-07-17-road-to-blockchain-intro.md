@@ -6,15 +6,13 @@ description: "Road to Blockchain: Một phần của lịch sử"
 keywords: "blockchain, bitcoin, history, satoshi, accounting, crypto"
 ---
 
-![A piece of History](/assets/images/rtb1/history.png)
+![A piece of History](/assets/images/rtb01/history.png)
 
-Viết về một công nghệ mới mẻ, luôn là thách thức lớn đối với blogger, và nó là một loại công việc tiêu hao rất nhiều thời gian và công sức. 4 phần mày mò tìm hiểu, nhưng 6 phần quan trọng hơn là giải thích, diễn đạt để độc giả hiểu, mới là thành công của một bài viết.
+Viết về một công nghệ mới mẻ, luôn là thách thức lớn đối với blogger, nó là một loại công việc tiêu hao rất nhiều thời gian và công sức. 4 phần mày mò tìm hiểu, rồi đến 6 phần quan trọng hơn: diễn đạt, mô tả để độc giả hiểu, mới được coi là bài viết chất lượng.
 
-Chủ đề lần này tôi chọn viết là một mảng công nghệ đang nhận được sự quan tâm rất lớn từ cộng đồng thời gian qua: Blockchain.
+Và thách thức lần này mang tên "Blockchain" - một công nghệ đã xuất hiện khá lâu nhưng vẫn tồn tại nhiều băn khoăn, hoài nghi xung quanh nó: Blockchain là gì? Đến từ đâu? Giải quyết vấn đề gì? Có đáng tin cậy ko? v.v...
 
-Có thể các bạn đã đọc rất nhiều, nghe rất nhiều, tìm tòi rất lâu nhưng vẫn đang bối rối, hoài nghi với những gì thu thập được - như tôi. Thì hẳn bạn rất khao khát muốn biết rõ hơn về nguồn gốc, ý tưởng đằng sau blockchain, những nền tảng đã giúp Satoshi tạo ra bitcoin...
-
-Bài viết đầu tiên trong series, sẽ tổng hợp và cố gắng giải thích nguồn gốc của blockchain, từ nhu cầu ghi chép đơn sơ đến sự bùng nổ của công nghệ mã hóa. 
+Bài viết mở đầu series, là câu chuyện về nguồn gốc của Blockchain: Từ những nhu cầu ghi chép đơn sơ đến một hệ thống lưu trữ tối ưu..
 
 Vậy xin ngược dòng lịch sử một chốc, về thời kỳ săn bắn hái lượm luôn cho xa nhé :)
 
@@ -24,25 +22,26 @@ Vậy xin ngược dòng lịch sử một chốc, về thời kỳ săn bắn h
 
 Nhu cầu ghi chép bắt đầu xuất hiện từ khi con người sống tập trung, để đáp ứng cho hoạt động ***Trao đổi (Exchange)*** và ***Buôn bán, giao thương (Trade)***
 
-Hôm nay tôi săn đc 1 em chồn, cả nhà ăn chồn 2 tuần nay đã ngán lắm, đi ngang nhà tên hàng xóm, thấy nó đang nướng cá, thơm lừng. Tôi dụ dỗ nó đổi em chồn lấy 5 con cá. Thằng hàng xóm đồng ý trao đổi, như vậy là đã xảy ra 1 giao dịch. Vậy đó, giao dịch đã xảy ra - trước cả khi con người biết đọc, ko chừng trước cả khi biết nói (who's know? hahaa)
-
 ...
 
-Một ngày đẹp trời khác, tôi săn đc 6 con chồn, hay thậm chí săn đc cả cọp Siberia, voi Mammoth, đương nhiên là ăn không hết, nhưng tủ lạnh lại chưa đc phát minh nên cũng chẳng còn cách nào - ngoài đem cho thằng hàng xóm hoặc linh cẩu ăn bớt. Ngay cả khi, tôi đem đổi thành cá, hay trái cây, thì cũng ko thể nhai hết được.
+Thuở săn bắn ấy, tôi đi bẫy chồn, cả nhà ăn chồn 2 tuần nay đã ngán lắm, đi ngang nhà tên hàng xóm, thấy nó đang nướng cá thơm lừng. Tôi dụ dỗ nó đổi chác. Tên hàng xóm đồng ý, chồn đổi cá. Vậy đó, giao dịch đã xảy ra - trước cả khi con người biết đọc, ko chừng trước cả khi biết nói (who's know? hahaa)
 
-Và thế là, vỏ sò, vỏ hến được đem ra làm đơn vị quy đổi cho hàng hóa. Tiền thời này, là vỏ sò được mài thật đẹp, phụ nữ mang làm trang sức được. Tôi săn đc 1 cọp Siberia, để lại cái tay cọp cả nhà ăn lẩu, còn lại tôi đem đổi lấy trăm vỏ sò ở ngoài chợ. Bữa nào đói quá, lười quá, hay say lá đu đủ quá ko săn được gì, tôi đem ít vỏ sò này đổi lấy vài chục trái táo, đôi con cá về ăn, vỏ sỏ quả là phát minh vĩ đại -))
+Một ngày đẹp trời khác, tôi săn đc cả cọp Siberia, voi Mammoth, đương nhiên là ăn không hết. Nhưng tủ lạnh lại chưa đc phát minh nên cũng chẳng còn cách nào - ngoài đem cho thằng hàng xóm hoặc linh cẩu ăn bớt. Ngay cả khi, tôi đem đổi thành cá, chuối, heo rừng... thì cũng ko thể nhai hết được.
 
-![Ancient Egypt bazaar](/assets/images/rtb1/ancient_egypt_bazaar.jpg)
+Và thế là, vỏ sò, vỏ hến trở thành đơn vị quy đổi cho hàng hóa. Tất nhiên phải là vỏ sò được mài thật đẹp, phụ nữ mang làm trang sức được mới có giá trị. Tôi săn đc cọp Siberia, để lại cái tay cọp cả nhà ăn lẩu, còn lại đem đổi lấy trăm vỏ sò ở ngoài chợ. Bữa nào đói quá, lười quá, hay say lá đu đủ quá ko săn được gì, tôi đem ít vỏ sò này đổi lấy vài chục trái táo, đôi con cá về ăn, vỏ sỏ quả là phát minh vĩ đại -))
 
-Rồi giao thương cũng từ đó mà vươn xa. Cọp Siberian đem xuống đồng bằng đổi sữa dê đùi ngựa, tôm cua đem lên cao nguyên đổi thịt voi, cafe đổi hồ tiêu, lúa gạo đổi máy bay, v.vv. Và vỏ sò cũng tiến hóa thành tiền đồng, bạc, vàng, ngân phiếu, và tiến tới thành 1 vài con số thập phân trong "tài khoản ngân hàng" - đó là chuyện về sau.
+![Ancient Egypt bazaar](/assets/images/rtb01/ancient_egypt_bazaar.jpg)
+
+Rồi giao thương cũng từ đó mà vươn xa. Cọp Siberia đem xuống đồng bằng đổi sữa dê đùi ngựa, tôm cua đem lên cao nguyên đổi thịt voi, cafe đổi hồ tiêu, lúa gạo đổi máy bay, v.vv. Vỏ sò cũng tiến hóa thành tiền đồng, bạc, vàng, ngân phiếu, và cuối cùng thành 1 vài con số thập phân trong "tài khoản ngân hàng" - đó là chuyện về sau.
 
 ### Cuốn sổ ghi nợ
 
 Khi "tiền vỏ hến" được sử dụng trong giao dịch, mọi mua bán đều cần phải được ghi chép, để tính toán giá cả, theo dõi tài sản, và có lẽ cũng là để tiện đòi nợ. Ai đó đã phát minh ra chữ viết và giấy da, chính là sự khởi đầu cho sự bùng nổ của lĩnh vực ghi chép, lưu trữ thông tin. Đối với hoạt động buôn bán, các gian thương thời kỳ này sẽ có 1 cuốn sổ ghi chép những thứ như:
 
-+ Ngày 01, bán 10 đầu tôm được 100 sò, bán 16 mực khổng lồ được 400 sò, mua 2 bò con hết 600 sò.
-+ Ngày 02, bán 20 cá thu được 200 sò, mua 2 cân gạo hết 40 sò.
-+ ...
+```haskell
+-- Ngày 01, bán 10 đầu tôm được 100 sò, bán 16 mực khổng lồ được 400 sò, mua 2 bò con hết 600 sò.
+-- Ngày 02, bán 20 cá thu được 200 sò, mua 2 cân gạo hết 40 sò.
+```
 
 Đây được coi là gốc rễ của ngành "kế toán - ghi sổ", hệ thống sổ ghi đơn giản như trên gọi là "Single-entry bookkeeping system". Các loại sổ ghi nợ, nhật ký buôn bán của gian thương về sau được đặt tên là Sổ Cái (Ledger).
 
@@ -50,25 +49,26 @@ Khi "tiền vỏ hến" được sử dụng trong giao dịch, mọi mua bán �
 
 ## 2. Hệ thống ghi Sổ Kép
 
-Khi thương mại vượt xa giới hạn bộ tộc, làng xã, tới quốc gia, vượt đại dương, xuyên lục địa... Hệ thống Sổ Đơn kia bộc lộ vấn đề về tính đúng đắn, minh bạch - khi không có một căn cứ nào để xác nhận được việc ghi chép trên sổ là đúng, sẽ dẫn tới các vấn đề về xác định tài sản, giá cả, thuế má, gian lận thương mại...
+Khi thương mại vượt xa giới hạn bộ tộc, làng xã, tới quốc gia, vượt đại dương, xuyên lục địa... Hệ thống Sổ Đơn kia bộc lộ vấn đề về tính đúng đắn, minh bạch: không có một căn cứ nào để xác nhận việc ghi chép trên sổ là chính xác...
 
 Hôm nay Cáo bán nợ cho Trâu già chục táo chín, vài hôm sau qua trả nợ thì Cáo bảo "Mày mua 12 trái lận, tao có ghi sổ đây...". Tranh cãi nổ ra và Trâu già húc lòi ruột Cáo, hết đời gian thương. Đó là vấn đề của Hệ thống Sổ Đơn.
 
 ### Giải pháp thay thế cho "Sổ đơn"
 
-Giai đoạn đầu Trung cổ, người Do Thái bắt đầu tiên phong đổi mới ngành kế toán: Ghi Sổ Kép. Và sau đó ở Ý, việc thực thi ghi Sổ Kép được đem ra làm chuẩn mực trong giao thương (đâu đó ở Thế Kỷ 15).
+Giai đoạn đầu Trung cổ, người Do Thái bắt đầu tiên phong đổi mới ngành kế toán: Ghi Sổ Kép. Và sau đó ở Ý, Ghi Sổ Kép được xem như là chuẩn mực trong giao thương (đâu đó ở Thế Kỷ 15).
 
 Về nguyên tắc, Ghi Sổ Kép là cách ghi dữ liệu debit (ghi nợ) và credit (ghi có) vào account (tài khoản) sao cho đảm bảo sự cân bằng của 2 phần này. Đọc thêm về [Hệ thống ghi Sổ kép](https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system)
 
 Lúc này, Trâu già mua chục trái táo của Cáo, thì giao dịch sẽ được ghi 2 lần:
 
-> Sổ của Cáo thêm 1 dòng: Ngày xx, bán cho Trâu già 10 trái táo, thu về 120 xu. --> Credit Account Cáo + 120
+```haskell
+--Sổ của Cáo thêm 1 dòng: Ngày xx, bán cho Trâu già 10 trái táo, thu về 120 xu. --> Credit Account Cáo + 120
+--Sổ của Trâu thêm 1 dòng: Ngày xx, mua của Cáo già 10 trái táo, mất 120 xu. --> Debit Account Trâu + 120
+```
 
-> Sổ của Trâu thêm 1 dòng: Ngày xx, mua của Cáo già 10 trái táo, mất 120 xu. --> Debit Account Trâu + 120
+Như vậy đảm bảo Credit Cáo = Debit Trâu, và nếu cần thiết, 2 bên kí tên vào 1 bản hợp đồng chung, để khỏi ai giả mạo sổ sách hí hí. Và sau này có tranh cãi kiện tụng, cứ đem sổ sách ra nói chuyện, ko cần phải đụng răng đụng sừng :)
 
-Như vậy đảm bảo Credit Cáo = Debit Trâu, và nếu cần thiết, ta kí tên vào 1 bản hợp đồng chung, để khỏi ai giả mạo sổ sách hí hí. Và sau này có tranh cãi kiện tụng, cứ đem sổ sách ra nói chuyện, ko cần phải đụng răng đụng sừng :)
-
-![Early 19th-century ledger](/assets/images/rtb1/ledger.png)
+![Early 19th-century ledger](/assets/images/rtb01/ledger.png)
 
 ---
 
@@ -78,7 +78,7 @@ Cho tới bây giờ: 2018, chúng ta vẫn đang sử dụng cách ghi sổ có
 
 Vấn đề là Sổ Kép có một khiếm khuyết nằm ở 2 chữ Cân Bằng - "Balanced but it's not correct"
 
-Debit và Credit phải cân bằng ư? Ko vấn đề gì, chúng ta có những thiên tài, địa tài hay đại hiệp ẩn danh có khả năng phù phép sự cân bằng này bằng cách cố tình ghi chép sai, khai khống, mua chuộc, giả mạo chữ ký v.v... và những sai sót này được tính toán rất tỉ mỉ, công phu, đảm bảo "Totally Balanced" cho các tài khoản được ghi chép.
+Debit và Credit phải cân bằng ư? Ko sao cả, đã từng có nhiều vị đại hiệp có khả năng phù phép sự cân bằng này bằng cách cố tình ghi chép sai, khai khống, mua chuộc, giả mạo chữ ký v.v... và những sai sót này được tính toán rất tỉ mỉ, công phu, đảm bảo "Totally Balanced" cho các tài khoản được ghi chép.
 
 Ngành kiểm toán đã phát hiện được rất nhiều gian lận và chúng ta hằng ngày vẫn chứng kiến những phiên tòa xử các vụ án giả mạo sổ sách..
 
@@ -90,11 +90,13 @@ Giao dịch diễn ra ở trang trại đa phần sẽ thông qua họ nhà Vư�
 
 Trâu già muốn mua nhãn của Khỉ-đột, thì sẽ nói với nhà Vượn 1 tiếng - rằng hắn sắp mua của Khỉ 2 cân nhãn, giá đồng ý là 40xu. Vượn sẽ làm chứng cho giao dịch này, và sẽ ghi vào sổ của nhà Vượn 1 dòng ghi chép:
 
-> Ngày xx, Trâu già mua của Khỉ-đột 2 cân táo, giá 40xu.
+```haskell
+--Ngày xx, Trâu già mua của Khỉ-đột 2 cân táo, giá 40xu.
+```
 
 Trâu già và Khỉ-đột cũng đồng thời ghi chú vào sổ của mình giao dịch trên.
 
-Như vậy, cách mà nhà Vượn tham gia vào ghi chép cho 1 giao dịch của Trâu và Khỉ, được coi là một phương pháp tiếp cận bổ sung cho nền tảng Ghi Sổ Kép. Cách tiếp cận này tin cậy hơn, giảm thiểu rủi ro của sai sót và gian lận, và mang tính chất lưu trữ - phòng trường hợp tranh chấp, thanh tra..
+Như vậy, cách mà nhà Vượn tham gia vào ghi chép cho giao dịch của Trâu và Khỉ, được coi là một phương pháp tiếp cận bổ sung cho nền tảng Ghi Sổ Kép. Cách tiếp cận này tin cậy hơn, giảm thiểu rủi ro của sai sót và gian lận, và mang tính chất lưu trữ - phòng trường hợp tranh chấp, thanh tra..
 
 Đây là cách mà Ngân Hàng hoạt động, dĩ nhiên, nhà Vượn (a.k.a Ngân Hàng) sẽ thu một mức phí để duy trì hoạt động làm "bên thứ 3 tin cậy" này.
 
@@ -115,13 +117,13 @@ Thời điểm này, Ngân Hàng và các bên thứ 3 khác (Vượn đội l�
 
 Đọc tới đây, các bạn cũng hiểu lĩnh vực ghi chép, lưu trữ đã có một lịch sử rất thú vị như vậy, nó luôn luôn có khiếm khuyết, và con người cũng chưa bao giờ ngừng hoàn thiện nó. Những công nghệ mới, tiêu chuẩn mới, phát minh mới vẫn cứ xuất hiện theo thời gian...
 
-Những đột phá trong lĩnh vực CNTT mang đến các hệ thống lưu trữ thông tin giao dịch khổng lồ, tập trung, được quản lý bởi những Tổ chức tín nhiệm (Trusted Third Party).
+Đột phá trong lĩnh vực CNTT mang đến những hệ thống lưu trữ thông tin giao dịch khổng lồ, tập trung, được quản lý bởi những Tổ chức tín nhiệm (Trusted Third Party).
 
-Tất nhiên, những Tổ chức tín nhiệm này cũng có nhiều nhược điểm, và nhược điểm lớn nhất của nó có lẽ là hiểm họa "Insider Fraud" - Gian lận nội bộ.
+Tất nhiên, "Tổ chức tín nhiệm" này cũng có nhiều nhược điểm, và nhược điểm lớn nhất của nó có lẽ là hiểm họa "Insider Fraud" - Gian lận nội bộ.
 
-![Insider Fraud](/assets/images/rtb1/cyber_attack.jpg)
+![Insider Fraud](/assets/images/rtb01/cyber_attack.jpg)
 
-Nói một cách dễ hiểu, là những gian lận này phát sinh từ bản thân "bên trong tổ chức" mà chúng ta đang tin tưởng. Chúng ta đang đặt niềm tin vào những tổ chức tín nhiệm, họ thường mang danh tiếng và của cải ra để đảm bảo cho sự tín nhiệm của tổ chức. Nhưng "tổ chức" đó là ai? Là những con người.
+Nói một cách dễ hiểu, là những gian lận này phát sinh từ bản thân "bên trong tổ chức" mà chúng ta đang tin tưởng. Chúng ta đang đặt niềm tin vào những tổ chức tín nhiệm, họ thường mang danh tiếng và của cải ra để đảm bảo cho sự tín nhiệm của tổ chức. Nhưng "tổ chức" đó là ai? Cũng là những con người bình thường mà thôi..
 
 Những người bên trong một tổ chức tín nhiệm, họ có thẩm quyền, họ được tiếp xúc với những dữ liệu ghi chép, hệ thống thông tin quan trọng. Và họ cũng chính là nguy cơ tiềm ẩn. Nhân viên cũ, cộng tác viên, đối tác, quản trị viên và thậm chí là kiểm soát viên đều có thể trở thành nhân tố tham gia vào những cuộc gian lận như:
 
@@ -172,7 +174,7 @@ Từ những năm 198x, rất nhiều nhà nghiên cứu đã đóng góp vào q
 
 5. [Ian Grigg - Triple Entry Accounting (2005)](https://nakamotoinstitute.org/triple-entry-accounting)
 
-Note: Nghiên cứu của Ian Grigg hoàn toàn ko liên quan đến lý thuyết "Momentum Accounting and Triple-Entry Bookkeeping" của giáo sư Yuji Ijiri. Có một blog trên hackernoon đã viết sai về khái niệm "kế toán tam phân", người dịch cũng sai theo.
+Note: Nghiên cứu của Ian Grigg hoàn toàn ko liên quan đến lý thuyết "Momentum Accounting and Triple-Entry Bookkeeping" của giáo sư Yuji Ijiri. Có một blog trên hackernoon đã viết sai về khái niệm "kế toán tam phân", người dịch Việt ngữ cũng sai theo.
 
 Tóm tắt lại cho các bạn ko có thời gian đọc, những nghiên cứu khoảng thời gian này, ít nhiều đều hướng đến một hệ thống lưu trữ hoàn thiện, mang các đặc điểm:
 
@@ -185,11 +187,11 @@ Tóm tắt lại cho các bạn ko có thời gian đọc, những nghiên cứu
 
 ### Sự ra đời của bitcoin/blockchain
 
-Và cuối cùng, một vị đại hiệp đã mang đến hệ thống thanh toán "như yêu cầu", tuy mới nhưng ko phải mới: Bitcoin! Câu chuyện từ cuối năm 2008 trở đi, rồi giai đoạn nở rộ của tiền mã hóa, chắc mọi người ai cũng nắm được. Ngoài ra, còn có rất nhiều kênh thông tin mà các bạn có thể tham khảo, có lẽ ko cần nhắc đến nữa.
+Và cuối cùng, một vị đại hiệp đã mang đến hệ thống thanh toán "như yêu cầu", tuy mới nhưng ko phải mới: Bitcoin! Câu chuyện từ cuối năm 2008 trở đi, rồi giai đoạn nở rộ của tiền mã hóa, chắc mọi người ai cũng nắm được, có lẽ ko cần nhắc đến nữa.
 
 Tuy nhiên, trong bản thảo về hệ thống tiền kỹ thuật số ngang hàng của mình, Satoshi Nakamato ko hề nhắc đến blockchain. Khái niệm blockchain (về sau) là dựa theo cách mà bitcoin hoạt động để hình thành nên.
 
-![Blockchain](/assets/images/rtb1/blockchain.jpg)
+![Blockchain](/assets/images/rtb01/blockchain.jpg)
 
 Blockchain đã xuất hiện như vậy, ko phải một ý tưởng chói lòa đến từ tương lai, mà là cả một quá trình nghiên cứu, hoàn thiện một nền tảng công nghệ ghi chép - lưu trữ dựa trên những điểm yếu của chính hệ thống hiện tại. Người ta đã nghiên cứu nó từ thập niên 80, và vẫn ko có dấu hiệu ngừng lại, khi hàng loạt công ty công nghệ lớn, ngân hàng, tập đoàn xuyên quốc gia, và cả chính phủ cũng đã bắt đầu tìm hiểu, nghiên cứu, thử nghiệm blockchain.
 
