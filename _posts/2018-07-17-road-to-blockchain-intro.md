@@ -8,7 +8,7 @@ keywords: "blockchain, bitcoin, history, satoshi, accounting, crypto"
 
 ![A piece of History](/assets/images/rtb01/history.png)
 
-Viết về một công nghệ mới mẻ, luôn là thách thức lớn đối với blogger, nó là một loại công việc tiêu hao rất nhiều thời gian và công sức. 4 phần mày mò tìm hiểu, rồi đến 6 phần quan trọng hơn: diễn đạt, mô tả để độc giả hiểu, mới được coi là bài viết chất lượng.
+Viết về một công nghệ mới mẻ, luôn là thách thức lớn đối với blogger, nó là một loại công việc tiêu hao nhiều thời gian và công sức. 4 phần mày mò tìm hiểu, rồi đến 6 phần quan trọng hơn: diễn đạt, mô tả để độc giả hiểu, mới được coi là bài viết chất lượng.
 
 Và thách thức lần này mang tên "Blockchain" - một công nghệ đã xuất hiện khá lâu nhưng vẫn tồn tại nhiều băn khoăn, hoài nghi xung quanh nó: Blockchain là gì? Đến từ đâu? Giải quyết vấn đề gì? Có đáng tin cậy ko? v.v...
 
@@ -36,7 +36,7 @@ Rồi giao thương cũng từ đó mà vươn xa. Cọp Siberia đem xuống đ
 
 ### Cuốn sổ ghi nợ
 
-Khi "tiền vỏ hến" được sử dụng trong giao dịch, mọi mua bán đều cần phải được ghi chép, để tính toán giá cả, theo dõi tài sản, và có lẽ cũng là để tiện đòi nợ. Ai đó đã phát minh ra chữ viết và giấy da, chính là sự khởi đầu cho sự bùng nổ của lĩnh vực ghi chép, lưu trữ thông tin. Đối với hoạt động buôn bán, các gian thương thời kỳ này sẽ có 1 cuốn sổ ghi chép những thứ như:
+Khi "tiền vỏ hến" được sử dụng trong giao dịch, mọi người bắt đầu "ghi chép": để tính toán giá cả, theo dõi tài sản, và có lẽ cũng là để tiện đòi nợ. Ai đó đã phát minh ra chữ viết và giấy da, chính là sự khởi đầu cho sự bùng nổ của lĩnh vực ghi chép, lưu trữ thông tin. Đối với hoạt động buôn bán, các gian thương thời kỳ này sẽ có 1 cuốn sổ ghi chép những thứ như:
 
 ```haskell
 -- Ngày 01, bán 10 đầu tôm được 100 sò, bán 16 mực khổng lồ được 400 sò, mua 2 bò con hết 600 sò.
@@ -104,12 +104,13 @@ Như vậy, cách mà nhà Vượn tham gia vào ghi chép cho giao dịch của
 
 Cùng với vòng xoáy của Computer và Internet, công nghệ lưu trữ số hóa cũng được áp dụng vào ghi chép.
 
-+ Nhập liệu Sổ sách giấy tờ được thay bằng Software, Hard Disk.
++ Computer tính toán thay cho con người.
++ Hard Disk lưu trữ thông tin thay cho sổ sách, giấy tờ.
 + Chữ ký tay được thay bằng chữ ký số.
 + Bank account được sử dụng rộng rãi và tiện dụng nhờ Internet.
 ...
 
-Thời điểm này, Ngân Hàng và các bên thứ 3 khác (Vượn đội lốt) cũng đã số hóa phần lớn sổ sách và ghi chép. Kèm theo quá trình số hóa, là việc ứng dụng các nghiên cứu của ngành Mật Mã học hiện đại (Modern Cryptography) để ngăn ngừa những nguy cơ về an toàn thông tin.
+Thời điểm này, Ngân Hàng và các Tổ chức tín nhiệm khác cũng đã số hóa phần lớn sổ sách và ghi chép.
 
 ---
 
@@ -119,13 +120,13 @@ Thời điểm này, Ngân Hàng và các bên thứ 3 khác (Vượn đội l�
 
 Đột phá trong lĩnh vực CNTT mang đến những hệ thống lưu trữ thông tin giao dịch khổng lồ, tập trung, được quản lý bởi những Tổ chức tín nhiệm (Trusted Third Party).
 
-Tất nhiên, "Tổ chức tín nhiệm" này cũng có nhiều nhược điểm, và nhược điểm lớn nhất của nó có lẽ là hiểm họa "Insider Fraud" - Gian lận nội bộ.
+Tất nhiên, TTP cũng có nhiều nhược điểm, và đáng kể nhất có lẽ là hiểm họa "Insider Fraud" - Gian lận nội bộ.
 
 ![Insider Fraud](/assets/images/rtb01/cyber_attack.jpg)
 
 Nói một cách dễ hiểu, là những gian lận này phát sinh từ bản thân "bên trong tổ chức" mà chúng ta đang tin tưởng. Chúng ta đang đặt niềm tin vào những tổ chức tín nhiệm, họ thường mang danh tiếng và của cải ra để đảm bảo cho sự tín nhiệm của tổ chức. Nhưng "tổ chức" đó là ai? Cũng là những con người bình thường mà thôi..
 
-Những người bên trong một tổ chức tín nhiệm, họ có thẩm quyền, họ được tiếp xúc với những dữ liệu ghi chép, hệ thống thông tin quan trọng. Và họ cũng chính là nguy cơ tiềm ẩn. Nhân viên cũ, cộng tác viên, đối tác, quản trị viên và thậm chí là kiểm soát viên đều có thể trở thành nhân tố tham gia vào những cuộc gian lận như:
+Những người bên trong một Tổ chức tín nhiệm, họ có thẩm quyền, họ được tiếp xúc với những dữ liệu ghi chép, hệ thống thông tin quan trọng. Và họ cũng chính là nguy cơ tiềm ẩn. Nhân viên cũ, cộng tác viên, đối tác, quản trị viên và thậm chí là kiểm soát viên đều có thể trở thành nhân tố tham gia vào những cuộc gian lận như:
 
 - Thay đổi, chỉnh sửa chứng từ, ghi chép.
 - Đánh cắp thông tin nhạy cảm (như tài khoản ngân hàng).
@@ -136,19 +137,19 @@ Những người bên trong một tổ chức tín nhiệm, họ có thẩm quy�
 
 Các bạn có thể xem qua một nghiên cứu nhỏ của viện nghiên cứu công nghệ phần mềm SEI (Carnegie Mellon Uni) về gian lận nội bộ trong ngành tài chính ở [đây](https://resources.sei.cmu.edu/asset_files/Brochure/2012_015_001_28207.pdf)
 
-### Công nghệ mã hóa trong lưu trữ
+### Trên sân chơi Internet
 
-Ngoài lĩnh vực tài chính, kiểm toán, ngân hàng vốn đã nhiều vấn đề, các bên thứ 3 khác cũng được tin tưởng trên sân chơi mới là Internet: VISA, Verisign, Internet DNS, Paypal... Chúng ta không thể phủ nhận những lợi ích từ những Tổ chức tín nhiệm này mang lại, đặc biệt khi họ ứng dụng những công nghệ mã hóa hiện đại để đảm bảo an toàn thông tin cho người sử dụng. Nhưng một lần nữa, niềm tin bị thử thách...
+Ngoài lĩnh vực lưu trữ/xác nhận thông tin truyền thống, các Tổ chức tín nhiệm - TTP cũng được tin tưởng trên sân chơi khác là Internet: VISA, Verisign, Internet DNS, Paypal, C.A... Chúng ta không thể phủ nhận những lợi ích từ TTP mang lại, đặc biệt khi họ ứng dụng những công nghệ mã hóa hiện đại (Modern Cryptography) để đảm bảo an toàn thông tin cho người sử dụng. Nhưng niềm tin vào họ vẫn bị thử thách.
 
-Các nhà nghiên cứu độc lập thậm chí đã nhận diện được hiểm họa từ lâu, và vẫn liên tiếp xuất bản những nghiên cứu chung + riêng đề xuất đến những mặt tối của "Trusted Third Party" thời kỳ Internet này.
+Các nhà nghiên cứu độc lập đã nhận diện được hiểm họa từ khá sớm, và vẫn liên tiếp xuất bản những nghiên cứu chung + riêng đề cập đến những mặt tối của "Trusted Third Party" thời kỳ Internet này. Scandal 2013 của Snowden, tuy muộn nhưng cũng góp phần khẳng định mối họa TTP là có thật.
 
-Vì chủ đề này gói hẹp trong phạm vi blockchain, nên tôi dẫn nguồn nghiên cứu của 2 tác giả được cho là ảnh hưởng rất lớn tới sự ra đời của blockchain là Ian Grigg và Nick Szabo:
+Vì chủ đề gói gọn trong phạm vi blockchain, nên tôi dẫn nguồn nghiên cứu của 2 tác giả được cho là ảnh hưởng lớn tới sự ra đời của blockchain là Ian Grigg và Nick Szabo:
 
 1. Những rào cản về chi phí, kĩ thuật, hạ tầng... chưa được dỡ bỏ kèm theo những lỗ hổng bảo mật của TTP: [Trusted Third Parties Are Security Holes - Nick Szabo](https://nakamotoinstitute.org/trusted-third-parties)
 
 2. Tác hại của hệ thống khóa công khai (Public Key Infrastructure): [PKI considered harmful - Ian Grigg](http://iang.org/ssl/pki_considered_harmful.html)
 
-Ở nghiên cứu của Ian Grigg về hệ thống PKI, có một đoạn ngắn mô tả tác hại của nguyên tắc tập trung, cũng là một vấn đề thúc đẩy cho sự ra đời của blockchain:
+Ở nghiên cứu của Ian Grigg về hệ thống PKI, có một đoạn ngắn mô tả một tác hại khác của TTP: nguyên tắc tập trung. Đó là khi TTP được trao một quyền lực quá lớn, gần như là độc quyền thì cũng chính là lúc giá trị của niềm tin (trust) dần bị loại bỏ. Người sử dụng sẽ ko có sự lựa chọn nào khác ngoài việc bắt buộc phải tin những Tổ chức này!
 
 > ...Indeed, as he (Trusted Third Party) has total power over issuance of certificates, he is now a major source of weakness, placing great stress on the word 'trust'.
 
@@ -158,9 +159,9 @@ Vì chủ đề này gói hẹp trong phạm vi blockchain, nên tôi dẫn ngu�
 
 ## 5. Một hệ thống ghi chép hoàn hảo
 
-Cảm nhận được những hiểm họa về bảo mật, an toàn thông tin, và mặt tối của nguyên lý tập trung trong lĩnh vực ghi chép - lưu trữ dữ liệu, chúng ta lại một lần nữa đi tìm giải pháp, cho một nền tảng lưu trữ mới...
+Nhận thấy những hiểm họa về an toàn thông tin và mặt trái của nguyên lý tập trung trong những Tổ chức tín nhiệm, chúng ta lại một lần nữa đi tìm giải pháp cho một nền tảng lưu trữ mới...
 
-Có một sự thật rằng, khi người nào đó tìm ra được một lỗ hổng của hệ thống, thì chính người đó cũng đồng thời nghĩ tới giải pháp khắc phục. Hơn ai hết, họ là người hiểu rõ bản chất vấn đề nhất...
+Có một sự thật rằng, khi người nào đó tìm ra được một lỗ hổng của hệ thống, thì chính người đó cũng đồng thời nghĩ tới giải pháp khắc phục. Hơn ai hết, họ là người hiểu rõ bản chất vấn đề nhất.
 
 Từ những năm 198x, rất nhiều nhà nghiên cứu đã đóng góp vào quá trình cải tiến hệ thống ghi chép, lưu trữ, thanh toán, mã hóa... Gián tiếp lẫn trực tiếp, lý thuyết và thử nghiệm... Các bạn có thể xem thêm ở đây: [Satoshi Nakamoto Institute](https://nakamotoinstitute.org/literature/), một số bài nổi bật tôi gợi ý nên đọc:
 
@@ -178,18 +179,21 @@ Note: Nghiên cứu của Ian Grigg hoàn toàn ko liên quan đến lý thuyế
 
 Tóm tắt lại cho các bạn ko có thời gian đọc, những nghiên cứu khoảng thời gian này, ít nhiều đều hướng đến một hệ thống lưu trữ hoàn thiện, mang các đặc điểm:
 
-- Tính phân tán: Sổ Cái sẽ được lưu làm nhiều bản, ở nhiều nơi khác nhau.
+- Tính phân tán và minh bạch: Sổ Cái sẽ được lưu làm nhiều bản, đồng bộ và nằm ở nhiều nơi khác nhau.
 
 - Tính toàn vẹn: mỗi thông tin (giao dịch) được lưu vào sổ thì không có cách nào chỉnh sửa, thay đổi.
 
-- Tính minh bạch(!): Cơ chế xác nhận ngang hàng và công bằng, nhằm loại bỏ bên bên thứ 3 (hệ thống tín nhiệm).
-
+- Tính tự chủ: Cơ chế đồng thuận/xác minh ngang hàng và công bằng, nhằm loại bỏ bên bên thứ 3 (hệ thống tín nhiệm).
 
 ### Sự ra đời của bitcoin/blockchain
 
-Và cuối cùng, một vị đại hiệp đã mang đến hệ thống thanh toán "như yêu cầu", tuy mới nhưng ko phải mới: Bitcoin! Câu chuyện từ cuối năm 2008 trở đi, rồi giai đoạn nở rộ của tiền mã hóa, chắc mọi người ai cũng nắm được, có lẽ ko cần nhắc đến nữa.
+Và cuối năm 2008, Satoshi đại hiệp đã mang đến hệ thống thanh toán "như yêu cầu": Bitcoin!
 
-Tuy nhiên, trong bản thảo về hệ thống tiền kỹ thuật số ngang hàng của mình, Satoshi Nakamato ko hề nhắc đến blockchain. Khái niệm blockchain (về sau) là dựa theo cách mà bitcoin hoạt động để hình thành nên.
+Bitcoin ra đời để khẳng định tính khả thi của tiền số (Electronic Cash or Digital Cash) nhưng đồng thời (vô tình ??) nó cũng là một giải pháp cho lưu trữ thông tin. Phương thức hoạt động của bitcoin như sau:
+
+> Các dữ liệu giao dịch xảy ra trong một khoảng thời gian nhất định được gom lại thành 1 block, sau đó block này sẽ được "hash" (một dạng mã hóa) vào chain (là một chuỗi các blocks xảy ra trước đó). Bitcoin network sẽ đảm bảo chain-of-blocks này được cập nhật và đồng bộ theo thời gian, gần-như-ko-thể bị sửa đổi, không bị phụ thuộc bất kỳ Tổ chức nào khác.
+
+--> Bạn đã hiểu nguồn gốc tên gọi "blockchain" ra đời ntnao rồi đó.
 
 ![Blockchain](/assets/images/rtb01/blockchain.jpg)
 
