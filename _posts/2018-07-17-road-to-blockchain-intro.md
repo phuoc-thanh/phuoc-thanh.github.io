@@ -8,19 +8,17 @@ keywords: "blockchain, bitcoin, history, satoshi, accounting, crypto"
 
 ![A piece of History](/assets/images/rtb01/history.png)
 
-Viết về một công nghệ mới mẻ, luôn là thách thức lớn đối với blogger, nó là một loại công việc tiêu hao nhiều thời gian và công sức. 4 phần mày mò tìm hiểu, rồi đến 6 phần quan trọng hơn: diễn đạt, mô tả để độc giả hiểu, mới được coi là bài viết chất lượng.
+Satoshi Nakamoto - là ai nhỉ? Nghe quen quen. Xời, click click 2 nhát và đã có kết quả: Cha đẻ của Bitcoin - Yeah, một đồng tiền đắt giá. Vậy còn "blockchain" là sao nữa? Có phải công nghệ đắt giá gì ko? Ai là cha đẻ của nó, cũng là Satoshi sao?
 
-Và thách thức lần này mang tên "Blockchain" - một công nghệ đã xuất hiện khá lâu nhưng vẫn tồn tại nhiều băn khoăn, hoài nghi xung quanh nó: Blockchain là gì? Đến từ đâu? Giải quyết vấn đề gì? Có đáng tin cậy ko? v.v...
+Đúng, chính lão là người tạo ra blockchain đầu tiên. Nhưng hôm nay tôi muốn mời các bạn cùng du hành ngược thời gian để có cái nhìn khác về nguồn gốc của "Blockchain" - một công nghệ đã xuất hiện khá lâu nhưng vẫn tồn tại nhiều băn khoăn, hoài nghi xung quanh nó: Blockchain là gì? Đến từ đâu? Giải quyết vấn đề gì? Có đáng tin cậy ko? v.v...
 
-Bài viết mở đầu series, là câu chuyện về nguồn gốc của Blockchain: Từ những nhu cầu ghi chép đơn sơ đến một hệ thống lưu trữ tối ưu..
-
-Vậy xin ngược dòng lịch sử một chốc, về thời kỳ săn bắn hái lượm luôn cho xa nhé :)
+Bài viết mở đầu series, là câu chuyện về sự ra đời của Blockchain: Từ những nhu cầu ghi chép đơn sơ đến một hệ thống lưu trữ tối ưu..
 
 ---
 
 ## 1. Từ nhu cầu ghi chép đơn sơ
 
-Nhu cầu ghi chép bắt đầu xuất hiện từ khi con người sống tập trung, để đáp ứng cho hoạt động ***Trao đổi (Exchange)*** và ***Buôn bán, giao thương (Trade)***
+Xin ngược dòng lịch sử một chốc, về thời kỳ săn bắn hái lượm luôn cho xa nhé :)
 
 ...
 
