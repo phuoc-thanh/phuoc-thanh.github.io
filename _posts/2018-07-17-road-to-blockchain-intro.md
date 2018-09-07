@@ -24,9 +24,9 @@ Xin ngược dòng lịch sử một chốc, về thời kỳ săn bắn hái l�
 
 Thuở săn bắn ấy, tôi đi bẫy chồn, cả nhà ăn chồn 2 tuần nay đã ngán lắm, đi ngang nhà tên hàng xóm, thấy nó đang nướng cá thơm lừng. Tôi dụ dỗ nó đổi chác. Tên hàng xóm đồng ý, chồn đổi cá. Vậy đó, giao dịch đã xảy ra - trước cả khi con người biết đọc, ko chừng trước cả khi biết nói (who's know? hahaa)
 
-Một ngày đẹp trời khác, tôi săn đc cả cọp Siberia, voi Mammoth, đương nhiên là ăn không hết. Nhưng tủ lạnh lại chưa đc phát minh nên cũng chẳng còn cách nào - ngoài đem cho thằng hàng xóm hoặc linh cẩu ăn bớt. Ngay cả khi, tôi đem đổi thành cá, chuối, heo rừng... thì cũng ko thể nhai hết được.
+Một ngày đẹp trời khác, tôi săn đc cả cọp Siberia, voi Mammoth, đương nhiên là ăn không hết. Nhưng tủ lạnh lại chưa đc phát minh nên cũng chẳng còn cách nào - ngoài đem cho thằng hàng xóm hoặc linh cẩu ăn bớt. Ngay cả khi, tôi đem đổi thành cá, chuối, heo rừng... thì cũng ko thể nhai hết được. Tôi ước gì mình có thể để dành, dự trữ những voi, cọp mà tôi săn được.
 
-Và thế là, vỏ sò, vỏ hến trở thành đơn vị quy đổi cho hàng hóa. Tất nhiên phải là vỏ sò được mài thật đẹp, phụ nữ mang làm trang sức được mới có giá trị. Tôi săn đc cọp Siberia, để lại cái tay cọp cả nhà ăn lẩu, còn lại đem đổi lấy trăm vỏ sò ở ngoài chợ. Bữa nào đói quá, lười quá, hay say lá đu đủ quá ko săn được gì, tôi đem ít vỏ sò này đổi lấy vài chục trái táo, đôi con cá về ăn, vỏ sỏ quả là phát minh vĩ đại -))
+ Vouloir, c'est pouvoir! Già làng, tộc trưởng nào đó đã thấu hiểu tôi và đưa vỏ sò, vỏ hến trở thành đơn vị quy đổi cho hàng hóa. Tất nhiên phải là vỏ sò được mài thật đẹp, phụ nữ mang làm trang sức được mới có giá trị. Tôi săn đc cọp Siberia, để lại cái tay cọp cả nhà ăn lẩu, còn lại đem đổi lấy trăm vỏ sò ở ngoài chợ. Bữa nào đói quá, lười quá, hay say lá đu đủ quá ko săn được gì, tôi đem ít vỏ sò này đổi lấy vài chục trái táo, đôi con cá về ăn, vỏ sò quả là phát minh vĩ đại -))
 
 ![Ancient Egypt bazaar](/assets/images/rtb01/ancient_egypt_bazaar.jpg)
 
@@ -191,7 +191,7 @@ Bitcoin ra đời để khẳng định tính khả thi của tiền số (Elect
 
 > Các dữ liệu giao dịch xảy ra trong một khoảng thời gian nhất định được gom lại thành 1 block, sau đó block này sẽ được "hash" (một dạng mã hóa) vào chain (là một chuỗi các blocks xảy ra trước đó). Bitcoin network sẽ đảm bảo chain-of-blocks này được cập nhật và đồng bộ theo thời gian, gần-như-ko-thể bị sửa đổi, không bị phụ thuộc bất kỳ Tổ chức nào khác.
 
---> Bạn đã hiểu nguồn gốc tên gọi "blockchain" ra đời ntnao rồi đó.
+Bạn đã hiểu tên gọi "blockchain" (a.k.a chain-of-blocks) có nguồn gốc từ đâu rồi đó.
 
 ![Blockchain](/assets/images/rtb01/blockchain.jpg)
 
