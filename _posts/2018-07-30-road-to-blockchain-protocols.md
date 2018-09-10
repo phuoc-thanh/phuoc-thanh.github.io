@@ -8,43 +8,44 @@ keywords: "blockchain, proofofstake, proofofwork, bitcoin"
 
 [Draft version - to be completed]
 
-Ở bài viết mở đầu, tôi đã giới thiệu về một phần lịch sử của blockchain, về nền tảng để hình thành nên một hệ thống lưu trữ thông tin toàn vẹn. Chúng ta hiểu blockchain ra đời để xóa bỏ 2 thứ: gian lận trong ghi chép và bên thứ 3, nhưng làm cách nào để hiện thực hóa lý tưởng?
+Sau phần mở đầu giới thiệu về một phần lịch sử của blockchain - một hệ thống lưu trữ thông tin toàn vẹn, bài viết lần này sẽ tập trung giải thích cơ chế hoạt động của bitcoin/blockchain.
 
-Bài viết thứ 2 trong series, tôi xin mô tả các đặc điểm của blockchain và cách hoạt động của một hệ thống mẫu (bitcoin)
+### Ba đặc điểm của Bitcoin/Blockchain
 
-## Blockchain characteristics
+Như đã tóm lược ở phần trước, blockchain ra đời là để hoàn thiện nền tảng lưu trữ cũ, những cải tiến của blockchain tập trung vào 3 điểm chính: phân tán sổ sách, toàn vẹn dữ liệu, và tự chủ hệ thống. Ba điểm cải tiến này được blockchain hiện thực hóa bằng những kỹ thuật [Crypto + Computer Science] tương đương:
 
-Nhắc lại về câu hỏi "blockchain là gì?"
-
-Nói tóm gọn, blockchain là một hệ thống lưu trữ thông tin phân tán, ko phụ thuộc vào bất kỳ bên thứ 3 nào và đảm bảo được sự toàn vẹn của dữ liệu. Blockchain được xây dựng dựa trên 3 đặc điểm chính:
-
-1. Distrubuted Ledger: Dữ liệu được ghi vào nhiều sổ khác nhau, và hoàn toàn giống nhau. Điều này góp phần loại bỏ một trung tâm lưu trữ tập trung và khiến cho hệ thống dữ liệu khó bị chỉnh sửa, đảm bảo an toàn đối với rủi ro mất mát thông tin.
+1. Distrubuted Ledger: Dữ liệu được ghi vào nhiều sổ cái khác nhau, có tính đồng bộ. Điều này góp phần loại bỏ một trung tâm lưu trữ tập trung và khiến cho hệ thống dữ liệu khó bị chỉnh sửa, giảm thiểu rủi ro mất mát thông tin.
 
 2. Immutable Data: Mỗi ghi chép được dán nhãn, mã hóa và liên kết chặt chẽ với nhau khiến cho việc chỉnh sửa ghi chép gần như là điều bất khả thi.
 
-3. Consensus Protocols: Cơ chế đồng thuận cởi mở...
+3. Consensus Protocols: Cơ chế đồng thuận ngang hàng, đảm bảo tính độc lập của hệ thống: ko phụ thuộc bất kỳ tổ chức nào khác ngoài chính những người tham gia hệ thống.
 
-### Blockchain và Bitcoin là 2 hay là 1?
+Chi tiết về cách thức triển khai của từng kỹ thuật, tôi sẽ làm rõ bên dưới đây.
 
-Bitcoin ra đời để khẳng định tính khả thi của tiền số (Electronic Cash or Digital Cash). Satoshi giới thiệu một giải pháp cho vấn đề "double-spending" trong các giao dịch tiền số ngang hàng. Giải pháp này dựa trên cơ chế xác nhận phi tập trung và mã hóa các giao dịch vào một chuỗi gần-như-ko-thể-bị-đảo-ngược. Bitcoin là giải pháp cho tiền số nhưng vô tình (not sure) nó cũng là một giải pháp cho lưu trữ, nếu thay các dữ liệu giao dịch (transactions) bằng các bản ghi chép (records).
+---
 
-Chi tiết hơn về giải pháp của Bitcoin, nó bao gồm:
+## 1. Minh bạch và phân tán: Distributed Ledger Sytem
 
-1. Proof-of-Work based Consensus Protocol: Cơ chế đồng thuận dựa trên PoW cho phép giao dịch được xác nhận mà ko cần dựa vào bên thứ 3. Ngoài ra, các bên tham gia mạng lưới sẽ có sổ cái riêng (phi tập trung), những sổ cái này đồng bộ về dữ liệu (same data)
+Tính tới giai đoạn hiện đại của hệ thống ghi sổ, đa phần chúng ta phần đông đều sử dụng một Hệ thống sổ kép có bổ sung bên thứ 3. Khi cần lưu trữ 1 thông tin và để chắc chắn về thông tin đó, ta ghi làm 3 bản: Người gửi, người nhận, và xác nhận bên thứ 3.
 
-2. Hashed transactions into an ongoing chain: Các dữ liệu giao dịch được hash (1 dạng mã hóa) vào 1 chuỗi có kèm thông tin thời gian, khiến các giao dịch này ko thể bị chỉnh sửa. Trong thực tế, các dữ liệu giao dịch này được gom lại thành 1 block, sau đó block này sẽ được hash vào chain --> Bạn đã hiểu nguồn gốc tên gọi blockchain ra đời ntnao rồi đó.
+Đầu tiên, người gửi và người nhận thường có vấn đề trong công việc lưu trữ giấy tờ: Bạn chắc hẳn ko bao giờ lưu lại toàn bộ hóa đơn, mà chỉ giữ lại những giấy tờ giao kèo quan trọng? Và vì quá tin tưởng vào Hệ thống tín nhiệm (TTP) nên bạn rất chủ quan rằng họ - TTP đang lưu một bản sao hoàn toàn đúng đắn?
+
+Đối với TTP, vấn đề của họ là gian lận nội bộ và tập trung quyền lực (đã nói ở phần trước).
+
+Như vậy cả 3 bản ghi đều có nguy cơ, lỗ hổng và sai sót sẽ đến như là điều tất yếu.
+
+Blockchain đưa ra một hệ thống lưu trữ mạnh mẽ hơn: Lưu làm nhiều bản, đồng bộ với nhau. Điều này khiến cho việc mất mát và sai sót thông tin rất khó xảy ra. Mỗi người tham gia vào hệ thống lưu trữ blockchain đều có thể xem toàn bộ giao dịch từ xưa như trái đất cho tới hiện nay, ai cũng có quyền lưu trữ toàn bộ dữ liệu này. Mỗi phiên bản lưu trữ như vậy được coi là một sổ cái: Ledger, và những sổ cái này có tính đồng bộ. Dữ liệu sẽ được cập nhật theo thời gian và đảm bảo toàn bộ sổ cái trong mạng sẽ lưu thông tin chính xác như nhau.
+
+
+**Central point of failure --> need to attack thoudsand/millions nodes instead of a central point
 
 ...
 
-## Distributed Ledger Sytem
+## 2. Toàn vẹn dữ liệu: Immutable Data
 
 ...
 
-## Immutable Data
-
-...
-
-## Consensus Protocols
+## 3. Tự chủ và công bằng: Consensus Protocols
 
 
 # Proof of Work - the need of
