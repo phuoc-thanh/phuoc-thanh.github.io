@@ -92,8 +92,6 @@ Khả năng trùng của tem vô cùng nhỏ, tính bằng triệu tỷ năm. N�
 
 ## 3. Tự chủ và công bằng
 
-
-
 ### Proof of Work - the need of
 
 Hẳn các bạn còn nhớ tới phát minh vỏ sò ở phần trước chứ?
