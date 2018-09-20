@@ -8,44 +8,48 @@ keywords: "blockchain, proofofstake, proofofwork, bitcoin"
 
 [Draft version - to be completed]
 
-Sau phần mở đầu giới thiệu về một phần lịch sử của blockchain - một hệ thống lưu trữ thông tin toàn vẹn, bài viết lần này sẽ tập trung giải thích cơ chế hoạt động của bitcoin/blockchain.
 
-### Ba đặc điểm của Bitcoin/Blockchain
+Như đã giới thiệu ở bài viết trước, bitcoin ra đời để giải quyết vấn đề double-spending trong lưu hành tiền kỹ thuật số. Nhưng nó đồng thời mở ra một hướng tiếp cận mới cho các nền tảng lưu trữ hiện đại, dựa vào 3 đặc điểm: phân tán sổ sách, toàn vẹn dữ liệu, và tự chủ hệ thống.
 
-Như đã tóm lược ở phần trước, blockchain ra đời là để hoàn thiện nền tảng lưu trữ cũ, những cải tiến của blockchain tập trung vào 3 điểm chính: phân tán sổ sách, toàn vẹn dữ liệu, và tự chủ hệ thống. Ba điểm cải tiến này được blockchain hiện thực hóa bằng những kỹ thuật [Crypto + Computer Science] tương đương:
-
-1. Distrubuted Ledger: Dữ liệu được ghi vào nhiều sổ cái khác nhau, có tính đồng bộ. Điều này góp phần loại bỏ một trung tâm lưu trữ tập trung và khiến cho hệ thống dữ liệu khó bị chỉnh sửa, giảm thiểu rủi ro mất mát thông tin.
-
-2. Immutable Data: Mỗi ghi chép được dán nhãn, mã hóa và liên kết chặt chẽ với nhau khiến cho việc chỉnh sửa ghi chép gần như là điều bất khả thi.
-
-3. Consensus Protocols: Cơ chế đồng thuận ngang hàng, đảm bảo tính độc lập của hệ thống: ko phụ thuộc bất kỳ tổ chức nào khác ngoài chính những người tham gia hệ thống.
-
-Chi tiết về cách thức triển khai của từng kỹ thuật, tôi sẽ làm rõ bên dưới đây.
+Vậy bitcoin/blockchain thể hiện 3 đặc điểm đó ra sao? Và hiện thực hóa nó như thế nào? Chúng ta tiếp tục khám phá, lần này là về kiến trúc của một mạng lưới Blockchain.
 
 ---
 
-## 1. Minh bạch và phân tán: Distributed Ledger Sytem
+## 1. Phân tán và Đồng bộ hóa Sổ cái
 
-Tính tới giai đoạn hiện đại của hệ thống ghi sổ, đa phần chúng ta phần đông đều sử dụng một Hệ thống sổ kép có bổ sung bên thứ 3. Khi cần lưu trữ 1 thông tin và để chắc chắn về thông tin đó, ta ghi làm 3 bản: Người gửi, người nhận, và xác nhận bên thứ 3.
+Đầu tiên, hãy cùng đặt vấn đề với hệ thống hiện tại.
 
-Đầu tiên, người gửi và người nhận thường có vấn đề trong công việc lưu trữ giấy tờ: Bạn chắc hẳn ko bao giờ lưu lại toàn bộ hóa đơn, mà chỉ giữ lại những giấy tờ giao kèo quan trọng? Và vì quá tin tưởng vào Hệ thống tín nhiệm (TTP) nên bạn rất chủ quan rằng họ - TTP đang lưu một bản sao hoàn toàn đúng đắn?
+Những ghi chép quan trọng, phần nhiều vẫn sử dụng Hệ thống sổ kép có bổ sung bên thứ 3: Thông tin được ghi làm 3 bản: Bên A, Bên B, và xác nhận bên thứ 3. Ồ, có 3 bản thôi á? 3 bản thì làm sao mà yên tâm được đây?
 
-Đối với TTP, vấn đề của họ là gian lận nội bộ và tập trung quyền lực (đã nói ở phần trước).
+Ko khó để tưởng tượng hoàn cảnh khi 1, 2 hay thậm chí là 3 bản ghi chép bị mất mát, sai sót. Và gian lận xảy ra, niềm tin bị thử thách, như đã nói ở bài trước.
 
-Như vậy cả 3 bản ghi đều có nguy cơ, lỗ hổng và sai sót sẽ đến như là điều tất yếu.
+**Vậy blockchain sao lưu dữ liệu như thế nào?**
 
-Blockchain đưa ra một hệ thống lưu trữ mạnh mẽ hơn: Lưu làm nhiều bản, đồng bộ với nhau. Điều này khiến cho việc mất mát và sai sót thông tin rất khó xảy ra. Mỗi người tham gia vào hệ thống lưu trữ blockchain đều có thể xem toàn bộ giao dịch từ xưa như trái đất cho tới hiện nay, ai cũng có quyền lưu trữ toàn bộ dữ liệu này. Mỗi phiên bản lưu trữ như vậy được coi là một sổ cái: Ledger, và những sổ cái này có tính đồng bộ. Dữ liệu sẽ được cập nhật theo thời gian và đảm bảo toàn bộ sổ cái trong mạng sẽ lưu thông tin chính xác như nhau.
+Blockchain đề xuất một giải pháp lưu trữ phân tán và đồng bộ với nhau. Nghĩa là, dữ liệu sẽ được lưu ở nhiều nơi khác nhau, được cập nhật theo thời gian đảm bảo toàn bộ sổ cái trong mạng sẽ lưu thông tin chính xác như nhau.
 
+Một giao dịch thành công giữa tôi và bạn, tôi ghi vào sổ của tôi, bạn ghi vào sổ của bạn, vợ tôi cũng ghi, hàng xóm tôi cũng ghi, chú em con dì chị vợ của bạn cũng ghi, bà bán vé số cũng ghi, chủ tịch Quốc Hội cũng ghi, đến cả Cậu Vàng của Lão Hạc cũng sẽ ghi lại - nếu nó biết viết.
 
-**Central point of failure --> need to attack thoudsand/millions nodes instead of a central point
+Vậy là, toàn bộ những ai tham gia vào mạng lưới đều cần phải ghi chép đủ các giao dịch vào sổ của họ, 3 người tham gia thì có 3 cuốn sổ, 1 triệu người tham gia thì có thể có 700 nghìn sổ hoặc 2 triệu sổ, điều đó ko ai biết, và chúng ta cũng chưa vội bàn tới.
+
+**Phân tán sổ sách, thì được lợi ích gì?**
+
+Tất nhiên, càng nhiều bản sao, thì mất mát và sai sót thông tin càng khó xảy ra. Good Idea.
+
+Thêm nữa, nếu ai cũng có quyền lưu trữ toàn bộ dữ liệu, thì mọi giao dịch đều minh bạch. Ai cũng có thể xem toàn bộ giao dịch từ xưa như trái đất cho tới hiện nay. Nhưng để đảm bảo riêng tư, người tham gia Blockchain network ko cần phải khai báo tên tuổi, gốc gác.
+
+Cuối cùng, nó khiến cho hệ thống hoạt động bền vững và khó bị tấn công hơn, phân tán dữ liệu sẽ khắc chế được điểm yếu: "Central point of failure". Ví dụ thế này cho dễ hiểu: Thay vì phải tập trung sức mạnh tấn công vào một tên đầu to + cơ bắp + nhà giàu mặt phố, thì kẻ phá hoại giờ phải vất vả để tìm diệt mạng lưới gồm vài trăm / vài triệu anh em ốm đói đang núp sau màn hình ở hang hốc nào đó rải rác khắp quả đất, ko chừng ở dưới đáy đại dương hay ngoài vũ trụ cũng có.
+
+**Lợi hại đó, nhưng bằng cách nào?**
+
+Câu trả lời là: Peer-to-peer network.
 
 ...
 
-## 2. Toàn vẹn dữ liệu: Immutable Data
+## 2. Toàn vẹn dữ liệu
 
 ...
 
-## 3. Tự chủ và công bằng: Consensus Protocols
+## 3. Tự chủ và công bằng
 
 
 # Proof of Work - the need of
