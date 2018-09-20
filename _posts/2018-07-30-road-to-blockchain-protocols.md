@@ -2,7 +2,7 @@
 layout: post
 title: "Road to Blockchain: How it works?"
 comments: true
-description: "Road to Blockchain - Những khái niệm cơ bản"
+description: "Road to Blockchain - Nguyên lý hoạt động của blockchain"
 keywords: "blockchain, proofofstake, proofofwork, bitcoin"
 ---
 
@@ -11,7 +11,7 @@ keywords: "blockchain, proofofstake, proofofwork, bitcoin"
 
 Như đã giới thiệu ở bài viết trước, bitcoin ra đời để giải quyết vấn đề double-spending trong lưu hành tiền kỹ thuật số. Nhưng nó đồng thời mở ra một hướng tiếp cận mới cho các nền tảng lưu trữ hiện đại, dựa vào 3 đặc điểm: phân tán sổ sách, toàn vẹn dữ liệu, và tự chủ hệ thống.
 
-Vậy bitcoin/blockchain thể hiện 3 đặc điểm đó ra sao? Và hiện thực hóa nó như thế nào? Chúng ta tiếp tục khám phá, lần này là về kiến trúc của một mạng lưới Blockchain.
+Vậy bitcoin/blockchain thể hiện 3 đặc điểm đó ra sao? Và hiện thực hóa nó như thế nào? Chúng ta tiếp tục khám phá, lần này là về kiến trúc tổng quan của một mạng lưới Blockchain.
 
 ---
 
@@ -19,40 +19,82 @@ Vậy bitcoin/blockchain thể hiện 3 đặc điểm đó ra sao? Và hiện t
 
 Đầu tiên, hãy cùng đặt vấn đề với hệ thống hiện tại.
 
-Những ghi chép quan trọng, phần nhiều vẫn sử dụng Hệ thống sổ kép có bổ sung bên thứ 3: Thông tin được ghi làm 3 bản: Bên A, Bên B, và xác nhận bên thứ 3. Ồ, có 3 bản thôi á? 3 bản thì làm sao mà yên tâm được đây?
+Những ghi chép quan trọng, phần nhiều vẫn sử dụng Hệ thống sổ kép có bổ sung bên thứ 3, Thông tin được ghi làm 3 bản: Bên A, Bên B, và xác nhận bên thứ 3. Ồ, có 3 bản thôi á? 3 bản thì làm sao mà yên tâm được đây?
 
 Ko khó để tưởng tượng hoàn cảnh khi 1, 2 hay thậm chí là 3 bản ghi chép bị mất mát, sai sót. Và gian lận xảy ra, niềm tin bị thử thách, như đã nói ở bài trước.
 
-**Vậy blockchain sao lưu dữ liệu như thế nào?**
+### Vậy blockchain sao lưu dữ liệu như thế nào?
 
-Blockchain đề xuất một giải pháp lưu trữ phân tán và đồng bộ với nhau. Nghĩa là, dữ liệu sẽ được lưu ở nhiều nơi khác nhau, được cập nhật theo thời gian đảm bảo toàn bộ sổ cái trong mạng sẽ lưu thông tin chính xác như nhau.
+Blockchain đề xuất một giải pháp lưu trữ phân tán và đồng bộ. Nghĩa là, dữ liệu sẽ được lưu ở nhiều nơi khác nhau, được cập nhật theo thời gian đảm bảo toàn bộ sổ cái trong mạng sẽ lưu thông tin chính xác như nhau.
 
 Một giao dịch thành công giữa tôi và bạn, tôi ghi vào sổ của tôi, bạn ghi vào sổ của bạn, vợ tôi cũng ghi, hàng xóm tôi cũng ghi, chú em con dì chị vợ của bạn cũng ghi, bà bán vé số cũng ghi, chủ tịch Quốc Hội cũng ghi, đến cả Cậu Vàng của Lão Hạc cũng sẽ ghi lại - nếu nó biết viết.
 
 Vậy là, toàn bộ những ai tham gia vào mạng lưới đều cần phải ghi chép đủ các giao dịch vào sổ của họ, 3 người tham gia thì có 3 cuốn sổ, 1 triệu người tham gia thì có thể có 700 nghìn sổ hoặc 2 triệu sổ, điều đó ko ai biết, và chúng ta cũng chưa vội bàn tới.
 
-**Phân tán sổ sách, thì được lợi ích gì?**
+### Phân tán sổ sách, thì được lợi ích gì?
 
-Tất nhiên, càng nhiều bản sao, thì mất mát và sai sót thông tin càng khó xảy ra. Good Idea.
+Tất nhiên, càng nhiều bản sao, thì mất mát và sai sót thông tin càng khó xảy ra. Nice!
 
-Thêm nữa, nếu ai cũng có quyền lưu trữ toàn bộ dữ liệu, thì mọi giao dịch đều minh bạch. Ai cũng có thể xem toàn bộ giao dịch từ xưa như trái đất cho tới hiện nay. Nhưng để đảm bảo riêng tư, người tham gia Blockchain network ko cần phải khai báo tên tuổi, gốc gác.
+Tiếp, Ai cũng có quyền lưu trữ toàn bộ dữ liệu, nghĩa là mọi giao dịch đều minh bạch. Ai cũng có thể xem toàn bộ giao dịch từ xưa như trái đất cho tới hiện nay. Ơ, như vậy thì còn gì là riêng tư? Đừng quá lo lắng, người tham gia Blockchain network ko cần phải khai báo tên tuổi, gốc gác.
 
-Cuối cùng, nó khiến cho hệ thống hoạt động bền vững và khó bị tấn công hơn, phân tán dữ liệu sẽ khắc chế được điểm yếu: "Central point of failure". Ví dụ thế này cho dễ hiểu: Thay vì phải tập trung sức mạnh tấn công vào một tên đầu to + cơ bắp + nhà giàu mặt phố, thì kẻ phá hoại giờ phải vất vả để tìm diệt mạng lưới gồm vài trăm / vài triệu anh em ốm đói đang núp sau màn hình ở hang hốc nào đó rải rác khắp quả đất, ko chừng ở dưới đáy đại dương hay ngoài vũ trụ cũng có.
+Cuối cùng, tính phân tán khiến cho hệ thống hoạt động bền vững và khó bị tấn công hơn, khắc chế được điểm yếu: "Central point of failure". Ví dụ thế này cho dễ hiểu: Thay vì phải tập trung sức mạnh tấn công vào một trung tâm dữ liệu lớn, thì kẻ phá hoại giờ phải tìm diệt (hoặc mua chuộc) mạng lưới gồm vài trăm / vài triệu anh em ốm đói đang núp sau màn hình ở hang hốc nào đó rải rác khắp quả đất.
 
-**Lợi hại đó, nhưng bằng cách nào?**
+### Lợi hại đó, nhưng bằng cách nào?
 
-Câu trả lời là: Peer-to-peer network.
+Câu trả lời là: Mạng-ngang-hàng, a.k.a Peer-to-peer network.
+
+Ko có gì mới mẻ cả, tương tự như BitTorrent thoi, hehe. Bạn chưa biết BitTorrent và p2p network là gì? Ko sao, tôi mô tả luôn ở đây.
+
+Hãy tưởng tượng khi mà bạn ngồi trước máy tính, và muốn nghe Bích Phương hát chẳng hạn, bạn thường tìm đến nhaccuitui, mp3zing để tải bài hát về, nghe online cũng là một hình thức tải về. Như vậy, mp3zing hay nhaccuitui, gọi chung là "Server" - đang phục vụ cả triệu lượt khách hàng giống như bạn mỗi ngày, đó chính là giao thức server-client điển hình của Internet hiện nay.
+
+Rồi một ngày kia, Phương ko vui lòng, Phương bắt những Server này gỡ bài hát của Phương xuống, thì sẽ ko còn lần sau để mà nghe "Bùa Yêu" nữa. Yeah, lúc này muốn nghe Phương hát, hẳn là bạn phải kiếm ai đó để copy, bằng usb, bằng cáp chì, bằng bluetooth các kiểu, và sau đó bạn có thể chia sẻ các bài hát của Phương cho người khác nữa. Đây chính là giao thức peer-to-peer, ko ai phục vụ ai, ko ai quản lý - can thiệp nổi vào thứ mà mọi người đang chia sẻ.
+
+BitTorrent là một sân chơi như vậy, một mạng lưới, mà các loại "file - tập tin" được chia sẻ ngang hàng, giữa những người tham gia vào mạng đó. Blockchain network thì ko chia sẻ bài hát hay phần mềm, mà nó chia sẻ sổ cái (Ledger). Giả sử bạn muốn tham gia vào mạng lưới blockchain, bạn chỉ cần cắm dây mạng và hô to câu thần chú "Hế lô, Xin-rô-nai Bờ-lốc-chên". Và 500ae sẽ dâng Ledger của họ đến tận nhà bạn.
 
 ...
 
 ## 2. Toàn vẹn dữ liệu
+
+Về nhu cầu toàn vẹn dữ liệu, có lẽ ko cần phải nói thêm nữa, vì chắc ko ai muốn phải phí công phí sức để tìm hiểu những việc như: Bản sao này có giống bản chính ko? Số liệu này có bị ai đó chỉnh sửa ko? Giao dịch này là thật hay là giả? Sổ sách này có ghi chép đầy đủ ko? Chữ ký trên hợp đồng này có hợp lệ? Hóa đơn này có phải mới xuất hồi sáng nay?...
+
+### Và blockchain đảm bảo toàn vẹn dữ liệu thật sao?
+
+Đúng vậy, một khi dữ liệu được xác nhận trong mạng lưới blockchain, thì nó gần như là bất khả xâm phạm, ko thể bị chỉnh sửa.
+
+Cuốn sổ cái blockchain là một cuốn sổ đặc biệt, mỗi khi bạn ghi chép 1 trang mới vào sổ thì mọi người sẽ đọc nội dung trang vừa được ghi đó, xác nhận nội dung xong thì họ sẽ dán một loại tem đặc biệt lên trang đó. Tem này đảm bảo trang giấy bạn vừa ghi ĐÚNG ĐẮN, và HỢP LỆ.
+
+### Ồ hay nhỉ, nhưng làm sao biết đúng, và hợp lệ?
+
+Loại Tem nói trên đặc biệt ở chỗ, nó được tạo ra từ 2 thứ:
+
++ Nội dung của trang ứng với nó. Bạn chỉ cần thay đổi 1 kí tự trong trang thôi, thì tem này sẽ biến đổi ngay.
++ Tem của trang trước. Tương tự như trên, bạn chỉ cần đổi 1 kí tự trong trang trước, thì tem này (và cả của trang trước) cũng bị biến đổi.
+
+Ví dụ như cuốn sổ của blockchain hiện tại đã ghi được 99 trang, bạn cố tình chỉnh sửa trang số 7, thì tem của trang số 7 sẽ bị biến đổi. Kéo theo tem của toàn bộ các trang từ 8 đến 99 đều bị thay đổi. Vì vậy bạn sẽ ko có cách nào chỉnh sửa nội dung một trang nào đó trong Sổ cái mà ko làm thay đổi những Tem đi kèm, Blockchain đương nhiên sẽ dựa trên loạt Tem này để xác minh sổ của bạn có hợp lệ hay ko?
+
+### Nhưng tôi cứ quyết tâm gian lận, và cứ dùng cuốn sổ ko-còn-nguyên-vẹn của mình để tham gia thì sao?
+
+Blockchain luôn luôn coi cuốn sổ dài nhất (Longest Ledger) là sổ hợp lệ. Và vì tính tính đồng bộ hóa của nó: nội dung mỗi bản sao đều phải giống nhau, nên nó chỉ chấp nhận một bản đúng duy nhất, các cuốn sổ khác đều ko được chấp nhận. Như vậy, cuốn sổ của bạn sẽ bị loại bỏ nếu như nó ko phải là dài nhất.
+
+### Dài nhất hả, tôi thích thì viết thêm vào cho nó dài ra thì sao?
+
+Ở trên tôi có nói là mỗi ghi chép của bạn, phải được mọi người xem xét, thông qua. Và sẽ có 1 người dán Tem-xác-nhận lên trang ghi chép đó, người đó có thể là bạn, nhưng khả năng đó rất rất khó xảy ra. Vì khả năng bạn ko được đóng dấu lên trang ghi chép mới, nên việc bạn tự viết cho sổ của bạn dài ra là bất khả thi. Và trường hợp đó, mọi người vẫn cứ tiếp tục update theo Sổ cái đầy đủ nhất (Longest Ledger), còn bạn có 2 lựa chọn lúc này. Một là chấp nhận cập nhật Sổ cái giống với mọi người, mọi chỉnh sửa mà bạn tạo ra đều sẽ bị bỏ ra 1 bên, và tiếp tục tham gia mạng Blockchain. Hai là ko chấp nhận Sổ cái đầy đủ, thì Sổ của bạn bị toàn mạng coi là 1 bản lỗi, sẽ ko được mạng Blockchain chấp nhận, bạn bị đẩy ra khỏi cuộc chơi. 
+
+### Vậy ai là người có quyền xác minh ghi chép và dán tem?
+
+Mọi người đua nhau để giành quyền này. Sở hữu năng lực tính toán càng cao, thì càng dễ trở thành người xác minh ghi chép và dán tem ở trang mới nhất.
+
+### Vậy có khi nào tem này bị trùng ko?
+
+Khả năng trùng của tem vô cùng nhỏ, tính bằng triệu tỷ năm. Nếu bạn ko tin thì hãy search cụm từ: "SHA256 Collision", SHA256 là một loại thuật toán để sinh ra tem của blockchain đó :)
 
 ...
 
 ## 3. Tự chủ và công bằng
 
 
-# Proof of Work - the need of
+
+### Proof of Work - the need of
 
 Hẳn các bạn còn nhớ tới phát minh vỏ sò ở phần trước chứ?
 
@@ -67,7 +109,7 @@ Vậy nếu như một người nhặt được chiếc vỏ sò đẹp tự nhi
 Và vài trăm năm nay, những hệ thống Proof Of Work vẫn đang được sử dụng rất nhiều. Chúng ta có thể đang gián tiếp sử dụng nó mỗi ngày, nhưng ko ai để ý mà thôi.
 
 
-# Hashcash by Adam Back (1997)
+### Hashcash by Adam Back (1997)
 
 Wiki link: https://en.wikipedia.org/wiki/Hashcash
 
@@ -105,7 +147,7 @@ Người gửi sẽ random 1 con số gắn vào header như trên và tính SHA
 Người nhận sẽ tính SHA của header và kiểm tra xem 20 bits đầu chuỗi hash có phải là zero không. Việc này chỉ mất 2 microsecond mà thôi. Nếu kết quả đúng thì sẽ tiếp tục kiểm tra các thông tin khác trong header như email address, time, database... để chắc chắn đây là email hợp lệ. Việc này cũng chiếm rất ít tài nguyên cpu và disk.
 
 
-# Bitcoin PoW system (2009)
+### Bitcoin PoW system (2009)
 
 Bitcoin là một trong những công nghệ ứng dụng Proof of Work và Hashcash.
 
@@ -120,7 +162,7 @@ Bitcoin cũng đc xem là ứng dụng tiên phong nhất của Blockchain, ở 
 2. Proof-of-Work cũng là một (trong rất nhiều) phương pháp để triển khai blockchain - chứ ko nhất thiết phải dùng PoW
 
 
-# Proof of Stake
+### Proof of Stake
 
 **Proof-of-Work problem**
 
@@ -142,13 +184,13 @@ Hệ thống PoS lựa chọn người xác nhận 1 bản ghi dựa trên mức
 
 Những cách thức đảm bảo cho sự ngẫu nhiên này có thể kể đến như: Randomized block selection, Coin Age based selection.
 
-# Blockchain Revolution
+## Blockchain Revolution
 
 Sự bùng nổ của blockchain cũng kéo theo rất nhiều vấn đề khác như tính bảo mật, tính riêng tư, mức độ khách quan, công bằng, sự chấp nhận và thích nghi của cộng đồng...
 
 Chắc chắn có rất nhiều bài toán kĩ thuật khác cũng đang cần giải pháp. Chúng ta sẽ tiếp tục khám phá và giải mã những vấn đề này, trong phần kế tiếp :)
 
-# References
+## References
 
 https://bitcoin.org/bitcoin.pdf
 
