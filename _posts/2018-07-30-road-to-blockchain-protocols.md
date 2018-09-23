@@ -68,13 +68,13 @@ Cuốn sổ cái blockchain là một cuốn sổ đặc biệt, mỗi khi bạn
 Loại Tem nói trên đặc biệt ở chỗ, nó được tạo ra từ 2 thứ:
 
 + Nội dung của trang ứng với nó. Bạn chỉ cần thay đổi 1 kí tự trong trang thôi, thì blockchain-network khi đọc Tem này sẽ biết rằng nội dung bên trong trang đã bị thay đổi.
-+ Tem của trang trước. Có nghĩa là các trang phải được sắp xếp theo đúng thứ tự. Việc đảo lộn hoặc xóa bớt trang nào đó, đều khiến cho Sổ cái của bạn ko hợp lệ với blockchain-network.
++ Tem của trang trước. Có nghĩa là các trang phải được sắp xếp theo đúng thứ tự. Việc đảo lộn hoặc xóa bớt trang bất kỳ, đều khiến cho Sổ cái của bạn ko hợp lệ với blockchain-network.
 
-**Vậy có khi nào tem này bị trùng ko?**
+**Có khi nào tem này bị trùng ko?**
 
 Khả năng trùng của tem vô cùng nhỏ, tính bằng triệu tỷ năm. Nếu bạn ko tin thì hãy search cụm từ: "SHA256 Collision", SHA256 là một loại thuật toán để sinh ra tem của blockchain đó :)
 
-### Nếu tôi cứ quyết tâm gian lận, thì sao?
+### Nếu tôi quyết tâm gian lận, thì sao?
 
 Ví dụ như cuốn sổ của blockchain hiện tại đã ghi được 99 trang, bạn muốn gian lận bằng cách cố tình chỉnh sửa trang số 7, thì bạn phải vượt qua 2 bước xác nhận của blockchain.
 
@@ -86,7 +86,7 @@ Ví dụ như cuốn sổ của blockchain hiện tại đã ghi được 99 tra
 
 Được chứ, nhưng lại có một bức tường khác bạn cần phải vượt qua.
 
-Blockchain-network luôn luôn coi cuốn sổ dài nhất (Longest Ledger) là sổ hợp lệ. Và vì tính tính đồng bộ hóa của nó nên nó chỉ chấp nhận một bản đúng duy nhất, các cuốn sổ khác - ngắn hơn đều ko được chấp nhận. Như vậy, cuốn sổ của bạn sẽ bị loại bỏ nếu như nó ko phải là dài nhất.
+Blockchain-network luôn luôn coi cuốn sổ dài nhất (Longest Ledger) là sổ hợp lệ. Và vì tính đồng bộ hóa của nó nên nó chỉ chấp nhận một bản đúng duy nhất, các cuốn sổ khác ngắn hơn đều ko được chấp nhận. Như vậy, cuốn sổ của bạn sẽ bị loại bỏ nếu như nó ko phải là dài nhất.
 
 **À thế thì nếu tôi ráng dán đủ Tem cho tới trang 99, chắc là vẫn khả thi chứ?**
 
@@ -104,28 +104,32 @@ Blockchain sử dụng Cơ chế đồng thuận dựa trên nền tảng Proof-
 
 ## 3. Tự chủ và cơ chế đồng thuận
 
+Bây giờ, sau khi đã có p2p network dành cho sự phân tán và một phương pháp mã hóa dữ liệu để đảm bảo tính toàn vẹn cho dữ liệu, blockchain còn cần thứ gì?
+
+- Một cách nào đó khiến cho việc dán Tem (a.k.a mã hóa dữ liệu) trở nên vô cùng khó khăn đối với những kẻ muốn phá hoại, nhưng phải dễ dàng kiểm tra sự sai sót.
+
+- Một cách để mọi người tham gia "Xác nhận" thông tin ghi chép một cách cộng đồng hơn, ai cũng có thể tham gia đóng góp, loại bỏ hoàn toàn vai trò của bên thứ 3.
+
+Và bổ sung cuối cùng này là Consensus Protocol dựa trên Proof-of-Work, hay như các vị đại hiệp gọi là Cơ chế đồng thuận dựa vào bằng chứng công việc.
+
 ### Proof of Work - the need of
 
 Hẳn các bạn còn nhớ tới phát minh vỏ sò ở phần trước chứ?
 
 Chúng ta thử suy luận, tại sao nó phải được mài nhỏ, có thể là khắc lên nữa rồi mới có thể đem ra làm tiền giao dịch được?
 
-Vì công việc mài dũa/điêu khắc một vỏ sò, vỏ hến đến một mức thật đẹp, thật tinh xảo sẽ chiếm một phần công sức, có thể đo đếm được - tất nhiên chỉ ở một mức độ tương đối. Nhưng khi cầm trên tay chiếc vỏ sò thật đẹp, nó là bằng chứng rằng người tạo ra nó ko chỉ dạo một vòng biển nhặt lên, mà người đó đã trải qua một quá trình làm việc, bỏ công sức chế tác để tạo ra chiếc vỏ sò có thể giao dịch được. Và người ta công nhận công sức của anh ta qua chiếc vỏ sò đó.
+Vì công việc mài dũa/điêu khắc một vỏ sò, vỏ hến đến một mức thật đẹp, thật tinh xảo sẽ chiếm một phần công sức + thời gian. Khi cầm trên tay chiếc vỏ sò thật đẹp, nó là bằng chứng rằng người tạo ra nó ko chỉ dạo một vòng biển nhặt lên, mà người đó đã trải qua một quá trình mài dũa, chế tác để tạo ra chiếc vỏ sò có thể giao dịch được. Và người ta công nhận công sức của anh ta qua chiếc vỏ sò đó.
 
 Vỏ sò, đó là nguyên mẫu rất xa xưa của cái gọi là "Proof of Work" / bằng chứng công việc.
 
 Vậy nếu như một người nhặt được chiếc vỏ sò đẹp tự nhiên, như đã được chế tác rồi thì sao? Thì mọi người vẫn công nhận, may mắn cũng là một phần của hệ thống :)
 
-Và vài trăm năm nay, những hệ thống Proof Of Work vẫn đang được sử dụng rất nhiều. Chúng ta có thể đang gián tiếp sử dụng nó mỗi ngày, nhưng ko ai để ý mà thôi.
+Và vài trăm năm nay, những hệ thống Proof Of Work vẫn đang được sử dụng rất nhiều. Chúng ta có thể đang gián tiếp sử dụng nó mỗi ngày, nhưng ko ai để ý mà thôi. Bitcoin sử dụng một nguyên mẫu proof-of-work hiện đại hơn, nhưng vẫn là ko mới mẻ: [Hashcash của Adam Back](https://en.wikipedia.org/wiki/Hashcash)
 
 
 ### Hashcash by Adam Back (1997)
 
-Wiki link: https://en.wikipedia.org/wiki/Hashcash
-
-Quay trở lại kỉ nguyên số, năm 1997 Adam Back đưa ra hệ thống Hashcash, là một hệ thống xác nhận bằng chứng công việc (PoW system) và chuyên dùng để loại bỏ spam mail, tương tự như ví dụ trên để loại bỏ binh đoàn xin-ăn.
-
-Hashcash yêu cầu bên người gửi phải đưa ra bằng chứng rằng họ "có bỏ công sức" ra khi gửi email đi. Và người nhận email sẽ xác nhận bằng chứng đó. "Bằng chứng công sức" này là một vài phép tính toán được cpu thực hiện.
+Là một hệ thống xác nhận bằng chứng công việc (PoW system) và chuyên dùng để loại bỏ spam mail, Hashcash yêu cầu bên người gửi phải đưa ra bằng chứng rằng họ "có bỏ công sức" ra khi gửi email đi. Và người nhận email sẽ xác nhận bằng chứng đó. "Bằng chứng công sức" này là một vài phép tính toán được cpu thực hiện.
 
 Hashcash đảm bảo: đối với người sử dụng máy tính cá nhân, gửi đi 1 email-có-bằng-chứng-no-spam, thì công sức bỏ ra để tạo bằng chứng này vừa phải, không đáng kể so với cpu. Và đối với người nhận, việc xác nhận bằng chứng này cực kỳ dễ dàng. Nhưng đối với spammer, họ sẽ phải bỏ ra công sức rất lớn để đạt được yêu cầu của hệ thống hashcash.
 
@@ -135,33 +139,8 @@ Cũng như nền tảng của hệ thống Proof-of-Work, hashcash sẽ có 1 c�
 
 Loại mã hash này chỉ có 1 cách duy nhất để tìm ra là đoán dần: brute force, ko có cách tìm nào khác. Nhưng khi tìm ra rồi thì việc xác nhận độ đúng đắn của mã hash này rất dễ dàng.
 
-**Phân tích kĩ thuật**
-
-Hashcash - sử dụng thuật toán SHA-1 để mã hóa một chuỗi thông tin kèm bằng chứng công việc vào header của email. Và người nhận sẽ xác nhận bằng chứng này.
-
-header của email sẽ có dạng:
-
-`X-Hashcash: 1:20:1303030600:adam@cypherspace.org::McMybZIhxKXu57jd:ckvi`
-
-Các thông tin chứa trong header gồm địa chỉ email, ngày gửi, và thông tin về bằng chứng công việc. Sự có mặt của địa chỉ email người nhận để đảm bảo rằng header này được tính toán dành cho mỗi người nhận cụ thể. Thời gian đính kèm để đảm bảo rằng email được gửi gần đây và để chắc chắn về header email: là duy nhất cho mỗi email
-
-
-***Sender Side:***
-
-Người gửi sẽ random 1 con số gắn vào header như trên và tính SHA (160bit) hash của header. Nếu 20 bits đầu tiên (5 hex digits) đều bằng zero, thì số hash này được coi là 1 bằng chứng "đạt chuẩn", sẽ được chấp thuận. Nếu không có kết quả như yêu cầu trên, sender sẽ tăng phần counter lên và tính hash lại. Xác suất để sender tính được số hash chuẩn ngay lần đầu tiên là 1/1 048 576. Đây cũng là trung bình số lần mà sender cần thử để tìm ra bằng chứng công việc - hash chuẩn.
-
-Đối với máy tính cá nhân thông thường, đây là mức tính toán có thể chấp nhân được đối với 1 người sử dụng phổ thông, nhưng với spammer thì con số phép tính sẽ cực kỳ lớn bởi số lượng email spam.
-
-***Receiver Side:***
-
-Người nhận sẽ tính SHA của header và kiểm tra xem 20 bits đầu chuỗi hash có phải là zero không. Việc này chỉ mất 2 microsecond mà thôi. Nếu kết quả đúng thì sẽ tiếp tục kiểm tra các thông tin khác trong header như email address, time, database... để chắc chắn đây là email hợp lệ. Việc này cũng chiếm rất ít tài nguyên cpu và disk.
-
 
 ### Bitcoin PoW system (2009)
-
-Bitcoin là một trong những công nghệ ứng dụng Proof of Work và Hashcash.
-
-Bitcoin áp dụng hệ thống PoW để giải quyết vấn đề của giao dịch tiền, và loại bỏ bên thứ 3 là ngân hàng.
 
 Bitcoin cũng dựa trên những nguyên lý của Adam's Hashcash để ứng dụng vào hệ thống xác nhận các giao dịch giữa người gửi và nhận. Tất nhiên phương pháp tính toán có thay đổi, phức tạp hơn, mạnh mẽ hơn, chặt chẽ hơn, khó bị bẻ gãy hơn. Nhưng về nguyên lý thì bitcoin cũng đang áp dụng 1 hệ thống tem (timestamp) tương tự hashcash.
 
@@ -172,9 +151,7 @@ Bitcoin cũng đc xem là ứng dụng tiên phong nhất của Blockchain, ở 
 2. Proof-of-Work cũng là một (trong rất nhiều) phương pháp để triển khai blockchain - chứ ko nhất thiết phải dùng PoW
 
 
-### Proof of Stake
-
-**Proof-of-Work problem**
+### Tại sao phải sử dụng proof-of-work?
 
 Thật ko may, hệ thống PoW vẫn có những điểm yếu của riêng nó. Và "Năng lượng" chính là bài toán lớn nhất của 1 hệ thống PoW.
 
@@ -182,23 +159,6 @@ Cpu dùng để tìm mã hash cần sử dụng điện năng. Và điện năng
 
 Và khái niệm Proof of Stake ra đời, chủ yếu là để áp dụng trong lĩnh vực tiền mã hóa.
 
-**Concept**
-
-Proof of Stake được giới thiệu như là 1 cuộc chơi mới cho những người cùng sử dụng 1 hệ thống. Mỗi người trong hệ thống đều có 1 số cổ phần (stake), và họ tự xác nhận với nhau các bản ghi (thường là các bản ghi giao dịch)
-
-Hệ thống PoS cũng loại bỏ bên thứ 3 như PoW, và nó ko yêu cầu người tham gia phải xử lý tính toán để xác nhận, mà chính họ tự xác nhận với nhau. Vậy làm sao để "họ tự xác nhận" với nhau đc?
-
-Các hệ thống PoS thường phát hành 1 lượng coins/tokens nào đó tương tự như cổ phiếu, và những ai sở hữu coin/token này được coi là cổ đông, các cổ đông này sẽ tham gia quá trình xác nhận bản ghi (giao dịch...).
-
-Hệ thống PoS lựa chọn người xác nhận 1 bản ghi dựa trên mức độ uy tín/giàu có thông qua lượng cổ phần nắm giữ. Thông thường những ai nắm nhiều cổ phần sẽ có lợi thế trong việc xác nhận, nhưng PoS có thêm các giao thức, quy tắc khác để đảm bảo tính ngẫu nhiên trong khâu chọn lựa người xác nhận kế tiếp - đảm bảo rằng ko phải cứ giàu nhất thì có 100% cơ hội được chọn.
-
-Những cách thức đảm bảo cho sự ngẫu nhiên này có thể kể đến như: Randomized block selection, Coin Age based selection.
-
-## Blockchain Revolution
-
-Sự bùng nổ của blockchain cũng kéo theo rất nhiều vấn đề khác như tính bảo mật, tính riêng tư, mức độ khách quan, công bằng, sự chấp nhận và thích nghi của cộng đồng...
-
-Chắc chắn có rất nhiều bài toán kĩ thuật khác cũng đang cần giải pháp. Chúng ta sẽ tiếp tục khám phá và giải mã những vấn đề này, trong phần kế tiếp :)
 
 ## References
 
