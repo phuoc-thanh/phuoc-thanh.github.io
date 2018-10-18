@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lambda-Chain Network"
+title: "Lambda Chain: Network"
 comments: true
 description: "Road to Blockchain - Lambda-chain Network"
 keywords: "blockchain, proofofstake, proofofwork, bitcoin, haskell, lambada"

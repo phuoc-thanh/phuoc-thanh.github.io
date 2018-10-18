@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Road to Blockchain: The Lamba Chain"
+title: "Road to Blockchain: The Lambda Chain"
 comments: true
 description: "Road to Blockchain - Triển khai mạng lưới Blockchain"
 keywords: "blockchain, proofofstake, proofofwork, bitcoin, haskell, lambada"
