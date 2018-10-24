@@ -3,7 +3,7 @@ layout: post
 title: "Road to Blockchain: The Lambda Chain"
 comments: true
 description: "Road to Blockchain - Triển khai mạng lưới Blockchain"
-keywords: "blockchain, proofofstake, proofofwork, bitcoin, haskell, lambada"
+keywords: "blockchain, proofofstake, proofofwork, bitcoin, haskell, lambda"
 ---
 
 Đối với một công việc nghiên cứu, ko có gì thú vị hơn khi được bắt đầu triển khai thực nghiệm đống lý thuyết "suông", để chứng minh rằng nó ko "suông".
@@ -20,17 +20,17 @@ Về blockchain, hiện tại có khá nhiều khoá học, mã nguồn mở, b�
 
 [Peer-to-Peer Network](https://thanhdo89se.github.io/2018/road-to-blockchain-lambda-network/)
 
-[Sustainable Integrity of Data](https://thanhdo89se.github.io/2018/road-to-blockchain-lambda-integrity-of-data)
+[Integrity of Data](https://thanhdo89se.github.io/2018/road-to-blockchain-lambda-integrity-of-data)
 
 [PoW Consensus Protocol](https://thanhdo89se.github.io/2018/road-to-blockchain-lambda-consensus-protocol)
 
-## Crypto Currency
+## Cryptocurrency
 
-Khi đã hoàn thành xong một hệ thống Blockchain network đơn giản, hiểu về công nghệ nền tảng và khái niệm của blockchain, chúng ta tiếp tục thử nghiệm đưa các giao dịch tiền số vào blockchain, để tạo ra như một thứ nổi tiếng khác: Cryto Currency
+Khi đã hoàn thành xong một hệ thống Blockchain network đơn giản, hiểu về công nghệ nền tảng và khái niệm của blockchain, chúng ta tiếp tục thử nghiệm đưa các giao dịch tiền số vào blockchain, để tạo ra như một thứ nổi tiếng khác: Crytocurrency
 
 Phần quan trọng ở một crypto currency trên blockchain có lẽ là transaction và wallet
 
-[Cryto currency](https://thanhdo89se.github.io/2018/road-to-blockchain-lambda-cryptocurrency)
+[Crytocurrency](https://thanhdo89se.github.io/2018/road-to-blockchain-lambda-cryptocurrency)
 
 ## Lambda Database - The lightnight
 
@@ -48,7 +48,7 @@ Tôi dành một chapter trong series để viết về LMDB.
 
 ## Project Structure
 
-[Source code của lambda-chain](https://github.com/thanhdo89se/lambda-chain) chỉ có vài file haskell, và thư mục data.mdb - là thư mục lưu trữ database.
+[Source code của lambda-chain](https://github.com/thanhdo89se/lambda-chain) rất đơn giản, chỉ có vài file hs.
 
 ```haskell
 -- data.mdb/
@@ -63,4 +63,8 @@ Tôi dành một chapter trong series để viết về LMDB.
 -- Persistence.hs
 -- Transaction.hs
 ```
-Đọc tên file là biết module đó làm gì rồi ha, riêng dash là CLI của program nhé, vì tôi cũng ko biết nên đặt tên gì cho nó :)
+Đọc tên file là biết module đó làm gì rồi ha.
+
+Thư mục `data.mdb`: nơi lưu trữ database, tạo bởi LMDB.
+
+Một file có tên lạ lạ: `Dash.hs`, chính là CLI của program, vì tôi cũng ko biết nên đặt tên gì cho nó :)

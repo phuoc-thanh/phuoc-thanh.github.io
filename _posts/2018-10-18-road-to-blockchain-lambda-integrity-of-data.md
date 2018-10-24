@@ -52,6 +52,8 @@ Tính lại hash của block xem có đúng ko?
 
 Kiểm tra thông tin hash của block trước có đúng ko?
 
+Note: this will be changed
+
 ```haskell
 -- Is a block valid?
 is_valid_block :: ByteString -> Block -> Block -> Bool
@@ -89,7 +91,8 @@ hash :: ByteString -> Digest SHA256
 hash m = hashWith SHA256 m
 ```
 
-Và phần Cryoto này chưa xong đâu nhé, về sau lambda-chain implement thêm phần Digital Signature nữa.
+Và phần Crypto này chưa xong đâu nhé, về sau lambda-chain implement thêm phần Digital Signature nữa.
+
 Rồi ta có thể tính toán block_hash kiểu như:
 
 ```haskell

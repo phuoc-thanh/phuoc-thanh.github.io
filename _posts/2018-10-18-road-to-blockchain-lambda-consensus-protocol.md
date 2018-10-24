@@ -72,4 +72,4 @@ hash_calculate origin prev_id m_root bits nonce = do
         then return $ BlockHeader prev_id timestamp m_root bits nonce
         else hash_calculate origin prev_id m_root bits (nonce + 1)
 ```
-`hash_calculate` chính là vòng lặp để brute force block hash, cho tới khi nó tìm đúng hash có chứa 'bits' số 0 ở đầu chuỗi hash. Nếu đã tìm được thì nó sẽ trả ra một header để xây dựng lên block mới.
+`hash_calculate` là một vòng lặp để brute force block hash, cho tới khi nó tìm đúng hash có chứa 'bits' số 0 ở đầu chuỗi hash. Nếu đã tìm được thì nó sẽ trả ra một header để xây dựng block mới.
