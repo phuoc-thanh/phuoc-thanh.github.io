@@ -26,7 +26,7 @@ Thuở săn bắn ấy, tôi đi bẫy chồn, cả nhà ăn chồn 2 tuần nay
 
 Một ngày đẹp trời khác, tôi săn đc cả cọp Siberia, voi Mammoth, đương nhiên là ăn không hết. Nhưng tủ lạnh lại chưa đc phát minh nên cũng chẳng còn cách nào - ngoài đem cho thằng hàng xóm hoặc linh cẩu ăn bớt. Ngay cả khi, tôi đem đổi thành cá, chuối, heo rừng... thì cũng ko thể nhai hết được. Tôi ước gì mình có thể để dành, dự trữ những voi, cọp mà tôi săn được.
 
- Vouloir, c'est pouvoir! Già làng, tộc trưởng nào đó đã thấu hiểu tôi và đưa vỏ sò, vỏ hến trở thành đơn vị quy đổi cho hàng hóa. Tất nhiên phải là vỏ sò được mài thật đẹp, phụ nữ mang làm trang sức được mới có giá trị. Tôi săn đc cọp Siberia, để lại cái tay cọp cả nhà ăn lẩu, còn lại đem đổi lấy trăm vỏ sò ở ngoài chợ. Bữa nào đói quá, lười quá, hay say lá đu đủ quá ko săn được gì, tôi đem ít vỏ sò này đổi lấy vài chục trái táo, đôi con cá về ăn, vỏ sò quả là phát minh vĩ đại -))
+ Vouloir, c'est pouvoir! Già làng, tộc trưởng nào đó đã thấu hiểu tôi và đưa vỏ sò, vỏ hến trở thành đơn vị quy đổi cho hàng hóa. Tất nhiên phải là vỏ sò được mài thật đẹp, phụ nữ mang làm trang sức được mới có giá trị. Tôi săn đc cọp Siberia, để lại cái tay cọp cả nhà ăn lẩu, còn lại đem đổi lấy trăm vỏ sò ở ngoài chợ. Bữa nào đói quá, lười quá, hay say lá đu đủ quá ko săn được gì, tôi đem ít vỏ sò này đổi lấy vài chục trái táo, đôi con cá về ăn, vỏ sò quả là phát minh vĩ đại.
 
 ![Ancient Egypt bazaar](/assets/images/rtb01/ancient_egypt_bazaar.jpg)
 
@@ -177,7 +177,7 @@ Note: Nghiên cứu của Ian Grigg hoàn toàn ko liên quan đến lý thuyế
 
 Tóm tắt lại cho các bạn ko có thời gian đọc, những nghiên cứu khoảng thời gian này, ít nhiều đều hướng đến một hệ thống lưu trữ hoàn thiện, mang các đặc điểm:
 
-- Tính phân tán và minh bạch: Sổ Cái sẽ được lưu làm nhiều bản, đồng bộ và nằm ở nhiều nơi khác nhau.
+- Tính phân tán: Sổ Cái sẽ được lưu làm nhiều bản, đồng bộ và nằm ở nhiều nơi khác nhau.
 
 - Tính toàn vẹn: mỗi thông tin (giao dịch) được lưu vào sổ thì không có cách nào chỉnh sửa, thay đổi.
 
@@ -197,11 +197,13 @@ Bạn đã hiểu tên gọi "blockchain" (a.k.a chain-of-blocks) có nguồn g�
 
 Blockchain đã xuất hiện như vậy, ko phải một ý tưởng chói lòa đến từ tương lai, mà là cả một quá trình nghiên cứu, hoàn thiện một nền tảng công nghệ ghi chép - lưu trữ dựa trên những điểm yếu của chính hệ thống hiện tại. Người ta đã nghiên cứu nó từ thập niên 80, và vẫn ko có dấu hiệu ngừng lại, khi hàng loạt công ty công nghệ lớn, ngân hàng, tập đoàn xuyên quốc gia, và cả chính phủ cũng đã bắt đầu tìm hiểu, nghiên cứu, thử nghiệm blockchain.
 
-Xin dẫn một số use-case của blockchain, [từ website của IBM](https://www.ibm.com/blockchain/use-cases/):
+Các bạn có thể xem [Khảo sát toàn cầu về Blockchain của Deloitte - 2018](https://www2.deloitte.com/content/dam/Deloitte/us/Documents/financial-services/us-fsi-2018-global-blockchain-survey-report.pdf) để thấy bức tranh toàn cảnh về trạng thái hiện tại của công nghệ blockchain.
+
+Thêm một số giải pháp cụ thể trên nền tảng blockchain [của IBM](https://www.ibm.com/blockchain/use-cases/):
 
 1. [Ứng dụng blockchain vào hồ sơ y tế và dữ liệu y học lâm sàng](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=KU912404USEN)
 
-2. [Ứng dụng trong an toàn thực phẩm và tra cứu nguồn gốc](https://www-03.ibm.com/press/us/en/pressrelease/53013.wss)
+2. [Blockchain trong an toàn thực phẩm và tra cứu nguồn gốc](https://www-03.ibm.com/press/us/en/pressrelease/53013.wss)
 
 3. [Hệ thống thông tin định danh và tài sản cá nhân dựa trên blockchain](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=KU912405USEN)
 
@@ -213,7 +215,7 @@ Xin dẫn một số use-case của blockchain, [từ website của IBM](https:/
 
 ...
 
-Và còn rất nhiều ứng dụng tiềm năng khác, đang đợi những người tiên phong phát triển...
+Và còn rất nhiều ứng dụng tiềm năng khác, đang đợi những nhà phát triển tiên phong...
 
 # References
 
@@ -228,3 +230,5 @@ http://iang.org/ssl/pki_considered_harmful.html
 https://www.ibm.com/blockchain/use-cases/
 
 https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system
+
+https://www2.deloitte.com/content/dam/Deloitte/us/Documents/financial-services/us-fsi-2018-global-blockchain-survey-report.pdf
