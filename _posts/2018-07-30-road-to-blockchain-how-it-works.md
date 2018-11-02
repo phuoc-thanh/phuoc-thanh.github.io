@@ -3,7 +3,7 @@ layout: post
 title: "Road to Blockchain: How it works?"
 comments: true
 description: "Road to Blockchain - Nguyên lý hoạt động của blockchain"
-keywords: "blockchain, proofofstake, proofofwork, bitcoin"
+keywords: "blockchain, crypto, proofofstake, proofofwork, bitcoin, p2p network, consensus protocol, hashing data"
 ---
 
 Như đã giới thiệu ở [bài viết trước](https://thanhdo89se.github.io/2018/road-to-blockchain-intro/), bitcoin ra đời để giải quyết vấn đề double-spending trong lưu hành tiền kỹ thuật số. Nhưng nó đồng thời mở ra một hướng tiếp cận mới cho các nền tảng lưu trữ hiện đại, dựa vào 3 đặc điểm: phân tán sổ sách, toàn vẹn dữ liệu, và tự chủ hệ thống.
@@ -14,19 +14,17 @@ Vậy bitcoin/blockchain thể hiện 3 đặc điểm đó ra sao? Và hiện t
 
 ## 1. Phân tán và Đồng bộ hóa Sổ cái
 
-Đầu tiên, hãy cùng đặt vấn đề với hệ thống lưu trữ hiện tại.
+Vấn đề của hệ thống lưu trữ hiện tại, vẫn là đặc tính tập trung: Những ghi chép quan trọng, phần nhiều vẫn sử dụng Hệ thống sổ kép có bổ sung bên thứ 3, Thông tin được ghi làm 3 bản: Bên A, Bên B, và xác nhận bên thứ 3.
 
-Những ghi chép quan trọng, phần nhiều vẫn sử dụng Hệ thống sổ kép có bổ sung bên thứ 3, Thông tin được ghi làm 3 bản: Bên A, Bên B, và xác nhận bên thứ 3. Ồ, có 3 bản thôi á? 3 bản thì làm sao mà yên tâm được đây?
-
-Ko khó để tưởng tượng hoàn cảnh khi 1, 2 hay thậm chí là 3 bản ghi chép bị mất mát, sai sót. Và gian lận xảy ra, niềm tin bị thử thách, như đã nói ở bài trước.
+Ko khó để tưởng tượng ra hậu quả khi 1, 2 hay thậm chí là 3 bản ghi chép bị mất mát, sai sót.
 
 ### Vậy blockchain sao lưu dữ liệu như thế nào?
 
 Blockchain đề xuất một giải pháp lưu trữ phân tán và đồng bộ. Nghĩa là, dữ liệu sẽ được lưu ở nhiều nơi khác nhau, được cập nhật theo thời gian đảm bảo toàn bộ sổ cái trong mạng sẽ lưu thông tin chính xác như nhau.
 
-Một giao dịch thành công giữa tôi và bạn, tôi ghi vào sổ của tôi, bạn ghi vào sổ của bạn, vợ tôi cũng ghi, hàng xóm tôi cũng ghi, chú em con dì chị vợ của bạn cũng ghi, bà bán vé số cũng ghi, chủ tịch Quốc Hội cũng ghi, đến cả Cậu Vàng của Lão Hạc cũng sẽ ghi lại - nếu nó biết viết.
+Một giao dịch thành công giữa tôi và bạn, tôi ghi vào sổ của tôi, bạn ghi vào sổ của bạn, vợ tôi cũng ghi, hàng xóm tôi cũng ghi, chú em con dì chị vợ của bạn cũng ghi, bà bán vé số cũng ghi, đến cả Cậu Vàng của Lão Hạc cũng sẽ ghi lại - nếu nó biết viết.
 
-Vậy là, toàn bộ những ai tham gia vào mạng lưới đều cần phải ghi chép đủ các giao dịch vào sổ của họ, 3 người tham gia thì có 3 cuốn sổ, 1 triệu người tham gia thì có thể có 700 nghìn sổ hoặc 2 triệu sổ, điều đó ko ai biết, và chúng ta cũng chưa vội bàn tới.
+Vậy là, toàn bộ những ai tham gia vào mạng lưới đều ghi chép đầy đủ các giao dịch vào sổ của họ, 3 người tham gia thì có 3 cuốn sổ, 1 triệu người tham gia thì có thể có 700 nghìn sổ hoặc 2 triệu sổ, điều đó ko ai biết, và chúng ta cũng chưa vội bàn tới.
 
 ### Phân tán sổ sách, thì được lợi ích gì?
 
@@ -52,7 +50,7 @@ BitTorrent là một sân chơi như vậy, một mạng lưới, mà các loạ
 
 ## 2. Toàn vẹn dữ liệu
 
-Về nhu cầu toàn vẹn dữ liệu, có lẽ ko cần phải nói thêm nữa, vì chắc ko ai muốn phải phí công phí sức để tìm hiểu những việc như: Bản sao này có giống bản chính ko? Số liệu này có bị ai đó chỉnh sửa ko? Giao dịch này là thật hay là giả? Sổ sách này có ghi chép đầy đủ ko? Chữ ký trên hợp đồng này có hợp lệ? Hóa đơn này có phải mới xuất hồi sáng nay?...
+Về nhu cầu toàn vẹn dữ liệu, có lẽ ko cần phải nói thêm nữa, vì chắc ko ai muốn phải công sức để xác nhận những thứ như: Bản sao này có giống bản chính ko? Số liệu này có bị ai đó chỉnh sửa ko? Giao dịch này là thật hay là giả? Sổ sách này có ghi chép đầy đủ ko? Chữ ký trên hợp đồng này có hợp lệ? Hóa đơn này có phải mới xuất hồi sáng nay?...
 
 ### Và blockchain đảm bảo toàn vẹn dữ liệu thật sao?
 
@@ -113,13 +111,13 @@ Bây giờ, sau khi đã có p2p network hỗ trợ cho sự phân tán và Hash
 
 Mật mã học tiếp tục được ứng dụng vào kiến trúc của blockchain, lần này cũng ko xa lạ: [Hashcash của Adam Back](https://en.wikipedia.org/wiki/Hashcash).
 
-Hãy nhớ lại phát minh Tiền Vỏ Sò ở bài viết trước, đó là một hệ thống Proof-of-Work cổ xưa. Tiền Vỏ Sò là bằng chứng của lao động, nó xác nhận giá trị tương đương với thời gian + công sức của việc mài dũa, chế tác. Hashcash cũng là một hệ thống như vậy, nguyên mẫu của Hashcash là một hệ thống xác nhận dựa trên bằng chứng công việc.
+Hãy nhớ lại phát minh Tiền Vỏ Sò ở bài viết trước, đó là một hệ thống Proof-of-Work cổ xưa. Tiền Vỏ Sò là bằng chứng của lao động, nó xác nhận giá trị tương đương với thời gian, công sức của việc mài dũa, chế tác. Hashcash cũng là một hệ thống như vậy, nguyên mẫu của Hashcash là một hệ thống xác nhận dựa trên bằng chứng công việc.
 
 **Hashcash? Lại là "Hash" gì đó?**
 
 Đúng. Hashcash cũng là một phương pháp băm (Hash) như giới thiệu ở trên, nhưng nó yêu cầu một người dùng muốn có được mã Hash đúng chuẩn "Hashcash" thì phải đoán mò. Haha.
 
-Khi bạn muốn Mã hóa một password, một giao dịch hay một email nào đó, bạn thường chỉ cần 1 cú click chuột, hoặc enter một câu lệnh, máy tính của bạn sẽ tính toán cho bạn mã Hash đó trong vòng vài micro-giây. Nhưng với Hashcash, loại mã Hash đó giờ đây cần phải "Đẹp" nữa.
+Khi bạn muốn Mã hóa một password, một giao dịch hay một email nào đó, bạn thường chỉ cần 1 cú click chuột, hoặc enter một câu lệnh, máy tính của bạn sẽ tính toán cho bạn mã Hash đó trong vòng vài micro giây. Nhưng với Hashcash, loại mã Hash đó giờ đây cần phải "Đẹp" nữa.
 
 Đẹp ở đây, là mã Hash đó phải được tính toán hên xui một chút. Bạn thêm vào phần cuối của dữ liệu cần Hash một con số, Hash cả dữ liệu và con số đó. Mã Hash sinh ra nếu có 2 con số zero ở đầu, thì được coi là đạt chuẩn, ví dụ: "00th1s1s4n3x4mpl3h4sh". Còn nếu ko đạt chuẩn, bạn đổi con số kia đi, và tính Hash tiếp, mò tiếp, cho tới khi nào đạt 2 số zero ở đầu Mã.
 
@@ -143,7 +141,7 @@ Ví dụ như cuốn sổ của blockchain hiện tại đã ghi được 99 Blo
 
 **Tôi sẽ bỏ qua tất cả Block từ 8 đến 98, chỉ gắn Block 99 vào sau Block 7 thì có được ko?**
 
-Blockchain-network luôn luôn coi cuốn sổ dài nhất (Longest Ledger) là sổ hợp lệ. Và vì tính đồng bộ hóa của nó nên nó chỉ chấp nhận một bản đúng duy nhất, các cuốn sổ khác ngắn hơn đều ko được chấp nhận. Như vậy, cuốn sổ của bạn sẽ bị loại bỏ nếu như nó ko phải là dài nhất.
+Blockchain-network luôn luôn coi cuốn sổ dài nhất (Longest Ledger) là sổ hợp lệ. Và vì tính đồng bộ hóa của nó nên nó chỉ chấp nhận một bản đúng duy nhất, các cuốn sổ khác ngắn hơn đều ko được chấp nhận. Như vậy, cuốn sổ của bạn sẽ bị loại bỏ.
 
 **À thế thì nếu tôi ráng tính toán Block Hash cho 99 Block, chắc là vẫn khả thi chứ?**
 
@@ -157,11 +155,9 @@ Ngoài ra, tiêu chuẩn "đẹp" của Blockchain hơi khác Hashcash, tiêu ch
 
 Kết thúc bài thứ 2 về Blockchain, có lẽ ko ít thì nhiều, bạn có thể hiểu sơ về cách mà Blockchain/Bitcoin hoạt động, các công nghệ ẩn dưới nó.
 
-Có thể bạn đã hiểu 100% và muốn đào sâu hơn.
+Có thể bạn đã hiểu 100% và muốn đào sâu hơn. Cũng có thể, bạn vẫn cảm thấy Blockchain phức tạp.
 
-Có thể bạn hoài nghi và cho rằng "Lý thuyết suông" là vô nghĩa.
-
-Cũng có thể, bạn vẫn cảm thấy Blockchain phức tạp.
+Có thể bạn vẫn đang hoài nghi và cho rằng "Lý thuyết suông" là vô nghĩa.
 
 Dù lí do là gì, những bài viết tiếp theo sẽ là một trải nghiệm thực tế, để chứng mình rằng Blockchain thật sự ko phải là thứ gì đó bí ẩn, đáng sợ, phức tạp. Và bất kỳ Lờ tờ vờ nào cũng có thể tạo ra một "blockchain" đơn giản.
 
