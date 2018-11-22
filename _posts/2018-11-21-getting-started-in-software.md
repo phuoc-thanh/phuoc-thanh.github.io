@@ -109,7 +109,7 @@ Vậy, ko có nhiều nơi tuyển dụng Clojure hoặc biến thể khác củ
 
 Hầu hết các ngôn ngữ hiện đại đều khá giống nhau. Ruby, Python, Perl, PHP, Java, và C đều là Germanic, ẩn sâu bên trong chúng đều là cùng một nguồn gốc, cùng lý tưởng. À, ngoài ra còn một họ ngôn ngữ khác mà bạn cần biết, nó tương tự như tiếng Nhật hay A-rập vậy, và cũng ko nhiều người sử dụng chúng. Cụ thể, Haskell và OCaml là ngôn ngữ lập trình hàm kiểu mạnh (strongly-typed fucntional **/lẽ ra ko nên dịch cụm từ này/**), rất khác biệt so với các ngôn ngữ khác và có một mức độ trừu tượng rất cao. Erlang là một ngôn ngữ lập trình hàm phân tán, code thực thi trên nhiều máy tính cùng lúc. Nếu bạn theo đuổi những kiểu ngôn ngữ này, nó có thể mang đến phần thưởng rất lớn cho bạn (và nó sẽ khiến bạn trở thành lập trình viên xuất sắc), nhưng bạn sẽ phải học rất nhiều và rất lâu trước khi bạn có thể kiếm được một công việc.
 
---
+---
 
 ## Giả định công việc đầu tiên
 
