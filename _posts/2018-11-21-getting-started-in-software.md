@@ -43,25 +43,23 @@ Phần backend nằm ở server - máy chủ. Nó thường được chia nhỏ 
 
 Môi trường để những thứ "backend" chạy trên đó, như máy tính, hệ điều hành, dịch vụ lưu trữ, mạng, điều khiển... Mà một cô nào đó vận hành thì được gọi là "dev ops" (aka operations enginner), "netword administrator", "sysadmin" tùy theo đặc trưng riêng.
 
-Nhiều lúc, những nhóm dev này làm việc độc lập với nhau, nhưng cũng có khi họ hoạt động sát cánh bên nhau. Một người cũng có thể đảm nhận một hoạt nhiều vai trò cùng lúc. tùy thuộc vài các tổ chức nhóm.
+Nhiều lúc, những nhóm dev này làm việc độc lập với nhau, nhưng cũng có khi họ hoạt động sát cánh bên nhau. Một người cũng có thể đảm nhận một hoạt nhiều vai trò cùng lúc, tùy thuộc vào các tổ chức nhóm.
 
 ---
 
 ## Quá trình viết Code
 
-Phát triển phần mềm rất giống với học thuật và nghiên cứu. Việc của bạn là phải hiểu đc vấn đề, tìm cách diễn đạt nó, viết về nó. Như cách mà bạn đưa ra lý lẽ để thuyết phục độc giả, giờ đây bạn hướng dẫn cho chiếc máy tinhs giải quyết vấn đề. Khác biệt lớn nhất ở đây là mức độ cụ thể: Ngôn ngữ máy tính đơn giản hơn, thực thi nhanh hơn, và sẽ ko bỏ qua lỗi lầm của con người.
+Phát triển phần mềm rất giống với học thuật và nghiên cứu. Việc của bạn là phải hiểu đc vấn đề, tìm cách diễn đạt nó, viết về nó. Như cách mà bạn đưa ra lý lẽ để thuyết phục độc giả, giờ đây bạn hướng dẫn cho chiếc máy tính giải quyết vấn đề. Khác biệt lớn nhất ở đây là mức độ cụ thể: Ngôn ngữ máy tính đơn giản hơn, thực thi nhanh hơn, và sẽ ko bỏ qua lỗi lầm của con người.
 
 Đầu tiên, khi tôi bắt đầu nghĩ về một vấn đề. Tôi cố gắng tự diễn giải nó một cách đơn giản nhất. Chia nó ra thành các vấn đề nhỏ hơn để có thể dễ dàng giải quyết. Tôi bắt đầu ghi chú, vẽ sơ đồ và từng bước đưa ra ví dụ đơn giản về vấn đề đó, tôi cũng tham khảo cách mà mọi người giải quyết nó. Đôi khi việc này chỉ mất vài giây, nhưng nó có thể kéo dài tới nhiều ngày.
 
-Then I write it in code. I break it up into functions, each of which expresses a simple, individual idea. I decide on common names for the things I'm trying to discuss, and use them consistently. Then I assemble the functions together into one that solves the problem. Each function or logical group has “comments”, which explain why the solution works this way and fills in contextual gaps for humans. Code always has two readers–the computer, and the person who comes in weeks or years later to change or improve it. Your job is to express the solution clearly and efficiently to both.
-
-Rồi tôi bắt đầu viết mã (code). Tôi chia nó ra thành nhiều functions (hàm số), mỗi function đó sẽ biểu diễn một ý tưởng khác nhau. Tôi đặt tên cho những thứ mà tôi đang cố gắng diễn đạt, và sử dụng chúng một cách nhất quán. Tiếp đó tôi tập hợp những function này lại với nhau thành một để giải quyết vấn đề. Mỗi function này đều có chú thích, đây là phần mà tôi giải thích cách mà đoạn mã giải quyết vấn đề, những chú thích này chủ yếu là viết cho con người đọc. Vì mã (code) luôn dành cho 2 đối tượng đọc nó là máy tính, và một người nào đó đến sau có thể thay đổi hoặc nâng cấp đoạn code đó. Vậy nên bạn phải diễn đạt giải pháp thật rõ ràng và hiệu quả cho cả hai đối tượng này.
+Rồi tôi bắt đầu viết mã (code). Tôi chia nó ra thành nhiều functions (hàm số), mỗi function đó sẽ biểu diễn một ý tưởng khác nhau. Tôi đặt tên cho những thứ mà tôi đang cố gắng diễn đạt, và sử dụng chúng một cách nhất quán. Tiếp đó tôi tập hợp những function này lại với nhau thành một để giải quyết vấn đề. Mỗi function này đều có chú thích, đây là phần mà tôi giải thích cách mà đoạn mã giải quyết vấn đề, những chú thích này chủ yếu là viết cho con người đọc. Vì mã (code) luôn dành cho 2 đối tượng, là máy tính, và một người nào đó đến sau có thể thay đổi hoặc nâng cấp đoạn code đó. Vậy nên bạn phải diễn đạt giải pháp thật rõ ràng và hiệu quả cho cả hai đối tượng này.
 
 **Functions trong lập trình cũng có thể coi là hàm số toán học, mặc dù nhiều ngôn ngữ khác nhau thể hiện nó theo nhiều cách, và có thể nó trông rất phức tạp và đồ sộ, nhưng về bản chất nó vẫn là một hàm số toán học.**
 
 Việc thứ 3, là Tôi sẽ kiểm thử giải pháp mà tôi vừa viết ra đó. Tôi ví dụ, nếu Tôi cần kiểm thử một function viết ra để làm phép cộng, Tôi biết rằng 1 + 1 = 2, và -3 + 5 = 2. Một phần mềm tốt thì cần có một bộ mẫu kiểm thử bao quát hết được toàn bộ các trường hợp xảy ra trong chương trình.
 
-Cuối cùng, tôi tinh chỉnh nó. Có thể chương trình chưa được định dạng cho đúng, hoặc có thể Tôi đã viết sai vài chữ. Cũng có thể chương trình đang bị lỗi về mặt logic. Trình biên dich (compiler) và các mẫu kiểm thử sẽ làm việc với nhau để chứng tỏ rằng, giải pháp bạn đưa ra là đúng đắn. Có khi, giải pháp đúng, nhưng quá chậm. Nếu Tôi nhận ra vấn đề thì tôi sẽ thiết kế lại, hoặc tối ưu hoá nó nếu cần thiết. Đây thường là phần công việc khó khăn nhất. 
+Cuối cùng, tôi tinh chỉnh nó. Có thể chương trình chưa được định dạnsg cho đúng, hoặc có thể Tôi đã viết sai vài chữ. Cũng có thể chương trình đang bị lỗi về mặt logic. Trình biên dịch (compiler) và các mẫu kiểm thử sẽ làm việc với nhau để chứng tỏ rằng, giải pháp bạn đưa ra là đúng đắn. Có khi, giải pháp đúng, nhưng quá chậm. Nếu Tôi nhận ra vấn đề thì tôi sẽ thiết kế lại, hoặc tối ưu hoá nó nếu cần thiết. Đây thường là phần công việc khó khăn nhất. 
 
 ---
 
@@ -71,7 +69,7 @@ Viết một phần mềm phức tạp, cũng chính là quá trình thay đổi
 
 Khi nhiều người cùng làm phần mềm, chúng tôi cố gắng chia nhỏ nó ra. Như vậy mỗi người có thể làm trên một thành phần riêng rẽ và ko gây trở ngại tới người khác. Có rất nhiều cách tổ chức Mã Code, những cách này đều hướng đến việc chia nhỏ, phân loại sự phức tạp để giúp bạn có thể hiểu và thay đổi được những phần nhỏ một cách riêng lẻ.
 
-Tưởng tượng việt viết một paper với một người bạn. Các bạn mỗi người nhận viết một section riêng, rồi sau đó kết hợp nó lại thành một tài liệu. Sau đó bạn có thể đọc phần của người còn lại và mở rộng nó, bạn có thể thay đổi từ ngữ, sắp xếp lại câu chữ. Môi lần bạn thay đổi thì bạn có thể lưu một "version" mới, và các bạn so sánh ghi chú vào buổi tối, bạn có thể coi mỗi thay đổi một cách độc lập, và quyết định cái nào sẽ phù hợp với toàn bộ tài liệu. Những thay đổi nhỏ thì càng dễ so sánh và tổng hợp hơn, nó cũng giúp bạn hiểu về lịch sử của tài liệu đó. Khi bạn tìm thấy một đoạn văn bị mất, bạn có thể đọc lại lịch sử để xem tại sao nó biết mất và biến mất ở giai đoạn nào.
+Tưởng tượng việc viết một paper với một người bạn. Các bạn mỗi người nhận viết một section riêng, rồi sau đó kết hợp nó lại thành một tài liệu. Sau đó bạn có thể đọc phần của người còn lại và mở rộng nó, bạn có thể thay đổi từ ngữ, sắp xếp lại câu chữ. Môi lần bạn thay đổi thì bạn có thể lưu một "version" mới, và các bạn so sánh ghi chú vào buổi tối, bạn có thể coi mỗi thay đổi một cách độc lập, và quyết định cái nào sẽ phù hợp với toàn bộ tài liệu. Những thay đổi nhỏ thì càng dễ so sánh và tổng hợp hơn, nó cũng giúp bạn hiểu về lịch sử của tài liệu đó. Khi bạn tìm thấy một đoạn văn bị mất, bạn có thể đọc lại lịch sử để xem tại sao nó biết mất và biến mất ở giai đoạn nào.
 
 ---
 
@@ -95,7 +93,7 @@ Javascript là một... tội ác, nhưng cần thiết, nó là thứ tệ hạ
 
 **[Đọc về Pidgin](https://vi.wikipedia.org/wiki/Pidgin_(ngôn_ngữ)). Tóm gọn lại pidgin là một loại ngôn ngữ tối giản, pha trộn lai tạp và vay mượn chữ nghĩa.**
 
-Vẫn tồn tại một thể loại frontend khác, là dành cho phone và tablet. Ở đây 2 tay chơi bự nhất là iOS (dành cho iPhone và iPad), sử dụng Objective-C (**thêm Swift nữa**) và Android, sử dụng Java (**thêm Kotkin nữa**). Cả 2 đều khá cân bằng về mức độc phức tạp và sức mạnh, như tiếng Pháp và tiếng Đức vậy. Có thể nói rằng, cả 2 đều có mức độ diễn đạt (expressiveness) ở mức khá. Và nó còn tỉ mỉ hơn cả viết code ở backend. Nhiều trường hợp đặc biệt, một chút khó khăn khi bắt đầu. Như đã nói, chẳng có phép nhiệm màu nào ở đây cả, và nếu có vấn đề tổng quát mà ít ai hứng thú, nó có thể là một thị trường ngách.
+Vẫn tồn tại một thể loại frontend khác, là dành cho phone và tablet. Ở đây 2 tay chơi bự nhất là iOS (dành cho iPhone và iPad), sử dụng Objective-C (**thêm Swift nữa**) và Android, sử dụng Java (**thêm Kotlin nữa**). Cả 2 đều khá cân bằng về mức độ phức tạp và sức mạnh, như tiếng Pháp và tiếng Đức vậy. Có thể nói rằng, cả 2 đều có mức độ diễn đạt (expressiveness) ở mức khá. Và nó còn tỉ mỉ hơn cả viết code ở backend. Nhiều trường hợp đặc biệt, một chút khó khăn khi bắt đầu. Như đã nói, chẳng có phép nhiệm màu nào ở đây cả, và nếu có vấn đề tổng quát mà ít ai hứng thú, nó có thể là một thị trường ngách.
 
 Phía backend thì có nhiều sự lựa chọn hơn. Rất đông người chọn Ruby hoặc Python. Giống như tiếng Pháp và tiếng Tây Ban Nha vậy, chúng đều khá phổ biến, gần giống nhau và có hiệu năng và sức mạnh ngang nhau. Cả 2 đều được đón nhận bởi cộng đồng lớn, nên bạn sẽ dễ dàng tìm thấy những thư viện (các đoạn code viết sẵn để giải quyết một vấn đề).
 
@@ -103,13 +101,13 @@ Muốn một hiệu năng tốt hơn, những hệ thống lớn thích dùng Ja
 
 Tôi sẽ né PHP và Perl. Đây là những ngôn ngữ khá ổn nhưng nó ko có điểm mạnh nào đáng kể. PHP thiết kế thiếu cẩn trọng và trở nên giống như tiếng Anh vậy: ko ai đồng ý / chắc chắn về từ ngữ nào nên dùng.
 
-Lisp và các biến thể của nó thì như tiếng Latin vậy. Rất cổ xưa, cực kỳ đơn giản, mức độ biểu đạt rất cao. Nhưng ít được nhắc đến kể cả sự thay đổi của Clojure. Hầu như toàn bộ các ngôn ngữ khác đều có thể xem là một subset của Lisp. Nó sẽ thay đổi bạn, thay đổi cách nghĩ của bạn và hoàn thiện kỹ năng lập trình của bạn đối với những ngôn ngữ khác.
+Lisp và các biến thể của nó thì như tiếng Latin vậy. Rất cổ xưa, cực kỳ đơn giản, mức độ biểu đạt rất cao. Nhưng ít được nhắc đến, kể cả sự thay đổi của Clojure. Hầu như toàn bộ các ngôn ngữ khác đều có thể xem là một subset của Lisp. Nó sẽ thay đổi bạn, thay đổi cách nghĩ của bạn và hoàn thiện kỹ năng lập trình của bạn đối với những ngôn ngữ khác.
 
 Khi bạn bắt đầu lập trình, suy nghĩ của bạn thường rời rạc và gói gọn, như khi bạn học tiếng mới vậy. Nhưng bạn sẽ trưởng thành dần khi bắt đầu giải quyết những bài toán lớn hơn, trừu tượng hơn. Mỗi ngôn ngữ đều có một mức trừu tượng khác nhau, là phần mà bạn ko thể giải thích trực tiếp. Ví dụ, tiếng anh cho phép bạn đặt tên cho các đối tượng hoàn toàn mới. Tiếng Đức cho phép bạn sinh ra những động từ được pha trộn, nhưng thực tế thì tiếng Anh và tiếng Đức đều có khả năng mô tả, diễn tả ngang nhau, chỉ là cách tiếp cận vấn đề khác nhau. Ngôn ngữ lập trình cũng như vậy. Lisp... cho bạn năng lực chế được cả ngữ pháp mới.
 
 Vậy, ko có nhiều nơi tuyển dụng Clojure hoặc biến thể khác của Lisp, nhưng vẫn có và công việc thường rất hay ho. Tôi đề cử Clojure (và biến thể của Lisp), nếu bạn có thời gian, hãy học nó.
 
-Hầu hết các ngôn ngữ hiện đại đều khá giống nhau. Ruby, Python, Perl, PHP, Java, và C đều là Germanic, ẩn sâu bên trong chúng đều là cùng một nguồn gốc, cùng lý tưởng. À, ngoài ra còn một họ ngôn ngữ khác mà bạn cần biết, nó tương tự như tiếng Nhật hay A rập vậy, và cũng ko nhiều người sử dụng chúng. Cụ thể, Haskell và OCaml là ngôn ngữ lập trình hàm kiểu mạnh (strongly-typed fucntional **- lẽ ra ko nên dịch cụm từ này :|**), rất khác biệt so với các ngôn ngữ khác và có một mức độ trừu tượng rất cao. Erlang là một ngôn ngữ lập trình hàm phân tán, code thực thi trên nhiều máy tính cùng lúc. Nếu bạn theo đuổi những kiểu ngôn ngữ này, nó có thể mang đến phần thưởng rất lớn cho bạn (và nó sẽ khiến bạn trở thành lập trình viên xuất sắc), nhưng bạn sẽ phải học rất nhiều và rất lâu trước khi bạn có thể kiếm được một công việc.
+Hầu hết các ngôn ngữ hiện đại đều khá giống nhau. Ruby, Python, Perl, PHP, Java, và C đều là Germanic, ẩn sâu bên trong chúng đều là cùng một nguồn gốc, cùng lý tưởng. À, ngoài ra còn một họ ngôn ngữ khác mà bạn cần biết, nó tương tự như tiếng Nhật hay A-rập vậy, và cũng ko nhiều người sử dụng chúng. Cụ thể, Haskell và OCaml là ngôn ngữ lập trình hàm kiểu mạnh (strongly-typed fucntional **/lẽ ra ko nên dịch cụm từ này/**), rất khác biệt so với các ngôn ngữ khác và có một mức độ trừu tượng rất cao. Erlang là một ngôn ngữ lập trình hàm phân tán, code thực thi trên nhiều máy tính cùng lúc. Nếu bạn theo đuổi những kiểu ngôn ngữ này, nó có thể mang đến phần thưởng rất lớn cho bạn (và nó sẽ khiến bạn trở thành lập trình viên xuất sắc), nhưng bạn sẽ phải học rất nhiều và rất lâu trước khi bạn có thể kiếm được một công việc.
 
 --
 
@@ -119,7 +117,7 @@ Khi bạn bắt đầu học một ngôn ngữ lập trình, bạn sẽ thu đư
 
 Khi bạn cảm thấy sẵn sàng, với những project nhỏ, demos hoặc thư viện nào đó mà có thể chứng tỏ được khả năng viết code một cách bài bản: rõ ràng, có ghi chú, dễ test. Thì bạn hãy gửi resume kèm theo link github. Lúc này mới có người đọc code của bạn và có thể họ sẽ thấy tiềm năng của bạn.
 
-Bạn tìm được một công việc trong một startup nhỏ, và bắt đầu lạc lối với hàng triệu thứ mà ko ai nhắc trước với bạn. Bạn cảm thấy mình vô dụng, một chút, nhưng bạn bắt đầu đuổi kịp công việc và đồng nghiệp. Trong một tháng (hoặc có thể 1 ngày), code của bạn sẽ lên sóng, và thứ gì đó bạn code, sẽ hiện trên màn hình của chục ngàn người dùng. Những vấn đề trong công việc mà bạn gặp phải sẽ thúc đẩy bạn học những thư viện mới, thật toán, hay thậm chí là ngôn ngữ mới. Bạn sẽ viết code để xử lý ngôn ngữ tự nhiên, và sếp của bạn khuyến khích bạn đẩy lên github.
+Bạn tìm được một công việc trong một startup nhỏ, và bắt đầu lạc lối với hàng triệu thứ mà ko ai nhắc trước với bạn. Bạn cảm thấy mình vô dụng, một chút, nhưng bạn bắt đầu đuổi kịp công việc và đồng nghiệp. Trong một tháng (hoặc có thể 1 ngày), code của bạn sẽ lên sóng, và thứ gì đó bạn code, sẽ hiện trên màn hình của chục ngàn người dùng. Những vấn đề trong công việc mà bạn gặp phải sẽ thúc đẩy bạn học những thư viện mới, thuật toán, hay thậm chí là ngôn ngữ mới. Bạn sẽ viết code để xử lý ngôn ngữ tự nhiên, và sếp của bạn khuyến khích bạn đẩy lên github.
 
 Từ đây trở đi, nó sẽ như một dòng chảy. Profile của bạn có nêu những đóng góp về mã nguồn mở, code của bạn chất lượng hơn và nhiều người bắt đầu để ý đến code của bạn. Rồi bạn sẽ nhận được những đề xuất hoặc lời mời gọi từ bên ngoài. Bạn sẽ cần mở rộng vốn liếng, làm quen môi trường khác, và học hỏi thêm, từ đồng nghiệp của mình.
 
@@ -133,7 +131,9 @@ Bạn và tôi sẽ bắt đầu viết một website, ngay ngày mai. Những t
 
 Option B: Theo đuổi backend
 
-Chúng ta sẽ bắt đầu bằng các bài toán trong Project Euler trước. Các bài toán nhỏ này chỉ có một đáp án, và mục tiêu rất rõ ràng, bạn sẽ càng tự tin hơn mỗi khi giải được bài toán. Những bài toán này bắt đầu từ dễ, và khó dần, thông qua việc giải toán nó cũng mang đến cho bạn những kỹ thuật mạnh mẽ để giải quyết vấn đề. Chúng ta có thể dùng bất kỳ ngôn ngữ nào, tôi thì gợi ý nên dùng Clojure hoặc Ruby. Con đường này sẽ đưa bạn đến với những khái niệm như kiểm thử, thuật toán, debug... tất cả những qui trình giải quyết vấn đề bằng code. Bạn chỉ cần học một ngôn ngữ, và tôi sẽ giúp bạn hiểu sâu hơn về ngôn ngữ và các kỹ thuật nâng cao.
+Chúng ta sẽ bắt đầu bằng các bài toán trong Project Euler trước. Các bài toán nhỏ này chỉ có một đáp án, và mục tiêu rất rõ ràng, bạn sẽ càng tự tin hơn mỗi khi giải được bài toán. Những bài toán này bắt đầu từ dễ, và khó dần, thông qua việc giải toán bạn cũng sẽ học được những kỹ thuật mạnh mẽ để giải quyết vấn đề. Chúng ta có thể dùng bất kỳ ngôn ngữ nào, tôi thì gợi ý nên dùng Clojure hoặc Ruby. Con đường này sẽ đưa bạn đến với những khái niệm như kiểm thử, thuật toán, debug... tất cả những qui trình giải quyết vấn đề bằng code. Bạn chỉ cần học một ngôn ngữ, và tôi sẽ giúp bạn hiểu sâu hơn về ngôn ngữ và các kỹ thuật nâng cao.
+
+**Project Euler cũng là nơi tôi luyện tập lúc rảnh rỗi, rất đáng để cày bừa nhé, [link đây](https://projecteuler.net)**
 
 Option C: Làm những gì bạn thích
 
