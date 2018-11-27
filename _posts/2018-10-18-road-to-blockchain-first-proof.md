@@ -18,6 +18,18 @@ Về blockchain, hiện tại có khá nhiều khoá học, mã nguồn mở, b�
 
 Ở 2 bài viết trước, chúng ta đã nắm được 3 đặc điểm quan trọng của blockchain là: Phân tán sổ cái, Toàn vẹn dữ liệu và Tự chủ hệ thống. Nếu quy ra công nghệ tương ứng, thì đó là: p2p-network, integrity-data, consensus-protocol.
 
+**added 27 Nov,2018**
+
+Trong khi thực ngiệm và coding, tôi có refer một số code base khác, đặc biệt là [uplink của adjoint](https://github.com/adjoint-io). Ở đây các bạn có thể xem docs của Uplink, có một đoạn mô tả về công nghệ phân tán sổ cái (Distributed Ledger Technology) mà họ mô tả cũng có 3 điểm tương đồng với 2 loạt bài nghiên cứu của tôi.
+
+> A distributed ledger is a database for processing transactions and storing data in a way that makes them useful for solving today’s complex economic challenges. A distributed ledger has three core distinguishing ideas:
+
+> Everywhere is the same.
+> The record is permanent.
+> No one is in charge.
+
+Mỗi người đều có cùng một bản Sổ Cái giống như nhau, dữ liệu ghi trong Sổ là bất biến, ai cũng có thể tham gia nhưng ko hề ràng buộc vai trò hay trách nhiệm.
+
 Đó cũng chính là 3 thành phần quan trọng để bạn có thể đảm bảo mình đang xây dựng "blockchain network", chứ không phải là một thứ gì đó khác. Chi tiết thiết kế và thực thi từng module, bạn có thể xem ở url bên dưới.
 
 List of lambda-chain core modules:
