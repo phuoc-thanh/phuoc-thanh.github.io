@@ -23,7 +23,7 @@ Tôi muốn mang đến cho bạn một cái nhìn bao quát về cách mà ngà
 
 ## Bằng cách nào mà Software (phần mềm) được tạo ra
 
-Lĩnh vực phần mềm, về mặt kỹ thuật được chia làm 2 khu vực lớn, thường được biết đến với tên gọi là "development" và "operations". Phát Triển - Development là quá trình viết và tinh chỉnh phần mềm, còn Vận Hành - Operations là công việc xuất bản và triển khai/duy trì chúng. Nói chung, Tôi nghĩ rằng công việc Phát Triển thì có chút thiên về vận dụng đầu óc và ngôn ngữ hơn, còn Vận Hành thì lại thiên về kinh nghiệm xử lý và tích hợp những thành phần khác nhau.
+Lĩnh vực phần mềm, về mặt kỹ thuật được chia làm 2 khu vực chính, thường được biết đến với tên gọi là "development" và "operations". Phát Triển - Development là quá trình viết và tinh chỉnh phần mềm, còn Vận Hành - Operations là công việc xuất bản và triển khai/duy trì chúng. Nói chung, Tôi nghĩ rằng công việc Phát Triển thì có chút thiên về vận dụng đầu óc và ngôn ngữ hơn, còn Vận Hành thì lại thiên về kinh nghiệm xử lý và tích hợp những thành phần khác nhau.
 
 Ngoài 2 khu vực kỹ thuật ra, thì cũng có những công việc xung quanh sản phẩm và thiết kế. "Product" (Nhóm sản phẩm) chính là cách mà bạn hiểu về một vấn đề đang gặp phải, gặp những người cần giải pháp cho vấn đề đó, hiểu những công cụ mà bạn có, và mường tượng được hình hài của giải pháp tổng thể. "Design" (Nhóm thiết kế) thì tập trung diễn đạt giải pháp cho người dùng. Tất cả mọi thứ, từ ý tưởng cốt lõi cho đến một mô hình trực quan, đến những chi tiết cụ thể nhất như màu sắc, sắp xếp, font chữ, tiếng động, hình ảnh...
 
@@ -33,7 +33,7 @@ Hãy tưởng tượng đến một cuộc đua xe xuyên sa mạc. Product team
 
 Designers và product team sẽ giao tiếp với nhau rất nhiều để giải quyết vấn đề, đưa ra giải pháp tốt nhất có thể cho người dùng. Developer và Designer làm việc chặt chẽ với nhau để định hình nên chiếc xe, trong đó: designers tùy chỉnh thiết kế cho hợp ý người dùng, và developers tùy chỉnh thiết kế cho máy tính hiểu. Developers sẽ phản hồi với product team về những gì đang được tạo ra và product team cũng thúc giục developers giải quyết những vấn đề còn tồn tại. Developers sẽ giúp đội vận hành (operations) hiểu về chiếc xe, về cách lắp ráp từng bộ phận, điểm yếu của của xe, giới hạn nhiệt, loại khí nào cần sử dụng... Đội vận hành cũng giúp developers hiểu thêm khi chiếc xe thực chạy trên đường, khi nào nó sẽ trục trặc, những bộ phận nào cần được củng cố, đâu là giới hạn tốc độ của chiếc xe...
 
-Xây dựng nên web sites là một cách tiếp cận tốt để có thể tìm hiểu hết những vai trò kể trên. Bạn sẽ thử mỗi vai trò một ít để cảm nhận được đâu là vai trò thích hợp cho bạn.
+Xây dựng nên web sites là một cách tiếp cận tốt để có thể hiểu về những vai trò kể trên. Bạn sẽ thử mỗi vai trò một ít để cảm nhận được đâu là vai trò thích hợp cho bạn.
 
 ---
 
@@ -43,7 +43,7 @@ Frontend, chính là phần mà bạn nhìn thấy trên browser - trình duyệ
 
 Phần backend nằm ở server - máy chủ. Nó thường được chia nhỏ ra làm nhiều thành phần phụ. Một phần phụ trong đó sẽ `render` những chi tiết frontend và đưa nó đến với người dùng khi họ yêu cầu. Một phần khác ghi thông tin xuống database. Các thành phần còn lại sẽ đảm nhận nhiệm vụ như gọi đến dịch vụ bên thứ 3, tính toán quỹ đạo, tạo cuộc gọi thoại, v.v... Những công việc này do "backend dev" đảm nhận.
 
-Môi trường để những thứ "backend" chạy trên đó, như máy tính, hệ điều hành, dịch vụ lưu trữ, mạng, điều khiển... Mà một cô nào đó vận hành thì được gọi là "dev ops" (aka operations enginner), "netword administrator", "sysadmin" tùy theo đặc trưng riêng.
+Môi trường để những thứ "backend" chạy trên đó, như máy tính, hệ điều hành, dịch vụ lưu trữ, mạng, điều khiển... Mà một cô nào đó vận hành thì được gọi là "dev ops" (aka operations engineer), "network administrator", "sysadmin" tùy theo đặc trưng riêng.
 
 Nhiều lúc, những nhóm dev này làm việc độc lập với nhau, nhưng cũng có khi họ hoạt động sát cánh bên nhau. Một người cũng có thể đảm nhận một hoạt nhiều vai trò cùng lúc, tùy thuộc vào cách tổ chức nhóm.
 
@@ -81,9 +81,9 @@ Nếu bạn muốn bước vào sự nghiệp lập trình, bạn sẽ cần xâ
 
 Đầu tiên: Bạn cần một hệ điều hành. Thành thật mà nói, hầu hết những công cụ mà bạn cần và sẽ sử dụng, thì ko được thiết kế cho Windows. Vẫn có một số cách thức thay thế, nhưng lại hay lỗi thời. Linux là sự lựa chọn số 1, tiếp theo đó là Mac OS. Rất nhiều lập trình viên nền Windows mà Tôi quen, vẫn phải chạy một máy ảo Ubuntu.
 
-Thứ 2: Bạn sẽ cần một trình biên tập (editor), là thứ sẽ giúp bạn viết code, biên tập. Nhiều người sử dụng Textmate, Sublime Text, hoặc Notepad++, nhưng những lập trình viên giỏi nhất mà tôi biết thường dùng Emacs hoặc Vim. Cả 2 đều mạnh mẽ, nhưng bạn sẽ cần thử thách trí nhớ của mình khi dùng đến. Bạn có thể thay đổi sau, nhưng thường ai cũng gắn bó với lựa chọn đầu tiên của họ. Một số ngôn ngữ như Objective C hay Java cần rất nhiều contextual information - như foreign language dictionaries, proofreaders... để viết tốt. Nếu bạn làm việc với những ngôn ngữ như vậy, bạn sẽ cần một trình biên tập đặc biệt khác, gọi là IDE.
+Thứ 2: Bạn sẽ cần một trình biên tập (editor), là thứ sẽ giúp bạn viết code, biên tập. Nhiều người sử dụng Textmate, Sublime Text, hoặc Notepad++, nhưng những lập trình viên giỏi nhất mà tôi biết thường dùng Emacs hoặc Vim. Cả 2 đều mạnh mẽ, và bạn sẽ cần phải luyện tập, thử thách trí nhớ của mình khi dùng. Bạn có thể thay đổi sau, nhưng thường ai cũng gắn bó với lựa chọn đầu tiên của họ. Một số ngôn ngữ như Objective C hay Java cần rất nhiều contextual information - như foreign language dictionaries, proofreaders... để viết tốt. Nếu bạn làm việc với những ngôn ngữ như vậy, bạn sẽ cần một trình biên tập đặc biệt khác, gọi là IDE.
 
-Thứ 3: version control. Có rất nhiều sự lựa chọn, đa số người quen và dự án mà Tôi làm việc đều sử dụng Git và Github. Bạn có thể học những thứ căn bản về git trong nửa giờ và nó sẽ giúp cuộc đời bạn sáng sủa hơn khi bắt đầu một dự án.
+Thứ 3: Version control. Có rất nhiều sự lựa chọn, đa số người quen và dự án mà Tôi làm việc đều sử dụng Git và Github. Bạn có thể học những thứ căn bản về git trong nửa giờ và nó sẽ giúp cuộc đời bạn sáng sủa hơn khi bắt đầu một dự án.
 
 ---
 
@@ -91,9 +91,9 @@ Thứ 3: version control. Có rất nhiều sự lựa chọn, đa số người
 
 Ok đây là ý kiến cá nhân của Tôi. Mỗi người đều có lý tưởng riêng và bạn sẽ nhận được câu trả lời khác nhau khi bạn hỏi nhiều người khác. Bạn sẽ bắt đầu khám phá ra và có ý kiến của bạn khi bắt đầu công việc. Hiện tại, bất kể là ngôn ngữ nào, mà bạn đang sử dụng, nó chính là Ngôn ngữ lập trình tốt nhất rồi. 
 
-Javascript là một... tội ác, nhưng cần thiết, nó là thứ tệ hại nhất trên thế giới này. Nó là cách duy nhất để bạn viết code cho sự tương tác ở frontend, vậy nên bạn muốn làm một website có tính tương tác, bạn cần dùng nó. Javascript được ném ra làm ngôn ngữ lập trình một cách chóng vánh, dĩ nhiên là kèm theo một thiết kế tồi. Javascript có rất nhiều ngoại lệ. Việc tổ chức, sắp xếp code của nó rất khó. Những thứ cơ bản của ngôn ngữ như numbers, strings, lists thì lại có thể thay hình đổi dạng sang kiểu khác một cách mà ko ai mong đợi. Bạn cần hiểu rằng khi bạn code với Javascript, bạn sẽ cảm thấy thất vọng hoặc bối rối và ko hiểu lý do, đó là vì ngôn ngữ này có nhiều giới hạn. Tóm lại nó là pidgin.
+Javascript là một... tội ác, nhưng cần thiết, nó là thứ tệ hại nhất trên thế giới này. Nó là cách duy nhất để bạn viết code cho sự tương tác ở frontend, vậy nên bạn muốn làm một website có tính tương tác, bạn cần dùng nó. Javascript được đem ra làm ngôn ngữ lập trình một cách chóng vánh, dĩ nhiên là kèm theo một thiết kế tồi. Javascript có rất nhiều ngoại lệ. Việc tổ chức, sắp xếp code của nó rất khó. Những thứ cơ bản của ngôn ngữ như numbers, strings, lists thì lại có thể thay hình đổi dạng sang kiểu khác một cách mà ko ai mong đợi. Bạn cần hiểu rằng khi bạn code với Javascript, bạn sẽ cảm thấy thất vọng hoặc bối rối và ko hiểu lý do, đó là vì ngôn ngữ này có nhiều giới hạn. Tóm lại nó là pidgin.
 
-**[Đọc về Pidgin](https://vi.wikipedia.org/wiki/Pidgin_(ngôn_ngữ)). Tóm gọn lại pidgin là một loại ngôn ngữ tối giản, pha trộn lai tạp và vay mượn chữ nghĩa.**
+**[Pidgin](https://vi.wikipedia.org/wiki/Pidgin_(ngôn_ngữ)), là một loại ngôn ngữ tối giản, pha trộn lai tạp và vay mượn chữ nghĩa.**
 
 Vẫn tồn tại một thể loại frontend khác, là dành cho phone và tablet. Ở đây 2 tay chơi bự nhất là iOS (dành cho iPhone và iPad), sử dụng Objective-C (**thêm Swift nữa**) và Android, sử dụng Java (**thêm Kotlin nữa**). Cả 2 đều khá cân bằng về mức độ phức tạp và sức mạnh, như tiếng Pháp và tiếng Đức vậy. Có thể nói rằng, cả 2 đều có mức độ diễn đạt (expressiveness) ở mức khá. Và code của nó còn đòi hỏi tỉ mỉ hơn cả viết code ở backend. Khá nhiều ngoại lệ và một chút khó khăn khi bắt đầu. Nhưng, chẳng có phép nhiệm màu nào ở đây cả, và nếu có, có thể là một cơ hội tốt cho bạn.
 
