@@ -4,12 +4,12 @@ title: "Binary"
 title2: "Reality" # default: ""
 description: "Under Naked Eyes"
 keywords: "Software, Engineering, Computer, Science, Programming, Blockchain, hijacking, Haskell"
-url: https://thanhdo89se.github.io/ # site url
+url: https://phuoc-thanh.github.io/ # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
 google_analytics: UA-XXXXX-XX
-repo: https://github.com/thanhdo89se/thanhdo89se.github.io
+repo: https://github.com/phuoc-thanh/phuoc-thanh.github.io
 # disqus_shortname: "binaryreality"
 # twitter_username: "HeiswayiNrird"
 comments: true
@@ -29,13 +29,13 @@ sass:
 
 # Author settings
 author:
-  name     : "Thanh P Do"
+  name     : "Phuoc-Thanh Do"
   job      : "citizen of the Matrix"
   bio      : "It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you."
   thumb    : /images/author.jpg
   email    : thanhdo89se@gmail.com
-  url      : http://thanhdo89se.github.io
-  github   : http://github.com/thanhdo89se
+  url      : http://phuoc-thanh.github.io
+  github   : http://github.com/phuoc-thanh
   facebook : https://www.facebook.com/naiveryan
 
 # social settings
