@@ -34,11 +34,11 @@ Mỗi người đều có cùng một bản Sổ Cái giống như nhau, dữ li
 
 List of lambda-chain core modules:
 
-1.  [Peer-to-Peer Network](https://thanhdo89se.github.io/2018/road-to-blockchain-lambda-network/)
+1.  [Peer-to-Peer Network](https://phuoc-thanh.github.io/2018/road-to-blockchain-lambda-network/)
 
-2.  [Integrity of Data](https://thanhdo89se.github.io/2018/road-to-blockchain-lambda-integrity-of-data)
+2.  [Integrity of Data](https://phuoc-thanh.github.io/2018/road-to-blockchain-lambda-integrity-of-data)
 
-3.  [PoW Consensus Protocol](https://thanhdo89se.github.io/2018/road-to-blockchain-lambda-consensus-protocol)
+3.  [PoW Consensus Protocol](https://phuoc-thanh.github.io/2018/road-to-blockchain-lambda-consensus-protocol)
 
 ---
 
@@ -48,7 +48,7 @@ Khi đã hoàn thành xong một hệ thống Blockchain network đơn giản, h
 
 Nội dung tiếp theo trong series là về transaction và wallet:
 
-[lambdachain: Crytocurrency](https://thanhdo89se.github.io/2018/road-to-blockchain-lambda-cryptocurrency)
+[lambdachain: Crytocurrency](https://phuoc-thanh.github.io/2018/road-to-blockchain-lambda-cryptocurrency)
 
 ---
 
@@ -65,13 +65,13 @@ Hơn nữa, lần setup và sử dụng LMDB gần đây, đã giúp tôi thu th
 
 Tôi dành một chapter trong series để viết về LMDB.
 
-[Lambda-db - The Lightning Memory-Mapped Database](https://thanhdo89se.github.io/2018/lambda-db)
+[Lambda-db - The Lightning Memory-Mapped Database](https://phuoc-thanh.github.io/2018/lambda-db)
 
 ---
 
 ## Project Structure
 
-[Source code của lambda-chain](https://github.com/thanhdo89se/lambda-chain) rất đơn giản, chỉ có vài file hs.
+[Source code của lambda-chain](https://github.com/phuoc-thanh/lambda-chain) rất đơn giản, chỉ có vài file hs.
 
 ```haskell
 -- data.mdb/

@@ -36,21 +36,21 @@ Với Haskell, lúc bắt đầu học tôi chỉ nghĩ đó là một môn họ
 
 Danh mục:
 
-[Chapter 1: The Origin of Crime - Khơi nguồn tội ác](https://thanhdo89se.github.io/2018/chapter01-the-origin-of-crime/)
+[Chapter 1: The Origin of Crime - Khơi nguồn tội ác](https://phuoc-thanh.github.io/2018/chapter01-the-origin-of-crime/)
 
-[Chapter 2: Raise of the North Force - Thế lực phương Bắc](https://thanhdo89se.github.io/2018/chapter02-raise-of-the-north-force/)
+[Chapter 2: Raise of the North Force - Thế lực phương Bắc](https://phuoc-thanh.github.io/2018/chapter02-raise-of-the-north-force/)
 
-[Chapter 3: Chasing the Shark - Thám tử Cá Mập](https://thanhdo89se.github.io/2018/chapter03-chasing-the-shark/)
+[Chapter 3: Chasing the Shark - Thám tử Cá Mập](https://phuoc-thanh.github.io/2018/chapter03-chasing-the-shark/)
 
-[Chapter 4: Reveal the Secret - Giải mã bí mật](https://thanhdo89se.github.io/2018/chapter04-reveal-the-secret/)
+[Chapter 4: Reveal the Secret - Giải mã bí mật](https://phuoc-thanh.github.io/2018/chapter04-reveal-the-secret/)
 
-[Chapter 5: The Art of Cheating - Nghệ thuật kiếm chác](https://thanhdo89se.github.io/2018/chapter05-the-art-of-cheating/)
+[Chapter 5: The Art of Cheating - Nghệ thuật kiếm chác](https://phuoc-thanh.github.io/2018/chapter05-the-art-of-cheating/)
 
-[Chapter 6: Raise of the South Force - Thế lực miền Nam](https://thanhdo89se.github.io/2018/chapter06-raise-of-the-south-force/)
+[Chapter 6: Raise of the South Force - Thế lực miền Nam](https://phuoc-thanh.github.io/2018/chapter06-raise-of-the-south-force/)
 
-[Chapter 7: Unexpected Discoveries - Những khám phá bất ngờ](https://thanhdo89se.github.io/2018/chapter07-unexpected-discoveries/)
+[Chapter 7: Unexpected Discoveries - Những khám phá bất ngờ](https://phuoc-thanh.github.io/2018/chapter07-unexpected-discoveries/)
 
-[Chapter 8: Being Unstoppable - Không thể cưỡng lại](https://thanhdo89se.github.io/2018/chapter08-being-unstoppable/)
+[Chapter 8: Being Unstoppable - Không thể cưỡng lại](https://phuoc-thanh.github.io/2018/chapter08-being-unstoppable/)
 
 ---
 
