@@ -20,7 +20,7 @@ Một câu hỏi tuy đơn giản nhưng sâu sắc.
 
 Trước hết, chúng ta cùng xem lại các qui chuẩn về bộ nhớ, lưu trữ của máy tính.
 
-**Computer có những hình thức lưu trữ nào?**
+### Computer có những hình thức lưu trữ nào?
 
 Đa phần những ghi chép và nghiên cứu trong ngành khoa học máy tính cho rằng Computer có 2 vùng lưu trữ chính là Main Memory và Secondary Storage, cũng có thể gọi tên phân biệt là "bộ nhớ" và "kho lưu trữ". Ngoài ra, những chíp vi xử lý mới còn có thêm bộ nhớ đệm (L1-L2-L3 Cache) cũng làm phần việc tương tự như Main Memory tuy nhiên dung lượng của Cache Mem rất nhỏ và ko nằm trong tầm quan sát/kiểm sát của người sử dụng.
 
@@ -28,7 +28,7 @@ Trước hết, chúng ta cùng xem lại các qui chuẩn về bộ nhớ, lưu
 
 * Secondary Storage: Tất cả những nơi lưu trữ còn lại ngoài Main Memory thì được xếp vào Secondary Storage. Hard Disk Drive, Solid-state Drive là phần cứng lưu trữ phổ biến nhất hiện nay, được xem là Secondary Storage.
 
-**Vậy dữ liệu nên được lưu ở đâu?**
+### Vậy dữ liệu nên được lưu ở đâu?
 
 RAM hay Disk đều có thể trở thành nơi lưu trữ dữ liệu, ltv có toàn quyền lựa chọn địa điểm lưu trữ, định dạng dữ liệu, và cả cách thức lưu trữ. Chọn Ram hay Disk, đều có những ưu điểm, nhược điểm riêng, tốc độ thường đi đôi với rủi ro và chi phí.
 
@@ -38,13 +38,13 @@ Nhưng có thể ko phải ai cũng biết, còn có một cách lưu trữ ít 
 
 ---
 
-## 2. Virtual Memory & Single-level Store
+## 2. Virtual Memory Concept
 
 Ở những thế hệ computer đầu tiên trên thế giới, sự phân cấp bộ nhớ trong một máy tính rất rõ ràng, rành mạch, khi đó, Main/Primary Memory và Secondary Storage còn có tên gọi là bộ nhớ sơ cấp và bộ nhớ thứ cấp.
 
 Các nhà khoa học máy tính đã trải qua chặng đường dài với rất nhiều nỗ lực xoá nhoà ranh giới phân biệt giữa 2 cấp bộ nhớ này, và công nghệ được tạo ra sau cùng là Virtual Memory. Cá nhân tôi nghĩ, đây là phát minh quan trọng bậc nhất trong ngành KHMT.
 
-### 2.1 Khơi nguồn của bộ nhớ ảo
+### Nguồn gốc của bộ nhớ ảo
 
 Những 40-50, với sự tồn tại của 2 cấp bộ nhớ kèm theo hạn chế của Memory, lập trình viên phải đảm nhiệm một công việc quan trọng là lên kế hoạch và tính toán các bước luân chuyển của dữ liệu giữa 2 cấp bộ nhớ. Công việc này chủ yếu là chia bộ nhớ ra thành từng blocks (về sau gọi là segments và pages), và tính toán thay đổi nơi lưu trữ của những block này (swap / overlay works).
 
@@ -62,45 +62,44 @@ Hình mô tả mô hình máy tính Güntsch:
 
 *Concept của Güntsch, dù mang tính cách tân, đột phá nhưng chưa bao giờ được thực hiện, chiếc máy mà ông mô tả chưa bao giờ được xây dựng nên. Không lâu sau đó, chiếc siêu máy tính Atlas khai sinh ra Virtual Memory - một phiên bản hiện thực hoá hoàn hảo hơn cả ý tưởng của Güntsch*
 
-### 2.2 Atlas, Multics và Single-level store
+---
 
-Siêu máy tính [Atlas](https://history-computer.com/ModernComputer/Electronic/Atlas.html) được phát triển trong khoảng 1956-1962, được xem là chiếc computer đầu tiên mang trong mình một bộ nhớ ảo (Virtual Memory)
+## 3. Virtual Memory Implementation: Atlas, Multics, Burroughs
 
-Chính những ý tưởng tiên phong của **Güntsch** đã thúc đẩy những nhà thiết kế Atlas đem đến bộ nhớ ảo hoàn thiện gồm:
+Siêu máy tính [Atlas](https://history-computer.com/ModernComputer/Electronic/Atlas.html) được phát triển trong khoảng 1956-1962, được xem là chiếc computer đầu tiên sở hữu bộ nhớ ảo - Virtual Memory. Kiến trúc Virtual Memory của Atlas cũng xoay quanh mô hình Güntsch, gồm 3 thành phần chính:
 
-1. Translation Hardware: Tương ứng với [MMU](https://en.wikipedia.org/wiki/Memory_management_unit) trong kiến trúc máy tính hiện đại. Tự động biên dịch địa chỉ từ chương trình (hay từ processor đem đến) thành địa chỉ bộ nhớ vật lý (physical address). Khi một địa chỉ ko được tìm thấy bởi translation software, nó sẽ raise một page fault exception và gọi đến handling tương ứng được cung cấp bởi OS.
+1. **Address Translation Hardware** - Có chức năng biên dịch địa chỉ bộ nhớ ảo (Virtual Address) thành địa chỉ bộ nhớ vật lý tương ứng (physical address). Traslation Hardware vẫn được sử dụng phổ biến trên kiến trúc máy tính hiện đại, dưới tên gọi: [MMU - Memory Management Unit](https://en.wikipedia.org/wiki/Memory_management_unit).
 
-2. Paging technique: Chia bộ nhớ thành những 'page' nhỏ hơn, để tạo điều kiện cho qua trình chuyển đổi nơi lưu trữ của dữ liệu, từ bộ nhớ sơ cấp sang thứ cấp (from memory to storage)
+2. **Page Fault Technique** - Là kỹ thuật cập nhật page dữ liệu còn thiếu lên Memory và update bảng tham chiếu trong trường hợp Translation Hardware ko thể tìm thấy tham chiếu đến Physical Address. Atlas cũng là cỗ máy đầu tiên giới thiệu thuật ngữ [Paging](https://en.wikipedia.org/wiki/Paging).
 
-Non-equivalence interruption handling(về sau gọi là Page fault): Hoạt động của Atlas Supervisor khi chuyển dữ liệu từ storage vào memory hay còn gọi là swap-in data lên memory khi chương trình request một blocks chưa có trong mem.
+3. **Page Replacement Algorithm** - Một giải thuật áp dụng cho trường hợp physical memory quá tải và cần giải phóng bớt vùng nhớ ít sử dụng.
 
-3. Page Replacement Algorithm: Khi physical memory đã sử dụng hết thì OS cung cấp cơ chế giải phóng vùng nhớ ít sử dụng.
+*Nếu muốn tìm hiểu sâu hơn về 3 thành phần này, chư vị đại hiệp có thể đọc thêm về cách mà Atlas Supervisor quản lý bộ nhớ ở [đây](http://www.chilton-computing.org.uk/acl/technology/atlas/p019.htm). Còn dưới đây là hình ảnh mô tả MMU*
+
+![MMU principle](assets/images/640px-MMU_principle_updated)
+
+
+Tiếp đó, những thế hệ siêu máy tính kế tiếp Atlas càng hoàn thiện hơn công nghệ lưu trữ và quản lý bộ nhớ, đáng kể nhất là Multics và Burroughs. 2 hệ máy này đi kèm với những đột phá đi-trước-thời-đại như Multiprocessing/Multitasking, Dynamic Linking, Hierarchical file system... đã làm tiền đề và nguồn cảm hứng cho toàn bộ hệ điều hành sau đó (Unix, Windows)
 
 * Máy Whirlwind có memory 2K words, 16bits/word ~ 4KB Memory
 
-* Máy Atlas có memory 16K words, 48bits/word ~ 96KB Memory
+* Máy Atlas có memory 16K words, 48bits/word ~ 96KB Memory, 512 words/page
 
 Page of 512 words (3072 Bytes), core mem ~ 32pages, fixed mem ~ 16pages, sub mem 2pages
 
 [Kiến trúc Virtual Address Space của Windows](https://docs.microsoft.com/en-us/windows/desktop/memory/virtual-address-space)
 
-
-### 2.2 Lưu trữ đơn cấp: Single-level store
-Dựa trên một công nghệ cũ là Single-level store được giới thiệu cùng với sự xuất hiện của cỗ máy [Multics](http://gunkies.org/wiki/Multics) huyền thoại.
-
-Bàn về lý thuyết của SLS trước nhé.
-
-Ở trên tôi có đưa ra vấn đề là máy tính có rất nhiều nơi lưu trữ và ltv cần đưa ra quyết định chọn nơi nào để lưu.
-
 ---
 
-## 3. Memory-map files
+## 4 Single-level store and Memory-map
 
-Xét thêm về nhu cầu đọc/ghi dữ liệu thực hiện trên Computer, những phương thức cơ bản thường được sử dụng như open(), read(), write(), close()... được lõi hệ điều hành (OS Kernel) cung cấp khá đầy đủ. Tất nhiên system calls còn rất nhiều phương thức hay ho khác nữa, một trong số đó là mmap() - chính là nơi xuất phát của ý tưởng Memory-Mapped Database.
+Những đột phá trong ảo hoá bộ nhớ mà 3 chiếc máy huyền thoại mang đến, đã cho phép những cỗ máy có thể lập trình đa nhiệm và sử dụng bộ nhớ đạt đến một hiệu suất cao nhất. Cho phép máy tính dùng nhiều Memory hơn cả số Memory vật lý thực. Qua đó cũng nâng cấp "mức độ thông minh" của hệ điều hành lên tầm cao mới, để có thể quản lý bộ nhớ thay cho con người.
 
-[System Calls - Linux](https://linux.die.net/man/2/)
+Ngay cả việc swap-in/swap-out Memory chunks, nay còn có tên gọi là map/unmap đã mặc định là tính năng bắt buộc phải có của HĐH hiện đại, để tận dụng tối đa khả năng của bộ nhớ.
 
-**Vậy memory-map là gì? mmap() hoạt động như thế nào?**
+Vậy có thể nói lý thuyết single-level store đã được hoàn thành đầy đủ, ltv ko còn quyền lực đối với Physical Memory, và cũng ko cần phải quan tâm nhiều tới câu hỏi là lưu/lấy dữ liệu trên disk hay ram. Ranh giới giữa Memory và Storage bị xoá nhoà.
+
+**Vậy memory-map hoạt động như thế nào?**
 
 Mmap() là hàm chức năng của hệ thống mà hầu hết OS, chuẩn POSIX hay Windows đều hỗ trợ. Mmap() khi được gọi sẽ tạo ra tham chiếu (mapping) giữa tập tin nguồn và bộ nhớ. Việc mapping này được thực thi tại bộ nhớ ảo của Process, not RAM or Disk itself.
 
@@ -116,7 +115,9 @@ https://www.kernel.org/doc/gorman/
 Ngoài ra tôi tìm được series youtube giải thích rất hay và rõ ràng về công nghệ virtual memory, tác giả kênh yt là [David Black-Scaffer](https://www.youtube.com/channel/UCzf_XjIoKSf4Ve2fH7xn-3A/feed)
 https://www.youtube.com/playlist?list=PLiwt1iVUib9s2Uo5BeYmwkDFUh70fJPxX
 
-## The Lightning Database
+---
+
+## 5. The Lightning Database
 
 ### Inherit from Single-Level Store
 
@@ -133,7 +134,11 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1369143
 
 https://history-computer.com/ModernComputer/Electronic/Atlas.html
 
+https://multicians.org/features.html
+
 http://www.chilton-computing.org.uk/acl/technology/atlas/p019.htm
+
+https://en.wikipedia.org/wiki/Translation_lookaside_buffer
 
 https://www.kernel.org/doc/gorman/
 
