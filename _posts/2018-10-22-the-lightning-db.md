@@ -17,7 +17,7 @@ Computer là cỗ máy có nhiều loại bộ nhớ và nơi lưu trữ khác n
 
 ## 1. Computer Memory & Storage
 
-Tính hiếu kỳ, đối với lập trình viên có thể ko giúp ích nhiều trong công việc thường nhật, nhưng theo tôi thì nó cần thiết để trở thành lập trình viên ko-bất-tài. Hôm nay tính hiếu kỳ với cụm từ "Single-level Store" thôi thúc tôi tìm hiểu bản chất công nghệ lưu trữ của computer. Dù chỉ là một phần nhỏ của lịch sử máy tính, nhưng vô cùng thú vị.
+Tính hiếu kỳ, đối với lập trình viên có thể ko giúp ích nhiều trong công việc thường nhật, nhưng theo tôi thì nó cần thiết để trở thành lập trình viên ko-bất-tài. Hôm nay tính hiếu kỳ với cụm từ "Single-level Store" thôi thúc tôi tìm hiểu bản chất công nghệ lưu trữ của computer. Dù chỉ là một phần nhỏ của lịch sử, nhưng vô cùng thú vị.
 
 ### Computer có những hình thức lưu trữ nào?
 
@@ -37,9 +37,9 @@ Tính hiếu kỳ, đối với lập trình viên có thể ko giúp ích nhi�
 
 RAM hay Disk đều có thể trở thành nơi lưu trữ dữ liệu, ltv có toàn quyền lựa chọn địa điểm lưu trữ, định dạng dữ liệu, và cả cách thức lưu trữ. Chọn Ram hay Disk, đều có những ưu điểm, nhược điểm riêng, tốc độ thường đi đôi với rủi ro và chi phí.
 
-Vì giá thành quá cao so với Disk Storage và tính chất "Volatile" (Ko có điện, mất hết data) của RAM Memory, nên dữ liệu thường được ưu tiên lưu trên Disk, phần dữ liệu sử dụng thường xuyên hoặc cần thiết để thực thi tiến trình (process) thì lưu trên RAM.
+Vì giá thành quá cao so với Disk Storage và tính chất "Volatile" (Ko có điện, mất hết data) của RAM, nên dữ liệu thường được ưu tiên lưu trên Disk, phần dữ liệu sử dụng thường xuyên hoặc cần thiết để thực thi tiến trình (process) thì lưu trên RAM.
 
-Ngay cả với khu vực database, đa số hệ quản trị dữ liệu (DBMS) cũng chọn Disk làm nơi lưu trữ và dùng RAM để thực thi chương trình, vẫn là lý do Price & Volatile. Cũng có một số DBMS hoạt động hoàn toàn trên RAM và tự tin rằng với hạ tầng thông tin hiện tại, Volatile ko còn là vấn đề nữa mà chỉ tồn tại lý do duy nhất để ko lưu data trên RAM, là Price mà thôi.
+Ngay cả trong lĩnh vực database, đa số hệ quản trị dữ liệu (DBMS) cũng chọn Disk làm nơi lưu trữ và dùng RAM để thực thi chương trình, vẫn là lý do Price & Volatile. Cũng có một số DBMS hoạt động hoàn toàn trên RAM và tự tin rằng với hạ tầng thông tin hiện tại, Volatile ko còn là vấn đề nữa mà chỉ tồn tại lý do duy nhất để ko lưu data trên RAM, là Price mà thôi.
 
 Tuy nhiên có thể ko phải ai cũng biết, còn có một cách lưu trữ ít nổi tiếng hơn, sử dụng cả RAM lẫn Disk để phục vụ cho công việc đọc/ghi dữ liệu. Cách lưu trữ đó có nguồn gốc từ Virtual Memory và Single-Level Store Concepts, mà sau đây chúng ta sẽ tìm hiểu.
 
@@ -105,7 +105,7 @@ Với nền tảng công nghệ của 3 chiếc máy huyền thoại, computer d
 
 Đáng lưu ý nhất, lý thuyết Single-level Store cũng được hoàn thiện trên hệ máy Multics cùng với mô hình Persistent Object & Mapping mà nó giới thiệu.
 
-Bộ nhớ ảo của Multics được triển khai bằng cách phân mảnh Memory và Storage. Xem dữ liệu chỉ đơn giản là những mảnh bytes thuần tuý, Operating System có nhiệm vụ phân mảnh, quản lý, tham chiếu, đặc biệt là giúp program đọc/ghi lên những mảnh bytes này. Program lúc này chỉ cần read/write thẳng vào phần bộ nhớ được map đó trên Virtual Memory. Đó cũng là cách mà memory-mapped files/mmap hoạt động.
+Bộ nhớ ảo của Multics được triển khai bằng cách phân mảnh Memory và Storage. Xem dữ liệu chỉ đơn giản là những mảnh bytes thuần tuý, Operating System có nhiệm vụ phân mảnh, quản lý, tham chiếu, đặc biệt là giúp program đọc/ghi lên những mảnh bytes này. Program lúc này chỉ cần read/write thẳng vào phần bộ nhớ được map trên Virtual Memory. Đó cũng là cách mà memory-mapped files/mmap hoạt động.
 
 *Video Series Bonus below: dành cho ai có ý muốn hiểu sâu hơn về virtual memory*
 
@@ -120,7 +120,7 @@ Lightning (hay LMDB) với tên gọi đầy đủ: Lightning Memory-Mapped Data
 
 ### Triết lý thứ nhất: Single-Level Store (SLS)
 
-Lightning được phát triển dựa trên concept Single-level store trên chiếc máy Multics, đi tìm một hướng lưu trữ thuần tuý nhất, hoàn toàn bỏ qua Type & Structure của dữ liệu mà hướng đến cấu trúc thông tin thô nhất: những mảnh bytes.
+Lightning được phát triển dựa trên concept Single-level store của chiếc máy Multics, đi tìm một hướng lưu trữ thuần tuý nhất, hoàn toàn bỏ qua Type & Structure của dữ liệu mà hướng đến cấu trúc thông tin thô nhất: những mảnh bytes.
 
 Toàn bộ file data của Lightning trên Disk sẽ được map vào Memory thông qua mmap(), sau đó hành động read/write được thực thi thẳng vào Mapped-Files ở Virtual Address. API của Lightning còn cho phép truy vấn, cập nhật dữ liệu dạng pointer-based Object, nghe hấp dẫn quá phải ko?
 
@@ -163,7 +163,7 @@ Dưới đây là một vài benchmark được trích từ slide của Howard C
 
 ## 5. Next Things n References
 
-Còn rất nhiều thứ để khám phá về LMDB như kiến trúc, ứng dụng, cách sử dụng... nhưng bài viết đã quá dài, nên tôi phải kết thúc vậy. Bên dưới đây là toàn bộ references mà bài viết sử dụng.
+Còn rất nhiều thứ để khám phá về LMDB như kiến trúc, API, cách cài đặt, sử dụng... nhưng bài viết đã quá dài, nên tôi phải kết thúc vậy. Bên dưới đây là toàn bộ references mà bài viết sử dụng.
 
 
 https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1369143
