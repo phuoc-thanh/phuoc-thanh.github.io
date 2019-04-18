@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Lightning Database 01: Single-Level Store Concept"
+title: "The Lightning Database"
 comments: true
 description: "The Lightning Database - Part 1"
 keywords: "blockchain, lambda, LMDB, Lightning, Memory-Mapped, database, memory"
@@ -28,6 +28,10 @@ Tính hiếu kỳ, đối với lập trình viên có thể ko giúp ích nhi�
 * Secondary Storage: Tất cả những nơi lưu trữ còn lại ngoài Main Memory thì được xếp vào Secondary Storage. Hard Disk Drive, Solid-state Drive là phần cứng lưu trữ phổ biến nhất hiện nay, được xem là Secondary Storage.
 
 *Những chíp vi xử lý mới còn có thêm bộ nhớ đệm (L1-L2-L3 Cache) cũng làm phần việc tương tự như Main Memory tuy nhiên dung lượng của Cache Mem rất nhỏ và ko nằm trong tầm quan sát/kiểm sát của người sử dụng.*
+
+![magnetic drum](/assets/images/lmdb/drum.jpg)
+
+Ảnh trên là một "bộ nhớ" đời đầu của Computer, còn được nhớ đến với tên gọi Magnetic Drum.
 
 ### Vậy dữ liệu được lưu ở đâu?
 
@@ -58,7 +62,7 @@ Dựa trên bộ nhớ nhanh nhất thời điểm đó - lõi nhớ của siêu
 
 Mô hình máy tính Güntsch:
 
-![Güntsch’s virtual memory concept](/assets/images/1956_vm_concept.png)
+![Güntsch’s virtual memory concept](/assets/images/lmdb/1956_vm_concept.png)
 
 * 6 blocks của Memory lần lượt chứa instructions ở 2 blocks M1, data ở 2 blocks M2, và vùng nhớ cố định ở 2 blocks M3 - là nơi được sử dụng để access nhanh vào những tài nguyên sử dụng lại liên tục (tương tự khái niệm cache).
 
@@ -70,6 +74,8 @@ Mô hình máy tính Güntsch:
 ---
 
 ## 3. Single-Level Store Concept
+
+Vậy lý thuyết của Güntsch được hình thành và phát triển như thế nào?
 
 ### Hiện thực hoá Virtual Memory
 
@@ -83,11 +89,11 @@ Mô hình máy tính Güntsch:
 
 > Atlas has memory of 16K words, 48bits/word (96KB Memory) at that time.
 
-* Sâu hơn về kiến trúc của Atlas, các bạn có thể đọc thêm về Atlas Supervisor và Atlas Hardware ở [đây](http://www.chilton-computing.org.uk/acl/technology/atlas/p019.htm). Còn dưới đây là hình ảnh mô tả MMU*
+*Chi tiết hơn về kiến trúc Atlas Supervisor và Atlas Hardware bạn có tham khảo thêm ở [link này](http://www.chilton-computing.org.uk/acl/technology/atlas/p019.htm). Còn dưới đây là hình mô tả tương tác của MMU với CPU và Memory*
 
-![MMU principle](/assets/images/640px-MMU_principle_updated.png)
+![MMU principle](/assets/images/lmdb/640px-MMU_principle_updated.png)
 
-Những thế hệ computer kế thừa Atlas càng hoàn thiện hơn công nghệ lưu trữ và quản lý bộ nhớ, đáng kể nhất là Multics và Burroughs. 2 hệ máy này đi kèm với những đột phá đi-trước-thời-đại như Multiprocessing/Multitasking, Dynamic Linking, Hierarchical file system... đã làm tiền đề và nguồn cảm hứng cho toàn bộ hệ điều hành sau này như Unix và Windows.
+Những thế hệ computer kế thừa Atlas càng hoàn thiện hơn công nghệ ảo hoá bộ nhớ, đáng kể nhất là Multics và Burroughs. 2 hệ máy này đi kèm với những đột phá đi-trước-thời-đại như Multiprocessing/Multitasking, Dynamic Linking, Hierarchical file system... đã làm tiền đề và nguồn cảm hứng cho toàn bộ hệ điều hành sau này gồm cả Unix, Windows.
 
 ### Hiện thực hoá Single-level Store
 
@@ -99,9 +105,9 @@ Với nền tảng công nghệ của 3 chiếc máy huyền thoại, computer d
 
 Đáng lưu ý nhất, lý thuyết Single-level Store cũng được hoàn thiện trên hệ máy Multics cùng với mô hình Persistent Object & Mapping mà nó giới thiệu.
 
-Bộ nhớ ảo của Multics được triển khai bằng cách phân mảnh Memory và Storage. Xem dữ liệu chỉ đơn giản là những mảnh bytes thuần tuý, và Operating System có nhiệm vụ phân mảnh, quản lý, tham chiếu, đặc biệt là giúp process ghi và đọc lên những mảnh bytes này. Việc của Program lúc này chỉ còn là read/write thẳng vào phần bộ nhớ được map đó (Virtual Memory). Đó cũng là cách mà memory-mapped files - mmap() hoạt động.
+Bộ nhớ ảo của Multics được triển khai bằng cách phân mảnh Memory và Storage. Xem dữ liệu chỉ đơn giản là những mảnh bytes thuần tuý, Operating System có nhiệm vụ phân mảnh, quản lý, tham chiếu, đặc biệt là giúp program đọc/ghi lên những mảnh bytes này. Program lúc này chỉ cần read/write thẳng vào phần bộ nhớ được map đó trên Virtual Memory. Đó cũng là cách mà memory-mapped files/mmap hoạt động.
 
-*Video Series Bonus below, dành cho ai có ý muốn hiểu sâu hơn về virtual memory*
+*Video Series Bonus below: dành cho ai có ý muốn hiểu sâu hơn về virtual memory*
 
 *[David Black-Scaffer - Virtual Memory](https://www.youtube.com/playlist?list=PLiwt1iVUib9s2Uo5BeYmwkDFUh70fJPxX)*
 
@@ -110,18 +116,55 @@ Bộ nhớ ảo của Multics được triển khai bằng cách phân mảnh Me
 
 ## 4. The Lightning Database
 
-### Inherit from Single-Level Store
+Lightning (hay LMDB) với tên gọi đầy đủ: Lightning Memory-Mapped Database - là một CSDL dạng Key-Value được viết bởi Howard Chu tại Symas, ra mắt năm 2011. Lightning có thiết kế kỹ thuật ảnh hưởng lớn từ Berkeley DB cùng nhiều bổ sung quan trọng.
 
-Lightning được phát triển dựa trên concept của Single-level store
+### Triết lý thứ nhất: Single-Level Store (SLS)
 
-### Born from Berkerley Database - BDB
+Lightning được phát triển dựa trên concept Single-level store trên chiếc máy Multics, đi tìm một hướng lưu trữ thuần tuý nhất, hoàn toàn bỏ qua Type & Structure của dữ liệu mà hướng đến cấu trúc thông tin thô nhất: những mảnh bytes.
 
-Cải tiến từ Berkerley Database để khắc phục những khuyết điểm của người tiền nhiệm này.
+Toàn bộ file data của Lightning trên Disk sẽ được map vào Memory thông qua mmap(), sau đó hành động read/write được thực thi thẳng vào Mapped-Files ở Virtual Address. API của Lightning còn cho phép truy vấn, cập nhật dữ liệu dạng pointer-based Object, nghe hấp dẫn quá phải ko?
+
+Lợi ích chính mà SLS và Mmap mang lại, là khả năng bỏ qua cache, buffer, memcpy. Đây là điểm mấu chốt khiến Lightning có thể sử dụng Memory với mức hiệu quả tối đa, read/write performance nhờ đó mà cải thiện rất rất nhiều.
+
+### Triết lý thứ hai: Multiversion Concurrency Control (MVCC)
+
+Một điểm nổi bật nữa của LMDB là triển khai MVCC, điều này có nghĩa là gì?
+
+[MVCC](https://en.wikipedia.org/wiki/Multiversion_concurrency_control) là một trong những phương pháp kiểm soát tính đồng thời (Concurrency & Multithreading), điểm đặc biệt nhất của MVCC là Isolation. Tôi ko thể tìm được từ tiếng Việt sát nghĩa cho ngữ cảnh 'Isolation' ở đây, nhưng có thể giải thích đơn giản như khả năng cung cấp góc nhìn độc lập đối với dữ liệu giữa các nguồn truy cập đồng thời (multiple threads or processes).
+
+MVCC đảm bảo mỗi thread truy cập vào DB sẽ luôn lấy được một view từ dữ liệu "cập-nhật-nhất" mà ko phải chờ đợi hành động modify nào khác. Sự đảm bảo này được thực hiện bằng kỹ thuật copy-on-write, khi cần thiết phải modify dữ liệu, một phiên bản copy mới của DB sẽ được tạo ra, dành riêng cho việc modify, dữ liệu thực sẽ ko bao giờ bị ghi đè - overwritten.
+
+Cũng phải nói thêm là khi nhắc tới chiến thuật copy-on-write hay snapshot isolation, lợi ích lớn nhất nó mang lại là tăng cường độ tin cậy (Reliability) cho DB, dữ liệu nằm trong DB sẽ ko bao giờ bị xung đột hay mất mát. Tất nhiên, đi kèm theo lợi ích đó là cái giá đắt đỏ phải trả đối với tài nguyên máy. Cực kỳ hao tốn và nhanh chóng nuốt sạch dung lượng kho lưu trữ là điều phải cân nhắc.
+
+Thậm chí việc dọn rác cũng sẽ tiêu tốn tài nguyên CPU/Memory rất nhiều nữa.
+
+Và LMDB quyết định chỉ giữ 2 bản snapshot của DB, ngoại trừ long-live transaction được tác giả Howard Chu khuyên là nên tránh dùng đến.
+
+### Điểm nổi trội của Lightning?
+
+**Compact, Reliability, Performance là 3 điểm ăn-tiền của LMDB.**
+
+* Dung lượng đóng gói của LMDB chỉ 40KB và nó có thể chạy trên các hệ điều hành chính gồm Linux, Windows, MacOS, Android, BSD, Solaris...
+
+* Đã có nhiều bài test được thực hiện với LMDB về độ tin cậy, và gần như vẫn chưa tìm được failure case. Với chiến thuật copy-on-write như đã mô tả ở trên thì trường hợp xấu nhất có thể xảy ra ở LMDB là bị mất last transaction trong trường hợp cúp điện hay crash app.
+
+* LMDB có tốc độ đọc/ghi xuất sắc, gần như vượt trội (Outperformed) các thể loại DB trong những lần benchmark, đặc biệt là ở khả năng Read và Batch-Write.
+
+Dưới đây là một vài benchmark được trích từ slide của Howard Chu, có thể các bạn cho rằng như vậy thì ko khách quan, nhưng thật ra kết quả benchmark trên một API khác của Google cũng xác nhận tốc độ của LMDB vượt trội.
+
+![loadtime](/assets/images/lmdb/benchmark01.png)
+
+![WriteScale](/assets/images/lmdb/benchmark02.png)
+
+![ReadScale](/assets/images/lmdb/benchmark03.png)
 
 
 ---
 
-## 5. References
+## 5. Next Things n References
+
+Còn rất nhiều thứ để khám phá về LMDB như kiến trúc, ứng dụng, cách sử dụng... nhưng bài viết đã quá dài, nên tôi phải kết thúc vậy. Bên dưới đây là toàn bộ references mà bài viết sử dụng.
+
 
 https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1369143
 
