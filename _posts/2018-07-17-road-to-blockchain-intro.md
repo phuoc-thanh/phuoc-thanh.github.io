@@ -56,7 +56,7 @@ Như vậy đảm bảo Credit Cáo = Debit Trâu, và nếu cần thiết, 2 b�
 
 ![Early 19th-century ledger](/assets/images/rtb01/ledger.png)
 
-Tín nhiệm trong giao dịch cũng ra đời sau đó ít lâu, khởi đầu bằng những tiệm ký gửi vàng - Goldsmith, và tiến hoá dần thành Ngân Hàng và tiền tệ. Ngân Hàng được xem như một tổ chức tín nhiệm - bên thứ ba, đem uy tín ra để lưu trữ tài sản, đồng thời ghi chép giao dịch và tình trạng tài sản của người tham gia giaiao dịch trong hệ thống.
+Tín nhiệm trong giao dịch cũng ra đời sau đó ít lâu, khởi đầu bằng những tiệm ký gửi vàng - Goldsmith, và tiến hoá dần thành Ngân Hàng và tiền tệ. Ngân Hàng được xem như một tổ chức tín nhiệm - bên thứ ba, đem uy tín ra để lưu trữ tài sản, đồng thời ghi chép giao dịch và tình trạng tài sản của người tham gia giao dịch trong hệ thống.
 
 
 ---
@@ -79,7 +79,7 @@ Tất nhiên, TTP cũng có nhiều nhược điểm, và đáng kể nhất có
 
 ![Insider Fraud](/assets/images/rtb01/cyber_attack.jpg)
 
-Nói một cách dễ hiểu, là những gian lận này phát sinh từ bản thân "bên trong tổ chức" mà chúng ta đang tin tưởng. Chúng ta đang đặt niềm tin vào những tổ chức nơi mà họ thường mang danh tiếng và của cải ra để đảm bảo cho sự tín nhiệm của họ. Nhưng "tổ chức" đó là ai? Cũng là những con người bình thường mà thôi.
+Nói một cách dễ hiểu, là những gian lận này phát sinh từ bản thân "bên trong tổ chức" mà chúng ta đang tin tưởng. 
 
 Những người bên trong một Tổ chức tín nhiệm, họ có thẩm quyền, họ được tiếp xúc với những dữ liệu ghi chép, hệ thống thông tin quan trọng. Và họ cũng chính là nguy cơ tiềm ẩn. Nhân viên cũ, cộng tác viên, đối tác, quản trị viên và thậm chí là kiểm soát viên đều có thể trở thành nhân tố tham gia vào những cuộc gian lận như:
 
@@ -131,7 +131,7 @@ Trong số những giải pháp về lưu trữ số, có rất nhiều nghiên 
 
 5. [Ian Grigg - Triple Entry Accounting (2005)](https://nakamotoinstitute.org/triple-entry-accounting)
 
-**Note: Nghiên cứu của Ian Grigg hoàn toàn ko liên quan đến lý thuyết "Momentum Accounting and Triple-Entry Bookkeeping" của giáo sư Yuji Ijiri. Có một blog trên hackernoon đã viết sai về khái niệm "kế toán tam phân", người dịch Việt ngữ cũng đã hiểu sai về khái niệm này.**
+*Note: Nghiên cứu của Ian Grigg hoàn toàn ko liên quan đến lý thuyết "Momentum Accounting and Triple-Entry Bookkeeping" của giáo sư Yuji Ijiri. Có một blog trên hackernoon đã viết sai về khái niệm "kế toán tam phân", người dịch Việt ngữ cũng đã hiểu sai về khái niệm này.*
 
 Tóm tắt lại cho các bạn ko có thời gian đọc, những nghiên cứu khoảng thời gian này, ít nhiều đều hướng đến một hệ thống lưu trữ hoàn thiện, mang các đặc điểm:
 
