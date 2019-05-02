@@ -17,15 +17,15 @@ Computer là cỗ máy có nhiều loại bộ nhớ và nơi lưu trữ khác n
 
 ## 1. Computer Memory & Storage
 
-Tính hiếu kỳ, đối với lập trình viên có thể ko giúp ích nhiều trong công việc thường nhật, nhưng theo tôi thì nó cần thiết để trở thành lập trình viên ko-bất-tài. Hôm nay tính hiếu kỳ với cụm từ "Single-level Store" thôi thúc tôi tìm hiểu bản chất công nghệ lưu trữ của computer. Dù chỉ là một phần nhỏ của lịch sử, nhưng vô cùng thú vị.
+Tính hiếu kỳ, đối với lập trình viên có thể ko giúp ích nhiều trong công việc thường nhật, nhưng theo tôi thì nó cần thiết để trở thành lập trình viên ko-bất-tài. Hôm nay tính hiếu kỳ với cụm từ "Single-level Store" thôi thúc tôi tìm hiểu bản chất công nghệ lưu trữ của computer.
 
 ### Computer có những hình thức lưu trữ nào?
 
-Đa phần những ghi chép và nghiên cứu trong ngành khoa học máy tính cho rằng Computer có 2 vùng lưu trữ chính là Main Memory và Secondary Storage, cũng có thể gọi tên phân biệt là "bộ nhớ" và "kho lưu trữ".
+Đa phần tài liệu nghiên cứu về khoa học máy tính đều cho rằng Computer có 2 vùng lưu trữ chính là Main Memory và Secondary Storage, tiếng Việt: "bộ nhớ" và "kho lưu trữ".
 
 * Main/Primary Memory: Theo kiến trúc von Neumann thì Main Memory là nơi chứa các tập lệnh (instructions) và dữ liệu (data) dành cho sự truy cập tức thời của CPU. RAM - như các bạn biết, là Memory của những chiếc PC hiện tại.
 
-* Secondary Storage: Tất cả những nơi lưu trữ còn lại ngoài Main Memory thì được xếp vào Secondary Storage. Hard Disk Drive, Solid-state Drive là phần cứng lưu trữ phổ biến nhất hiện nay, được xem là Secondary Storage.
+* Secondary Storage: Tất cả những nơi lưu trữ còn lại ngoài Main Memory thì được xếp vào Secondary Storage. Hard Disk Drive, Solid-state Drive là phần cứng lưu trữ phổ biến nhất hiện nay.
 
 *Những chíp vi xử lý mới còn có thêm bộ nhớ đệm (L1-L2-L3 Cache) cũng làm phần việc tương tự như Main Memory tuy nhiên dung lượng của Cache Mem rất nhỏ và ko nằm trong tầm quan sát/kiểm sát của người sử dụng.*
 
@@ -48,7 +48,7 @@ Tuy nhiên có thể ko phải ai cũng biết, còn có một cách lưu trữ 
 
 ## 2. Virtual Memory Concept
 
-Những năm 40-50, chính vì hạn chế về dung lượng Memory, lập trình viên khi đó phải đảm nhiệm một công việc quan trọng là lên kế hoạch và tính toán các bước luân chuyển của dữ liệu giữa 2 cấp bộ nhớ là Memory và Storage. Công việc này chủ yếu là chia bộ nhớ ra thành từng blocks (về sau gọi là segments và pages), và tính toán kế hooạch di chuyển những block này giữa 2 cấp bộ nhớ (swap / overlay works).
+Những năm 40-50, chính vì hạn chế về dung lượng Memory, lập trình viên khi đó phải đảm nhiệm một công việc quan trọng: tính toán và lập trình các bước luân chuyển của dữ liệu giữa 2 cấp bộ nhớ là Memory và Storage. Công việc này chủ yếu là chia bộ nhớ ra thành từng blocks (về sau gọi là segments và pages), và tính toán kế hooạch di chuyển những block này giữa 2 cấp bộ nhớ (swap / overlay works).
 
 Để tăng hiệu suất sử dụng của bộ nhớ và tận dụng tốt hơn nguồn tài nguyên của computer, các nhà khoa học máy tính đã nỗ lực tìm cách xoá đi ranh giới phân biệt giữa 2 cấp bộ nhớ này, và công nghệ được tạo ra sau cùng là Virtual Memory - phát minh quan trọng bậc nhất trong ngành KHMT.
 
@@ -68,7 +68,7 @@ Mô hình máy tính Güntsch:
 
 * Phần việc swapping/overlaying giữa 2 cấp của bộ nhớ được hệ thống hardware thực thi tự động dựa trên nhu cầu (fetching-on-demand scheme). Khi có một truy cập vào 'ô nhớ' ko chứa trong memory, thì hệ thống sẽ kích hoạt quá trình thay thế dữ liệu, giữa memory và storage.
 
-*Concept của Güntsch, dù mang tính cách tân, đột phá nhưng chưa bao giờ được thực hiện, chiếc máy mà ông mô tả chưa bao giờ được xây dựng nên. Không lâu sau đó, siêu máy tính Atlas khai sinh ra Virtual Memory - hiện thực hoá ý tưởng của Güntsch*
+*Concept của Güntsch, dù mang tính cách tân, đột phá nhưng chưa bao giờ được thực hiện, chiếc máy mà ông mô tả chưa bao giờ được xây dựng nên.*
 
 
 ---
@@ -89,7 +89,7 @@ Vậy lý thuyết của Güntsch được hình thành và phát triển như t
 
 > Atlas has memory of 16K words, 48bits/word (96KB Memory) at that time.
 
-*Chi tiết hơn về kiến trúc Atlas Supervisor và Atlas Hardware bạn có tham khảo thêm ở [link này](http://www.chilton-computing.org.uk/acl/technology/atlas/p019.htm). Còn dưới đây là hình mô tả tương tác của MMU với CPU và Memory*
+*Chi tiết hơn về kiến trúc Atlas Supervisor và Atlas Hardware bạn có thể tham khảo thêm ở [link này](http://www.chilton-computing.org.uk/acl/technology/atlas/p019.htm). Còn dưới đây là hình mô tả tương tác của MMU với CPU và Memory*
 
 ![MMU principle](/assets/images/lmdb/640px-MMU_principle_updated.png)
 
@@ -120,17 +120,17 @@ Lightning (hay LMDB) với tên gọi đầy đủ: Lightning Memory-Mapped Data
 
 ### Triết lý thứ nhất: Single-Level Store (SLS)
 
-Lightning được phát triển dựa trên concept Single-level store của chiếc máy Multics, đi tìm một hướng lưu trữ thuần tuý nhất, hoàn toàn bỏ qua Type & Structure của dữ liệu mà hướng đến cấu trúc thông tin thô nhất: những mảnh bytes.
+Lightning được phát triển dựa trên concept Single-level store của chiếc máy Multics, lưu trữ dữ liệu ở dạng thuần tuý, hoàn toàn bỏ qua Type & Structure của dữ liệu mà hướng đến cấu trúc thông tin thô nhất: những mảnh bytes.
 
-Toàn bộ file data của Lightning trên Disk sẽ được map vào Memory thông qua mmap(), sau đó hành động read/write được thực thi thẳng vào Mapped-Files ở Virtual Address. API của Lightning còn cho phép truy vấn, cập nhật dữ liệu dạng pointer-based Object, nghe hấp dẫn quá phải ko?
+Toàn bộ file data của Lightning trên Disk sẽ được map vào Memory bằng mmap(), sau đó hành động read/write được thực thi thẳng vào Mapped-Files ở Virtual Address. API của Lightning còn cho phép truy vấn, cập nhật dữ liệu dạng pointer-based Object, nghe hấp dẫn quá phải ko?
 
 Lợi ích chính mà SLS và Mmap mang lại, là khả năng bỏ qua cache, buffer, memcpy. Đây là điểm mấu chốt khiến Lightning có thể sử dụng Memory với mức hiệu quả tối đa, read/write performance nhờ đó mà cải thiện rất rất nhiều.
 
 ### Triết lý thứ hai: Multiversion Concurrency Control (MVCC)
 
-Một điểm nổi bật nữa của LMDB là triển khai MVCC, điều này có nghĩa là gì?
+Một đặc điểm khác của LMDB là triển khai MVCC, điều này có nghĩa là gì?
 
-[MVCC](https://en.wikipedia.org/wiki/Multiversion_concurrency_control) là một trong những phương pháp kiểm soát tính đồng thời (Concurrency & Multithreading), điểm đặc biệt nhất của MVCC là Isolation. Tôi ko thể tìm được từ tiếng Việt sát nghĩa cho ngữ cảnh 'Isolation' ở đây, nhưng có thể giải thích đơn giản như khả năng cung cấp góc nhìn độc lập đối với dữ liệu giữa các nguồn truy cập đồng thời (multiple threads or processes).
+[MVCC](https://en.wikipedia.org/wiki/Multiversion_concurrency_control) là một trong những phương pháp kiểm soát tính đồng thời, điểm đặc biệt nhất của MVCC là Isolation. Tôi ko thể tìm được từ tiếng Việt sát nghĩa cho ngữ cảnh 'Isolation' ở đây, nhưng có thể giải thích đơn giản như khả năng cung cấp góc nhìn độc lập đối với dữ liệu giữa các nguồn truy cập đồng thời (multiple threads or processes).
 
 MVCC đảm bảo mỗi thread truy cập vào DB sẽ luôn lấy được một view từ dữ liệu "cập-nhật-nhất" mà ko phải chờ đợi hành động modify nào khác. Sự đảm bảo này được thực hiện bằng kỹ thuật copy-on-write, khi cần thiết phải modify dữ liệu, một phiên bản copy mới của DB sẽ được tạo ra, dành riêng cho việc modify, dữ liệu thực sẽ ko bao giờ bị ghi đè - overwritten.
 
@@ -146,7 +146,7 @@ Và LMDB quyết định chỉ giữ 2 bản snapshot của DB, ngoại trừ lo
 
 * Dung lượng đóng gói của LMDB chỉ 40KB và nó có thể chạy trên các hệ điều hành chính gồm Linux, Windows, MacOS, Android, BSD, Solaris...
 
-* Đã có nhiều bài test được thực hiện với LMDB về độ tin cậy, và gần như vẫn chưa tìm được failure case. Với chiến thuật copy-on-write như đã mô tả ở trên thì trường hợp xấu nhất có thể xảy ra ở LMDB là bị mất last transaction trong trường hợp cúp điện hay crash app.
+* Đã có nhiều bài test được thực hiện với LMDB về độ tin cậy, và gần như vẫn chưa tìm được failure case. Với chiến thuật copy-on-write như đã mô tả ở trên thì trường hợp xấu nhất có thể xảy ra ở LMDB là bị mất last transaction với rủi ro cúp điện hoặc crash app.
 
 * LMDB có tốc độ đọc/ghi xuất sắc, gần như vượt trội (Outperformed) các thể loại DB trong những lần benchmark, đặc biệt là ở khả năng Read và Batch-Write.
 
