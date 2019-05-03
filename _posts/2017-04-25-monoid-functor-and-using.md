@@ -6,43 +6,37 @@ description: "Monoid, Functor - Định nghĩa và ứng dụng"
 keywords: "monoid, functor, binary operation, algebra, math, category, abstract, functional, programming, haskell"
 ---
 
-Khi bắt đầu tiếp xúc với Functional Programming, tôi gặp nhiều khái niệm mới mẻ - đáng ngạc nhiên hơn là 5 năm lập trình dạo mình chưa hề nghe qua. 2 trong số đó là monoid và functor (tiếp theo là monad - the true black hole hahah). Các bài viết chi tiết về monoid, functor khá rải rác, đa số là viết bằng English.
+Khi bắt đầu tiếp xúc với Functional Programming, Tôi gặp nhiều khái niệm mới mẻ - đáng ngạc nhiên hơn là 5 năm lập trình dạo Tôi chưa hề nghe qua. Monoid, Functor và Monad là ba trong số đó.
 
-Cũng đã dành kha khá thời gian của mình cho phần này, nên Tôi quyết định làm 1 wiki nhỏ tóm tắt về chủ đề khá trừu tượng này.
+Cũng đã dành kha khá thời gian của mình cho chủ đề khá trừu tượng này, nên Tôi quyết định viết đôi dòng ngắn ngắn tóm tắt về monoid và functor.
 
-## 1. Định nghĩa Monoid
+## 1. Monoid.. là gì?
 
-Monoid là 1 khái niệm xuất phát từ Đại Số Trừu Tượng (Abstract Algebra), cụ thể hơn: Lý Thuyết Phạm Trù (Category Theory)
+Khái niệm Monoid có xuất phát từ Đại Số Trừu Tượng (Abstract Algebra), cụ thể hơn là Category Theory. Riêng về Category Theory, theo tôi là môn lý thuyết rất đáng bỏ thời gian ra học, nếu bạn nghiêm túc muốn lập trình với mức độ trừu tượng cao.
  
 > A monoid is an algebraic structure with a single associative binary operation and an identity element
 
+Trên đây là định nghĩa tổng quát của Monoid, với chỉ một câu ngắn gọn, mà buộc người đọc phải tìm và đọc thêm vài bài viết "toán học" khác chỉ để hiểu được định nghĩa. Bây giờ bạn thấy bắt đầu phức tạp rồi đó. 
+
 ### 1.1 Binary Operation
 
-**Định nghĩa**
+Trong toán học, ***Binary Operation*** là phép toán trong 1 tập S, nó kết hợp 2 phần tử (còn gọi là toán hạng) của tập S để tạo ra 1 phần tử khác cũng phải thuộc tập S.***Binary Operation*** còn được biết đến với tên gọi phép toán nhị nguyên, sử dụng 2 biến đầu vào và cho ra 1 kết quả.
 
-Trong toán học, ***Binary Operation*** là phép toán trong 1 tập S, nó kết hợp 2 phần tử (còn gọi là toán hạng) của tập S để tạo ra 1 phần tử khác cũng thuộc tập S.
-
-***Binary Operation*** có thể dịch là phép toán 2 ngôi hoặc phép toán nhị nguyên, là 1 phép toán sử dụng 2 biến đầu vào và cho ra 1 kết quả.
-
-Ví dụ điển hình về phép toán nhị nguyên là phép cộng (+) và phép nhân (x) trên 1 tập đơn:
+Phép cộng (+) và phép nhân (x), chính là phép toán nhị nguyên mà ai-cũng-từng-biết.
 * Trong tập hợp số thực R, f(a, b) = a + b là 1 phép toán nhị nguyên vì tổng của 2 số thực là 1 số thực.
 
-***Note:***
-
-*Khác với Unary Operation là phép toán 1 ngôi (đơn nguyên), sử dụng 1 biến đầu vào và cho ra 1 kết quả.*
-
-*Khác với Bitwise Operation thường được dịch là phép toán nhị phân, sử dụng cả Unary/Binary Operation để tính toán số nhị phân*
+*Lưu ý rằng Binary Operation khác với Unary Operation - phép toán đơn nguyên, và cũng Khác với Bitwise Operation thường được dịch là phép toán nhị phân*
 
 
-**Tính chất**
+**Tính chất của Binary Operation**
 
 Một phép toán nhị nguyên có thể có tính giao hoán, hoặc kết hợp. Ví dụ:
 
 Đối với a,b,c là phần tử thuộc tập số thực R:
 
-Phép cộng (+) có cả tính kếp hợp: (a + b) + c = a + (b + c) và giao hoán: a + b = b + a 
+* Phép cộng (+) có cả tính kếp hợp: (a + b) + c = a + (b + c) và giao hoán: a + b = b + a 
 
-Phép trừ (-) ko có tính kếp hợp a − (b − c) ≠ (a − b) − c và cũng ko có tính giao hoán: a − b ≠ b − a
+* Phép trừ (-) ko có tính kếp hợp a − (b − c) ≠ (a − b) − c và cũng ko có tính giao hoán: a − b ≠ b − a
 
 ### 1.2 Monoid
 
@@ -56,22 +50,20 @@ Giả sử S là 1 tập hợp (set), và • là 1 phép toán nhị nguyên S 
 
 2.Phần tử nhận dạng: Tồn tại 1 phần tử e thuộc S sao cho với từng phần tử a thuộc S, ta luôn có  e • a = a • e = a
 
-**Ví Dụ**
-
-Tập hợp số tự nhiên N, tạo ra 2 commutative monoid (monoid có tính giao hoán) với phép cộng (phần tử nhận dạng: 0) và phép nhân (phần tử nhận dạng 1)
+*Ví dụ, Tập số tự nhiên N, tạo ra 2 commutative monoid (monoid có tính giao hoán) gồm phép cộng (phần tử nhận dạng: 0) và phép nhân (phần tử nhận dạng 1)*
 
 ---
 
 ## 2. Monoid trong lập trình hàm (Haskell)
 
 Xét 1 kiểu (type) m và 1 phép toán (<>) :: m -> m -> m. Kiểu m và phép toán (<>) được coi là monoid khi:
-1. luôn tồn tại 1 phần tử mempty :: m thỏa điều kiện x <> mempty == x and mempty <> x == x;
+1. Luôn tồn tại 1 phần tử mempty :: m thỏa điều kiện x <> mempty == x and mempty <> x == x;
 
-2. và phép toán (<>) có tính kết (associative): (a <> b) <> c == a <> (b <> c).
+2. Phép toán (<>) có tính kết (associative): (a <> b) <> c == a <> (b <> c).
 
-### 2.1 Lớp Monoid (Monoid typeclass) trong Haskell
+### 2.1 Lớp Monoid trong Haskell
 
-Lớp monoid trong haskell được định nghĩa như sau:
+Monoid Typeclass trong haskell được định nghĩa như sau:
 
 ```haskell
 class Monoid m where
