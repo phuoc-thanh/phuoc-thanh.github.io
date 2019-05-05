@@ -10,13 +10,15 @@ Khi bắt đầu tiếp xúc với Functional Programming, Tôi gặp nhiều kh
 
 Cũng đã dành kha khá thời gian của mình cho chủ đề khá trừu tượng này, nên Tôi quyết định viết đôi dòng ngắn ngắn tóm tắt về monoid và functor.
 
+---
+
 ## 1. Monoid.. là gì?
 
 Khái niệm Monoid có xuất phát từ Đại Số Trừu Tượng (Abstract Algebra), cụ thể hơn là Category Theory. Riêng về Category Theory, theo tôi là môn lý thuyết rất đáng bỏ thời gian ra học, nếu bạn nghiêm túc muốn lập trình với mức độ trừu tượng cao.
  
 > A monoid is an algebraic structure with a single associative binary operation and an identity element
 
-Trên đây là định nghĩa tổng quát của Monoid, với chỉ một câu ngắn gọn, mà buộc người đọc phải tìm và đọc thêm vài bài viết "toán học" khác chỉ để hiểu được định nghĩa. Bây giờ bạn thấy bắt đầu phức tạp rồi đó. 
+Trên đây là định nghĩa tổng quát của Monoid, với chỉ một câu ngắn gọn, mà buộc người đọc phải tìm và đọc thêm kha khá bài viết "toán học" khác chỉ để hiểu được định nghĩa. Bây giờ bạn thấy bắt đầu phức tạp rồi đó. 
 
 ### 1.1 Binary Operation
 
@@ -25,7 +27,7 @@ Trong toán học, ***Binary Operation*** là phép toán trong 1 tập S, nó k
 Phép cộng (+) và phép nhân (x), chính là phép toán nhị nguyên mà ai-cũng-từng-biết.
 * Trong tập hợp số thực R, f(a, b) = a + b là 1 phép toán nhị nguyên vì tổng của 2 số thực là 1 số thực.
 
-*Lưu ý rằng Binary Operation khác với Unary Operation - phép toán đơn nguyên, và cũng Khác với Bitwise Operation thường được dịch là phép toán nhị phân*
+*Lưu ý rằng Binary Operation khác với Unary Operation - phép toán đơn nguyên, và cũng khác với Bitwise Operation thường được dịch là phép toán nhị phân*
 
 
 **Tính chất của Binary Operation**
@@ -245,13 +247,17 @@ Type constructor trong những ví dụ trên là [], Maybe, Tree chứ không d
 
 ## Tham khảo
 https://en.wikiversity.org/wiki/Introduction_to_Category_Theory/Monoids
+
 https://en.wikiversity.org/wiki/Introduction_to_Category_Theory/Functors
+
 https://en.wikipedia.org/wiki/Binary_operation
-https://en.wikipedia.org/wiki/Abstract_algebra
+
 https://en.wikipedia.org/wiki/Morphism
-https://en.wikipedia.org/wiki/Functor
+
 http://www.cis.upenn.edu/~cis194/spring15/lectures/04-typeclasses.html
+
 https://en.wikibooks.org/wiki/Haskell/Monoids
+
 https://en.wikibooks.org/wiki/Haskell/The_Functor_class
-https://en.wikibooks.org/wiki/Haskell/Foldable
+
 http://stackoverflow.com/questions/13134825/how-do-functors-work-in-haskell
