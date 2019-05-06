@@ -52,16 +52,32 @@ Giả sử S là 1 tập hợp (set), và • là 1 phép toán nhị nguyên S 
 
 2.Phần tử nhận dạng: Tồn tại 1 phần tử e thuộc S sao cho với từng phần tử a thuộc S, ta luôn có  e • a = a • e = a
 
-*Ví dụ, Tập số tự nhiên N, tạo ra 2 commutative monoid (monoid có tính giao hoán) gồm phép cộng (phần tử nhận dạng: 0) và phép nhân (phần tử nhận dạng 1)*
+*Ví dụ, Tập số tự nhiên N tạo ra 2 commutative monoid (monoid có tính giao hoán) gồm phép cộng và phép nhân*
+
+```haskell
+(3 + 6) + 9 = 3 + (6 + 9)
+ 6 + 0  = 0 + 6 = 6
+```
+
+Và
+
+```haskell
+(4 * 6) * 8 = 4 * (6 * 8)
+ 4 * 1  = 1 * 4 = 4
+```
 
 ---
 
 ## 2. Monoid trong lập trình hàm (Haskell)
 
-Xét 1 kiểu (type) m và 1 phép toán (<>) :: m -> m -> m. Kiểu m và phép toán (<>) được coi là monoid khi:
-1. Luôn tồn tại 1 phần tử mempty :: m thỏa điều kiện x <> mempty == x and mempty <> x == x;
+Với thiết kế Mathematics-like của mình, Haskell xây dựng Monoid rất sát với định nghĩa toán học của nó. Tất cả Monoids trong Haskell đều tuân theo Monoid Laws, bắt buộc phải có phép tính kết hợp (<>) và phần tử nhận dạng mempty.
 
-2. Phép toán (<>) có tính kết (associative): (a <> b) <> c == a <> (b <> c).
+```haskell
+(x <> y) <> z = x <> (y <> z) -- associativity
+mempty <> x = x               -- left identity
+x <> mempty = x               -- right identity
+```
+
 
 ### 2.1 Lớp Monoid trong Haskell
 
@@ -79,7 +95,9 @@ class Monoid m where
 (<>) = mappend
 ```
 
-Và haskell có sẵn rất nhiều thực thể Monoid (Monoid instances). Ví dụ dễ thấy nhất là list:
+Typeclass, cũng là một từ khoá mới đối với bạn đọc chưa có kinh nghiệm cùng Functional Programming, ở đây các bạn có thể xem nó giống như Interface trong Java/C# vậy. Thật ra có nhiều điểm khác biệt giữa Typeclass và Interface, nhưng điểm chung dễ nhận thấy ở đây chính là nội dung của chúng, đều là một bản thiết kế trừu tượng, thể hiện tính chất chung của nhiều kiểu dữ liệu khác nhau.
+
+Và haskell có sẵn rất nhiều thực thể Monoid (Monoid instances). List là một ví dụ:
 
 ```haskell
 instance Monoid [a] where
@@ -87,23 +105,58 @@ instance Monoid [a] where
   mappend = (++)
 ```
 
-### 2.2 Ứng dụng Monoid (to be completed)
+### 2.2 Ứng dụng Monoid
 
-Monoid rất thông dụng trong haskell,
+Monoid rất thông dụng trong haskell, hầu như có mặt khắp mọi nơi và được dùng thường xuyên.
 
-** The `Writer` Monad **
+List là một Monoid, vậy Monoid giúp ích List như thế nào? Thử phép (<>) như định nghĩa trên List, là biết ngay thôi :)
 
-** The `Foldable` Class **
+```haskell
+iAppend = [1] <> [2] <> [3, 4] -- output: [1,2,3,4]
 
-** Finger Trees **
+sAppend = "I am " <> "The " <> "Void" -- output: "I am The Void"
+```
 
-** Options and settings **
+Ồ có vẻ như, cứ gặp một instance của Monoid, là chúng ta có một hàm concat free nhỉ. Và ngược lại, cứ thấy function (<>) ta hiểu là mình đang làm việc với một cấu trúc mang 2 tính chất Associative và has-Identity. Trên phương diện lập trình mà nói, Monoid tăng tính nhận diện và tổng quát cho ngôn ngữ.
+
+Vẫn cảm thấy chưa đã, mời xem qua [Data.Monoid](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Monoid.html), thư viện này cung cấp hàng loạt Monoid instance hay ho khác như Sum & Product cho Num type, hay instance cho Comparison, Predicate... 
+
+
+**The `Foldable` Class**
+
+Fold - hay Reduce trong một số ngôn ngữ khác, thuộc nhóm hàm bậc cao **Higher Order Functions**, và Haskell có Foldable class tổng quát hoá các tính toán xung quanh Fold như fold left, fold right, fold map và cả special case như sum, product, length, elem...
+
+Nếu bạn xem mã của Foldable class, sẽ thấy nó được xây dựng từ Monoid. Ngay cả trong những ví dụ đơn giản, tính toán thông thường, chúng ta cũng dễ dàng nhận ra Fold và Monoid có gì đó... giống nhau?
+
+```haskell
+easySum = foldr (+) 0 [2,4,6,8] --output 20
+maxFold = foldr max 66 [11,22,33,44,55] -- output 66
+```
+
+Có nhiều ví dụ thú vị hơn về foldable, như duyệt cây trong [blog này](http://blog.sigfpe.com/2009/01/haskell-monoids-and-their-uses.html) chẳng hạn:
+
+```haskell
+data Tree a = Empty | Leaf a | Node (Tree a) a (Tree a)
+instance Foldable Tree where
+    foldMap f Empty = mempty
+    foldMap f (Leaf x) = f x
+    foldMap f (Node l k r) = foldMap f l `mappend` f k `mappend` foldMap f r
+```
+
+Nếu ta define một cây như trên, sau đó ta cần duyệt cây để tìm phần tử giá trị bằng 1, hoặc bất cứ phần từ lớn hơn 5:
+
+```haskell
+tree = Node (Leaf 1) 7 (Leaf 2)
+
+f1   = foldMap (Any . (== 1)) tree
+f2   = foldMap (All . (>  5)) tree
+```
 
 ---
 
-## 3. Định nghĩa Functor
+## 3. Functor.. là gì?
 
-Functor cũng xuất phát từ Đại Số Trừu Tượng (Abstract Algebra) và Lý Thuyết Phạm Trù (Category Theory).
+Functor cũng xuất phát từ Category Theory giống như Monoid vậy, và nó còn trừu tượng hơn :)
 
 > A functor is a type of mapping between categories arising in category theory. Functors can be thought of as homomorphisms between categories. In the category of small categories, functors can be thought of more generally as morphisms.
 
