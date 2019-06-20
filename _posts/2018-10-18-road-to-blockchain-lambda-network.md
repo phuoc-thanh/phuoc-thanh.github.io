@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lambda Chain: Network"
+title: "Lambda Chain: Network - updating"
 comments: true
 description: "Road to Blockchain: Network"
 keywords: "blockchain, proofofstake, proofofwork, bitcoin, haskell, lambda, p2p network, tcp connect"
@@ -24,20 +24,23 @@ Có bao nhiêu loại distributed network?
 
 Đồng bộ dữ liệu - Data Replication (Query Spreading?Central Server?Super Nodes?)
 
+> To be revise
 * Single-master (master-slave replication) vs Multi-master: The way of distribution of data
 * Full Replication vs Partial Replication: The way of making replicas
 * Synchronous propagation vs Asynchronous Propagation: The way of propagation update
 Synchrouns aka eager update, spreading update to all replicas before commit, it make the state is mostly update among node, usually appears on single-master model.
 Asynchronous aka lazy update, commit make from unknown node, commit asap then propagate the updates to other replicas. This approach usually appears on multi-master model, and it has 2 implementation: Optimistic and Non-optimistic (to-be-write). The optimistic way assumes that no conflict in propagation phase then make a divergence between nodes
 
+> To be revise
 Propagation frequency
 * Pull, whenever enable/call, node send request to make propagation
 * Push, if updated, send update immediately
 
+> To be revise
 Data Reconciliation: is the activity that brings divergent replicas back to a mutual consistent state (like synchronize process?)
 
+> To be revise
 Network structure
-
 * Structured (pure)
 * Unstructured (pure)
 * Super Peers (impure/hybrid)
