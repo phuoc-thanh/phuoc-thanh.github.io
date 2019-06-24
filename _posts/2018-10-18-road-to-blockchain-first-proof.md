@@ -63,9 +63,9 @@ Hầu hết các chain lớn hiện tại đều sử dụng no-sql db, như lev
 Monero sử dụng LMDB, cũng là một dạng key-pair db, và tôi chọn LMDB cho lambda chain vì đã từng code trước đây.
 Hơn nữa, lần setup và sử dụng LMDB gần đây, đã giúp tôi thu thập thêm kha khá kiến thức về IO, memory, channel.. rất hay và đáng để học hỏi.
 
-Tôi dành một chapter trong series để viết về LMDB.
+Tôi có một bài viết giới thiệu về bộ nhớ máy tính và LMDB:
 
-[Lambda-db - The Lightning Memory-Mapped Database](https://phuoc-thanh.github.io/2018/lambda-db)
+[The Lightning Database](https://phuoc-thanh.github.io/2018/the-lightning-db/)
 
 ---
 

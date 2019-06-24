@@ -263,21 +263,25 @@ fmap  (+7)     Nothing   = Nothing
 Ví dụ ta có 1 data type:
 
 ```haskell
-data Tree a = Leaf a | Branch (Tree a) (Tree a) deriving (Show)
+data Tree a = Empty | Leaf a | Node a (Tree a) (Tree a) deriving Show
 ```
 
 Ta có thể định nghĩa thực thể Functor cho kiểu Tree như sau:
 
 ```haskell
+-- Instance of Functor, to use fmap()
 instance Functor Tree where
-  fmap f (Leaf x)            = Leaf   (f x)
-  fmap f (Branch left right) = Branch (fmap f left) (fmap f right)
+  fmap f (Empty)             = Empty
+  fmap f (Leaf l)            = Leaf (f l)
+  fmap f (Node n left right) = Node (f n) (fmap f left) (fmap f right)
 ```
 
-Compile nó và thử apply function (2*) lên Tree này để xem điều kì diệu :D
+Compile nó và thử apply function (2*) lên tree để xem điều kì diệu :D
 
 ```haskell
-fmap (2*) (Branch (Branch (Leaf 1) (Leaf 2)) (Leaf 3))
+tree = Node 1 (Node 2 (Node 4 (Leaf 7) Empty) (Leaf 5))
+              (Node 3 (Node 6 (Leaf 8) (Leaf 9)) Empty)
+fmap_test = fmap (2*) tree
 ```
 
 ### 4.3 Data.Functor
