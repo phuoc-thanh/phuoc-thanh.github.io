@@ -6,19 +6,19 @@ description: "Monoid, Functor - Định nghĩa và ứng dụng"
 keywords: "monoid, functor, binary operation, algebra, math, category, abstract, functional, programming, haskell"
 ---
 
-Khi bắt đầu tiếp xúc với Functional Programming, Tôi gặp nhiều khái niệm mới mẻ - đáng ngạc nhiên hơn là 5 năm lập trình dạo Tôi chưa hề nghe qua. Monoid, Functor và Monad là ba trong số đó.
+Khi bắt đầu tiếp xúc với Functional Programming, Tôi chắc ai cũng sẽ gặp những khái niệm mới mẻ như: Monoid, Functor và Monad. Không những chỉ "gặp", mà sẽ còn làm quen, làm thân với nhau dài dài nữa kia.
 
-Cũng đã dành kha khá thời gian của mình cho chủ đề khá trừu tượng này, nên Tôi quyết định viết đôi dòng ngắn ngắn tóm tắt về monoid và functor.
+Cũng đã dành kha khá thời gian của mình cho chủ đề khá trừu tượng này, nên Tôi quyết định viết đôi dòng ngắn ngắn tóm tắt về Monoid và Functor. Hi vọng sẽ giúp ích được các bạn ít nhiều, và xa hơn nữa là sẽ có thể viết thêm về Monad trong những bài viết tiếp theo.
 
 ---
 
 ## 1. Monoid.. là gì?
 
-Khái niệm Monoid có xuất phát từ Đại Số Trừu Tượng (Abstract Algebra), cụ thể hơn là Category Theory. Riêng về Category Theory, theo tôi là môn lý thuyết rất đáng bỏ thời gian ra học, nếu bạn nghiêm túc muốn lập trình với mức độ trừu tượng cao.
+Khái niệm Monoid xuất phát từ Category Theory - a.k.a `Lý Thuyết Phạm Trù`. Category Theory theo Tôi là môn lý thuyết rất đáng học nếu bạn nghiêm túc muốn lập trình trừu tượng, tuy rất khó nhai nếu không có nền tảng Toán học tốt.
  
 > A monoid is an algebraic structure with a single associative binary operation and an identity element
 
-Trên đây là định nghĩa tổng quát của Monoid, với chỉ một câu ngắn gọn, mà buộc người đọc phải tìm và đọc thêm kha khá bài viết "toán học" khác chỉ để hiểu được định nghĩa. Bây giờ bạn thấy bắt đầu phức tạp rồi đó. 
+Trên đây là định nghĩa tổng quát của Monoid, với chỉ một câu ngắn gọn, mà buộc người đọc phải tìm và đọc thêm kha khá bài viết "Toán học" khác chỉ để hiểu được định nghĩa. Bây giờ bạn thấy bắt đầu phức tạp rồi đó. 
 
 ### 1.1 Binary Operation
 
@@ -101,8 +101,8 @@ Và haskell có sẵn rất nhiều thực thể Monoid (Monoid instances). List
 
 ```haskell
 instance Monoid [a] where
-  mempty  = []
-  mappend = (++)
+  mempty  = [] -- An empty list
+  mappend = (++) -- Append / Concatenate function
 ```
 
 ### 2.2 Ứng dụng Monoid
@@ -166,16 +166,16 @@ Category trong từ điển toán tin/kỹ thuật được dịch là "Phạm T
 
 > Category theory is a formalism that allows a unified way for expressing properties and constructions that are similar for various structures.
 
-Trong Toán học, Category là 1 cấu trúc đại số (Algebraic Structure). Category bao gồm 1 nhóm đối tượng (objects) được liên kết với nhau bởi những arrows.
+Trong Toán học, Category là 1 cấu trúc đại số (Algebraic Structure). Category bao gồm 1 nhóm đối tượng (objects) được liên kết với nhau bởi những arrows / morphisms.
 
-Arrow: là khái niệm chỉ phép ánh xạ (morphism) giữa 2 đối tượng (objects). 
+Arrow: là khái niệm chỉ phép ánh xạ giữa 2 đối tượng (objects).
 
 Ví dụ dễ thấy nhất của Category chính là sets, trong đó object chính là set và arrow là function.
 
 
 **Tính chất**
 
-Tính chất cơ bản của Category là kết hợp (composition of the arrows) (1).
+Tính chất cơ bản, cũng như bản chất của Category chính là kết hợp (composition of the arrows) (1).
 
 Và sự tồn tại của 1 mũi tên định danh (identity arrow) cho mỗi object (2).
 
@@ -234,7 +234,7 @@ fmap chính là 1 hàm đa kiểu (polytypic function) dùng để map function 
 instance Functor [] where
   fmap = map
 ```
-Nhìn vào định nghĩa thực thể functor trên list, ta có thể thấy fmap chính là dạng khái quát hóa của map.
+Nhìn vào định nghĩa thực thể functor trên list, ta có thể thấy fmap chính là thể tổng quát của map.
 
 ```haskell
 fmap (* 10)  [2,4,8,16] = [20,40,80,160]
